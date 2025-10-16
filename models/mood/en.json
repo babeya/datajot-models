@@ -1,0 +1,12 @@
+{
+  "title": "Mood",
+  "description": "Track your daily mood to improve self-awareness and wellbeing.",
+  "seo": {
+    "keywords": [
+      "mood",
+      "wellbeing",
+      "journal"
+    ],
+    "image": "https://yourname.github.io/myapp-models/images/mood.png"
+  }
+}

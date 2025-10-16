@@ -1,0 +1,15 @@
+{
+  "id": "mood",
+  "category": "wellbeing",
+  "icon": "😊",
+  "fields": [
+    {
+      "name": "feeling",
+      "type": "text"
+    },
+    {
+      "name": "date",
+      "type": "date"
+    }
+  ]
+}

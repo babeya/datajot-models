@@ -1,0 +1,12 @@
+{
+  "title": "Humeur",
+  "description": "Notez votre humeur quotidienne pour mieux suivre votre bien-être.",
+  "seo": {
+    "keywords": [
+      "humeur",
+      "bien-être",
+      "journal"
+    ],
+    "image": "https://yourname.github.io/myapp-models/images/mood.png"
+  }
+}

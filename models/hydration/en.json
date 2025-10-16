@@ -1,0 +1,12 @@
+{
+  "title": "Hydration",
+  "description": "Track your daily water intake to stay healthy.",
+  "seo": {
+    "keywords": [
+      "water",
+      "health",
+      "hydration"
+    ],
+    "image": "https://yourname.github.io/myapp-models/images/hydration.png"
+  }
+}
