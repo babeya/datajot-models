@@ -1,0 +1,8 @@
+{
+  "title": "Coffee",
+  "description": "Track your daily coffee consumption.",
+  "seo": {
+    "keywords": ["coffee", "caffeine", "drinks", "nutrition"],
+    "image": "https://yourname.github.io/myapp-models/images/coffee.png"
+  }
+}

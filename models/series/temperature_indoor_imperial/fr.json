@@ -1,0 +1,8 @@
+{
+  "title": "Température intérieure (°F)",
+  "description": "Suivez la température intérieure en Fahrenheit.",
+  "seo": {
+    "keywords": ["température", "intérieur", "maison", "fahrenheit"],
+    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
+  }
+}

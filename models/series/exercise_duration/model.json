@@ -1,9 +1,9 @@
 {
-  "id": "hydration",
+  "id": "exercise_duration",
   "type": "series",
-  "category": "health",
-  "icon": "drop.fill",
-  "unit": "volume_metric",
+  "category": "fitness",
+  "icon": "figure.run",
+  "unit": "duration",
   "graphType": "bar",
   "stats": {
     "showAverage": true,
@@ -17,6 +17,6 @@
     "showMaxOnChart": false,
     "showMinOnChart": false,
     "autoScaleYAxis": true,
-    "averageColorHex": "#3B82F6"
+    "averageColorHex": "#10B981"
   }
 }

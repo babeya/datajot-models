@@ -1,0 +1,8 @@
+{
+  "title": "Température intérieure (°C)",
+  "description": "Suivez la température intérieure en Celsius.",
+  "seo": {
+    "keywords": ["température", "intérieur", "maison", "celsius"],
+    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
+  }
+}

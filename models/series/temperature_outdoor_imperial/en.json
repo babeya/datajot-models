@@ -1,0 +1,8 @@
+{
+  "title": "Outdoor Temperature (°F)",
+  "description": "Track outdoor temperature in Fahrenheit.",
+  "seo": {
+    "keywords": ["temperature", "outdoor", "weather", "fahrenheit"],
+    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
+  }
+}

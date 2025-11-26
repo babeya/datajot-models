@@ -1,0 +1,8 @@
+{
+  "title": "Humidity",
+  "description": "Track humidity levels.",
+  "seo": {
+    "keywords": ["humidity", "weather", "environment"],
+    "image": "https://yourname.github.io/myapp-models/images/humidity.png"
+  }
+}

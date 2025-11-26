@@ -1,0 +1,8 @@
+{
+  "title": "Alcohol",
+  "description": "Track your alcohol consumption.",
+  "seo": {
+    "keywords": ["alcohol", "drinks", "health", "consumption"],
+    "image": "https://yourname.github.io/myapp-models/images/alcohol.png"
+  }
+}

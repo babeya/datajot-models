@@ -1,0 +1,8 @@
+{
+  "title": "Indoor Temperature (°C)",
+  "description": "Track indoor temperature in Celsius.",
+  "seo": {
+    "keywords": ["temperature", "indoor", "home", "celsius"],
+    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
+  }
+}

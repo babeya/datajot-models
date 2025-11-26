@@ -1,0 +1,8 @@
+{
+  "title": "Exercise Duration",
+  "description": "Track your exercise duration.",
+  "seo": {
+    "keywords": ["exercise", "fitness", "workout", "duration"],
+    "image": "https://yourname.github.io/myapp-models/images/exercise.png"
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "id": "mood",
+  "id": "visitors",
   "type": "series",
-  "category": "wellness",
-  "icon": "face.smiling.fill",
-  "graphType": "line",
+  "category": "business",
+  "icon": "person.2.fill",
+  "graphType": "bar",
   "stats": {
     "showAverage": true,
-    "showMedian": true,
-    "showSum": false,
+    "showMedian": false,
+    "showSum": true,
     "showCount": true,
     "showMax": true,
     "showMin": true,
@@ -15,7 +15,7 @@
     "showMedianOnChart": false,
     "showMaxOnChart": false,
     "showMinOnChart": false,
-    "autoScaleYAxis": false,
-    "averageColorHex": "#F59E0B"
+    "autoScaleYAxis": true,
+    "averageColorHex": "#3B82F6"
   }
 }

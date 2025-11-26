@@ -1,21 +1,21 @@
 {
-  "id": "mood",
+  "id": "coffee",
   "type": "series",
-  "category": "wellness",
-  "icon": "face.smiling.fill",
-  "graphType": "line",
+  "category": "nutrition",
+  "icon": "cup.and.saucer.fill",
+  "graphType": "bar",
   "stats": {
     "showAverage": true,
-    "showMedian": true,
-    "showSum": false,
+    "showMedian": false,
+    "showSum": true,
     "showCount": true,
     "showMax": true,
-    "showMin": true,
+    "showMin": false,
     "showAverageOnChart": true,
     "showMedianOnChart": false,
     "showMaxOnChart": false,
     "showMinOnChart": false,
-    "autoScaleYAxis": false,
-    "averageColorHex": "#F59E0B"
+    "autoScaleYAxis": true,
+    "averageColorHex": "#78350F"
   }
 }

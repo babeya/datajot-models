@@ -1,12 +1,13 @@
 {
-  "id": "mood",
+  "id": "humidity",
   "type": "series",
-  "category": "wellness",
-  "icon": "face.smiling.fill",
+  "category": "environment",
+  "icon": "humidity.fill",
+  "unit": "percentage",
   "graphType": "line",
   "stats": {
     "showAverage": true,
-    "showMedian": true,
+    "showMedian": false,
     "showSum": false,
     "showCount": true,
     "showMax": true,
@@ -15,7 +16,7 @@
     "showMedianOnChart": false,
     "showMaxOnChart": false,
     "showMinOnChart": false,
-    "autoScaleYAxis": false,
-    "averageColorHex": "#F59E0B"
+    "autoScaleYAxis": true,
+    "averageColorHex": "#06B6D4"
   }
 }

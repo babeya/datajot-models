@@ -1,0 +1,8 @@
+{
+  "title": "Poids (kg)",
+  "description": "Suivez votre poids corporel en kilogrammes.",
+  "seo": {
+    "keywords": ["poids", "santé", "fitness", "kilogrammes"],
+    "image": "https://yourname.github.io/myapp-models/images/weight.png"
+  }
+}

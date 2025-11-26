@@ -1,12 +1,13 @@
 {
-  "id": "mood",
+  "id": "temperature_outdoor_imperial",
   "type": "series",
-  "category": "wellness",
-  "icon": "face.smiling.fill",
+  "category": "environment",
+  "icon": "thermometer.medium",
+  "unit": "temperature_imperial",
   "graphType": "line",
   "stats": {
     "showAverage": true,
-    "showMedian": true,
+    "showMedian": false,
     "showSum": false,
     "showCount": true,
     "showMax": true,
@@ -15,7 +16,7 @@
     "showMedianOnChart": false,
     "showMaxOnChart": false,
     "showMinOnChart": false,
-    "autoScaleYAxis": false,
-    "averageColorHex": "#F59E0B"
+    "autoScaleYAxis": true,
+    "averageColorHex": "#EF4444"
   }
 }

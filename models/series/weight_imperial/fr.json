@@ -1,0 +1,8 @@
+{
+  "title": "Poids (lb)",
+  "description": "Suivez votre poids corporel en livres.",
+  "seo": {
+    "keywords": ["poids", "santé", "fitness", "livres"],
+    "image": "https://yourname.github.io/myapp-models/images/weight.png"
+  }
+}

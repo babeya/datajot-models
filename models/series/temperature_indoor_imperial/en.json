@@ -1,0 +1,8 @@
+{
+  "title": "Indoor Temperature (°F)",
+  "description": "Track indoor temperature in Fahrenheit.",
+  "seo": {
+    "keywords": ["temperature", "indoor", "home", "fahrenheit"],
+    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
+  }
+}

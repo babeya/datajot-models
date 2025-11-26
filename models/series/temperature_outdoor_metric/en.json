@@ -1,0 +1,8 @@
+{
+  "title": "Outdoor Temperature (°C)",
+  "description": "Track outdoor temperature in Celsius.",
+  "seo": {
+    "keywords": ["temperature", "outdoor", "weather", "celsius"],
+    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
+  }
+}

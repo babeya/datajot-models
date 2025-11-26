@@ -1,0 +1,8 @@
+{
+  "title": "Weight (lb)",
+  "description": "Track your body weight in pounds.",
+  "seo": {
+    "keywords": ["weight", "health", "fitness", "pounds"],
+    "image": "https://yourname.github.io/myapp-models/images/weight.png"
+  }
+}
