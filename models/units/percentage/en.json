@@ -1,0 +1,7 @@
+{
+  "title": "Percentage",
+  "description": "Measure values as a percentage",
+  "subUnits": {
+    "percent": { "title": "Percent", "abbreviation": "%" }
+  }
+}

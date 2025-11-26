@@ -1,0 +1,11 @@
+{
+  "id": "weight_imperial",
+  "type": "unit",
+  "category": "mass",
+  "system": "imperial",
+  "baseUnit": "oz",
+  "subUnits": [
+    { "id": "oz", "symbol": "oz", "toBase": 1 },
+    { "id": "lb", "symbol": "lb", "toBase": 16 }
+  ]
+}

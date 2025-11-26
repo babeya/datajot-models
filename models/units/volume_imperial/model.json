@@ -1,0 +1,13 @@
+{
+  "id": "volume_imperial",
+  "type": "unit",
+  "category": "volume",
+  "system": "imperial",
+  "baseUnit": "floz",
+  "subUnits": [
+    { "id": "floz", "symbol": "fl oz", "toBase": 1 },
+    { "id": "cup", "symbol": "cup", "toBase": 8 },
+    { "id": "pt", "symbol": "pt", "toBase": 16 },
+    { "id": "gal", "symbol": "gal", "toBase": 128 }
+  ]
+}

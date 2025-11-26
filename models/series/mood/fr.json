@@ -1,0 +1,8 @@
+{
+  "title": "Humeur",
+  "description": "Suivez votre humeur quotidienne pour comprendre vos schémas émotionnels.",
+  "seo": {
+    "keywords": ["humeur", "émotions", "bien-être", "santé mentale"],
+    "image": "https://yourname.github.io/myapp-models/images/mood.png"
+  }
+}

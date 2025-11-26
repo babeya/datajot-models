@@ -1,0 +1,11 @@
+{
+  "title": "Duration",
+  "description": "Measure time duration",
+  "subUnits": {
+    "ms": { "title": "Millisecond", "abbreviation": "ms" },
+    "s": { "title": "Second", "abbreviation": "s" },
+    "min": { "title": "Minute", "abbreviation": "min" },
+    "h": { "title": "Hour", "abbreviation": "h" },
+    "d": { "title": "Day", "abbreviation": "d" }
+  }
+}

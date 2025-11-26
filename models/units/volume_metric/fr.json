@@ -1,0 +1,9 @@
+{
+  "title": "Volume (L)",
+  "description": "Mesure des volumes en unités métriques",
+  "subUnits": {
+    "ml": { "title": "Millilitre", "abbreviation": "ml" },
+    "cl": { "title": "Centilitre", "abbreviation": "cl" },
+    "l": { "title": "Litre", "abbreviation": "L" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "height_imperial",
+  "type": "unit",
+  "category": "length",
+  "system": "imperial",
+  "baseUnit": "in",
+  "subUnits": [
+    { "id": "in", "symbol": "in", "toBase": 1 },
+    { "id": "ft", "symbol": "ft", "toBase": 12 }
+  ]
+}

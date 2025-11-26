@@ -1,0 +1,18 @@
+{
+  "id": "mood",
+  "type": "series",
+  "category": "wellness",
+  "icon": "😊",
+  "fields": [
+    {
+      "name": "level",
+      "type": "number",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "name": "date",
+      "type": "date"
+    }
+  ]
+}

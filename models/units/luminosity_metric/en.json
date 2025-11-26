@@ -1,0 +1,7 @@
+{
+  "title": "Luminosity (lx)",
+  "description": "Measure light intensity in lux",
+  "subUnits": {
+    "lux": { "title": "Lux", "abbreviation": "lx" }
+  }
+}

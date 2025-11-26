@@ -1,0 +1,12 @@
+{
+  "id": "height_metric",
+  "type": "unit",
+  "category": "length",
+  "system": "metric",
+  "baseUnit": "cm",
+  "subUnits": [
+    { "id": "mm", "symbol": "mm", "toBase": 0.1 },
+    { "id": "cm", "symbol": "cm", "toBase": 1 },
+    { "id": "m", "symbol": "m", "toBase": 100 }
+  ]
+}

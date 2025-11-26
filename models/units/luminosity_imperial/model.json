@@ -1,0 +1,10 @@
+{
+  "id": "luminosity_imperial",
+  "type": "unit",
+  "category": "light",
+  "system": "imperial",
+  "baseUnit": "fc",
+  "subUnits": [
+    { "id": "fc", "symbol": "fc", "toBase": 1 }
+  ]
+}

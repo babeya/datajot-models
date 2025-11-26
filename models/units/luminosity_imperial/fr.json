@@ -1,0 +1,7 @@
+{
+  "title": "Luminosité (fc)",
+  "description": "Mesure de l'intensité lumineuse en foot-candles",
+  "subUnits": {
+    "fc": { "title": "Foot-candle", "abbreviation": "fc" }
+  }
+}

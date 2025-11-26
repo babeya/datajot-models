@@ -1,0 +1,10 @@
+{
+  "id": "temperature_imperial",
+  "type": "unit",
+  "category": "temperature",
+  "system": "imperial",
+  "baseUnit": "f",
+  "subUnits": [
+    { "id": "f", "symbol": "°F", "toBase": 1 }
+  ]
+}

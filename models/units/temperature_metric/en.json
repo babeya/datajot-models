@@ -1,0 +1,7 @@
+{
+  "title": "Temperature (°C)",
+  "description": "Measure temperature in Celsius",
+  "subUnits": {
+    "c": { "title": "Celsius", "abbreviation": "°C" }
+  }
+}

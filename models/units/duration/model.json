@@ -1,0 +1,14 @@
+{
+  "id": "duration",
+  "type": "unit",
+  "category": "time",
+  "system": "universal",
+  "baseUnit": "s",
+  "subUnits": [
+    { "id": "ms", "symbol": "ms", "toBase": 0.001 },
+    { "id": "s", "symbol": "s", "toBase": 1 },
+    { "id": "min", "symbol": "min", "toBase": 60 },
+    { "id": "h", "symbol": "h", "toBase": 3600 },
+    { "id": "d", "symbol": "d", "toBase": 86400 }
+  ]
+}

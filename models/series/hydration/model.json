@@ -1,12 +1,13 @@
 {
   "id": "hydration",
+  "type": "series",
   "category": "health",
   "icon": "💧",
   "fields": [
     {
       "name": "volume",
       "type": "number",
-      "unit": "ml"
+      "unit": "volume_metric"
     },
     {
       "name": "date",
