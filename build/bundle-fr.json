@@ -1,0 +1,53 @@
+[
+  {
+    "id": "hydration",
+    "category": "health",
+    "icon": "💧",
+    "fields": [
+      {
+        "name": "volume",
+        "type": "number",
+        "unit": "ml"
+      },
+      {
+        "name": "date",
+        "type": "date"
+      }
+    ],
+    "title": "Hydratation",
+    "description": "Suivez votre consommation d’eau quotidienne pour rester en forme.",
+    "seo": {
+      "keywords": [
+        "eau",
+        "santé",
+        "hydratation"
+      ],
+      "image": "https://yourname.github.io/myapp-models/images/hydration.png"
+    }
+  },
+  {
+    "id": "mood",
+    "category": "wellbeing",
+    "icon": "😊",
+    "fields": [
+      {
+        "name": "feeling",
+        "type": "text"
+      },
+      {
+        "name": "date",
+        "type": "date"
+      }
+    ],
+    "title": "Humeur",
+    "description": "Notez votre humeur quotidienne pour mieux suivre votre bien-être.",
+    "seo": {
+      "keywords": [
+        "humeur",
+        "bien-être",
+        "journal"
+      ],
+      "image": "https://yourname.github.io/myapp-models/images/mood.png"
+    }
+  }
+]

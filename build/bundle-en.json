@@ -1,0 +1,53 @@
+[
+  {
+    "id": "hydration",
+    "category": "health",
+    "icon": "💧",
+    "fields": [
+      {
+        "name": "volume",
+        "type": "number",
+        "unit": "ml"
+      },
+      {
+        "name": "date",
+        "type": "date"
+      }
+    ],
+    "title": "Hydration",
+    "description": "Track your daily water intake to stay healthy.",
+    "seo": {
+      "keywords": [
+        "water",
+        "health",
+        "hydration"
+      ],
+      "image": "https://yourname.github.io/myapp-models/images/hydration.png"
+    }
+  },
+  {
+    "id": "mood",
+    "category": "wellbeing",
+    "icon": "😊",
+    "fields": [
+      {
+        "name": "feeling",
+        "type": "text"
+      },
+      {
+        "name": "date",
+        "type": "date"
+      }
+    ],
+    "title": "Mood",
+    "description": "Track your daily mood to improve self-awareness and wellbeing.",
+    "seo": {
+      "keywords": [
+        "mood",
+        "wellbeing",
+        "journal"
+      ],
+      "image": "https://yourname.github.io/myapp-models/images/mood.png"
+    }
+  }
+]
