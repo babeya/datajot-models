@@ -4,6 +4,7 @@
   "category": "fitness",
   "icon": "figure.run",
   "unit": "duration",
+  "color": "#10B981",
   "graphType": "bar",
   "stats": {
     "showAverage": true,

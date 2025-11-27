@@ -4,6 +4,7 @@
   "category": "health",
   "icon": "drop.fill",
   "unit": "volume_metric",
+  "color": "#3B82F6",
   "graphType": "bar",
   "stats": {
     "showAverage": true,

@@ -4,6 +4,7 @@
   "category": "environment",
   "icon": "thermometer.sun.fill",
   "unit": "temperature_metric",
+  "color": "#F97316",
   "graphType": "line",
   "stats": {
     "showAverage": true,

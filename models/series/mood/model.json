@@ -3,6 +3,7 @@
   "type": "series",
   "category": "wellness",
   "icon": "face.smiling.fill",
+  "color": "#FBBF24",
   "graphType": "line",
   "stats": {
     "showAverage": true,

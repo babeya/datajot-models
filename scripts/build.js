@@ -24,7 +24,7 @@ function readModels(type) {
 /**
  * Génère un bundle pour un type et une langue donnés
  */
-function generateBundle(type, lang) {
+function generateBundle(type, lang, unitsMap = null, categoriesMap = null) {
   const models = readModels(type)
   const bundle = []
 
@@ -35,7 +35,19 @@ function generateBundle(type, lang) {
     const model = JSON.parse(readFileSync(modelPath, 'utf-8'))
     const i18n = JSON.parse(readFileSync(langPath, 'utf-8'))
 
-    bundle.push({ ...model, ...i18n })
+    const item = { ...model, ...i18n }
+
+    // Si c'est une série avec une unité et qu'on a une map des unités, on injecte l'objet complet
+    if (type === 'series' && item.unit && unitsMap && unitsMap[item.unit]) {
+      item.unitObject = unitsMap[item.unit]
+    }
+
+    // Si l'item a une catégorie et qu'on a une map des catégories, on injecte l'objet complet
+    if (item.category && categoriesMap && categoriesMap[item.category]) {
+      item.categoryObject = categoriesMap[item.category]
+    }
+
+    bundle.push(item)
   }
 
   return bundle
@@ -45,8 +57,29 @@ function generateBundle(type, lang) {
 for (const lang of languages) {
   const fullBundle = {}
 
+  // Charger d'abord les catégories pour créer une map
+  const categoriesModels = readModels('categories')
+  const categoriesMap = {}
+  for (const categoryId of categoriesModels) {
+    const modelPath = join(baseDir, 'categories', categoryId, 'model.json')
+    const langPath = join(baseDir, 'categories', categoryId, `${lang}.json`)
+    const model = JSON.parse(readFileSync(modelPath, 'utf-8'))
+    const i18n = JSON.parse(readFileSync(langPath, 'utf-8'))
+    categoriesMap[categoryId] = { ...model, ...i18n }
+  }
+
+  // Charger les unités pour créer une map
+  const unitsBundle = generateBundle('units', lang, null, categoriesMap)
+  const unitsMap = {}
+  for (const unit of unitsBundle) {
+    unitsMap[unit.id] = unit
+  }
+
   for (const type of modelTypes) {
-    const bundle = generateBundle(type, lang)
+    const bundle = type === 'series' 
+      ? generateBundle(type, lang, unitsMap, categoriesMap)
+      : generateBundle(type, lang, null, categoriesMap)
+    
     fullBundle[type] = bundle
     
     // Génère aussi un bundle séparé par type
