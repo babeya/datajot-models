@@ -1,0 +1,9 @@
+{
+  "key": "noise_levels",
+  "type": "series",
+  "category": "environment",
+  "icon": "speaker.wave.3.fill",
+  "color": "#F87171",
+  "graphType": "line",
+  "unit": "count"
+}

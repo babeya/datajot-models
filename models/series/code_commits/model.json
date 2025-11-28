@@ -1,0 +1,9 @@
+{
+  "key": "code_commits",
+  "type": "series",
+  "category": "productivity",
+  "icon": "chevron.left.slash.chevron.right",
+  "color": "#9333EA",
+  "graphType": "bar",
+  "unit": "count"
+}

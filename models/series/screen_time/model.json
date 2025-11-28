@@ -1,0 +1,9 @@
+{
+  "key": "screen_time",
+  "type": "series",
+  "category": "digital",
+  "icon": "iphone",
+  "color": "#3B82F6",
+  "graphType": "area",
+  "unit": "duration"
+}

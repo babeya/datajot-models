@@ -1,0 +1,9 @@
+{
+  "key": "symptom_intensity",
+  "type": "series",
+  "category": "health",
+  "icon": "cross.case.fill",
+  "color": "#FB7185",
+  "graphType": "area",
+  "unit": "percentage"
+}

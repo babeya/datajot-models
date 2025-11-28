@@ -1,0 +1,14 @@
+{
+  "key": "currency",
+  "type": "unit",
+  "category": "finance",
+  "baseUnit": "usd",
+  "subUnits": [
+    { "key": "usd", "factor": 1, "abbreviation": "USD" },
+    { "key": "eur", "factor": 1.08, "abbreviation": "EUR" },
+    { "key": "gbp", "factor": 1.27, "abbreviation": "GBP" },
+    { "key": "cad", "factor": 0.74, "abbreviation": "CAD" },
+    { "key": "aud", "factor": 0.66, "abbreviation": "AUD" },
+    { "key": "jpy", "factor": 0.0067, "abbreviation": "JPY" }
+  ]
+}

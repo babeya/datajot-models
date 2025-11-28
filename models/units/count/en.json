@@ -1,0 +1,13 @@
+{
+  "title": "Count",
+  "description": "Generic counting unit for tallies and recurring events.",
+  "seo": {
+    "keywords": ["count", "events", "tally", "quantity"]
+  },
+  "subUnit": {
+    "count": { "abbreviation": "ct", "title": "Count" },
+    "dozen": { "abbreviation": "dz", "title": "Dozen" },
+    "hundred": { "abbreviation": "100", "title": "Hundred" },
+    "thousand": { "abbreviation": "k", "title": "Thousand" }
+  }
+}

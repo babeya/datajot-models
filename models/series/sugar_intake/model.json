@@ -1,0 +1,9 @@
+{
+  "key": "sugar_intake",
+  "type": "series",
+  "category": "nutrition",
+  "icon": "cube.fill",
+  "color": "#FB923C",
+  "graphType": "line",
+  "unit": "weight_metric"
+}

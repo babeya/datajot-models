@@ -1,0 +1,13 @@
+{
+  "title": "Décompte",
+  "description": "Unité générique pour compter des éléments ou des événements.",
+  "seo": {
+    "keywords": ["compter", "quantité", "événements", "totaux"]
+  },
+  "subUnit": {
+    "count": { "abbreviation": "u", "title": "Unité" },
+    "dozen": { "abbreviation": "dz", "title": "Douzaine" },
+    "hundred": { "abbreviation": "100", "title": "Cent" },
+    "thousand": { "abbreviation": "k", "title": "Millier" }
+  }
+}

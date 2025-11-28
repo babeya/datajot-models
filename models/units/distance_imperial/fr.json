@@ -1,0 +1,13 @@
+{
+  "title": "Distance (impérial)",
+  "description": "Distances impériales des pouces aux miles.",
+  "seo": {
+    "keywords": ["distance", "impérial", "miles", "pouces"]
+  },
+  "subUnit": {
+    "in": { "abbreviation": "in", "title": "Pouce" },
+    "ft": { "abbreviation": "ft", "title": "Pied" },
+    "yd": { "abbreviation": "yd", "title": "Yard" },
+    "mi": { "abbreviation": "mi", "title": "Mille" }
+  }
+}

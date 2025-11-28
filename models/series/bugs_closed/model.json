@@ -1,0 +1,9 @@
+{
+  "key": "bugs_closed",
+  "type": "series",
+  "category": "productivity",
+  "icon": "ant.fill",
+  "color": "#EA580C",
+  "graphType": "bar",
+  "unit": "count"
+}

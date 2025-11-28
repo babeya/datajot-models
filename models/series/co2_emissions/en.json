@@ -1,0 +1,7 @@
+{
+  "name": "CO2 Emissions",
+  "description": "Estimated kilograms of CO2 emitted per day.",
+  "seo": {
+    "keywords": ["co2", "carbon", "environment", "emissions"]
+  }
+}

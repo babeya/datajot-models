@@ -1,0 +1,9 @@
+{
+  "key": "creative_writing_words",
+  "type": "series",
+  "category": "creativity",
+  "icon": "pencil.and.outline",
+  "color": "#FBBF24",
+  "graphType": "line",
+  "unit": "count"
+}

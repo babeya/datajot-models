@@ -1,0 +1,9 @@
+{
+  "key": "gas_usage",
+  "type": "series",
+  "category": "energy",
+  "icon": "flame.circle.fill",
+  "color": "#F97316",
+  "graphType": "line",
+  "unit": "volume_imperial"
+}

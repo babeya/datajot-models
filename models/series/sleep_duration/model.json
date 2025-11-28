@@ -1,0 +1,9 @@
+{
+  "key": "sleep_duration",
+  "type": "series",
+  "category": "wellness",
+  "icon": "bed.double.fill",
+  "color": "#7C3AED",
+  "graphType": "area",
+  "unit": "duration"
+}

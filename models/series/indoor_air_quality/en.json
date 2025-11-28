@@ -1,0 +1,7 @@
+{
+  "name": "Indoor Air Quality",
+  "description": "AQI or VOC readings captured indoors.",
+  "seo": {
+    "keywords": ["air quality", "indoor", "environment", "AQI"]
+  }
+}

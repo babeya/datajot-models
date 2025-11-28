@@ -1,0 +1,9 @@
+{
+  "key": "deals_closed",
+  "type": "series",
+  "category": "business",
+  "icon": "handshake.fill",
+  "color": "#EA580C",
+  "graphType": "points",
+  "unit": "count"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "blood_glucose",
+  "type": "series",
+  "category": "health",
+  "icon": "drop.fill",
+  "color": "#A855F7",
+  "graphType": "line",
+  "unit": "glucose"
+}

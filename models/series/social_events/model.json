@@ -1,0 +1,9 @@
+{
+  "key": "social_events",
+  "type": "series",
+  "category": "social",
+  "icon": "person.3.fill",
+  "color": "#EC4899",
+  "graphType": "points",
+  "unit": "count"
+}

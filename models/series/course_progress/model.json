@@ -1,0 +1,9 @@
+{
+  "key": "course_progress",
+  "type": "series",
+  "category": "learning",
+  "icon": "list.bullet.rectangle",
+  "color": "#22D3EE",
+  "graphType": "line",
+  "unit": "percentage"
+}

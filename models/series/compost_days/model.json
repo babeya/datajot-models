@@ -1,0 +1,9 @@
+{
+  "key": "compost_days",
+  "type": "series",
+  "category": "sustainability",
+  "icon": "leaf.arrow.circlepath",
+  "color": "#65A30D",
+  "graphType": "points",
+  "unit": "count"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "volunteer_hours",
+  "type": "series",
+  "category": "social",
+  "icon": "hands.sparkles.fill",
+  "color": "#A855F7",
+  "graphType": "line",
+  "unit": "duration"
+}

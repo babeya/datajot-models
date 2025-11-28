@@ -1,0 +1,9 @@
+{
+  "key": "solar_generation",
+  "type": "series",
+  "category": "energy",
+  "icon": "sun.max.fill",
+  "color": "#FDBA74",
+  "graphType": "area",
+  "unit": "energy"
+}

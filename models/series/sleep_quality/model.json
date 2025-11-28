@@ -1,0 +1,9 @@
+{
+  "key": "sleep_quality",
+  "type": "series",
+  "category": "wellness",
+  "icon": "sparkles",
+  "color": "#6EE7B7",
+  "graphType": "line",
+  "unit": "percentage"
+}

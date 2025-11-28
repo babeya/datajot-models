@@ -1,0 +1,9 @@
+{
+  "key": "cycling_distance",
+  "type": "series",
+  "category": "fitness",
+  "icon": "bicycle",
+  "color": "#059669",
+  "graphType": "line",
+  "unit": "distance_metric"
+}

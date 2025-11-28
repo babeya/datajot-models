@@ -1,0 +1,1641 @@
+{
+  "version": 1,
+  "targetTotalSeries": 100,
+  "existingSeriesCount": 14,
+  "newSeries": [
+    {
+      "key": "sleep_duration",
+      "category": "wellness",
+      "unit": "duration",
+      "icon": "bed.double.fill",
+      "color": "#7C3AED",
+      "graphType": "area",
+      "name": {
+        "en": "Sleep Duration",
+        "fr": "Durée de sommeil"
+      },
+      "description": {
+        "en": "Hours slept each night to monitor rest consistency.",
+        "fr": "Nombre d'heures de sommeil chaque nuit pour suivre la régularité du repos."
+      },
+      "seo": {
+        "keywords": ["sleep", "rest", "wellness", "recovery"]
+      }
+    },
+    {
+      "key": "sleep_quality",
+      "category": "wellness",
+      "unit": "percentage",
+      "icon": "sparkles",
+      "color": "#6EE7B7",
+      "graphType": "line",
+      "name": {
+        "en": "Sleep Quality",
+        "fr": "Qualité du sommeil"
+      },
+      "description": {
+        "en": "Subjective sleep quality score from wearable or journal.",
+        "fr": "Score subjectif de qualité du sommeil issu d'un capteur ou d'un journal."
+      },
+      "seo": {
+        "keywords": ["sleep", "quality", "score", "rest"]
+      }
+    },
+    {
+      "key": "meditation_minutes",
+      "category": "mindfulness",
+      "unit": "duration",
+      "icon": "brain.head.profile",
+      "color": "#FBBF24",
+      "graphType": "bar",
+      "name": {
+        "en": "Meditation Minutes",
+        "fr": "Minutes de méditation"
+      },
+      "description": {
+        "en": "Track time spent meditating to build mindfulness habits.",
+        "fr": "Suit le temps passé à méditer pour renforcer les habitudes de pleine conscience."
+      },
+      "seo": {
+        "keywords": ["meditation", "mindfulness", "calm", "focus"]
+      }
+    },
+    {
+      "key": "gratitude_entries",
+      "category": "mindfulness",
+      "unit": "count",
+      "icon": "heart.text.square.fill",
+      "color": "#F472B6",
+      "graphType": "points",
+      "name": {
+        "en": "Gratitude Entries",
+        "fr": "Entrées de gratitude"
+      },
+      "description": {
+        "en": "Number of gratitude journal entries logged per day.",
+        "fr": "Nombre d'entrées consignées dans le journal de gratitude par jour."
+      },
+      "seo": {
+        "keywords": ["gratitude", "journal", "mindfulness", "positivity"]
+      }
+    },
+    {
+      "key": "stress_index",
+      "category": "wellness",
+      "unit": "percentage",
+      "icon": "waveform.path.ecg",
+      "color": "#F87171",
+      "graphType": "line",
+      "name": {
+        "en": "Stress Index",
+        "fr": "Indice de stress"
+      },
+      "description": {
+        "en": "Stress score aggregated from wearable or mood survey.",
+        "fr": "Indice de stress agrégé depuis un capteur ou un questionnaire d'humeur."
+      },
+      "seo": {
+        "keywords": ["stress", "wellness", "balance", "score"]
+      }
+    },
+    {
+      "key": "breath_sessions",
+      "category": "mindfulness",
+      "unit": "count",
+      "icon": "wind",
+      "color": "#0EA5E9",
+      "graphType": "bar",
+      "name": {
+        "en": "Breathing Sessions",
+        "fr": "Sessions de respiration"
+      },
+      "description": {
+        "en": "Guided breathing or box-breath repetitions completed daily.",
+        "fr": "Sessions de respiration guidée ou de cohérence cardiaque terminées chaque jour."
+      },
+      "seo": {
+        "keywords": ["breathing", "calm", "mindfulness", "coherence"]
+      }
+    },
+    {
+      "key": "steps_walked",
+      "category": "fitness",
+      "unit": "count",
+      "icon": "figure.walk",
+      "color": "#10B981",
+      "graphType": "line",
+      "name": {
+        "en": "Steps Walked",
+        "fr": "Pas effectués"
+      },
+      "description": {
+        "en": "Total steps captured by pedometer or wearable.",
+        "fr": "Nombre total de pas capturés par podomètre ou montre connectée."
+      },
+      "seo": {
+        "keywords": ["steps", "fitness", "activity", "walking"]
+      }
+    },
+    {
+      "key": "running_distance",
+      "category": "fitness",
+      "unit": "distance_metric",
+      "icon": "figure.run",
+      "color": "#2563EB",
+      "graphType": "line",
+      "name": {
+        "en": "Running Distance",
+        "fr": "Distance de course"
+      },
+      "description": {
+        "en": "Kilometers logged during running workouts.",
+        "fr": "Kilomètres enregistrés pendant les séances de course."
+      },
+      "seo": {
+        "keywords": ["running", "distance", "training", "fitness"]
+      }
+    },
+    {
+      "key": "cycling_distance",
+      "category": "fitness",
+      "unit": "distance_metric",
+      "icon": "bicycle",
+      "color": "#059669",
+      "graphType": "line",
+      "name": {
+        "en": "Cycling Distance",
+        "fr": "Distance de cyclisme"
+      },
+      "description": {
+        "en": "Distance ridden on indoor or outdoor rides.",
+        "fr": "Distance parcourue lors des sorties vélo intérieures ou extérieures."
+      },
+      "seo": {
+        "keywords": ["cycling", "distance", "rides", "fitness"]
+      }
+    },
+    {
+      "key": "workout_sessions",
+      "category": "fitness",
+      "unit": "count",
+      "icon": "dumbbell.fill",
+      "color": "#F97316",
+      "graphType": "bar",
+      "name": {
+        "en": "Workout Sessions",
+        "fr": "Séances d'entraînement"
+      },
+      "description": {
+        "en": "Number of structured workouts completed.",
+        "fr": "Nombre de séances d'entraînement structurées réalisées."
+      },
+      "seo": {
+        "keywords": ["workout", "fitness", "training", "sessions"]
+      }
+    },
+    {
+      "key": "strength_volume",
+      "category": "fitness",
+      "unit": "count",
+      "icon": "figure.strengthtraining.traditional",
+      "color": "#DC2626",
+      "graphType": "area",
+      "name": {
+        "en": "Strength Volume",
+        "fr": "Volume de musculation"
+      },
+      "description": {
+        "en": "Total reps or sets aggregated per training day.",
+        "fr": "Total des répétitions ou séries agrégées par journée d'entraînement."
+      },
+      "seo": {
+        "keywords": ["strength", "volume", "gym", "training"]
+      }
+    },
+    {
+      "key": "yoga_minutes",
+      "category": "fitness",
+      "unit": "duration",
+      "icon": "figure.cooldown",
+      "color": "#34D399",
+      "graphType": "line",
+      "name": {
+        "en": "Yoga Minutes",
+        "fr": "Minutes de yoga"
+      },
+      "description": {
+        "en": "Track mindful movement or stretching duration.",
+        "fr": "Suit la durée des séances de yoga ou d'étirements conscients."
+      },
+      "seo": {
+        "keywords": ["yoga", "mobility", "stretch", "wellness"]
+      }
+    },
+    {
+      "key": "heart_rate_resting",
+      "category": "health",
+      "unit": "frequency",
+      "icon": "heart.fill",
+      "color": "#EF4444",
+      "graphType": "line",
+      "name": {
+        "en": "Resting Heart Rate",
+        "fr": "Fréquence cardiaque au repos"
+      },
+      "description": {
+        "en": "Average resting BPM to monitor cardiovascular readiness.",
+        "fr": "BPM moyen au repos pour suivre l'état cardiovasculaire."
+      },
+      "seo": {
+        "keywords": ["heart rate", "health", "BPM", "readiness"]
+      }
+    },
+    {
+      "key": "heart_rate_variability",
+      "category": "health",
+      "unit": "duration",
+      "icon": "waveform.path",
+      "color": "#8B5CF6",
+      "graphType": "line",
+      "name": {
+        "en": "Heart Rate Variability",
+        "fr": "Variabilité de la fréquence cardiaque"
+      },
+      "description": {
+        "en": "Milliseconds between beats to gauge recovery.",
+        "fr": "Millisecondes entre les battements pour évaluer la récupération."
+      },
+      "seo": {
+        "keywords": ["HRV", "recovery", "health", "readiness"]
+      }
+    },
+    {
+      "key": "blood_pressure_systolic",
+      "category": "health",
+      "unit": "pressure",
+      "icon": "waveform.circle",
+      "color": "#F59E0B",
+      "graphType": "line",
+      "name": {
+        "en": "Systolic Pressure",
+        "fr": "Pression systolique"
+      },
+      "description": {
+        "en": "Top blood pressure value recorded daily.",
+        "fr": "Valeur supérieure de tension artérielle relevée quotidiennement."
+      },
+      "seo": {
+        "keywords": ["blood pressure", "systolic", "health", "cardio"]
+      }
+    },
+    {
+      "key": "blood_pressure_diastolic",
+      "category": "health",
+      "unit": "pressure",
+      "icon": "waveform.circle.fill",
+      "color": "#D97706",
+      "graphType": "line",
+      "name": {
+        "en": "Diastolic Pressure",
+        "fr": "Pression diastolique"
+      },
+      "description": {
+        "en": "Bottom blood pressure reading per measurement.",
+        "fr": "Valeur inférieure de tension artérielle à chaque mesure."
+      },
+      "seo": {
+        "keywords": ["blood pressure", "diastolic", "health", "cardio"]
+      }
+    },
+    {
+      "key": "oxygen_saturation",
+      "category": "health",
+      "unit": "percentage",
+      "icon": "lungs.fill",
+      "color": "#0EA5E9",
+      "graphType": "line",
+      "name": {
+        "en": "Oxygen Saturation",
+        "fr": "Saturation en oxygène"
+      },
+      "description": {
+        "en": "Pulse oximeter readings during rest or sleep.",
+        "fr": "Mesures d'oxymètre au repos ou pendant le sommeil."
+      },
+      "seo": {
+        "keywords": ["oxygen", "SpO2", "health", "breathing"]
+      }
+    },
+    {
+      "key": "blood_glucose",
+      "category": "health",
+      "unit": "glucose",
+      "icon": "drop.fill",
+      "color": "#A855F7",
+      "graphType": "line",
+      "name": {
+        "en": "Blood Glucose",
+        "fr": "Glycémie"
+      },
+      "description": {
+        "en": "Fasting or post-meal glucose readings.",
+        "fr": "Mesures de glycémie à jeun ou postprandiales."
+      },
+      "seo": {
+        "keywords": ["glucose", "blood sugar", "health", "metabolism"]
+      }
+    },
+    {
+      "key": "body_fat_percentage",
+      "category": "health",
+      "unit": "percentage",
+      "icon": "figure.arms.open",
+      "color": "#EC4899",
+      "graphType": "line",
+      "name": {
+        "en": "Body Fat %",
+        "fr": "% de masse grasse"
+      },
+      "description": {
+        "en": "Body composition tracked via smart scale or calipers.",
+        "fr": "Composition corporelle suivie via balance connectée ou adipomètre."
+      },
+      "seo": {
+        "keywords": ["body fat", "composition", "fitness", "health"]
+      }
+    },
+    {
+      "key": "menstrual_cycle",
+      "category": "health",
+      "unit": "duration",
+      "icon": "drop.circle",
+      "color": "#DB2777",
+      "graphType": "points",
+      "name": {
+        "en": "Menstrual Cycle",
+        "fr": "Cycle menstruel"
+      },
+      "description": {
+        "en": "Track cycle length or phase duration in days.",
+        "fr": "Suit la durée du cycle ou des phases en jours."
+      },
+      "seo": {
+        "keywords": ["cycle", "health", "hormones", "tracking"]
+      }
+    },
+    {
+      "key": "medication_adherence",
+      "category": "health",
+      "unit": "percentage",
+      "icon": "pills.fill",
+      "color": "#F43F5E",
+      "graphType": "bar",
+      "name": {
+        "en": "Medication Adherence",
+        "fr": "Observance des traitements"
+      },
+      "description": {
+        "en": "Percentage of prescribed doses taken on schedule.",
+        "fr": "Pourcentage de prises effectuées selon l'ordonnance."
+      },
+      "seo": {
+        "keywords": ["medication", "adherence", "health", "treatment"]
+      }
+    },
+    {
+      "key": "symptom_intensity",
+      "category": "health",
+      "unit": "percentage",
+      "icon": "cross.case.fill",
+      "color": "#FB7185",
+      "graphType": "area",
+      "name": {
+        "en": "Symptom Intensity",
+        "fr": "Intensité des symptômes"
+      },
+      "description": {
+        "en": "Self-reported severity score for tracked conditions.",
+        "fr": "Score d'intensité déclaré pour les symptômes suivis."
+      },
+      "seo": {
+        "keywords": ["symptoms", "tracking", "health", "score"]
+      }
+    },
+    {
+      "key": "calorie_intake",
+      "category": "nutrition",
+      "unit": "energy",
+      "icon": "flame.fill",
+      "color": "#F97316",
+      "graphType": "bar",
+      "name": {
+        "en": "Calorie Intake",
+        "fr": "Apport calorique"
+      },
+      "description": {
+        "en": "Daily calories consumed across meals and snacks.",
+        "fr": "Calories quotidiennes consommées via repas et collations."
+      },
+      "seo": {
+        "keywords": ["calories", "nutrition", "diet", "energy"]
+      }
+    },
+    {
+      "key": "protein_intake",
+      "category": "nutrition",
+      "unit": "weight_metric",
+      "icon": "bolt.fill",
+      "color": "#F59E0B",
+      "graphType": "line",
+      "name": {
+        "en": "Protein Intake",
+        "fr": "Apport en protéines"
+      },
+      "description": {
+        "en": "Grams of protein eaten per day.",
+        "fr": "Grammes de protéines consommés chaque jour."
+      },
+      "seo": {
+        "keywords": ["protein", "macros", "nutrition", "diet"]
+      }
+    },
+    {
+      "key": "carb_intake",
+      "category": "nutrition",
+      "unit": "weight_metric",
+      "icon": "circle.grid.2x2.fill",
+      "color": "#EAB308",
+      "graphType": "line",
+      "name": {
+        "en": "Carb Intake",
+        "fr": "Apport en glucides"
+      },
+      "description": {
+        "en": "Carbohydrate grams logged per day.",
+        "fr": "Grammes de glucides enregistrés par jour."
+      },
+      "seo": {
+        "keywords": ["carbs", "nutrition", "glucose", "diet"]
+      }
+    },
+    {
+      "key": "fat_intake",
+      "category": "nutrition",
+      "unit": "weight_metric",
+      "icon": "drop.triangle.fill",
+      "color": "#D97706",
+      "graphType": "line",
+      "name": {
+        "en": "Fat Intake",
+        "fr": "Apport en lipides"
+      },
+      "description": {
+        "en": "Grams of fat consumed daily.",
+        "fr": "Grammes de lipides consommés quotidiennement."
+      },
+      "seo": {
+        "keywords": ["fat", "lipids", "nutrition", "macros"]
+      }
+    },
+    {
+      "key": "fiber_intake",
+      "category": "nutrition",
+      "unit": "weight_metric",
+      "icon": "leaf.fill",
+      "color": "#22C55E",
+      "graphType": "line",
+      "name": {
+        "en": "Fiber Intake",
+        "fr": "Apport en fibres"
+      },
+      "description": {
+        "en": "Daily fiber grams from fruits, veggies, and grains.",
+        "fr": "Grammes de fibres provenant des fruits, légumes et céréales."
+      },
+      "seo": {
+        "keywords": ["fiber", "nutrition", "gut", "health"]
+      }
+    },
+    {
+      "key": "sugar_intake",
+      "category": "nutrition",
+      "unit": "weight_metric",
+      "icon": "cube.fill",
+      "color": "#FB923C",
+      "graphType": "line",
+      "name": {
+        "en": "Sugar Intake",
+        "fr": "Apport en sucres"
+      },
+      "description": {
+        "en": "Track grams of added sugar consumed.",
+        "fr": "Suit les grammes de sucres ajoutés consommés."
+      },
+      "seo": {
+        "keywords": ["sugar", "nutrition", "diet", "health"]
+      }
+    },
+    {
+      "key": "sodium_intake",
+      "category": "nutrition",
+      "unit": "weight_metric",
+      "icon": "aqi.low",
+      "color": "#60A5FA",
+      "graphType": "line",
+      "name": {
+        "en": "Sodium Intake",
+        "fr": "Apport en sodium"
+      },
+      "description": {
+        "en": "Milligrams of sodium logged daily.",
+        "fr": "Milligrammes de sodium enregistrés chaque jour."
+      },
+      "seo": {
+        "keywords": ["sodium", "salt", "nutrition", "blood pressure"]
+      }
+    },
+    {
+      "key": "fruit_servings",
+      "category": "nutrition",
+      "unit": "count",
+      "icon": "applelogo",
+      "color": "#EF4444",
+      "graphType": "bar",
+      "name": {
+        "en": "Fruit Servings",
+        "fr": "Portions de fruits"
+      },
+      "description": {
+        "en": "Number of fruit servings eaten per day.",
+        "fr": "Nombre de portions de fruits consommées par jour."
+      },
+      "seo": {
+        "keywords": ["fruit", "nutrition", "servings", "diet"]
+      }
+    },
+    {
+      "key": "vegetable_servings",
+      "category": "nutrition",
+      "unit": "count",
+      "icon": "leaf",
+      "color": "#16A34A",
+      "graphType": "bar",
+      "name": {
+        "en": "Vegetable Servings",
+        "fr": "Portions de légumes"
+      },
+      "description": {
+        "en": "Daily servings of vegetables consumed.",
+        "fr": "Portions quotidiennes de légumes consommées."
+      },
+      "seo": {
+        "keywords": ["vegetables", "nutrition", "greens", "diet"]
+      }
+    },
+    {
+      "key": "tea_intake",
+      "category": "nutrition",
+      "unit": "volume_metric",
+      "icon": "cup.and.saucer.fill",
+      "color": "#A3E635",
+      "graphType": "line",
+      "name": {
+        "en": "Tea Intake",
+        "fr": "Consommation de thé"
+      },
+      "description": {
+        "en": "Cups of tea brewed per day.",
+        "fr": "Tasses de thé infusées chaque jour."
+      },
+      "seo": {
+        "keywords": ["tea", "beverage", "hydration", "habit"]
+      }
+    },
+    {
+      "key": "snack_count",
+      "category": "nutrition",
+      "unit": "count",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "color": "#F97316",
+      "graphType": "points",
+      "name": {
+        "en": "Snack Count",
+        "fr": "Nombre de collations"
+      },
+      "description": {
+        "en": "Snacks eaten between main meals.",
+        "fr": "Collations consommées entre les repas principaux."
+      },
+      "seo": {
+        "keywords": ["snacks", "nutrition", "habit", "diet"]
+      }
+    },
+    {
+      "key": "screen_time",
+      "category": "digital",
+      "unit": "duration",
+      "icon": "iphone",
+      "color": "#3B82F6",
+      "graphType": "area",
+      "name": {
+        "en": "Screen Time",
+        "fr": "Temps d'écran"
+      },
+      "description": {
+        "en": "Total device screen time across phones and tablets.",
+        "fr": "Durée totale passée devant les écrans sur téléphone et tablette."
+      },
+      "seo": {
+        "keywords": ["screen time", "digital", "habit", "focus"]
+      }
+    },
+    {
+      "key": "app_focus_time",
+      "category": "digital",
+      "unit": "duration",
+      "icon": "app.fill",
+      "color": "#0EA5E9",
+      "graphType": "line",
+      "name": {
+        "en": "Focus App Time",
+        "fr": "Temps d'applications productives"
+      },
+      "description": {
+        "en": "Minutes spent in focus or productivity apps.",
+        "fr": "Minutes passées dans des applications de concentration ou de productivité."
+      },
+      "seo": {
+        "keywords": ["focus", "apps", "productivity", "digital"]
+      }
+    },
+    {
+      "key": "data_usage",
+      "category": "digital",
+      "unit": "bandwidth",
+      "icon": "antenna.radiowaves.left.and.right",
+      "color": "#6366F1",
+      "graphType": "line",
+      "name": {
+        "en": "Data Usage",
+        "fr": "Consommation de données"
+      },
+      "description": {
+        "en": "Mobile or broadband data consumed per day.",
+        "fr": "Données mobiles ou internet consommées par jour."
+      },
+      "seo": {
+        "keywords": ["data", "bandwidth", "internet", "usage"]
+      }
+    },
+    {
+      "key": "code_commits",
+      "category": "productivity",
+      "unit": "count",
+      "icon": "chevron.left.slash.chevron.right",
+      "color": "#9333EA",
+      "graphType": "bar",
+      "name": {
+        "en": "Code Commits",
+        "fr": "Commits de code"
+      },
+      "description": {
+        "en": "Commits pushed to repositories per day.",
+        "fr": "Commits envoyés sur les dépôts par jour."
+      },
+      "seo": {
+        "keywords": ["code", "commits", "developer", "productivity"]
+      }
+    },
+    {
+      "key": "bugs_closed",
+      "category": "productivity",
+      "unit": "count",
+      "icon": "ant.fill",
+      "color": "#EA580C",
+      "graphType": "bar",
+      "name": {
+        "en": "Bugs Closed",
+        "fr": "Bugs résolus"
+      },
+      "description": {
+        "en": "Resolved tickets or bugs per sprint or day.",
+        "fr": "Tickets ou bugs résolus par jour ou sprint."
+      },
+      "seo": {
+        "keywords": ["bugs", "quality", "tracking", "productivity"]
+      }
+    },
+    {
+      "key": "tasks_completed",
+      "category": "productivity",
+      "unit": "count",
+      "icon": "checkmark.circle.fill",
+      "color": "#10B981",
+      "graphType": "bar",
+      "name": {
+        "en": "Tasks Completed",
+        "fr": "Tâches terminées"
+      },
+      "description": {
+        "en": "Tasks checked off any to-do system.",
+        "fr": "Tâches cochées dans n'importe quel système de suivi."
+      },
+      "seo": {
+        "keywords": ["tasks", "productivity", "todo", "progress"]
+      }
+    },
+    {
+      "key": "focus_hours",
+      "category": "productivity",
+      "unit": "duration",
+      "icon": "hourglass.circle.fill",
+      "color": "#FACC15",
+      "graphType": "line",
+      "name": {
+        "en": "Focus Hours",
+        "fr": "Heures de concentration"
+      },
+      "description": {
+        "en": "Deep work or Pomodoro blocks accumulated daily.",
+        "fr": "Heures de travail profond ou de blocs Pomodoro accumulées au quotidien."
+      },
+      "seo": {
+        "keywords": ["focus", "deep work", "time", "productivity"]
+      }
+    },
+    {
+      "key": "meeting_hours",
+      "category": "business",
+      "unit": "duration",
+      "icon": "person.2.fill",
+      "color": "#3B82F6",
+      "graphType": "line",
+      "name": {
+        "en": "Meeting Hours",
+        "fr": "Heures de réunion"
+      },
+      "description": {
+        "en": "Total time spent in meetings or calls.",
+        "fr": "Temps total passé en réunions ou appels."
+      },
+      "seo": {
+        "keywords": ["meetings", "business", "time", "collaboration"]
+      }
+    },
+    {
+      "key": "email_zero_sessions",
+      "category": "productivity",
+      "unit": "count",
+      "icon": "tray.full.fill",
+      "color": "#2563EB",
+      "graphType": "points",
+      "name": {
+        "en": "Inbox Zero Sessions",
+        "fr": "Sessions boîte zéro"
+      },
+      "description": {
+        "en": "Times the inbox reached zero unread items.",
+        "fr": "Nombre de fois où la boîte de réception est revenue à zéro non lus."
+      },
+      "seo": {
+        "keywords": ["email", "inbox zero", "productivity", "focus"]
+      }
+    },
+    {
+      "key": "reading_minutes",
+      "category": "learning",
+      "unit": "duration",
+      "icon": "book.fill",
+      "color": "#EA580C",
+      "graphType": "line",
+      "name": {
+        "en": "Reading Minutes",
+        "fr": "Minutes de lecture"
+      },
+      "description": {
+        "en": "Time spent reading books or articles.",
+        "fr": "Temps passé à lire des livres ou des articles."
+      },
+      "seo": {
+        "keywords": ["reading", "learning", "books", "habit"]
+      }
+    },
+    {
+      "key": "study_sessions",
+      "category": "learning",
+      "unit": "count",
+      "icon": "graduationcap.fill",
+      "color": "#7C3AED",
+      "graphType": "bar",
+      "name": {
+        "en": "Study Sessions",
+        "fr": "Sessions d'étude"
+      },
+      "description": {
+        "en": "Number of structured study blocks completed.",
+        "fr": "Nombre de sessions d'étude structurées réalisées."
+      },
+      "seo": {
+        "keywords": ["study", "learning", "students", "progress"]
+      }
+    },
+    {
+      "key": "course_progress",
+      "category": "learning",
+      "unit": "percentage",
+      "icon": "list.bullet.rectangle",
+      "color": "#22D3EE",
+      "graphType": "line",
+      "name": {
+        "en": "Course Progress",
+        "fr": "Progression du cours"
+      },
+      "description": {
+        "en": "Percent completion for an active course or curriculum.",
+        "fr": "Pourcentage d'avancement pour un cours ou un programme actif."
+      },
+      "seo": {
+        "keywords": ["course", "progress", "learning", "study"]
+      }
+    },
+    {
+      "key": "language_practice",
+      "category": "learning",
+      "unit": "duration",
+      "icon": "character.book.closed.fill",
+      "color": "#14B8A6",
+      "graphType": "line",
+      "name": {
+        "en": "Language Practice",
+        "fr": "Pratique linguistique"
+      },
+      "description": {
+        "en": "Minutes spent on language apps or speaking sessions.",
+        "fr": "Minutes passées sur des applications ou sessions de conversation."
+      },
+      "seo": {
+        "keywords": ["language", "learning", "practice", "habit"]
+      }
+    },
+    {
+      "key": "skill_drills",
+      "category": "learning",
+      "unit": "count",
+      "icon": "target",
+      "color": "#D946EF",
+      "graphType": "points",
+      "name": {
+        "en": "Skill Drills",
+        "fr": "Exercices ciblés"
+      },
+      "description": {
+        "en": "Deliberate practice drills completed for a skill.",
+        "fr": "Exercices de pratique délibérée effectués pour une compétence."
+      },
+      "seo": {
+        "keywords": ["skill", "practice", "learning", "drills"]
+      }
+    },
+    {
+      "key": "creative_writing_words",
+      "category": "creativity",
+      "unit": "count",
+      "icon": "pencil.and.outline",
+      "color": "#FBBF24",
+      "graphType": "line",
+      "name": {
+        "en": "Writing Word Count",
+        "fr": "Mots d'écriture créative"
+      },
+      "description": {
+        "en": "Words written for fiction, journaling, or essays.",
+        "fr": "Nombre de mots rédigés pour romans, journaux ou essais."
+      },
+      "seo": {
+        "keywords": ["writing", "creativity", "words", "habit"]
+      }
+    },
+    {
+      "key": "design_hours",
+      "category": "creativity",
+      "unit": "duration",
+      "icon": "paintpalette.fill",
+      "color": "#F97316",
+      "graphType": "line",
+      "name": {
+        "en": "Design Hours",
+        "fr": "Heures de design"
+      },
+      "description": {
+        "en": "Time allocated to design or illustration work.",
+        "fr": "Temps consacré aux travaux de design ou d'illustration."
+      },
+      "seo": {
+        "keywords": ["design", "creative", "art", "work"]
+      }
+    },
+    {
+      "key": "music_practice",
+      "category": "creativity",
+      "unit": "duration",
+      "icon": "music.note",
+      "color": "#4ADE80",
+      "graphType": "line",
+      "name": {
+        "en": "Music Practice",
+        "fr": "Pratique musicale"
+      },
+      "description": {
+        "en": "Minutes spent practicing instruments or vocals.",
+        "fr": "Minutes passées à pratiquer un instrument ou le chant."
+      },
+      "seo": {
+        "keywords": ["music", "practice", "creativity", "instrument"]
+      }
+    },
+    {
+      "key": "photography_sessions",
+      "category": "creativity",
+      "unit": "count",
+      "icon": "camera.fill",
+      "color": "#FB7185",
+      "graphType": "points",
+      "name": {
+        "en": "Photography Sessions",
+        "fr": "Sessions photo"
+      },
+      "description": {
+        "en": "Shoots or photo walks completed.",
+        "fr": "Séances photo ou balades photographiques réalisées."
+      },
+      "seo": {
+        "keywords": ["photo", "creative", "camera", "sessions"]
+      }
+    },
+    {
+      "key": "art_pieces",
+      "category": "creativity",
+      "unit": "count",
+      "icon": "paintbrush.pointed.fill",
+      "color": "#C084FC",
+      "graphType": "bar",
+      "name": {
+        "en": "Art Pieces",
+        "fr": "Œuvres artistiques"
+      },
+      "description": {
+        "en": "Finished drawings, canvases, or craft projects.",
+        "fr": "Dessins, toiles ou projets artisanaux terminés."
+      },
+      "seo": {
+        "keywords": ["art", "creativity", "projects", "craft"]
+      }
+    },
+    {
+      "key": "social_messages",
+      "category": "social",
+      "unit": "count",
+      "icon": "bubble.left.and.bubble.right.fill",
+      "color": "#38BDF8",
+      "graphType": "line",
+      "name": {
+        "en": "Messages Sent",
+        "fr": "Messages envoyés"
+      },
+      "description": {
+        "en": "Personal messages sent across channels.",
+        "fr": "Messages personnels envoyés sur différents canaux."
+      },
+      "seo": {
+        "keywords": ["messages", "social", "communication", "chat"]
+      }
+    },
+    {
+      "key": "social_events",
+      "category": "social",
+      "unit": "count",
+      "icon": "person.3.fill",
+      "color": "#EC4899",
+      "graphType": "points",
+      "name": {
+        "en": "Social Events",
+        "fr": "Événements sociaux"
+      },
+      "description": {
+        "en": "Meetups, dinners, or gatherings attended.",
+        "fr": "Rencontres, dîners ou événements auxquels on a participé."
+      },
+      "seo": {
+        "keywords": ["social", "events", "community", "friends"]
+      }
+    },
+    {
+      "key": "calls_made",
+      "category": "social",
+      "unit": "count",
+      "icon": "phone.fill",
+      "color": "#14B8A6",
+      "graphType": "bar",
+      "name": {
+        "en": "Calls Made",
+        "fr": "Appels passés"
+      },
+      "description": {
+        "en": "Meaningful audio or video calls completed.",
+        "fr": "Appels audio ou vidéo importants effectués."
+      },
+      "seo": {
+        "keywords": ["calls", "social", "communication", "friends"]
+      }
+    },
+    {
+      "key": "volunteer_hours",
+      "category": "social",
+      "unit": "duration",
+      "icon": "hands.sparkles.fill",
+      "color": "#A855F7",
+      "graphType": "line",
+      "name": {
+        "en": "Volunteer Hours",
+        "fr": "Heures de bénévolat"
+      },
+      "description": {
+        "en": "Time donated to causes or communities.",
+        "fr": "Temps donné à des causes ou communautés."
+      },
+      "seo": {
+        "keywords": ["volunteer", "community", "hours", "impact"]
+      }
+    },
+    {
+      "key": "charity_donations",
+      "category": "finance",
+      "unit": "currency",
+      "icon": "gift.fill",
+      "color": "#F43F5E",
+      "graphType": "bar",
+      "name": {
+        "en": "Charity Donations",
+        "fr": "Dons caritatifs"
+      },
+      "description": {
+        "en": "Amount donated to charities or causes.",
+        "fr": "Montant donné à des associations ou causes."
+      },
+      "seo": {
+        "keywords": ["charity", "donations", "finance", "impact"]
+      }
+    },
+    {
+      "key": "recycling_weight",
+      "category": "sustainability",
+      "unit": "weight_metric",
+      "icon": "arrow.3.trianglepath",
+      "color": "#22C55E",
+      "graphType": "bar",
+      "name": {
+        "en": "Recycling Weight",
+        "fr": "Poids recyclé"
+      },
+      "description": {
+        "en": "Kilograms of materials diverted from trash.",
+        "fr": "Kilogrammes de matériaux détournés des déchets."
+      },
+      "seo": {
+        "keywords": ["recycling", "sustainability", "waste", "green"]
+      }
+    },
+    {
+      "key": "compost_days",
+      "category": "sustainability",
+      "unit": "count",
+      "icon": "leaf.arrow.circlepath",
+      "color": "#65A30D",
+      "graphType": "points",
+      "name": {
+        "en": "Compost Days",
+        "fr": "Jours de compost"
+      },
+      "description": {
+        "en": "Days where food scraps were composted.",
+        "fr": "Jours durant lesquels les déchets alimentaires ont été compostés."
+      },
+      "seo": {
+        "keywords": ["compost", "sustainability", "zero waste", "green"]
+      }
+    },
+    {
+      "key": "energy_consumption",
+      "category": "energy",
+      "unit": "energy",
+      "icon": "bolt.fill",
+      "color": "#FACC15",
+      "graphType": "line",
+      "name": {
+        "en": "Electricity Usage",
+        "fr": "Consommation électrique"
+      },
+      "description": {
+        "en": "kWh consumed at home or office.",
+        "fr": "kWh consommés à la maison ou au bureau."
+      },
+      "seo": {
+        "keywords": ["energy", "electricity", "usage", "power"]
+      }
+    },
+    {
+      "key": "solar_generation",
+      "category": "energy",
+      "unit": "energy",
+      "icon": "sun.max.fill",
+      "color": "#FDBA74",
+      "graphType": "area",
+      "name": {
+        "en": "Solar Generation",
+        "fr": "Production solaire"
+      },
+      "description": {
+        "en": "kWh generated by solar panels.",
+        "fr": "kWh générés par les panneaux solaires."
+      },
+      "seo": {
+        "keywords": ["solar", "energy", "renewable", "power"]
+      }
+    },
+    {
+      "key": "gas_usage",
+      "category": "energy",
+      "unit": "volume_imperial",
+      "icon": "flame.circle.fill",
+      "color": "#F97316",
+      "graphType": "line",
+      "name": {
+        "en": "Gas Usage",
+        "fr": "Consommation de gaz"
+      },
+      "description": {
+        "en": "Therms or gallons of natural gas consumed.",
+        "fr": "Therms ou gallons de gaz naturel consommés."
+      },
+      "seo": {
+        "keywords": ["gas", "energy", "usage", "utility"]
+      }
+    },
+    {
+      "key": "water_usage",
+      "category": "environment",
+      "unit": "volume_metric",
+      "icon": "drop.triangle.fill",
+      "color": "#38BDF8",
+      "graphType": "line",
+      "name": {
+        "en": "Water Usage",
+        "fr": "Consommation d'eau"
+      },
+      "description": {
+        "en": "Liters of water used daily at home.",
+        "fr": "Litres d'eau utilisés quotidiennement à la maison."
+      },
+      "seo": {
+        "keywords": ["water", "usage", "environment", "utility"]
+      }
+    },
+    {
+      "key": "indoor_air_quality",
+      "category": "environment",
+      "unit": "count",
+      "icon": "aqi.medium",
+      "color": "#2563EB",
+      "graphType": "line",
+      "name": {
+        "en": "Indoor Air Quality",
+        "fr": "Qualité de l'air intérieur"
+      },
+      "description": {
+        "en": "AQI or VOC readings captured indoors.",
+        "fr": "Indice AQI ou COV mesuré en intérieur."
+      },
+      "seo": {
+        "keywords": ["air quality", "indoor", "environment", "AQI"]
+      }
+    },
+    {
+      "key": "outdoor_air_quality",
+      "category": "environment",
+      "unit": "count",
+      "icon": "cloud.fill",
+      "color": "#4B5563",
+      "graphType": "line",
+      "name": {
+        "en": "Outdoor Air Quality",
+        "fr": "Qualité de l'air extérieur"
+      },
+      "description": {
+        "en": "AQI readings for the local area.",
+        "fr": "Indices AQI de la zone locale."
+      },
+      "seo": {
+        "keywords": ["air", "outdoor", "environment", "AQI"]
+      }
+    },
+    {
+      "key": "co2_emissions",
+      "category": "environment",
+      "unit": "weight_metric",
+      "icon": "cloud.car.fill",
+      "color": "#0F172A",
+      "graphType": "line",
+      "name": {
+        "en": "CO₂ Emissions",
+        "fr": "Émissions de CO₂"
+      },
+      "description": {
+        "en": "Estimated kilograms of CO₂ emitted per day.",
+        "fr": "Kilogrammes de CO₂ estimés émis par jour."
+      },
+      "seo": {
+        "keywords": ["co2", "carbon", "environment", "emissions"]
+      }
+    },
+    {
+      "key": "noise_levels",
+      "category": "environment",
+      "unit": "count",
+      "icon": "speaker.wave.3.fill",
+      "color": "#F87171",
+      "graphType": "line",
+      "name": {
+        "en": "Noise Levels",
+        "fr": "Niveau sonore"
+      },
+      "description": {
+        "en": "dB readings from sensors or phone measurements.",
+        "fr": "Mesures en décibels provenant de capteurs ou du téléphone."
+      },
+      "seo": {
+        "keywords": ["noise", "sound", "environment", "decibels"]
+      }
+    },
+    {
+      "key": "plant_watering",
+      "category": "home",
+      "unit": "count",
+      "icon": "drop.fill",
+      "color": "#34D399",
+      "graphType": "points",
+      "name": {
+        "en": "Plant Watering",
+        "fr": "Arrosage des plantes"
+      },
+      "description": {
+        "en": "Number of plants watered per day.",
+        "fr": "Nombre de plantes arrosées par jour."
+      },
+      "seo": {
+        "keywords": ["plants", "watering", "home", "care"]
+      }
+    },
+    {
+      "key": "laundry_cycles",
+      "category": "home",
+      "unit": "count",
+      "icon": "washer.fill",
+      "color": "#60A5FA",
+      "graphType": "bar",
+      "name": {
+        "en": "Laundry Cycles",
+        "fr": "Cycles de lessive"
+      },
+      "description": {
+        "en": "Washer or dryer cycles completed.",
+        "fr": "Cycles de lave-linge ou sèche-linge effectués."
+      },
+      "seo": {
+        "keywords": ["laundry", "home", "chores", "cycles"]
+      }
+    },
+    {
+      "key": "cleaning_sessions",
+      "category": "home",
+      "unit": "count",
+      "icon": "sparkles",
+      "color": "#FBBF24",
+      "graphType": "bar",
+      "name": {
+        "en": "Cleaning Sessions",
+        "fr": "Sessions de ménage"
+      },
+      "description": {
+        "en": "Chore blocks dedicated to cleaning.",
+        "fr": "Périodes dédiées aux tâches de ménage."
+      },
+      "seo": {
+        "keywords": ["cleaning", "home", "chores", "habit"]
+      }
+    },
+    {
+      "key": "grocery_trips",
+      "category": "home",
+      "unit": "count",
+      "icon": "cart.fill",
+      "color": "#EF4444",
+      "graphType": "points",
+      "name": {
+        "en": "Grocery Trips",
+        "fr": "Courses alimentaires"
+      },
+      "description": {
+        "en": "Number of grocery runs completed.",
+        "fr": "Nombre de courses alimentaires effectuées."
+      },
+      "seo": {
+        "keywords": ["grocery", "shopping", "home", "habit"]
+      }
+    },
+    {
+      "key": "commute_distance",
+      "category": "travel",
+      "unit": "distance_metric",
+      "icon": "car.fill",
+      "color": "#EF4444",
+      "graphType": "line",
+      "name": {
+        "en": "Commute Distance",
+        "fr": "Distance de trajet"
+      },
+      "description": {
+        "en": "Kilometers traveled commuting each day.",
+        "fr": "Kilomètres parcourus pour les trajets quotidiens."
+      },
+      "seo": {
+        "keywords": ["commute", "distance", "travel", "work"]
+      }
+    },
+    {
+      "key": "flights_taken",
+      "category": "travel",
+      "unit": "count",
+      "icon": "airplane",
+      "color": "#0EA5E9",
+      "graphType": "points",
+      "name": {
+        "en": "Flights Taken",
+        "fr": "Vols effectués"
+      },
+      "description": {
+        "en": "Commercial or private flights boarded.",
+        "fr": "Vols commerciaux ou privés effectués."
+      },
+      "seo": {
+        "keywords": ["flights", "travel", "air", "trips"]
+      }
+    },
+    {
+      "key": "travel_days",
+      "category": "travel",
+      "unit": "count",
+      "icon": "suitcase.fill",
+      "color": "#F97316",
+      "graphType": "area",
+      "name": {
+        "en": "Travel Days",
+        "fr": "Jours de voyage"
+      },
+      "description": {
+        "en": "Days spent away from home for work or leisure.",
+        "fr": "Jours passés loin de la maison pour le travail ou les loisirs."
+      },
+      "seo": {
+        "keywords": ["travel", "trips", "days", "journey"]
+      }
+    },
+    {
+      "key": "miles_driven",
+      "category": "travel",
+      "unit": "distance_imperial",
+      "icon": "gauge.with.dots.needle.67percent",
+      "color": "#2563EB",
+      "graphType": "line",
+      "name": {
+        "en": "Miles Driven",
+        "fr": "Miles parcourus"
+      },
+      "description": {
+        "en": "Total miles driven with any vehicle.",
+        "fr": "Nombre total de miles parcourus avec un véhicule."
+      },
+      "seo": {
+        "keywords": ["driving", "miles", "travel", "vehicle"]
+      }
+    },
+    {
+      "key": "budget_spending",
+      "category": "finance",
+      "unit": "currency",
+      "icon": "creditcard.fill",
+      "color": "#10B981",
+      "graphType": "line",
+      "name": {
+        "en": "Budget Spending",
+        "fr": "Dépenses budgétaires"
+      },
+      "description": {
+        "en": "Total expenses recorded for the budget period.",
+        "fr": "Total des dépenses enregistrées pour la période budgétaire."
+      },
+      "seo": {
+        "keywords": ["budget", "spending", "finance", "expenses"]
+      }
+    },
+    {
+      "key": "savings_rate",
+      "category": "finance",
+      "unit": "percentage",
+      "icon": "shield.checkered",
+      "color": "#0D9488",
+      "graphType": "line",
+      "name": {
+        "en": "Savings Rate",
+        "fr": "Taux d'épargne"
+      },
+      "description": {
+        "en": "Percentage of income saved each month.",
+        "fr": "Pourcentage du revenu épargné chaque mois."
+      },
+      "seo": {
+        "keywords": ["savings", "finance", "rate", "money"]
+      }
+    },
+    {
+      "key": "investment_balance",
+      "category": "finance",
+      "unit": "currency",
+      "icon": "chart.line.uptrend.xyaxis",
+      "color": "#FACC15",
+      "graphType": "line",
+      "name": {
+        "en": "Investment Balance",
+        "fr": "Valeur des investissements"
+      },
+      "description": {
+        "en": "Portfolio value tracked over time.",
+        "fr": "Valeur du portefeuille suivie dans le temps."
+      },
+      "seo": {
+        "keywords": ["investments", "portfolio", "finance", "wealth"]
+      }
+    },
+    {
+      "key": "subscription_costs",
+      "category": "finance",
+      "unit": "currency",
+      "icon": "doc.richtext.fill",
+      "color": "#6366F1",
+      "graphType": "bar",
+      "name": {
+        "en": "Subscription Costs",
+        "fr": "Coûts des abonnements"
+      },
+      "description": {
+        "en": "Recurring subscription expenses per month.",
+        "fr": "Dépenses d'abonnements récurrents par mois."
+      },
+      "seo": {
+        "keywords": ["subscriptions", "finance", "expenses", "recurring"]
+      }
+    },
+    {
+      "key": "cash_flow",
+      "category": "business",
+      "unit": "currency",
+      "icon": "banknote.fill",
+      "color": "#16A34A",
+      "graphType": "line",
+      "name": {
+        "en": "Cash Flow",
+        "fr": "Flux de trésorerie"
+      },
+      "description": {
+        "en": "Net cash inflow minus outflow per period.",
+        "fr": "Flux de trésorerie net par période."
+      },
+      "seo": {
+        "keywords": ["cash flow", "business", "finance", "liquidity"]
+      }
+    },
+    {
+      "key": "invoice_payments",
+      "category": "business",
+      "unit": "currency",
+      "icon": "list.clipboard.fill",
+      "color": "#F87171",
+      "graphType": "bar",
+      "name": {
+        "en": "Invoice Payments",
+        "fr": "Paiements de factures"
+      },
+      "description": {
+        "en": "Amount collected from paid invoices.",
+        "fr": "Montant encaissé via les factures réglées."
+      },
+      "seo": {
+        "keywords": ["invoices", "payments", "business", "finance"]
+      }
+    },
+    {
+      "key": "leads_generated",
+      "category": "business",
+      "unit": "count",
+      "icon": "person.crop.circle.badge.plus",
+      "color": "#C026D3",
+      "graphType": "bar",
+      "name": {
+        "en": "Leads Generated",
+        "fr": "Leads générés"
+      },
+      "description": {
+        "en": "Marketing-qualified or sales-qualified leads captured.",
+        "fr": "Leads marketing ou commerciaux qualifiés capturés."
+      },
+      "seo": {
+        "keywords": ["leads", "sales", "pipeline", "business"]
+      }
+    },
+    {
+      "key": "deals_closed",
+      "category": "business",
+      "unit": "count",
+      "icon": "handshake.fill",
+      "color": "#EA580C",
+      "graphType": "points",
+      "name": {
+        "en": "Deals Closed",
+        "fr": "Affaires conclues"
+      },
+      "description": {
+        "en": "Opportunities closed won per week or month.",
+        "fr": "Opportunités conclues gagnées par semaine ou mois."
+      },
+      "seo": {
+        "keywords": ["deals", "sales", "business", "pipeline"]
+      }
+    },
+    {
+      "key": "customer_support_tickets",
+      "category": "business",
+      "unit": "count",
+      "icon": "headphones",
+      "color": "#0EA5E9",
+      "graphType": "line",
+      "name": {
+        "en": "Support Tickets",
+        "fr": "Tickets support"
+      },
+      "description": {
+        "en": "Incoming or resolved customer support tickets.",
+        "fr": "Tickets de support client reçus ou résolus."
+      },
+      "seo": {
+        "keywords": ["support", "tickets", "business", "customers"]
+      }
+    },
+    {
+      "key": "website_visits",
+      "category": "digital",
+      "unit": "count",
+      "icon": "cursorarrow.rays",
+      "color": "#F472B6",
+      "graphType": "line",
+      "name": {
+        "en": "Website Visits",
+        "fr": "Visites du site"
+      },
+      "description": {
+        "en": "Unique sessions recorded on a website or app.",
+        "fr": "Sessions uniques enregistrées sur un site ou une application."
+      },
+      "seo": {
+        "keywords": ["website", "visits", "analytics", "traffic"]
+      }
+    },
+    {
+      "key": "marketing_campaign_reach",
+      "category": "business",
+      "unit": "count",
+      "icon": "megaphone.fill",
+      "color": "#FB923C",
+      "graphType": "area",
+      "name": {
+        "en": "Campaign Reach",
+        "fr": "Portée des campagnes"
+      },
+      "description": {
+        "en": "Audience reached per marketing campaign.",
+        "fr": "Audience touchée par campagne marketing."
+      },
+      "seo": {
+        "keywords": ["marketing", "reach", "campaign", "business"]
+      }
+    }
+  ]
+}

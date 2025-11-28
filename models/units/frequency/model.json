@@ -1,0 +1,14 @@
+{
+  "key": "frequency",
+  "type": "unit",
+  "category": "time",
+  "baseUnit": "hz",
+  "subUnits": [
+    { "key": "microhz", "factor": 0.000001, "abbreviation": "µHz" },
+    { "key": "millihz", "factor": 0.001, "abbreviation": "mHz" },
+    { "key": "hz", "factor": 1, "abbreviation": "Hz" },
+    { "key": "khz", "factor": 1000, "abbreviation": "kHz" },
+    { "key": "mhz", "factor": 1000000, "abbreviation": "MHz" },
+    { "key": "ghz", "factor": 1000000000, "abbreviation": "GHz" }
+  ]
+}

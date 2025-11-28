@@ -1,0 +1,9 @@
+{
+  "key": "design_hours",
+  "type": "series",
+  "category": "creativity",
+  "icon": "paintpalette.fill",
+  "color": "#F97316",
+  "graphType": "line",
+  "unit": "duration"
+}

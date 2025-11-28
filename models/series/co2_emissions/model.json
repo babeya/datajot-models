@@ -1,0 +1,9 @@
+{
+  "key": "co2_emissions",
+  "type": "series",
+  "category": "environment",
+  "icon": "cloud.car.fill",
+  "color": "#0F172A",
+  "graphType": "line",
+  "unit": "weight_metric"
+}

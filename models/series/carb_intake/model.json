@@ -1,0 +1,9 @@
+{
+  "key": "carb_intake",
+  "type": "series",
+  "category": "nutrition",
+  "icon": "circle.grid.2x2.fill",
+  "color": "#EAB308",
+  "graphType": "line",
+  "unit": "weight_metric"
+}

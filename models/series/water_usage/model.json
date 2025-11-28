@@ -1,0 +1,9 @@
+{
+  "key": "water_usage",
+  "type": "series",
+  "category": "environment",
+  "icon": "drop.triangle.fill",
+  "color": "#38BDF8",
+  "graphType": "line",
+  "unit": "volume_metric"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "photography_sessions",
+  "type": "series",
+  "category": "creativity",
+  "icon": "camera.fill",
+  "color": "#FB7185",
+  "graphType": "points",
+  "unit": "count"
+}

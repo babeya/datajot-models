@@ -1,0 +1,9 @@
+{
+  "key": "strength_volume",
+  "type": "series",
+  "category": "fitness",
+  "icon": "figure.strengthtraining.traditional",
+  "color": "#DC2626",
+  "graphType": "area",
+  "unit": "count"
+}

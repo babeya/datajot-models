@@ -1,0 +1,15 @@
+{
+  "title": "Frequency",
+  "description": "Cycles per second for signals, habits, or repeated tasks.",
+  "seo": {
+    "keywords": ["frequency", "hz", "cycles", "period"]
+  },
+  "subUnit": {
+    "microhz": { "abbreviation": "µHz", "title": "Microhertz" },
+    "millihz": { "abbreviation": "mHz", "title": "Millihertz" },
+    "hz": { "abbreviation": "Hz", "title": "Hertz" },
+    "khz": { "abbreviation": "kHz", "title": "Kilohertz" },
+    "mhz": { "abbreviation": "MHz", "title": "Megahertz" },
+    "ghz": { "abbreviation": "GHz", "title": "Gigahertz" }
+  }
+}

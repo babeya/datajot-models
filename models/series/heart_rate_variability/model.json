@@ -1,0 +1,9 @@
+{
+  "key": "heart_rate_variability",
+  "type": "series",
+  "category": "health",
+  "icon": "waveform.path",
+  "color": "#8B5CF6",
+  "graphType": "line",
+  "unit": "duration"
+}

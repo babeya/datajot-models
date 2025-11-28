@@ -1,0 +1,9 @@
+{
+  "key": "calorie_intake",
+  "type": "series",
+  "category": "nutrition",
+  "icon": "flame.fill",
+  "color": "#F97316",
+  "graphType": "bar",
+  "unit": "energy"
+}

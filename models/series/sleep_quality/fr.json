@@ -1,0 +1,7 @@
+{
+  "name": "Qualité du sommeil",
+  "description": "Score subjectif de qualité du sommeil issu d'un capteur ou d'un journal.",
+  "seo": {
+    "keywords": ["sommeil", "qualité", "score", "repos"]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Steps Walked",
+  "description": "Total steps captured by pedometer or wearable.",
+  "seo": {
+    "keywords": ["steps", "fitness", "activity", "walking"]
+  }
+}

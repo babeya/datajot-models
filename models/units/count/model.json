@@ -1,0 +1,12 @@
+{
+  "key": "count",
+  "type": "unit",
+  "category": "ratio",
+  "baseUnit": "count",
+  "subUnits": [
+    { "key": "count", "factor": 1, "abbreviation": "ct" },
+    { "key": "dozen", "factor": 12, "abbreviation": "dz" },
+    { "key": "hundred", "factor": 100, "abbreviation": "100" },
+    { "key": "thousand", "factor": 1000, "abbreviation": "k" }
+  ]
+}

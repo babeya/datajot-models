@@ -1,0 +1,9 @@
+{
+  "key": "blood_pressure_systolic",
+  "type": "series",
+  "category": "health",
+  "icon": "waveform.circle",
+  "color": "#F59E0B",
+  "graphType": "line",
+  "unit": "pressure"
+}

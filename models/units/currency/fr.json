@@ -1,0 +1,15 @@
+{
+  "title": "Devise",
+  "description": "Principales devises mondiales normalisées en dollars US.",
+  "seo": {
+    "keywords": ["argent", "finance", "devise", "dépenses"]
+  },
+  "subUnit": {
+    "usd": { "abbreviation": "USD", "title": "Dollar américain" },
+    "eur": { "abbreviation": "EUR", "title": "Euro" },
+    "gbp": { "abbreviation": "GBP", "title": "Livre sterling" },
+    "cad": { "abbreviation": "CAD", "title": "Dollar canadien" },
+    "aud": { "abbreviation": "AUD", "title": "Dollar australien" },
+    "jpy": { "abbreviation": "JPY", "title": "Yen japonais" }
+  }
+}

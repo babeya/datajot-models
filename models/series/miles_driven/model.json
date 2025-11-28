@@ -1,0 +1,9 @@
+{
+  "key": "miles_driven",
+  "type": "series",
+  "category": "travel",
+  "icon": "gauge.with.dots.needle.67percent",
+  "color": "#2563EB",
+  "graphType": "line",
+  "unit": "distance_imperial"
+}

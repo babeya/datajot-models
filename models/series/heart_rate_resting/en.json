@@ -1,0 +1,7 @@
+{
+  "name": "Resting Heart Rate",
+  "description": "Average resting BPM to monitor cardiovascular readiness.",
+  "seo": {
+    "keywords": ["heart rate", "health", "BPM", "readiness"]
+  }
+}

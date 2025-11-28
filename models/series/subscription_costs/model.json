@@ -1,0 +1,9 @@
+{
+  "key": "subscription_costs",
+  "type": "series",
+  "category": "finance",
+  "icon": "doc.richtext.fill",
+  "color": "#6366F1",
+  "graphType": "bar",
+  "unit": "currency"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "breath_sessions",
+  "type": "series",
+  "category": "mindfulness",
+  "icon": "wind",
+  "color": "#0EA5E9",
+  "graphType": "bar",
+  "unit": "count"
+}

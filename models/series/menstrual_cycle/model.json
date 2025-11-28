@@ -1,0 +1,9 @@
+{
+  "key": "menstrual_cycle",
+  "type": "series",
+  "category": "health",
+  "icon": "drop.circle",
+  "color": "#DB2777",
+  "graphType": "points",
+  "unit": "duration"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "fat_intake",
+  "type": "series",
+  "category": "nutrition",
+  "icon": "drop.triangle.fill",
+  "color": "#D97706",
+  "graphType": "line",
+  "unit": "weight_metric"
+}

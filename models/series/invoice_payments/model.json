@@ -1,0 +1,9 @@
+{
+  "key": "invoice_payments",
+  "type": "series",
+  "category": "business",
+  "icon": "list.clipboard.fill",
+  "color": "#F87171",
+  "graphType": "bar",
+  "unit": "currency"
+}

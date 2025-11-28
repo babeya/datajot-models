@@ -1,0 +1,9 @@
+{
+  "key": "leads_generated",
+  "type": "series",
+  "category": "business",
+  "icon": "person.crop.circle.badge.plus",
+  "color": "#C026D3",
+  "graphType": "bar",
+  "unit": "count"
+}

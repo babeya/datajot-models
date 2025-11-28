@@ -1,0 +1,9 @@
+{
+  "key": "blood_pressure_diastolic",
+  "type": "series",
+  "category": "health",
+  "icon": "waveform.circle.fill",
+  "color": "#D97706",
+  "graphType": "line",
+  "unit": "pressure"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Niveau sonore",
+  "description": "Mesures en décibels provenant de capteurs ou du téléphone.",
+  "seo": {
+    "keywords": ["bruit", "son", "environnement", "décibels"]
+  }
+}

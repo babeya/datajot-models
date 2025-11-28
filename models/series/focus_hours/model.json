@@ -1,0 +1,9 @@
+{
+  "key": "focus_hours",
+  "type": "series",
+  "category": "productivity",
+  "icon": "hourglass.circle.fill",
+  "color": "#FACC15",
+  "graphType": "line",
+  "unit": "duration"
+}

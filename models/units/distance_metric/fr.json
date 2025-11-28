@@ -1,0 +1,13 @@
+{
+  "title": "Distance (métrique)",
+  "description": "Distances métriques des millimètres aux kilomètres.",
+  "seo": {
+    "keywords": ["distance", "métrique", "mètres", "kilomètres"]
+  },
+  "subUnit": {
+    "mm": { "abbreviation": "mm", "title": "Millimètre" },
+    "cm": { "abbreviation": "cm", "title": "Centimètre" },
+    "m": { "abbreviation": "m", "title": "Mètre" },
+    "km": { "abbreviation": "km", "title": "Kilomètre" }
+  }
+}

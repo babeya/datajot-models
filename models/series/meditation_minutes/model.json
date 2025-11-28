@@ -1,0 +1,9 @@
+{
+  "key": "meditation_minutes",
+  "type": "series",
+  "category": "mindfulness",
+  "icon": "brain.head.profile",
+  "color": "#FBBF24",
+  "graphType": "bar",
+  "unit": "duration"
+}

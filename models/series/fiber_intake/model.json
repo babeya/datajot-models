@@ -1,0 +1,9 @@
+{
+  "key": "fiber_intake",
+  "type": "series",
+  "category": "nutrition",
+  "icon": "leaf.fill",
+  "color": "#22C55E",
+  "graphType": "line",
+  "unit": "weight_metric"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "music_practice",
+  "type": "series",
+  "category": "creativity",
+  "icon": "music.note",
+  "color": "#4ADE80",
+  "graphType": "line",
+  "unit": "duration"
+}

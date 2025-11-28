@@ -1,0 +1,9 @@
+{
+  "key": "art_pieces",
+  "type": "series",
+  "category": "creativity",
+  "icon": "paintbrush.pointed.fill",
+  "color": "#C084FC",
+  "graphType": "bar",
+  "unit": "count"
+}

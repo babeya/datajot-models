@@ -1,0 +1,7 @@
+{
+  "name": "Qualité de l'air extérieur",
+  "description": "Indices AQI de la zone locale.",
+  "seo": {
+    "keywords": ["air", "extérieur", "environnement", "AQI"]
+  }
+}

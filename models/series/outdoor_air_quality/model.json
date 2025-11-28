@@ -1,0 +1,9 @@
+{
+  "key": "outdoor_air_quality",
+  "type": "series",
+  "category": "environment",
+  "icon": "cloud.fill",
+  "color": "#4B5563",
+  "graphType": "line",
+  "unit": "count"
+}

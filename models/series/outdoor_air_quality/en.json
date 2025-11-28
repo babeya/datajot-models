@@ -1,0 +1,7 @@
+{
+  "name": "Outdoor Air Quality",
+  "description": "AQI readings for the local area.",
+  "seo": {
+    "keywords": ["air", "outdoor", "environment", "AQI"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "key": "heart_rate_resting",
+  "type": "series",
+  "category": "health",
+  "icon": "heart.fill",
+  "color": "#EF4444",
+  "graphType": "line",
+  "unit": "frequency"
+}

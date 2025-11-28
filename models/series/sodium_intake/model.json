@@ -1,0 +1,9 @@
+{
+  "key": "sodium_intake",
+  "type": "series",
+  "category": "nutrition",
+  "icon": "aqi.low",
+  "color": "#60A5FA",
+  "graphType": "line",
+  "unit": "weight_metric"
+}

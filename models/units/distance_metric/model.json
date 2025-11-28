@@ -1,0 +1,13 @@
+{
+  "key": "distance_metric",
+  "type": "unit",
+  "category": "length",
+  "system": "metric",
+  "baseUnit": "m",
+  "subUnits": [
+    { "key": "mm", "factor": 0.001, "abbreviation": "mm" },
+    { "key": "cm", "factor": 0.01, "abbreviation": "cm" },
+    { "key": "m", "factor": 1, "abbreviation": "m" },
+    { "key": "km", "factor": 1000, "abbreviation": "km" }
+  ]
+}

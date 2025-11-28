@@ -1,0 +1,9 @@
+{
+  "key": "customer_support_tickets",
+  "type": "series",
+  "category": "business",
+  "icon": "headphones",
+  "color": "#0EA5E9",
+  "graphType": "line",
+  "unit": "count"
+}

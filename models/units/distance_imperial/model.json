@@ -1,0 +1,13 @@
+{
+  "key": "distance_imperial",
+  "type": "unit",
+  "category": "length",
+  "system": "imperial",
+  "baseUnit": "in",
+  "subUnits": [
+    { "key": "in", "factor": 1, "abbreviation": "in" },
+    { "key": "ft", "factor": 12, "abbreviation": "ft" },
+    { "key": "yd", "factor": 36, "abbreviation": "yd" },
+    { "key": "mi", "factor": 63360, "abbreviation": "mi" }
+  ]
+}

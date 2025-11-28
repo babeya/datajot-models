@@ -1,0 +1,9 @@
+{
+  "key": "plant_watering",
+  "type": "series",
+  "category": "home",
+  "icon": "drop.fill",
+  "color": "#34D399",
+  "graphType": "points",
+  "unit": "count"
+}

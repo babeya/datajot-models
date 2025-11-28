@@ -1,0 +1,9 @@
+{
+  "key": "calls_made",
+  "type": "series",
+  "category": "social",
+  "icon": "phone.fill",
+  "color": "#14B8A6",
+  "graphType": "bar",
+  "unit": "count"
+}

@@ -1,0 +1,9 @@
+{
+  "key": "language_practice",
+  "type": "series",
+  "category": "learning",
+  "icon": "character.book.closed.fill",
+  "color": "#14B8A6",
+  "graphType": "line",
+  "unit": "duration"
+}

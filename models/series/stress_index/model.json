@@ -1,0 +1,9 @@
+{
+  "key": "stress_index",
+  "type": "series",
+  "category": "wellness",
+  "icon": "waveform.path.ecg",
+  "color": "#F87171",
+  "graphType": "line",
+  "unit": "percentage"
+}

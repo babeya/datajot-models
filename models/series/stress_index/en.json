@@ -1,0 +1,7 @@
+{
+  "name": "Stress Index",
+  "description": "Stress score aggregated from wearable or mood survey.",
+  "seo": {
+    "keywords": ["stress", "wellness", "balance", "score"]
+  }
+}
