@@ -2,18 +2,9 @@
   "title": "Volume (L)",
   "description": "Measure liquid volumes in metric units",
   "subUnitTitles": {
-    "ml": {
-      "title": "Milliliter",
-      "abbreviation": "ml"
-    },
-    "cl": {
-      "title": "Centiliter",
-      "abbreviation": "cl"
-    },
-    "l": {
-      "title": "Liter",
-      "abbreviation": "L"
-    }
+    "ml": "Milliliter",
+    "cl": "Centiliter",
+    "l": "Liter"
   },
   "seo": {
     "keywords": []

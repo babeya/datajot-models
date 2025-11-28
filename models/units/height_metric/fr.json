@@ -2,18 +2,9 @@
   "title": "Taille (m)",
   "description": "Mesure de taille ou longueur en unités métriques",
   "subUnitTitles": {
-    "mm": {
-      "title": "Millimètre",
-      "abbreviation": "mm"
-    },
-    "cm": {
-      "title": "Centimètre",
-      "abbreviation": "cm"
-    },
-    "m": {
-      "title": "Mètre",
-      "abbreviation": "m"
-    }
+    "mm": "Millimètre",
+    "cm": "Centimètre",
+    "m": "Mètre"
   },
   "seo": {
     "keywords": []

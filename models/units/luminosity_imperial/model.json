@@ -6,8 +6,8 @@
   "subUnits": [
     {
       "key": "fc",
-      "symbol": "fc",
-      "factor": 1
+      "factor": 1,
+      "abbreviation": "fc"
     }
   ]
 }

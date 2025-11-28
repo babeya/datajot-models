@@ -2,10 +2,7 @@
   "title": "Percentage",
   "description": "Measure values as a percentage",
   "subUnitTitles": {
-    "percent": {
-      "title": "Percent",
-      "abbreviation": "%"
-    }
+    "percent": "Percent"
   },
   "seo": {
     "keywords": []

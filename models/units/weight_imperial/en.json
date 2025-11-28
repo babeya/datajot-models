@@ -2,14 +2,8 @@
   "title": "Weight (lb)",
   "description": "Measure weight in imperial units",
   "subUnitTitles": {
-    "oz": {
-      "title": "Ounce",
-      "abbreviation": "oz"
-    },
-    "lb": {
-      "title": "Pound",
-      "abbreviation": "lb"
-    }
+    "oz": "Ounce",
+    "lb": "Pound"
   },
   "seo": {
     "keywords": []

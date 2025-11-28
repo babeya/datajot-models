@@ -2,14 +2,8 @@
   "title": "Taille (ft)",
   "description": "Mesure de taille ou longueur en unités impériales",
   "subUnitTitles": {
-    "in": {
-      "title": "Pouce",
-      "abbreviation": "po"
-    },
-    "ft": {
-      "title": "Pied",
-      "abbreviation": "pi"
-    }
+    "in": "Pouce",
+    "ft": "Pied"
   },
   "seo": {
     "keywords": []

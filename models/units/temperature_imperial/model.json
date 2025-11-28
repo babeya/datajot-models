@@ -6,8 +6,8 @@
   "subUnits": [
     {
       "key": "f",
-      "symbol": "°F",
-      "factor": 1
+      "factor": 1,
+      "abbreviation": "f"
     }
   ]
 }

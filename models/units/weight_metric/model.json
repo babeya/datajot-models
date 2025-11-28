@@ -6,18 +6,18 @@
   "subUnits": [
     {
       "key": "mg",
-      "symbol": "mg",
-      "factor": 0.001
+      "factor": 0.001,
+      "abbreviation": "mg"
     },
     {
       "key": "g",
-      "symbol": "g",
-      "factor": 1
+      "factor": 1,
+      "abbreviation": "g"
     },
     {
       "key": "kg",
-      "symbol": "kg",
-      "factor": 1000
+      "factor": 1000,
+      "abbreviation": "kg"
     }
   ]
 }

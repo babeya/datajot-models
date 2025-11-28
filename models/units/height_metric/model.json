@@ -6,18 +6,18 @@
   "subUnits": [
     {
       "key": "mm",
-      "symbol": "mm",
-      "factor": 0.1
+      "factor": 0.1,
+      "abbreviation": "mm"
     },
     {
       "key": "cm",
-      "symbol": "cm",
-      "factor": 1
+      "factor": 1,
+      "abbreviation": "cm"
     },
     {
       "key": "m",
-      "symbol": "m",
-      "factor": 100
+      "factor": 100,
+      "abbreviation": "m"
     }
   ]
 }

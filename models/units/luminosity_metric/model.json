@@ -6,8 +6,8 @@
   "subUnits": [
     {
       "key": "lux",
-      "symbol": "lx",
-      "factor": 1
+      "factor": 1,
+      "abbreviation": "lux"
     }
   ]
 }

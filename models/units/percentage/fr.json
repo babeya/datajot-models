@@ -2,10 +2,7 @@
   "title": "Pourcentage",
   "description": "Mesure de valeurs en pourcentage",
   "subUnitTitles": {
-    "percent": {
-      "title": "Pourcent",
-      "abbreviation": "%"
-    }
+    "percent": "Pourcent"
   },
   "seo": {
     "keywords": []

@@ -55,13 +55,12 @@ const transformSubUnits = (model, i18n) => {
   }
   
   return model[FIELD_SUB_UNITS].map(subUnit => {
-    const i18nData = i18n[FIELD_SUB_UNIT_TITLES][subUnit[FIELD_KEY]] || {}
+    const title = i18n[FIELD_SUB_UNIT_TITLES][subUnit[FIELD_KEY]] || ''
     return {
       key: subUnit[FIELD_KEY],
       abbreviation: subUnit.abbreviation,
-      symbol: subUnit.symbol,
       factor: subUnit.factor,
-      title: i18nData.title
+      title
     }
   })
 }

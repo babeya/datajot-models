@@ -6,23 +6,23 @@
   "subUnits": [
     {
       "key": "floz",
-      "symbol": "fl oz",
-      "factor": 1
+      "factor": 1,
+      "abbreviation": "floz"
     },
     {
       "key": "cup",
-      "symbol": "cup",
-      "factor": 8
+      "factor": 8,
+      "abbreviation": "cup"
     },
     {
       "key": "pt",
-      "symbol": "pt",
-      "factor": 16
+      "factor": 16,
+      "abbreviation": "pt"
     },
     {
       "key": "gal",
-      "symbol": "gal",
-      "factor": 128
+      "factor": 128,
+      "abbreviation": "gal"
     }
   ]
 }

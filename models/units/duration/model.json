@@ -6,28 +6,28 @@
   "subUnits": [
     {
       "key": "ms",
-      "symbol": "ms",
-      "factor": 0.001
+      "factor": 0.001,
+      "abbreviation": "ms"
     },
     {
       "key": "s",
-      "symbol": "s",
-      "factor": 1
+      "factor": 1,
+      "abbreviation": "s"
     },
     {
       "key": "min",
-      "symbol": "min",
-      "factor": 60
+      "factor": 60,
+      "abbreviation": "min"
     },
     {
       "key": "h",
-      "symbol": "h",
-      "factor": 3600
+      "factor": 3600,
+      "abbreviation": "h"
     },
     {
       "key": "d",
-      "symbol": "d",
-      "factor": 86400
+      "factor": 86400,
+      "abbreviation": "d"
     }
   ]
 }
