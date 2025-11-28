@@ -1,14 +1,29 @@
 {
   "title": "Durée",
   "description": "Mesure de durée temporelle",
-  "subUnitTitles": {
-    "ms": "Milliseconde",
-    "s": "Seconde",
-    "min": "Minute",
-    "h": "Heure",
-    "d": "Jour"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "ms": {
+      "abbreviation": "ms",
+      "title": "Milliseconde"
+    },
+    "s": {
+      "abbreviation": "s",
+      "title": "Seconde"
+    },
+    "min": {
+      "abbreviation": "min",
+      "title": "Minute"
+    },
+    "h": {
+      "abbreviation": "h",
+      "title": "Heure"
+    },
+    "d": {
+      "abbreviation": "d",
+      "title": "Jour"
+    }
   }
 }

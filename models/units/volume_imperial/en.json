@@ -1,13 +1,25 @@
 {
   "title": "Volume (gal)",
   "description": "Measure liquid volumes in imperial units",
-  "subUnitTitles": {
-    "floz": "Fluid ounce",
-    "cup": "Cup",
-    "pt": "Pint",
-    "gal": "Gallon"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "floz": {
+      "abbreviation": "floz",
+      "title": "Fluid ounce"
+    },
+    "cup": {
+      "abbreviation": "cup",
+      "title": "Cup"
+    },
+    "pt": {
+      "abbreviation": "pt",
+      "title": "Pint"
+    },
+    "gal": {
+      "abbreviation": "gal",
+      "title": "Gallon"
+    }
   }
 }

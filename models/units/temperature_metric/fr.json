@@ -1,10 +1,13 @@
 {
   "title": "Température (°C)",
   "description": "Mesure de température en Celsius",
-  "subUnitTitles": {
-    "c": "Celsius"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "c": {
+      "abbreviation": "c",
+      "title": "Celsius"
+    }
   }
 }

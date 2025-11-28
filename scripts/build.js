@@ -17,6 +17,7 @@ const FIELD_SUB_UNITS = 'subUnits'
 const FIELD_SUB_UNIT_TITLES = 'subUnitTitles'
 const FIELD_UNIT = 'unit'
 const FIELD_CATEGORY = 'category'
+const FIELD_SUB_UNIT = 'subUnit'
 
 mkdirSync(OUTPUT_DIR, { recursive: true })
 
@@ -50,17 +51,17 @@ const readModelFiles = (type, modelId, lang) => {
  * Transform subUnits by combining model data with translations
  */
 const transformSubUnits = (model, i18n) => {
-  if (!model[FIELD_SUB_UNITS] || !i18n[FIELD_SUB_UNIT_TITLES]) {
+  if (!model[FIELD_SUB_UNITS] || !i18n[FIELD_SUB_UNIT]) {
     return null
   }
   
   return model[FIELD_SUB_UNITS].map(subUnit => {
-    const title = i18n[FIELD_SUB_UNIT_TITLES][subUnit[FIELD_KEY]] || ''
+    const i18nData = i18n[FIELD_SUB_UNIT][subUnit[FIELD_KEY]] || { abbreviation: subUnit[FIELD_KEY], title: '' }
     return {
       key: subUnit[FIELD_KEY],
-      abbreviation: subUnit.abbreviation,
+      abbreviation: i18nData.abbreviation,
       factor: subUnit.factor,
-      title
+      title: i18nData.title
     }
   })
 }
@@ -72,7 +73,7 @@ const applyUnitTransformation = (item, model, i18n) => {
   const subUnitsArray = transformSubUnits(model, i18n)
   if (subUnitsArray) {
     item[FIELD_SUB_UNITS] = subUnitsArray
-    delete item[FIELD_SUB_UNIT_TITLES]
+    delete item[FIELD_SUB_UNIT]
   }
   return item
 }

@@ -1,10 +1,13 @@
 {
   "title": "Luminosity (fc)",
   "description": "Measure light intensity in foot-candles",
-  "subUnitTitles": {
-    "fc": "Foot-candle"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "fc": {
+      "abbreviation": "fc",
+      "title": "Foot-candle"
+    }
   }
 }

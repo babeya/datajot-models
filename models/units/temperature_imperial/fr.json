@@ -1,10 +1,13 @@
 {
   "title": "Température (°F)",
   "description": "Mesure de température en Fahrenheit",
-  "subUnitTitles": {
-    "f": "Fahrenheit"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "f": {
+      "abbreviation": "f",
+      "title": "Fahrenheit"
+    }
   }
 }

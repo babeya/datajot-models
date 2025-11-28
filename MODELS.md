@@ -60,7 +60,7 @@ type UnitTranslationModel = {
   title: string; // Name of the unit in the specific language
   description: string; // Description of the unit in the specific language
   abbreviation?: string; // Abbreviation for the unit in the specific language
-  subUnitTitles: { [key: string]: string }; // Titles for each sub-unit
+  subUnitTitles: { [key: string]: { abbreviation: string, title: string } }; // Titles for each sub-unit
   seo: {
     keywords: string[]; // SEO keywords
   };

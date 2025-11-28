@@ -1,11 +1,17 @@
 {
   "title": "Poids (lb)",
   "description": "Mesure du poids en unités impériales",
-  "subUnitTitles": {
-    "oz": "Once",
-    "lb": "Livre"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "oz": {
+      "abbreviation": "oz",
+      "title": "Once"
+    },
+    "lb": {
+      "abbreviation": "lb",
+      "title": "Livre"
+    }
   }
 }

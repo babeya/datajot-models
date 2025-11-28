@@ -1,12 +1,21 @@
 {
   "title": "Volume (L)",
   "description": "Mesure des volumes en unités métriques",
-  "subUnitTitles": {
-    "ml": "Millilitre",
-    "cl": "Centilitre",
-    "l": "Litre"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "ml": {
+      "abbreviation": "ml",
+      "title": "Millilitre"
+    },
+    "cl": {
+      "abbreviation": "cl",
+      "title": "Centilitre"
+    },
+    "l": {
+      "abbreviation": "l",
+      "title": "Litre"
+    }
   }
 }

@@ -1,12 +1,21 @@
 {
   "title": "Height (m)",
   "description": "Measure height or length in metric units",
-  "subUnitTitles": {
-    "mm": "Millimeter",
-    "cm": "Centimeter",
-    "m": "Meter"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "mm": {
+      "abbreviation": "mm",
+      "title": "Millimeter"
+    },
+    "cm": {
+      "abbreviation": "cm",
+      "title": "Centimeter"
+    },
+    "m": {
+      "abbreviation": "m",
+      "title": "Meter"
+    }
   }
 }

@@ -1,14 +1,29 @@
 {
   "title": "Duration",
   "description": "Measure time duration",
-  "subUnitTitles": {
-    "ms": "Millisecond",
-    "s": "Second",
-    "min": "Minute",
-    "h": "Hour",
-    "d": "Day"
-  },
   "seo": {
     "keywords": []
+  },
+  "subUnit": {
+    "ms": {
+      "abbreviation": "ms",
+      "title": "Millisecond"
+    },
+    "s": {
+      "abbreviation": "s",
+      "title": "Second"
+    },
+    "min": {
+      "abbreviation": "min",
+      "title": "Minute"
+    },
+    "h": {
+      "abbreviation": "h",
+      "title": "Hour"
+    },
+    "d": {
+      "abbreviation": "d",
+      "title": "Day"
+    }
   }
 }
