@@ -1,8 +1,12 @@
 {
-  "title": "Mood",
   "description": "Track your daily mood to understand your emotional patterns.",
   "seo": {
-    "keywords": ["mood", "emotions", "wellness", "mental health"],
-    "image": "https://yourname.github.io/myapp-models/images/mood.png"
-  }
+    "keywords": [
+      "mood",
+      "emotions",
+      "wellness",
+      "mental health"
+    ]
+  },
+  "name": "Mood"
 }

@@ -1,22 +1,8 @@
 {
-  "id": "coffee",
+  "key": "coffee",
   "type": "series",
   "category": "nutrition",
   "icon": "cup.and.saucer.fill",
   "color": "#92400E",
-  "graphType": "bar",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": true,
-    "showCount": true,
-    "showMax": true,
-    "showMin": false,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#78350F"
-  }
+  "graphType": "bar"
 }

@@ -1,22 +1,8 @@
 {
-  "id": "alcohol",
+  "key": "alcohol",
   "type": "series",
   "category": "nutrition",
   "icon": "wineglass.fill",
   "color": "#DC2626",
-  "graphType": "bar",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": true,
-    "showCount": true,
-    "showMax": true,
-    "showMin": false,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#F59E0B"
-  }
+  "graphType": "bar"
 }

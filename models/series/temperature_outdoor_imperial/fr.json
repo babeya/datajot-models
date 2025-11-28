@@ -1,8 +1,12 @@
 {
-  "title": "Température extérieure (°F)",
   "description": "Suivez la température extérieure en Fahrenheit.",
   "seo": {
-    "keywords": ["température", "extérieur", "météo", "fahrenheit"],
-    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
-  }
+    "keywords": [
+      "température",
+      "extérieur",
+      "météo",
+      "fahrenheit"
+    ]
+  },
+  "name": "Température extérieure (°F)"
 }

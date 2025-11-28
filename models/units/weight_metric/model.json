@@ -1,12 +1,23 @@
 {
-  "id": "weight_metric",
+  "key": "weight_metric",
   "type": "unit",
   "category": "mass",
-  "system": "metric",
   "baseUnit": "g",
   "subUnits": [
-    { "id": "mg", "symbol": "mg", "toBase": 0.001 },
-    { "id": "g", "symbol": "g", "toBase": 1 },
-    { "id": "kg", "symbol": "kg", "toBase": 1000 }
+    {
+      "key": "mg",
+      "symbol": "mg",
+      "factor": 0.001
+    },
+    {
+      "key": "g",
+      "symbol": "g",
+      "factor": 1
+    },
+    {
+      "key": "kg",
+      "symbol": "kg",
+      "factor": 1000
+    }
   ]
 }

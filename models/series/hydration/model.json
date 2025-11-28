@@ -1,23 +1,9 @@
 {
-  "id": "hydration",
+  "key": "hydration",
   "type": "series",
   "category": "health",
   "icon": "drop.fill",
   "unit": "volume_metric",
   "color": "#3B82F6",
-  "graphType": "bar",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": true,
-    "showCount": true,
-    "showMax": true,
-    "showMin": false,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#3B82F6"
-  }
+  "graphType": "bar"
 }

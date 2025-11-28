@@ -1,23 +1,9 @@
 {
-  "id": "temperature_indoor_imperial",
+  "key": "temperature_indoor_imperial",
   "type": "series",
   "category": "environment",
   "icon": "thermometer.sun.fill",
   "unit": "temperature_imperial",
   "color": "#F97316",
-  "graphType": "line",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": false,
-    "showCount": true,
-    "showMax": true,
-    "showMin": true,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#F97316"
-  }
+  "graphType": "line"
 }

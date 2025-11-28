@@ -1,8 +1,11 @@
 {
-  "title": "Humidité",
   "description": "Suivez les niveaux d'humidité.",
   "seo": {
-    "keywords": ["humidité", "météo", "environnement"],
-    "image": "https://yourname.github.io/myapp-models/images/humidity.png"
-  }
+    "keywords": [
+      "humidité",
+      "météo",
+      "environnement"
+    ]
+  },
+  "name": "Humidité"
 }

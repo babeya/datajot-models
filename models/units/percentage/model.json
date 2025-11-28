@@ -1,10 +1,13 @@
 {
-  "id": "percentage",
+  "key": "percentage",
   "type": "unit",
   "category": "ratio",
-  "system": "universal",
   "baseUnit": "percent",
   "subUnits": [
-    { "id": "percent", "symbol": "%", "toBase": 1 }
+    {
+      "key": "percent",
+      "symbol": "%",
+      "factor": 1
+    }
   ]
 }

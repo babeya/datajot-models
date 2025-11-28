@@ -1,23 +1,9 @@
 {
-  "id": "weight_imperial",
+  "key": "weight_imperial",
   "type": "series",
   "category": "health",
   "icon": "scalemass.fill",
   "unit": "weight_imperial",
   "color": "#EC4899",
-  "graphType": "line",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": false,
-    "showCount": true,
-    "showMax": true,
-    "showMin": true,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#8B5CF6"
-  }
+  "graphType": "line"
 }

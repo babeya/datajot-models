@@ -1,23 +1,9 @@
 {
-  "id": "temperature_outdoor_imperial",
+  "key": "temperature_outdoor_imperial",
   "type": "series",
   "category": "environment",
   "icon": "thermometer.medium",
   "unit": "temperature_imperial",
   "color": "#EF4444",
-  "graphType": "line",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": false,
-    "showCount": true,
-    "showMax": true,
-    "showMin": true,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#EF4444"
-  }
+  "graphType": "line"
 }

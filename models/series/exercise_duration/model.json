@@ -1,23 +1,9 @@
 {
-  "id": "exercise_duration",
+  "key": "exercise_duration",
   "type": "series",
   "category": "fitness",
   "icon": "figure.run",
   "unit": "duration",
   "color": "#10B981",
-  "graphType": "bar",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": true,
-    "showCount": true,
-    "showMax": true,
-    "showMin": false,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#10B981"
-  }
+  "graphType": "bar"
 }

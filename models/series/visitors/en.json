@@ -1,8 +1,12 @@
 {
-  "title": "Visitors",
   "description": "Track visitor count.",
   "seo": {
-    "keywords": ["visitors", "traffic", "business", "analytics"],
-    "image": "https://yourname.github.io/myapp-models/images/visitors.png"
-  }
+    "keywords": [
+      "visitors",
+      "traffic",
+      "business",
+      "analytics"
+    ]
+  },
+  "name": "Visitors"
 }

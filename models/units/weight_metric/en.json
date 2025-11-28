@@ -1,9 +1,21 @@
 {
   "title": "Weight (kg)",
   "description": "Measure weight in metric units",
-  "subUnits": {
-    "mg": { "title": "Milligram", "abbreviation": "mg" },
-    "g": { "title": "Gram", "abbreviation": "g" },
-    "kg": { "title": "Kilogram", "abbreviation": "kg" }
+  "subUnitTitles": {
+    "mg": {
+      "title": "Milligram",
+      "abbreviation": "mg"
+    },
+    "g": {
+      "title": "Gram",
+      "abbreviation": "g"
+    },
+    "kg": {
+      "title": "Kilogram",
+      "abbreviation": "kg"
+    }
+  },
+  "seo": {
+    "keywords": []
   }
 }

@@ -1,8 +1,12 @@
 {
-  "title": "Cigarettes",
   "description": "Suivez votre consommation quotidienne de cigarettes.",
   "seo": {
-    "keywords": ["cigarettes", "tabac", "santé", "habitude"],
-    "image": "https://yourname.github.io/myapp-models/images/cigarettes.png"
-  }
+    "keywords": [
+      "cigarettes",
+      "tabac",
+      "santé",
+      "habitude"
+    ]
+  },
+  "name": "Cigarettes"
 }

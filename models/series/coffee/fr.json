@@ -1,8 +1,12 @@
 {
-  "title": "Café",
   "description": "Suivez votre consommation quotidienne de café.",
   "seo": {
-    "keywords": ["café", "caféine", "boissons", "nutrition"],
-    "image": "https://yourname.github.io/myapp-models/images/coffee.png"
-  }
+    "keywords": [
+      "café",
+      "caféine",
+      "boissons",
+      "nutrition"
+    ]
+  },
+  "name": "Café"
 }

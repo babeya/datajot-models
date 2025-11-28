@@ -1,8 +1,12 @@
 {
-  "title": "Cigarettes",
   "description": "Track your daily cigarette consumption.",
   "seo": {
-    "keywords": ["cigarettes", "smoking", "health", "habit"],
-    "image": "https://yourname.github.io/myapp-models/images/cigarettes.png"
-  }
+    "keywords": [
+      "cigarettes",
+      "smoking",
+      "health",
+      "habit"
+    ]
+  },
+  "name": "Cigarettes"
 }

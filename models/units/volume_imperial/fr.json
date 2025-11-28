@@ -1,10 +1,25 @@
 {
   "title": "Volume (gal)",
   "description": "Mesure des volumes en unités impériales",
-  "subUnits": {
-    "floz": { "title": "Once liquide", "abbreviation": "fl oz" },
-    "cup": { "title": "Tasse", "abbreviation": "cup" },
-    "pt": { "title": "Pinte", "abbreviation": "pt" },
-    "gal": { "title": "Gallon", "abbreviation": "gal" }
+  "subUnitTitles": {
+    "floz": {
+      "title": "Once liquide",
+      "abbreviation": "fl oz"
+    },
+    "cup": {
+      "title": "Tasse",
+      "abbreviation": "cup"
+    },
+    "pt": {
+      "title": "Pinte",
+      "abbreviation": "pt"
+    },
+    "gal": {
+      "title": "Gallon",
+      "abbreviation": "gal"
+    }
+  },
+  "seo": {
+    "keywords": []
   }
 }

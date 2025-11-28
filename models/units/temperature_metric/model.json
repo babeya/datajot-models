@@ -1,10 +1,13 @@
 {
-  "id": "temperature_metric",
+  "key": "temperature_metric",
   "type": "unit",
   "category": "temperature",
-  "system": "metric",
   "baseUnit": "c",
   "subUnits": [
-    { "id": "c", "symbol": "°C", "toBase": 1 }
+    {
+      "key": "c",
+      "symbol": "°C",
+      "factor": 1
+    }
   ]
 }

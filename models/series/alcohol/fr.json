@@ -1,8 +1,12 @@
 {
-  "title": "Alcool",
   "description": "Suivez votre consommation d'alcool.",
   "seo": {
-    "keywords": ["alcool", "boissons", "santé", "consommation"],
-    "image": "https://yourname.github.io/myapp-models/images/alcohol.png"
-  }
+    "keywords": [
+      "alcool",
+      "boissons",
+      "santé",
+      "consommation"
+    ]
+  },
+  "name": "Alcool"
 }

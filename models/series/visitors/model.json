@@ -1,22 +1,8 @@
 {
-  "id": "visitors",
+  "key": "visitors",
   "type": "series",
   "category": "business",
   "icon": "person.2.fill",
   "color": "#8B5CF6",
-  "graphType": "bar",
-  "stats": {
-    "showAverage": true,
-    "showMedian": false,
-    "showSum": true,
-    "showCount": true,
-    "showMax": true,
-    "showMin": true,
-    "showAverageOnChart": true,
-    "showMedianOnChart": false,
-    "showMaxOnChart": false,
-    "showMinOnChart": false,
-    "autoScaleYAxis": true,
-    "averageColorHex": "#3B82F6"
-  }
+  "graphType": "bar"
 }

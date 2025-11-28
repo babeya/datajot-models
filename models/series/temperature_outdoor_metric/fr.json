@@ -1,8 +1,12 @@
 {
-  "title": "Température extérieure (°C)",
   "description": "Suivez la température extérieure en Celsius.",
   "seo": {
-    "keywords": ["température", "extérieur", "météo", "celsius"],
-    "image": "https://yourname.github.io/myapp-models/images/temperature.png"
-  }
+    "keywords": [
+      "température",
+      "extérieur",
+      "météo",
+      "celsius"
+    ]
+  },
+  "name": "Température extérieure (°C)"
 }

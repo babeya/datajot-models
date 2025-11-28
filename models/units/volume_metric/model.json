@@ -1,12 +1,23 @@
 {
-  "id": "volume_metric",
+  "key": "volume_metric",
   "type": "unit",
   "category": "volume",
-  "system": "metric",
   "baseUnit": "ml",
   "subUnits": [
-    { "id": "ml", "symbol": "ml", "toBase": 1 },
-    { "id": "cl", "symbol": "cl", "toBase": 10 },
-    { "id": "l", "symbol": "L", "toBase": 1000 }
+    {
+      "key": "ml",
+      "symbol": "ml",
+      "factor": 1
+    },
+    {
+      "key": "cl",
+      "symbol": "cl",
+      "factor": 10
+    },
+    {
+      "key": "l",
+      "symbol": "L",
+      "factor": 1000
+    }
   ]
 }

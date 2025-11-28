@@ -1,13 +1,28 @@
 {
-  "id": "volume_imperial",
+  "key": "volume_imperial",
   "type": "unit",
   "category": "volume",
-  "system": "imperial",
   "baseUnit": "floz",
   "subUnits": [
-    { "id": "floz", "symbol": "fl oz", "toBase": 1 },
-    { "id": "cup", "symbol": "cup", "toBase": 8 },
-    { "id": "pt", "symbol": "pt", "toBase": 16 },
-    { "id": "gal", "symbol": "gal", "toBase": 128 }
+    {
+      "key": "floz",
+      "symbol": "fl oz",
+      "factor": 1
+    },
+    {
+      "key": "cup",
+      "symbol": "cup",
+      "factor": 8
+    },
+    {
+      "key": "pt",
+      "symbol": "pt",
+      "factor": 16
+    },
+    {
+      "key": "gal",
+      "symbol": "gal",
+      "factor": 128
+    }
   ]
 }

@@ -1,8 +1,17 @@
 {
   "title": "Height (ft)",
   "description": "Measure height or length in imperial units",
-  "subUnits": {
-    "in": { "title": "Inch", "abbreviation": "in" },
-    "ft": { "title": "Foot", "abbreviation": "ft" }
+  "subUnitTitles": {
+    "in": {
+      "title": "Inch",
+      "abbreviation": "in"
+    },
+    "ft": {
+      "title": "Foot",
+      "abbreviation": "ft"
+    }
+  },
+  "seo": {
+    "keywords": []
   }
 }

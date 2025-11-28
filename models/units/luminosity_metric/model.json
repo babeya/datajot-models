@@ -1,10 +1,13 @@
 {
-  "id": "luminosity_metric",
+  "key": "luminosity_metric",
   "type": "unit",
   "category": "light",
-  "system": "metric",
   "baseUnit": "lux",
   "subUnits": [
-    { "id": "lux", "symbol": "lx", "toBase": 1 }
+    {
+      "key": "lux",
+      "symbol": "lx",
+      "factor": 1
+    }
   ]
 }
