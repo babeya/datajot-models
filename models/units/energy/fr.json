@@ -1,0 +1,15 @@
+{
+  "title": "Énergie",
+  "description": "Unités d'énergie et de travail",
+  "subUnits": {
+    "J": { "title": "Joule", "abbreviation": "J" },
+    "kJ": { "title": "Kilojoule", "abbreviation": "kJ" },
+    "cal": { "title": "Calorie", "abbreviation": "cal" },
+    "kcal": { "title": "Kilocalorie", "abbreviation": "kcal" },
+    "Wh": { "title": "Watt-heure", "abbreviation": "Wh" },
+    "kWh": { "title": "Kilowatt-heure", "abbreviation": "kWh" }
+  },
+  "seo": {
+    "keywords": ["énergie", "calories", "joules", "électricité"]
+  }
+}

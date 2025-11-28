@@ -1,0 +1,28 @@
+{
+  "key": "bandwidth",
+  "type": "unit",
+  "category": "digital",
+  "baseUnit": "bps",
+  "subUnits": [
+    {
+      "key": "bps",
+      "factor": 1,
+      "abbreviation": "bps"
+    },
+    {
+      "key": "kbps",
+      "factor": 1000,
+      "abbreviation": "kbps"
+    },
+    {
+      "key": "Mbps",
+      "factor": 1000000,
+      "abbreviation": "Mbps"
+    },
+    {
+      "key": "Gbps",
+      "factor": 1000000000,
+      "abbreviation": "Gbps"
+    }
+  ]
+}

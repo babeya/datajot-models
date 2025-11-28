@@ -13,6 +13,11 @@
       "key": "lb",
       "factor": 16,
       "abbreviation": "lb"
+    },
+    {
+      "key": "st",
+      "factor": 224,
+      "abbreviation": "st"
     }
   ]
 }

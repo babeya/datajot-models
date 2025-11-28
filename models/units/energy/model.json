@@ -1,0 +1,38 @@
+{
+  "key": "energy",
+  "type": "unit",
+  "category": "energy",
+  "baseUnit": "J",
+  "subUnits": [
+    {
+      "key": "J",
+      "factor": 1,
+      "abbreviation": "J"
+    },
+    {
+      "key": "kJ",
+      "factor": 1000,
+      "abbreviation": "kJ"
+    },
+    {
+      "key": "cal",
+      "factor": 4.184,
+      "abbreviation": "cal"
+    },
+    {
+      "key": "kcal",
+      "factor": 4184,
+      "abbreviation": "kcal"
+    },
+    {
+      "key": "Wh",
+      "factor": 3600,
+      "abbreviation": "Wh"
+    },
+    {
+      "key": "kWh",
+      "factor": 3600000,
+      "abbreviation": "kWh"
+    }
+  ]
+}

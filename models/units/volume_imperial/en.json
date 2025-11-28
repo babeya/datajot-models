@@ -20,6 +20,18 @@
     "gal": {
       "abbreviation": "gal",
       "title": "Gallon"
+    },
+    "tsp": {
+      "abbreviation": "tsp",
+      "title": "Teaspoon"
+    },
+    "tbsp": {
+      "abbreviation": "tbsp",
+      "title": "Tablespoon"
+    },
+    "qt": {
+      "abbreviation": "qt",
+      "title": "Quart"
     }
   }
 }

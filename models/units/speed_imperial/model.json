@@ -1,0 +1,19 @@
+{
+  "key": "speed_imperial",
+  "type": "unit",
+  "category": "speed",
+  "system": "imperial",
+  "baseUnit": "mph",
+  "subUnits": [
+    {
+      "key": "mph",
+      "factor": 1,
+      "abbreviation": "mph"
+    },
+    {
+      "key": "kn",
+      "factor": 1.15078,
+      "abbreviation": "kn"
+    }
+  ]
+}

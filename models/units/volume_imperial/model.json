@@ -23,6 +23,21 @@
       "key": "gal",
       "factor": 128,
       "abbreviation": "gal"
+    },
+    {
+      "key": "tsp",
+      "factor": 0.166667,
+      "abbreviation": "tsp"
+    },
+    {
+      "key": "tbsp",
+      "factor": 0.5,
+      "abbreviation": "tbsp"
+    },
+    {
+      "key": "qt",
+      "factor": 32,
+      "abbreviation": "qt"
     }
   ]
 }

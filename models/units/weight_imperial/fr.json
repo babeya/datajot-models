@@ -12,6 +12,10 @@
     "lb": {
       "abbreviation": "lb",
       "title": "Livre"
+    },
+    "st": {
+      "abbreviation": "st",
+      "title": "Stone"
     }
   }
 }

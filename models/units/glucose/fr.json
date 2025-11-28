@@ -1,0 +1,11 @@
+{
+  "title": "Glycémie",
+  "description": "Unités de concentration de glucose sanguin",
+  "subUnits": {
+    "mmol_L": { "title": "Millimoles par litre", "abbreviation": "mmol/L" },
+    "mg_dL": { "title": "Milligrammes par décilitre", "abbreviation": "mg/dL" }
+  },
+  "seo": {
+    "keywords": ["glycémie", "sucre", "santé", "diabète"]
+  }
+}

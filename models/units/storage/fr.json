@@ -1,0 +1,14 @@
+{
+  "title": "Stockage Numérique",
+  "description": "Unités de stockage d'information numérique",
+  "subUnits": {
+    "B": { "title": "Octet", "abbreviation": "o" },
+    "kB": { "title": "Kilooctet", "abbreviation": "ko" },
+    "MB": { "title": "Mégaoctet", "abbreviation": "Mo" },
+    "GB": { "title": "Gigaoctet", "abbreviation": "Go" },
+    "TB": { "title": "Téraoctet", "abbreviation": "To" }
+  },
+  "seo": {
+    "keywords": ["stockage", "octets", "mémoire", "disque"]
+  }
+}

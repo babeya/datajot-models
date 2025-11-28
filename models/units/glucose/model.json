@@ -1,0 +1,18 @@
+{
+  "key": "glucose",
+  "type": "unit",
+  "category": "health",
+  "baseUnit": "mmol_L",
+  "subUnits": [
+    {
+      "key": "mmol_L",
+      "factor": 1,
+      "abbreviation": "mmol/L"
+    },
+    {
+      "key": "mg_dL",
+      "factor": 0.0555,
+      "abbreviation": "mg/dL"
+    }
+  ]
+}

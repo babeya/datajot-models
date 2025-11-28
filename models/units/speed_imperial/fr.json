@@ -1,0 +1,11 @@
+{
+  "title": "Vitesse (Impérial)",
+  "description": "Unités impériales de vitesse",
+  "subUnits": {
+    "mph": { "title": "Miles par heure", "abbreviation": "mph" },
+    "kn": { "title": "Nœuds", "abbreviation": "kn" }
+  },
+  "seo": {
+    "keywords": ["vitesse", "impérial", "mph", "nœuds"]
+  }
+}

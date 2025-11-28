@@ -1,0 +1,19 @@
+{
+  "key": "speed_metric",
+  "type": "unit",
+  "category": "speed",
+  "system": "metric",
+  "baseUnit": "m_s",
+  "subUnits": [
+    {
+      "key": "m_s",
+      "factor": 1,
+      "abbreviation": "m/s"
+    },
+    {
+      "key": "km_h",
+      "factor": 0.277778,
+      "abbreviation": "km/h"
+    }
+  ]
+}

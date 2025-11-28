@@ -1,0 +1,11 @@
+{
+  "title": "Vitesse (Métrique)",
+  "description": "Unités métriques de vitesse",
+  "subUnits": {
+    "m_s": { "title": "Mètres par seconde", "abbreviation": "m/s" },
+    "km_h": { "title": "Kilomètres par heure", "abbreviation": "km/h" }
+  },
+  "seo": {
+    "keywords": ["vitesse", "métrique", "km/h"]
+  }
+}

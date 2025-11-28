@@ -1,0 +1,13 @@
+{
+  "title": "Bande Passante",
+  "description": "Unités de débit de transfert de données",
+  "subUnits": {
+    "bps": { "title": "Bits par seconde", "abbreviation": "bps" },
+    "kbps": { "title": "Kilobits par seconde", "abbreviation": "kbps" },
+    "Mbps": { "title": "Mégabits par seconde", "abbreviation": "Mbps" },
+    "Gbps": { "title": "Gigabits par seconde", "abbreviation": "Gbps" }
+  },
+  "seo": {
+    "keywords": ["bande passante", "vitesse", "internet", "transfert"]
+  }
+}

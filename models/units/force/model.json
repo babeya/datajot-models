@@ -1,0 +1,23 @@
+{
+  "key": "force",
+  "type": "unit",
+  "category": "force",
+  "baseUnit": "N",
+  "subUnits": [
+    {
+      "key": "N",
+      "factor": 1,
+      "abbreviation": "N"
+    },
+    {
+      "key": "kN",
+      "factor": 1000,
+      "abbreviation": "kN"
+    },
+    {
+      "key": "lbf",
+      "factor": 4.44822,
+      "abbreviation": "lbf"
+    }
+  ]
+}

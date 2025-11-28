@@ -6,11 +6,11 @@
   },
   "subUnit": {
     "floz": {
-      "abbreviation": "floz",
+      "abbreviation": "oz fl",
       "title": "Once liquide"
     },
     "cup": {
-      "abbreviation": "cup",
+      "abbreviation": "tasse",
       "title": "Tasse"
     },
     "pt": {
@@ -20,6 +20,18 @@
     "gal": {
       "abbreviation": "gal",
       "title": "Gallon"
+    },
+    "tsp": {
+      "abbreviation": "c.à.c",
+      "title": "Cuillère à café"
+    },
+    "tbsp": {
+      "abbreviation": "c.à.s",
+      "title": "Cuillère à soupe"
+    },
+    "qt": {
+      "abbreviation": "qt",
+      "title": "Quart"
     }
   }
 }

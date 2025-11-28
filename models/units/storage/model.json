@@ -1,0 +1,33 @@
+{
+  "key": "storage",
+  "type": "unit",
+  "category": "digital",
+  "baseUnit": "B",
+  "subUnits": [
+    {
+      "key": "B",
+      "factor": 1,
+      "abbreviation": "B"
+    },
+    {
+      "key": "kB",
+      "factor": 1000,
+      "abbreviation": "kB"
+    },
+    {
+      "key": "MB",
+      "factor": 1000000,
+      "abbreviation": "MB"
+    },
+    {
+      "key": "GB",
+      "factor": 1000000000,
+      "abbreviation": "GB"
+    },
+    {
+      "key": "TB",
+      "factor": 1000000000000,
+      "abbreviation": "TB"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Bandwidth",
+  "description": "Units of data transfer rate",
+  "subUnits": {
+    "bps": { "title": "Bits per second", "abbreviation": "bps" },
+    "kbps": { "title": "Kilobits per second", "abbreviation": "kbps" },
+    "Mbps": { "title": "Megabits per second", "abbreviation": "Mbps" },
+    "Gbps": { "title": "Gigabits per second", "abbreviation": "Gbps" }
+  },
+  "seo": {
+    "keywords": ["bandwidth", "speed", "internet", "transfer"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Pressure",
+  "description": "Units of pressure",
+  "subUnits": {
+    "Pa": { "title": "Pascal", "abbreviation": "Pa" },
+    "hPa": { "title": "Hectopascal", "abbreviation": "hPa" },
+    "kPa": { "title": "Kilopascal", "abbreviation": "kPa" },
+    "bar": { "title": "Bar", "abbreviation": "bar" },
+    "psi": { "title": "Pound per square inch", "abbreviation": "psi" },
+    "atm": { "title": "Atmosphere", "abbreviation": "atm" },
+    "mmHg": { "title": "Millimeter of mercury", "abbreviation": "mmHg" }
+  },
+  "seo": {
+    "keywords": ["pressure", "pascal", "bar", "psi", "atmosphere"]
+  }
+}

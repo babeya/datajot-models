@@ -1,0 +1,14 @@
+{
+  "title": "Digital Storage",
+  "description": "Units of digital information storage",
+  "subUnits": {
+    "B": { "title": "Byte", "abbreviation": "B" },
+    "kB": { "title": "Kilobyte", "abbreviation": "kB" },
+    "MB": { "title": "Megabyte", "abbreviation": "MB" },
+    "GB": { "title": "Gigabyte", "abbreviation": "GB" },
+    "TB": { "title": "Terabyte", "abbreviation": "TB" }
+  },
+  "seo": {
+    "keywords": ["storage", "bytes", "memory", "disk space"]
+  }
+}
