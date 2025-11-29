@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "validate:models": "node scripts/validate_models_structure.js",
+    "validate:output": "node scripts/validate_output_models.js",
+    "validate": "npm run validate:models && npm run validate:output"
   },
   "description": "Models of Datajot",
   "main": "index.js",

@@ -42,7 +42,6 @@ Units are defined in the `models/units` directory. Similar to series, each unit 
 // model.json
 type SubUnit = {
   key: string; // Unique identifier for the sub-unit
-  abbreviation?: string; // Abbreviation for the sub-unit
   factor: number; // Conversion factor to the base unit
 }
 
@@ -60,7 +59,7 @@ type UnitTranslationModel = {
   title: string; // Name of the unit in the specific language
   description: string; // Description of the unit in the specific language
   abbreviation?: string; // Abbreviation for the unit in the specific language
-  subUnitTitles: { [key: string]: { abbreviation: string, title: string } }; // Titles for each sub-unit
+  subUnits: { [key: string]: { abbreviation: string, title: string } }; // Titles for each sub-unit
   seo: {
     keywords: string[]; // SEO keywords
   };
