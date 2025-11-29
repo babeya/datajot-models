@@ -1,10 +1,10 @@
 {
-  "title": "Durée",
-  "description": "Mesure de durée temporelle",
+  "title": "Dur\u00e9e",
+  "description": "Mesure de dur\u00e9e temporelle",
   "seo": {
     "keywords": []
   },
-  "subUnit": {
+  "subUnits": {
     "ms": {
       "abbreviation": "ms",
       "title": "Milliseconde"

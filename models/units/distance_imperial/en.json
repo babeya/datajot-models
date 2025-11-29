@@ -2,12 +2,29 @@
   "title": "Distance (Imperial)",
   "description": "Imperial distances from inches to miles.",
   "seo": {
-    "keywords": ["distance", "imperial", "miles", "feet"]
+    "keywords": [
+      "distance",
+      "imperial",
+      "miles",
+      "feet"
+    ]
   },
-  "subUnit": {
-    "in": { "abbreviation": "in", "title": "Inch" },
-    "ft": { "abbreviation": "ft", "title": "Foot" },
-    "yd": { "abbreviation": "yd", "title": "Yard" },
-    "mi": { "abbreviation": "mi", "title": "Mile" }
+  "subUnits": {
+    "in": {
+      "abbreviation": "in",
+      "title": "Inch"
+    },
+    "ft": {
+      "abbreviation": "ft",
+      "title": "Foot"
+    },
+    "yd": {
+      "abbreviation": "yd",
+      "title": "Yard"
+    },
+    "mi": {
+      "abbreviation": "mi",
+      "title": "Mile"
+    }
   }
 }

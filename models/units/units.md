@@ -10,7 +10,7 @@ File named model.json
   "type": "unit",
   "category": "Allows grouping",
   "baseUnit": "The base units",
-  "subUnit": [{
+  "subUnits": [{
     "id": "unique id of the subunit",
     "symbol": "unit displayed",
     "toBase": "factor"

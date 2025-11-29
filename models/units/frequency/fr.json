@@ -1,15 +1,38 @@
 {
-  "title": "Fréquence",
-  "description": "Cycles par seconde pour des signaux ou des habitudes répétées.",
+  "title": "Fr\u00e9quence",
+  "description": "Cycles par seconde pour des signaux ou des habitudes r\u00e9p\u00e9t\u00e9es.",
   "seo": {
-    "keywords": ["fréquence", "hertz", "cycles", "période"]
+    "keywords": [
+      "fr\u00e9quence",
+      "hertz",
+      "cycles",
+      "p\u00e9riode"
+    ]
   },
-  "subUnit": {
-    "microhz": { "abbreviation": "µHz", "title": "Microhertz" },
-    "millihz": { "abbreviation": "mHz", "title": "Millihertz" },
-    "hz": { "abbreviation": "Hz", "title": "Hertz" },
-    "khz": { "abbreviation": "kHz", "title": "Kilohertz" },
-    "mhz": { "abbreviation": "MHz", "title": "Mégahertz" },
-    "ghz": { "abbreviation": "GHz", "title": "Gigahertz" }
+  "subUnits": {
+    "microhz": {
+      "abbreviation": "\u00b5Hz",
+      "title": "Microhertz"
+    },
+    "millihz": {
+      "abbreviation": "mHz",
+      "title": "Millihertz"
+    },
+    "hz": {
+      "abbreviation": "Hz",
+      "title": "Hertz"
+    },
+    "khz": {
+      "abbreviation": "kHz",
+      "title": "Kilohertz"
+    },
+    "mhz": {
+      "abbreviation": "MHz",
+      "title": "M\u00e9gahertz"
+    },
+    "ghz": {
+      "abbreviation": "GHz",
+      "title": "Gigahertz"
+    }
   }
 }

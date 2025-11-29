@@ -1,15 +1,38 @@
 {
   "title": "Devise",
-  "description": "Principales devises mondiales normalisées en dollars US.",
+  "description": "Principales devises mondiales normalis\u00e9es en dollars US.",
   "seo": {
-    "keywords": ["argent", "finance", "devise", "dépenses"]
+    "keywords": [
+      "argent",
+      "finance",
+      "devise",
+      "d\u00e9penses"
+    ]
   },
-  "subUnit": {
-    "usd": { "abbreviation": "USD", "title": "Dollar américain" },
-    "eur": { "abbreviation": "EUR", "title": "Euro" },
-    "gbp": { "abbreviation": "GBP", "title": "Livre sterling" },
-    "cad": { "abbreviation": "CAD", "title": "Dollar canadien" },
-    "aud": { "abbreviation": "AUD", "title": "Dollar australien" },
-    "jpy": { "abbreviation": "JPY", "title": "Yen japonais" }
+  "subUnits": {
+    "usd": {
+      "abbreviation": "USD",
+      "title": "Dollar am\u00e9ricain"
+    },
+    "eur": {
+      "abbreviation": "EUR",
+      "title": "Euro"
+    },
+    "gbp": {
+      "abbreviation": "GBP",
+      "title": "Livre sterling"
+    },
+    "cad": {
+      "abbreviation": "CAD",
+      "title": "Dollar canadien"
+    },
+    "aud": {
+      "abbreviation": "AUD",
+      "title": "Dollar australien"
+    },
+    "jpy": {
+      "abbreviation": "JPY",
+      "title": "Yen japonais"
+    }
   }
 }

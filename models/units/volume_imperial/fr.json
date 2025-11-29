@@ -1,10 +1,10 @@
 {
   "title": "Volume (gal)",
-  "description": "Mesure des volumes en unités impériales",
+  "description": "Mesure des volumes en unit\u00e9s imp\u00e9riales",
   "seo": {
     "keywords": []
   },
-  "subUnit": {
+  "subUnits": {
     "floz": {
       "abbreviation": "oz fl",
       "title": "Once liquide"
@@ -22,12 +22,12 @@
       "title": "Gallon"
     },
     "tsp": {
-      "abbreviation": "c.à.c",
-      "title": "Cuillère à café"
+      "abbreviation": "c.\u00e0.c",
+      "title": "Cuill\u00e8re \u00e0 caf\u00e9"
     },
     "tbsp": {
-      "abbreviation": "c.à.s",
-      "title": "Cuillère à soupe"
+      "abbreviation": "c.\u00e0.s",
+      "title": "Cuill\u00e8re \u00e0 soupe"
     },
     "qt": {
       "abbreviation": "qt",

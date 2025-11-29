@@ -1,21 +1,21 @@
 {
   "title": "Taille (m)",
-  "description": "Mesure de taille ou longueur en unités métriques",
+  "description": "Mesure de taille ou longueur en unit\u00e9s m\u00e9triques",
   "seo": {
     "keywords": []
   },
-  "subUnit": {
+  "subUnits": {
     "mm": {
       "abbreviation": "mm",
-      "title": "Millimètre"
+      "title": "Millim\u00e8tre"
     },
     "cm": {
       "abbreviation": "cm",
-      "title": "Centimètre"
+      "title": "Centim\u00e8tre"
     },
     "m": {
       "abbreviation": "m",
-      "title": "Mètre"
+      "title": "M\u00e8tre"
     }
   }
 }

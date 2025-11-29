@@ -1,10 +1,10 @@
 {
-  "title": "Luminosité (lx)",
-  "description": "Mesure de l'intensité lumineuse en lux",
+  "title": "Luminosit\u00e9 (lx)",
+  "description": "Mesure de l'intensit\u00e9 lumineuse en lux",
   "seo": {
     "keywords": []
   },
-  "subUnit": {
+  "subUnits": {
     "lux": {
       "abbreviation": "lux",
       "title": "Lux"

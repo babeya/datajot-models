@@ -2,12 +2,29 @@
   "title": "Distance (Metric)",
   "description": "Metric distances from millimeters to kilometers.",
   "seo": {
-    "keywords": ["distance", "metric", "meters", "kilometers"]
+    "keywords": [
+      "distance",
+      "metric",
+      "meters",
+      "kilometers"
+    ]
   },
-  "subUnit": {
-    "mm": { "abbreviation": "mm", "title": "Millimeter" },
-    "cm": { "abbreviation": "cm", "title": "Centimeter" },
-    "m": { "abbreviation": "m", "title": "Meter" },
-    "km": { "abbreviation": "km", "title": "Kilometer" }
+  "subUnits": {
+    "mm": {
+      "abbreviation": "mm",
+      "title": "Millimeter"
+    },
+    "cm": {
+      "abbreviation": "cm",
+      "title": "Centimeter"
+    },
+    "m": {
+      "abbreviation": "m",
+      "title": "Meter"
+    },
+    "km": {
+      "abbreviation": "km",
+      "title": "Kilometer"
+    }
   }
 }

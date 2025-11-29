@@ -2,14 +2,37 @@
   "title": "Currency",
   "description": "Common world currencies normalized to USD.",
   "seo": {
-    "keywords": ["money", "finance", "currency", "expense"]
+    "keywords": [
+      "money",
+      "finance",
+      "currency",
+      "expense"
+    ]
   },
-  "subUnit": {
-    "usd": { "abbreviation": "USD", "title": "US Dollar" },
-    "eur": { "abbreviation": "EUR", "title": "Euro" },
-    "gbp": { "abbreviation": "GBP", "title": "British Pound" },
-    "cad": { "abbreviation": "CAD", "title": "Canadian Dollar" },
-    "aud": { "abbreviation": "AUD", "title": "Australian Dollar" },
-    "jpy": { "abbreviation": "JPY", "title": "Japanese Yen" }
+  "subUnits": {
+    "usd": {
+      "abbreviation": "USD",
+      "title": "US Dollar"
+    },
+    "eur": {
+      "abbreviation": "EUR",
+      "title": "Euro"
+    },
+    "gbp": {
+      "abbreviation": "GBP",
+      "title": "British Pound"
+    },
+    "cad": {
+      "abbreviation": "CAD",
+      "title": "Canadian Dollar"
+    },
+    "aud": {
+      "abbreviation": "AUD",
+      "title": "Australian Dollar"
+    },
+    "jpy": {
+      "abbreviation": "JPY",
+      "title": "Japanese Yen"
+    }
   }
 }

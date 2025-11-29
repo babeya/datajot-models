@@ -14,10 +14,8 @@ const FILE_INDEX = 'index.json'
 const ENCODING_UTF8 = 'utf-8'
 const FIELD_KEY = 'key'
 const FIELD_SUB_UNITS = 'subUnits'
-const FIELD_SUB_UNIT_TITLES = 'subUnitTitles'
 const FIELD_UNIT = 'unit'
 const FIELD_CATEGORY = 'category'
-const FIELD_SUB_UNIT = 'subUnit'
 
 mkdirSync(OUTPUT_DIR, { recursive: true })
 
@@ -51,17 +49,23 @@ const readModelFiles = (type, modelId, lang) => {
  * Transform subUnits by combining model data with translations
  */
 const transformSubUnits = (model, i18n) => {
-  if (!model[FIELD_SUB_UNITS] || !i18n[FIELD_SUB_UNIT]) {
+  const modelSubUnits = model[FIELD_SUB_UNITS]
+  if (!Array.isArray(modelSubUnits) || !modelSubUnits.length) {
     return null
   }
+
+  const i18nSubUnits = i18n[FIELD_SUB_UNITS]
+  if (!i18nSubUnits) {
+    throw new Error(`Missing subUnits translations for unit ${model[FIELD_KEY]}`)
+  }
   
-  return model[FIELD_SUB_UNITS].map(subUnit => {
-    const i18nData = i18n[FIELD_SUB_UNIT][subUnit[FIELD_KEY]] || { abbreviation: subUnit[FIELD_KEY], title: '' }
+  return modelSubUnits.map(subUnit => {
+    const i18nData = i18nSubUnits[subUnit[FIELD_KEY]] || {}
     return {
       key: subUnit[FIELD_KEY],
-      abbreviation: i18nData.abbreviation,
       factor: subUnit.factor,
-      title: i18nData.title
+      abbreviation: i18nData.abbreviation || subUnit.abbreviation || subUnit[FIELD_KEY],
+      title: i18nData.title || ''
     }
   })
 }
@@ -73,7 +77,6 @@ const applyUnitTransformation = (item, model, i18n) => {
   const subUnitsArray = transformSubUnits(model, i18n)
   if (subUnitsArray) {
     item[FIELD_SUB_UNITS] = subUnitsArray
-    delete item[FIELD_SUB_UNIT]
   }
   return item
 }

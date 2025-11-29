@@ -1,10 +1,10 @@
 {
   "title": "Volume (L)",
-  "description": "Mesure des volumes en unités métriques",
+  "description": "Mesure des volumes en unit\u00e9s m\u00e9triques",
   "seo": {
     "keywords": []
   },
-  "subUnit": {
+  "subUnits": {
     "ml": {
       "abbreviation": "ml",
       "title": "Millilitre"
