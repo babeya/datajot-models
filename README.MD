@@ -31,3 +31,18 @@ All scripts run with plain Node (no dependencies). Use `npm run <script>` from t
 4. Optionally run `npm run validate:output` to confirm the produced bundles are structurally sound before publishing.
 
 Following this loop keeps the published data at models.datajot.app synchronized with the curated model sources in this repository.
+
+## npm package
+
+Install the published package to access the generated bundles, locale helpers, search utilities, and conversion helpers directly from your app.
+
+```bash
+npm install datajot-models
+```
+
+- `import { getBundle } from 'datajot-models/data'` provides direct access to the localized `series`/`units` bundles that power the hosted JSON files.
+- `import { searchUnits } from 'datajot-models/search'` returns locale-aware search results across titles, descriptions, and SEO keywords.
+- `import { convertUnitValue } from 'datajot-models/convert'` converts values between sub-units using the curated conversion factors.
+- `import type { UnitOutputModel } from 'datajot-models/types'` exposes the same TypeScript contracts used inside the repo.
+
+Each entry point is tree-shakeable, works in both Node.js and modern browsers, and relies on the statically bundled JSON output under `build/`.
