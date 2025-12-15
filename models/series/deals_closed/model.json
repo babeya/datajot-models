@@ -2,7 +2,7 @@
   "key": "deals_closed",
   "type": "series",
   "category": "business",
-  "icon": "handshake.fill",
+  "icon": "hands.clap.fill",
   "color": "#EA580C",
   "graphType": "points",
   "unit": "count"
