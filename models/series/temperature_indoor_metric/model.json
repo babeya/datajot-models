@@ -5,5 +5,6 @@
   "icon": "thermometer.sun.fill",
   "unit": "temperature_metric",
   "color": "#F97316",
-  "graphType": "line"
+  "graphType": "line",
+  "visualizationConfig": "inside_temp_deg_c"
 }

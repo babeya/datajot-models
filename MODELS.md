@@ -141,6 +141,7 @@ type SeriesInputModel = {
   color: string; // Hex color code
   graphType: "line" | "bar" | "area" | "points";
   unit?: string; // Reference to a unit key
+  visualizationConfig?: string; // Reference to a visualization config key
 }
 
 // {lang}.json
@@ -169,8 +170,31 @@ type SeriesOutputModel = {
   unit?: UnitOutputModel; // Full unit model
   name: string;
   description: string;
+  visualizationConfig?: VisualizationConfig;
   seo: {
     keywords: string[];
   };
 }
+```
+
+## VisualizationConfig
+
+### Structure
+
+```typescript
+
+type ThresholdOperator = "<" | "<=" | ">" | ">=";
+
+type ThresholdConfig = {
+  order: number;
+  operator: ThresholdOperator;
+  value: number;
+  color: string;
+}
+
+type VisualizationConfig = {
+  thresholds: ThresholdConfig[];
+
+}
+
 ```

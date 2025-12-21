@@ -1,0 +1,11 @@
+{ 
+  "key": "inside_temp_deg_c",
+  "type": "visualizationConfig",
+  "thresholds":[
+    { "order": 1, "operator": "<", "value": 16, "color": "#BFD7ED" },
+    { "order": 2, "operator": "<", "value": 19, "color": "#CFE8F3" },
+    { "order": 3, "operator": "<", "value": 21, "color": "#DFF2D8" },
+    { "order": 4, "operator": "<", "value": 24, "color": "#FFF1C1" },
+    { "order": 5, "operator": ">=", "value": 24, "color": "#FFD6D6" }
+  ]
+}
