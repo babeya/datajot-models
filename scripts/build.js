@@ -295,7 +295,7 @@ const generateIndex = () => {
   const index = {
     series: readModels(TYPE_SERIES).map(key => ({ key })),
     units: readModels(TYPE_UNITS).map(key => ({ key })),
-    visualization: readModels(TYPE_VISUALIZATION_CONFIGS).map(key => ({ key }))
+    visualizations: readModels(TYPE_VISUALIZATION_CONFIGS).map(key => ({ key }))
   }
   writeBundleFile(FILE_INDEX, index)
   console.log('✅ Index generated')
