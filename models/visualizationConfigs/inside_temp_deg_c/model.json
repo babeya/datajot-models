@@ -1,16 +1,44 @@
-{ 
+{
   "key": "inside_temp_deg_c",
   "label": "Indoor Temperature (°C)",
   "type": "visualizationConfig",
   "unit": "temperature_metric",
-  "thresholds":[
-    { "order": 1, "operator": "<", "value": 16, "color": "#BFD7ED" },
-    { "order": 2, "operator": "<", "value": 19, "color": "#CFE8F3" },
-    { "order": 3, "operator": "<", "value": 21, "color": "#DFF2D8" },
-    { "order": 4, "operator": "<", "value": 24, "color": "#FFF1C1" },
-    { "order": 5, "operator": ">=", "value": 24, "color": "#FFD6D6" }
-  ],
-  "yAxisBounds": [
-    { "min": 10, "max": 30 }
-  ]
-}
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+          "value": 16,
+          "colorHex": "#BFD7ED"
+        },
+        {
+          "order": 2,
+          "operatorType": "<",
+          "value": 19,
+          "colorHex": "#CFE8F3"
+        },
+        {
+          "order": 3,
+          "operatorType": "<",
+          "value": 21,
+          "colorHex": "#DFF2D8"
+        },
+        {
+          "order": 4,
+          "operatorType": "<",
+          "value": 24,
+          "colorHex": "#FFF1C1"
+        },
+        {
+          "order": 5,
+          "operatorType": ">=",
+          "value": 24,
+          "colorHex": "#FFD6D6"
+        }
+      ],
+      "yAxisBounds": [
+        {
+          "lowerBound": 10,
+          "upperBound": 30
+        }
+      ]
+    }
