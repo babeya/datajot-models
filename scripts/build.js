@@ -5,7 +5,7 @@ import { join } from 'path'
 const BASE_DIR = './models'
 const OUTPUT_DIR = './build'
 const LANGUAGES = ['fr', 'en']
-const MODEL_TYPES = ['series', 'units', 'visualization']
+const MODEL_TYPES = ['series', 'units', 'visualizations']
 const TYPE_CATEGORIES = 'categories'
 const TYPE_UNITS = 'units'
 const TYPE_SERIES = 'series'
@@ -268,7 +268,7 @@ const generateLanguageBundles = (lang) => {
   for (const type of MODEL_TYPES) {
     let bundle
     
-    if (type === 'visualization') {
+    if (type === 'visualizations') {
       bundle = generateVisualizationBundle(lang, categoriesMap)
     } else {
       bundle = type === TYPE_SERIES 
