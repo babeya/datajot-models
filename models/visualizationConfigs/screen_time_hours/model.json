@@ -1,0 +1,44 @@
+{
+  "key": "screen_time_hours",
+  "label": "Temps d'écran (heures)",
+  "type": "visualizationConfig",
+  "unit": "duration",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 2,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 4,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 6,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 8,
+      "colorHex": "#B91C1C"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 8,
+      "colorHex": "#7C2D12"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 0,
+      "upperBound": 12
+    }
+  ]
+}

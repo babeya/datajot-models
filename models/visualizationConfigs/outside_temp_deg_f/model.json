@@ -1,0 +1,44 @@
+{
+  "key": "outside_temp_deg_f",
+  "label": "Température extérieure (°F)",
+  "type": "visualizationConfig",
+  "unit": "temperature_imperial",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 32,
+      "colorHex": "#1E3A8A"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 50,
+      "colorHex": "#2563EB"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 68,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 86,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 86,
+      "colorHex": "#B91C1C"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": -4,
+      "upperBound": 113
+    }
+  ]
+}

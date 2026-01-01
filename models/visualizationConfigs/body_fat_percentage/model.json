@@ -1,0 +1,44 @@
+{
+  "key": "body_fat_percentage",
+  "label": "Pourcentage de graisse corporelle (%)",
+  "type": "visualizationConfig",
+  "unit": "percentage",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 10,
+      "colorHex": "#1E3A8A"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 15,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 20,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 30,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 30,
+      "colorHex": "#B91C1C"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 0,
+      "upperBound": 40
+    }
+  ]
+}

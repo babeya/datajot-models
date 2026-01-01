@@ -1,0 +1,44 @@
+{
+  "key": "motion_detection_count",
+  "label": "Détections de mouvement",
+  "type": "visualizationConfig",
+  "unit": "count",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 5,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 15,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 30,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 50,
+      "colorHex": "#B91C1C"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 50,
+      "colorHex": "#7C2D12"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 0,
+      "upperBound": 100
+    }
+  ]
+}

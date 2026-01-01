@@ -1,0 +1,44 @@
+{
+  "key": "light_level_lux",
+  "label": "Niveau de luminosité (lux)",
+  "type": "visualizationConfig",
+  "unit": "luminosity_metric",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 10,
+      "colorHex": "#1E1B4B"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 100,
+      "colorHex": "#3730A3"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 500,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 1000,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 1000,
+      "colorHex": "#FEF3C7"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 0,
+      "upperBound": 2000
+    }
+  ]
+}

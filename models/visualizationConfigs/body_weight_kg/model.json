@@ -1,0 +1,44 @@
+{
+  "key": "body_weight_kg",
+  "label": "Poids corporel (kg)",
+  "type": "visualizationConfig",
+  "unit": "weight_metric",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 50,
+      "colorHex": "#2563EB"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 70,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 90,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 120,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 120,
+      "colorHex": "#B91C1C"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 40,
+      "upperBound": 150
+    }
+  ]
+}

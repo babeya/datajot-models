@@ -1,0 +1,44 @@
+{
+  "key": "exercise_duration_minutes",
+  "label": "Durée d'exercice (minutes)",
+  "type": "visualizationConfig",
+  "unit": "duration",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 15,
+      "colorHex": "#B91C1C"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 30,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 45,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 60,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 60,
+      "colorHex": "#2563EB"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 0,
+      "upperBound": 120
+    }
+  ]
+}

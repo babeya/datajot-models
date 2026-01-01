@@ -1,0 +1,44 @@
+{
+  "key": "battery_level_percentage",
+  "label": "Niveau de batterie (%)",
+  "type": "visualizationConfig",
+  "unit": "percentage",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 10,
+      "colorHex": "#B91C1C"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 25,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 50,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 75,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 75,
+      "colorHex": "#2563EB"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 0,
+      "upperBound": 100
+    }
+  ]
+}

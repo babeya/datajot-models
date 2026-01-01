@@ -1,0 +1,44 @@
+{
+  "key": "walking_distance_km",
+  "label": "Distance de marche (km)",
+  "type": "visualizationConfig",
+  "unit": "distance_metric",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 2,
+      "colorHex": "#B91C1C"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 5,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 8,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 12,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 12,
+      "colorHex": "#2563EB"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 0,
+      "upperBound": 20
+    }
+  ]
+}

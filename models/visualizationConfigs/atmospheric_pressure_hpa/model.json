@@ -1,0 +1,44 @@
+{
+  "key": "atmospheric_pressure_hpa",
+  "label": "Pression atmosphérique (hPa)",
+  "type": "visualizationConfig",
+  "unit": "pressure",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 1000,
+      "colorHex": "#B91C1C"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 1013,
+      "colorHex": "#EA580C"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 1020,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 1030,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 1030,
+      "colorHex": "#2563EB"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 980,
+      "upperBound": 1050
+    }
+  ]
+}

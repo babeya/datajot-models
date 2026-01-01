@@ -1,0 +1,44 @@
+{
+  "key": "inside_temp_deg_f",
+  "label": "Température intérieure (°F)",
+  "type": "visualizationConfig",
+  "unit": "temperature_imperial",
+  "thresholds": [
+    {
+      "order": 1,
+      "operatorType": "<",
+      "value": 61,
+      "colorHex": "#1E3A8A"
+    },
+    {
+      "order": 2,
+      "operatorType": "<",
+      "value": 66,
+      "colorHex": "#2563EB"
+    },
+    {
+      "order": 3,
+      "operatorType": "<",
+      "value": 70,
+      "colorHex": "#15803D"
+    },
+    {
+      "order": 4,
+      "operatorType": "<",
+      "value": 75,
+      "colorHex": "#CA8A04"
+    },
+    {
+      "order": 5,
+      "operatorType": ">=",
+      "value": 75,
+      "colorHex": "#B91C1C"
+    }
+  ],
+  "yAxisBounds": [
+    {
+      "lowerBound": 50,
+      "upperBound": 86
+    }
+  ]
+}
