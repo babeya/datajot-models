@@ -1,6 +1,5 @@
 {
   "key": "motion_detection_count",
-  "label": "Détections de mouvement",
   "type": "visualizationConfig",
   "unit": "count",
   "thresholds": [

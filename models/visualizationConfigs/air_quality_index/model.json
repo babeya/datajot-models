@@ -1,6 +1,5 @@
 {
   "key": "air_quality_index",
-  "label": "Indice de qualité de l'air",
   "type": "visualizationConfig",
   "unit": "count",
   "thresholds": [

@@ -1,6 +1,5 @@
 {
   "key": "inside_temp_deg_c",
-  "label": "Indoor Temperature (°C)",
   "type": "visualizationConfig",
   "unit": "temperature_metric",
   "thresholds": [

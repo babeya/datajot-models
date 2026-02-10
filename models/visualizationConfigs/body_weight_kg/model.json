@@ -1,6 +1,5 @@
 {
   "key": "body_weight_kg",
-  "label": "Poids corporel (kg)",
   "type": "visualizationConfig",
   "unit": "weight_metric",
   "thresholds": [

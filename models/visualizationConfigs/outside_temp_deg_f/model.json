@@ -1,6 +1,5 @@
 {
   "key": "outside_temp_deg_f",
-  "label": "Température extérieure (°F)",
   "type": "visualizationConfig",
   "unit": "temperature_imperial",
   "thresholds": [

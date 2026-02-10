@@ -1,6 +1,5 @@
 {
   "key": "battery_level_percentage",
-  "label": "Niveau de batterie (%)",
   "type": "visualizationConfig",
   "unit": "percentage",
   "thresholds": [

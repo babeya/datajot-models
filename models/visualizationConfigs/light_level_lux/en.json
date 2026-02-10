@@ -1,0 +1,12 @@
+{
+  "name": "Light Level (lux)",
+  "description": "Track light levels for better ambiance and energy management",
+  "seo": {
+    "keywords": [
+      "light",
+      "luminosity",
+      "ambiance",
+      "indoor"
+    ]
+  }
+}

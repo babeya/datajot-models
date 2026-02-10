@@ -1,0 +1,12 @@
+{
+  "name": "Outdoor Temperature (°F)",
+  "description": "Track outdoor temperature in Fahrenheit for weather awareness",
+  "seo": {
+    "keywords": [
+      "temperature",
+      "outdoor",
+      "fahrenheit",
+      "weather"
+    ]
+  }
+}

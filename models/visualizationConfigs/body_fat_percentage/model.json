@@ -1,6 +1,5 @@
 {
   "key": "body_fat_percentage",
-  "label": "Pourcentage de graisse corporelle (%)",
   "type": "visualizationConfig",
   "unit": "percentage",
   "thresholds": [

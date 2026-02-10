@@ -1,6 +1,5 @@
 {
   "key": "co2_concentration_ppm",
-  "label": "Concentration CO2 (ppm)",
   "type": "visualizationConfig",
   "unit": "count",
   "thresholds": [

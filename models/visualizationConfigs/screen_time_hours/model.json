@@ -1,6 +1,5 @@
 {
   "key": "screen_time_hours",
-  "label": "Temps d'écran (heures)",
   "type": "visualizationConfig",
   "unit": "duration",
   "thresholds": [

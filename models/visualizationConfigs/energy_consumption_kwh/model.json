@@ -1,6 +1,5 @@
 {
   "key": "energy_consumption_kwh",
-  "label": "Consommation d'énergie (kWh)",
   "type": "visualizationConfig",
   "unit": "energy",
   "thresholds": [

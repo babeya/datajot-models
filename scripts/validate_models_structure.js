@@ -111,10 +111,58 @@ const validateSeries = (dir) => {
   })
 }
 
+const validateVisualizationConfig = (dir) => {
+  const modelPath = join(dir.path, 'model.json')
+  const model = readJsonFile(modelPath)
+
+  requireString(reporter, `${modelPath}.key`, model.key, 'VisualizationConfig model requires string key')
+  reporter.ensure(model.type === 'visualizationConfig', `${modelPath}: VisualizationConfig model.type must equal "visualizationConfig"`)
+  
+  // Vérifier que le champ label n'existe pas (doit être dans les traductions)
+  if (model.label !== undefined) {
+    reporter.fail(`${modelPath}: VisualizationConfig model should not have label field (use translations instead)`)
+  }
+
+  // Vérifier l'unité si elle existe
+  if (model.unit) {
+    requireString(reporter, `${modelPath}.unit`, model.unit, 'VisualizationConfig model unit reference must be a string when provided')
+  }
+
+  // Valider les thresholds si ils existent
+  if (model.thresholds && requireNonEmptyArray(reporter, `${modelPath}.thresholds`, model.thresholds, 'VisualizationConfig model thresholds must be array when provided')) {
+    model.thresholds.forEach((threshold, idx) => {
+      const context = `${modelPath}.thresholds[${idx}]`
+      requireNumber(reporter, `${context}.order`, threshold?.order, 'threshold requires order number')
+      requireString(reporter, `${context}.operatorType`, threshold?.operatorType, 'threshold requires operatorType string')
+      requireNumber(reporter, `${context}.value`, threshold?.value, 'threshold requires value number')
+      requireString(reporter, `${context}.colorHex`, threshold?.colorHex, 'threshold requires colorHex string')
+    })
+  }
+
+  // Valider les yAxisBounds si ils existent
+  if (model.yAxisBounds && requireNonEmptyArray(reporter, `${modelPath}.yAxisBounds`, model.yAxisBounds, 'VisualizationConfig model yAxisBounds must be array when provided')) {
+    model.yAxisBounds.forEach((bound, idx) => {
+      const context = `${modelPath}.yAxisBounds[${idx}]`
+      requireNumber(reporter, `${context}.lowerBound`, bound?.lowerBound, 'yAxisBound requires lowerBound number')
+      requireNumber(reporter, `${context}.upperBound`, bound?.upperBound, 'yAxisBound requires upperBound number')
+    })
+  }
+
+  // Valider les traductions
+  LANGUAGES.forEach((lang) => {
+    const langPath = join(dir.path, `${lang}.json`)
+    const translation = readJsonFile(langPath)
+    requireString(reporter, `${langPath}.name`, translation.name, 'VisualizationConfig translation requires name string')
+    requireString(reporter, `${langPath}.description`, translation.description, 'VisualizationConfig translation requires description string')
+    validateSeoKeywords(reporter, `${langPath}.seo`, translation.seo)
+  })
+}
+
 const validators = {
   categories: validateCategory,
   units: validateUnit,
-  series: validateSeries
+  series: validateSeries,
+  visualizationConfigs: validateVisualizationConfig
 }
 
 const main = () => {

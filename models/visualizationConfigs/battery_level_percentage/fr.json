@@ -1,0 +1,12 @@
+{
+  "name": "Niveau de batterie (%)",
+  "description": "Surveillez le pourcentage de batterie pour la gestion des appareils",
+  "seo": {
+    "keywords": [
+      "batterie",
+      "énergie",
+      "appareil",
+      "surveillance"
+    ]
+  }
+}

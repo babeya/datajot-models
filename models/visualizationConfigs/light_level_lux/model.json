@@ -1,6 +1,5 @@
 {
   "key": "light_level_lux",
-  "label": "Niveau de luminosité (lux)",
   "type": "visualizationConfig",
   "unit": "luminosity_metric",
   "thresholds": [

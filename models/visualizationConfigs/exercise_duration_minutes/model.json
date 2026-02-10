@@ -1,6 +1,5 @@
 {
   "key": "exercise_duration_minutes",
-  "label": "Durée d'exercice (minutes)",
   "type": "visualizationConfig",
   "unit": "duration",
   "thresholds": [

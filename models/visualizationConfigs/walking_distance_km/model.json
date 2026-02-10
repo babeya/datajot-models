@@ -1,6 +1,5 @@
 {
   "key": "walking_distance_km",
-  "label": "Distance de marche (km)",
   "type": "visualizationConfig",
   "unit": "distance_metric",
   "thresholds": [

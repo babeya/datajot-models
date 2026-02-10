@@ -1,6 +1,5 @@
 {
   "key": "inside_temp_deg_f",
-  "label": "Température intérieure (°F)",
   "type": "visualizationConfig",
   "unit": "temperature_imperial",
   "thresholds": [

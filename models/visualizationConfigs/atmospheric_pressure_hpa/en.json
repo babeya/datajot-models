@@ -1,0 +1,12 @@
+{
+  "name": "Atmospheric Pressure (hPa)",
+  "description": "Track atmospheric pressure changes for weather monitoring",
+  "seo": {
+    "keywords": [
+      "atmospheric pressure",
+      "weather",
+      "barometric",
+      "monitoring"
+    ]
+  }
+}

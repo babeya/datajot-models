@@ -1,6 +1,5 @@
 {
   "key": "atmospheric_pressure_hpa",
-  "label": "Pression atmosphérique (hPa)",
   "type": "visualizationConfig",
   "unit": "pressure",
   "thresholds": [

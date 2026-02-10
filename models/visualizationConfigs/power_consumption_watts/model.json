@@ -1,6 +1,5 @@
 {
   "key": "power_consumption_watts",
-  "label": "Consommation électrique (W)",
   "type": "visualizationConfig",
   "unit": "energy",
   "thresholds": [

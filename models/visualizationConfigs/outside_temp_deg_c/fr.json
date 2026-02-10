@@ -1,0 +1,12 @@
+{
+  "name": "Température extérieure (°C)",
+  "description": "Suivez la température extérieure en Celsius pour la surveillance météo",
+  "seo": {
+    "keywords": [
+      "température",
+      "extérieur",
+      "celsius",
+      "météo"
+    ]
+  }
+}

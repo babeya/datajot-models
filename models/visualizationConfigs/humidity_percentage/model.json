@@ -1,6 +1,5 @@
 {
   "key": "humidity_percentage",
-  "label": "Humidité (%)",
   "type": "visualizationConfig",
   "unit": "percentage",
   "thresholds": [

@@ -1,6 +1,5 @@
 {
   "key": "sleep_hours",
-  "label": "Heures de sommeil",
   "type": "visualizationConfig",
   "unit": "duration",
   "thresholds": [

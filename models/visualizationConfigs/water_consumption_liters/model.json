@@ -1,6 +1,5 @@
 {
   "key": "water_consumption_liters",
-  "label": "Consommation d'eau (litres)",
   "type": "visualizationConfig",
   "unit": "volume_metric",
   "thresholds": [
