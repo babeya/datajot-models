@@ -1,5 +1,5 @@
 {
-  "name": "Battery Level (%)",
+  "label": "Battery Level (%)",
   "description": "Monitor battery level percentage for device management",
   "seo": {
     "keywords": [

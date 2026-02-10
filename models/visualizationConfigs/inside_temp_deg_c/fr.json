@@ -1,5 +1,5 @@
 {
-  "name": "Température intérieure (°C)",
+  "label": "Température intérieure (°C)",
   "description": "Surveillez la température intérieure en Celsius pour un confort optimal",
   "seo": {
     "keywords": [

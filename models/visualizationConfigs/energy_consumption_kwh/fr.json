@@ -1,5 +1,5 @@
 {
-  "name": "Consommation d'énergie (kWh)",
+  "label": "Consommation d'énergie (kWh)",
   "description": "Surveillez la consommation d'énergie pour optimiser l'usage et réduire les coûts",
   "seo": {
     "keywords": [

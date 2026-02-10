@@ -1,5 +1,5 @@
 {
-  "name": "Power Consumption (W)",
+  "label": "Power Consumption (W)",
   "description": "Monitor power consumption in real-time for energy optimization",
   "seo": {
     "keywords": [

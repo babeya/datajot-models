@@ -1,5 +1,5 @@
 {
-  "name": "Température extérieure (°F)",
+  "label": "Température extérieure (°F)",
   "description": "Suivez la température extérieure en Fahrenheit pour la surveillance météo",
   "seo": {
     "keywords": [

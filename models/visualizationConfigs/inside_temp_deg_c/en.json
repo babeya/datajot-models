@@ -1,5 +1,5 @@
 {
-  "name": "Indoor Temperature (°C)",
+  "label": "Indoor Temperature (°C)",
   "description": "Monitor indoor temperature in Celsius for optimal comfort",
   "seo": {
     "keywords": [

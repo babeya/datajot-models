@@ -1,5 +1,5 @@
 {
-  "name": "Light Level (lux)",
+  "label": "Light Level (lux)",
   "description": "Track light levels for better ambiance and energy management",
   "seo": {
     "keywords": [

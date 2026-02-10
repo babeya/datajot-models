@@ -152,7 +152,7 @@ const validateVisualizationConfig = (dir) => {
   LANGUAGES.forEach((lang) => {
     const langPath = join(dir.path, `${lang}.json`)
     const translation = readJsonFile(langPath)
-    requireString(reporter, `${langPath}.name`, translation.name, 'VisualizationConfig translation requires name string')
+    requireString(reporter, `${langPath}.label`, translation.label, 'VisualizationConfig translation requires label string')
     requireString(reporter, `${langPath}.description`, translation.description, 'VisualizationConfig translation requires description string')
     validateSeoKeywords(reporter, `${langPath}.seo`, translation.seo)
   })

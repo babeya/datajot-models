@@ -1,5 +1,5 @@
 {
-  "name": "CO2 Concentration (ppm)",
+  "label": "CO2 Concentration (ppm)",
   "description": "Track CO2 concentration for better indoor air quality",
   "seo": {
     "keywords": [

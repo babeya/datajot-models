@@ -1,5 +1,5 @@
 {
-  "name": "Consommation électrique (W)",
+  "label": "Consommation électrique (W)",
   "description": "Surveillez la consommation électrique en temps réel pour l'optimisation énergétique",
   "seo": {
     "keywords": [

@@ -1,5 +1,5 @@
 {
-  "name": "Pression atmosphérique (hPa)",
+  "label": "Pression atmosphérique (hPa)",
   "description": "Suivez les changements de pression atmosphérique pour la surveillance météo",
   "seo": {
     "keywords": [

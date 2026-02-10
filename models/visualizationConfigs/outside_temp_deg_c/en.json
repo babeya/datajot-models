@@ -1,5 +1,5 @@
 {
-  "name": "Outdoor Temperature (°C)",
+  "label": "Outdoor Temperature (°C)",
   "description": "Track outdoor temperature in Celsius for weather awareness",
   "seo": {
     "keywords": [

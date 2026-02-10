@@ -1,5 +1,5 @@
 {
-  "name": "Température extérieure (°C)",
+  "label": "Température extérieure (°C)",
   "description": "Suivez la température extérieure en Celsius pour la surveillance météo",
   "seo": {
     "keywords": [

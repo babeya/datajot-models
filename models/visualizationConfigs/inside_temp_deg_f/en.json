@@ -1,5 +1,5 @@
 {
-  "name": "Indoor Temperature (°F)",
+  "label": "Indoor Temperature (°F)",
   "description": "Monitor indoor temperature in Fahrenheit for optimal comfort",
   "seo": {
     "keywords": [

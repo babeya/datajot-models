@@ -1,5 +1,5 @@
 {
-  "name": "Atmospheric Pressure (hPa)",
+  "label": "Atmospheric Pressure (hPa)",
   "description": "Track atmospheric pressure changes for weather monitoring",
   "seo": {
     "keywords": [

@@ -1,5 +1,5 @@
 {
-  "name": "Température intérieure (°F)",
+  "label": "Température intérieure (°F)",
   "description": "Surveillez la température intérieure en Fahrenheit pour un confort optimal",
   "seo": {
     "keywords": [

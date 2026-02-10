@@ -1,5 +1,5 @@
 {
-  "name": "Humidity (%)",
+  "label": "Humidity (%)",
   "description": "Monitor humidity levels for optimal indoor comfort",
   "seo": {
     "keywords": [
