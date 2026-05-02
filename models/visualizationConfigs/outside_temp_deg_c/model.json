@@ -7,31 +7,31 @@
       "order": 1,
       "operatorType": "<",
       "value": 0,
-      "colorHex": "#1E3A8A"
+      "colorHex": "#1D4ED8"
     },
     {
       "order": 2,
       "operatorType": "<",
       "value": 10,
-      "colorHex": "#2563EB"
+      "colorHex": "#3B82F6"
     },
     {
       "order": 3,
       "operatorType": "<",
       "value": 20,
-      "colorHex": "#15803D"
+      "colorHex": "#22C55E"
     },
     {
       "order": 4,
       "operatorType": "<",
       "value": 30,
-      "colorHex": "#CA8A04"
+      "colorHex": "#EAB308"
     },
     {
       "order": 5,
       "operatorType": ">=",
       "value": 30,
-      "colorHex": "#B91C1C"
+      "colorHex": "#EF4444"
     }
   ],
   "yAxisBounds": [
