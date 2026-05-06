@@ -174,7 +174,7 @@ const validateVisualizationConfig = (dir) => {
       requireNumber(reporter, `${context}.order`, threshold?.order, 'threshold requires order number')
       requireEnum(reporter, `${context}.operatorType`, threshold?.operatorType, THRESHOLD_OPERATORS, 'threshold operatorType must be one of')
       requireNumber(reporter, `${context}.value`, threshold?.value, 'threshold requires value number')
-      requireString(reporter, `${context}.color`, threshold?.color, 'threshold requires color string')
+      requireString(reporter, `${context}.colorHex`, threshold?.colorHex, 'threshold requires colorHex string')
     })
   }
 

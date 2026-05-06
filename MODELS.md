@@ -189,7 +189,7 @@ type ThresholdConfig = {
   order: number;
   operatorType: ThresholdOperator;
   value: number;
-  color: string;
+  colorHex: string;
 }
 
 type SVC = {

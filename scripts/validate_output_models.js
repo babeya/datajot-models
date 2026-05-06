@@ -96,7 +96,7 @@ const validateThresholdOutput = (context, threshold) => {
   requireNumber(reporter, `${context}.order`, threshold.order, 'threshold.order must be a valid number')
   requireEnum(reporter, `${context}.operatorType`, threshold.operatorType, THRESHOLD_OPERATORS, 'threshold.operatorType must be one of')
   requireNumber(reporter, `${context}.value`, threshold.value, 'threshold.value must be a valid number')
-  requireString(reporter, `${context}.color`, threshold.color, 'threshold.color must be provided')
+  requireString(reporter, `${context}.colorHex`, threshold.colorHex, 'threshold.colorHex must be provided')
 }
 
 const validateSvcOutput = (context, svc) => {

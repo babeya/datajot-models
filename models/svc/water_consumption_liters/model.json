@@ -7,31 +7,31 @@
       "order": 1,
       "value": 1,
       "operatorType": "<",
-      "color": "#EF4444"
+      "colorHex": "#EF4444"
     },
     {
       "order": 2,
       "value": 1.5,
       "operatorType": "<",
-      "color": "#F97316"
+      "colorHex": "#F97316"
     },
     {
       "order": 3,
       "value": 2,
       "operatorType": "<",
-      "color": "#EAB308"
+      "colorHex": "#EAB308"
     },
     {
       "order": 4,
       "value": 3,
       "operatorType": "<",
-      "color": "#22C55E"
+      "colorHex": "#22C55E"
     },
     {
       "order": 5,
       "value": 3,
       "operatorType": ">=",
-      "color": "#3B82F6"
+      "colorHex": "#3B82F6"
     }
   ],
   "showAverage": false,
