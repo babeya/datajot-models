@@ -6,31 +6,31 @@
     {
       "order": 1,
       "value": 10,
-      "operator": "<",
+      "operatorType": "<",
       "color": "#312E81"
     },
     {
       "order": 2,
       "value": 100,
-      "operator": "<",
+      "operatorType": "<",
       "color": "#4F46E5"
     },
     {
       "order": 3,
       "value": 500,
-      "operator": "<",
+      "operatorType": "<",
       "color": "#EAB308"
     },
     {
       "order": 4,
       "value": 1000,
-      "operator": "<",
+      "operatorType": "<",
       "color": "#F97316"
     },
     {
       "order": 5,
       "value": 1000,
-      "operator": ">=",
+      "operatorType": ">=",
       "color": "#FDE047"
     }
   ],

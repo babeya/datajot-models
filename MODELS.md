@@ -187,7 +187,7 @@ type ThresholdOperator = "<" | "<=" | ">" | ">=";
 
 type ThresholdConfig = {
   order: number;
-  operator: ThresholdOperator;
+  operatorType: ThresholdOperator;
   value: number;
   color: string;
 }

@@ -172,7 +172,7 @@ const validateVisualizationConfig = (dir) => {
     model.thresholds.forEach((threshold, idx) => {
       const context = `${modelPath}.thresholds[${idx}]`
       requireNumber(reporter, `${context}.order`, threshold?.order, 'threshold requires order number')
-      requireEnum(reporter, `${context}.operator`, threshold?.operator, THRESHOLD_OPERATORS, 'threshold operator must be one of')
+      requireEnum(reporter, `${context}.operatorType`, threshold?.operatorType, THRESHOLD_OPERATORS, 'threshold operatorType must be one of')
       requireNumber(reporter, `${context}.value`, threshold?.value, 'threshold requires value number')
       requireString(reporter, `${context}.color`, threshold?.color, 'threshold requires color string')
     })
