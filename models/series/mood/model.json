@@ -1,8 +1,0 @@
-{
-  "key": "mood",
-  "type": "series",
-  "category": "wellness",
-  "icon": "face.smiling.fill",
-  "color": "#FBBF24",
-  "graphType": "bar"
-}

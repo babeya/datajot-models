@@ -4,6 +4,7 @@
   "category": "environment",
   "icon": "aqi.medium",
   "unit": "count",
+  "svc": "air_quality_index",
   "color": "#2563EB",
   "graphType": "bar"
 }

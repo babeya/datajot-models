@@ -1,9 +1,0 @@
-{
-  "key": "website_visits",
-  "type": "series",
-  "category": "digital",
-  "icon": "cursorarrow.rays",
-  "unit": "count",
-  "color": "#F472B6",
-  "graphType": "bar"
-}

@@ -1,0 +1,12 @@
+{
+  "description": "Track rainfall accumulation from forecast data or a rain gauge.",
+  "seo": {
+    "keywords": [
+      "rain",
+      "rainfall",
+      "precipitation",
+      "weather"
+    ]
+  },
+  "name": "Rainfall"
+}

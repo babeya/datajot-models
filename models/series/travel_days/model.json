@@ -1,9 +1,0 @@
-{
-  "key": "travel_days",
-  "type": "series",
-  "category": "travel",
-  "icon": "suitcase.fill",
-  "unit": "count",
-  "color": "#F97316",
-  "graphType": "bar"
-}

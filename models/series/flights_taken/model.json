@@ -1,9 +1,0 @@
-{
-  "key": "flights_taken",
-  "type": "series",
-  "category": "travel",
-  "icon": "airplane",
-  "unit": "count",
-  "color": "#0EA5E9",
-  "graphType": "bar"
-}

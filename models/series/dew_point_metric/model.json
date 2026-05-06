@@ -1,0 +1,9 @@
+{
+  "key": "dew_point_metric",
+  "type": "series",
+  "category": "environment",
+  "icon": "thermometer.and.liquid.waves",
+  "unit": "temperature_metric",
+  "color": "#14B8A6",
+  "graphType": "line"
+}

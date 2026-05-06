@@ -1,9 +1,0 @@
-{
-  "key": "oxygen_saturation",
-  "type": "series",
-  "category": "health",
-  "icon": "lungs.fill",
-  "unit": "percentage",
-  "color": "#0EA5E9",
-  "graphType": "bar"
-}

@@ -1,0 +1,9 @@
+{
+  "key": "uv_index",
+  "type": "series",
+  "category": "environment",
+  "icon": "sun.max.trianglebadge.exclamationmark.fill",
+  "unit": "count",
+  "color": "#F59E0B",
+  "graphType": "line"
+}

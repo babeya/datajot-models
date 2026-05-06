@@ -1,0 +1,9 @@
+{
+  "key": "visibility",
+  "type": "series",
+  "category": "environment",
+  "icon": "eye.fill",
+  "unit": "distance_metric",
+  "color": "#6366F1",
+  "graphType": "line"
+}

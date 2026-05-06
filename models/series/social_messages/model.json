@@ -1,9 +1,0 @@
-{
-  "key": "social_messages",
-  "type": "series",
-  "category": "social",
-  "icon": "bubble.left.and.bubble.right.fill",
-  "unit": "count",
-  "color": "#38BDF8",
-  "graphType": "bar"
-}

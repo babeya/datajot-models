@@ -1,9 +1,0 @@
-{
-  "key": "savings_rate",
-  "type": "series",
-  "category": "finance",
-  "icon": "shield.checkered",
-  "unit": "percentage",
-  "color": "#0D9488",
-  "graphType": "bar"
-}

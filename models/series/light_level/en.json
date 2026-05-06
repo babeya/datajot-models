@@ -1,0 +1,12 @@
+{
+  "description": "Track light level from a sensor or weather data.",
+  "seo": {
+    "keywords": [
+      "light",
+      "lux",
+      "sensor",
+      "environment"
+    ]
+  },
+  "name": "Light Level"
+}

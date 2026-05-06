@@ -1,0 +1,12 @@
+{
+  "description": "Suivez la vitesse du vent depuis des données météo locales ou une station extérieure.",
+  "seo": {
+    "keywords": [
+      "vent",
+      "vitesse",
+      "météo",
+      "environnement"
+    ]
+  },
+  "name": "Vitesse du vent"
+}

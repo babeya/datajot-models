@@ -1,9 +1,0 @@
-{
-  "key": "steps_walked",
-  "type": "series",
-  "category": "fitness",
-  "icon": "figure.walk",
-  "unit": "count",
-  "color": "#10B981",
-  "graphType": "bar"
-}

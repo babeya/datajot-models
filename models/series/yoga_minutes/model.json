@@ -1,9 +1,0 @@
-{
-  "key": "yoga_minutes",
-  "type": "series",
-  "category": "fitness",
-  "icon": "figure.cooldown",
-  "unit": "duration",
-  "color": "#34D399",
-  "graphType": "bar"
-}

@@ -1,9 +1,0 @@
-{
-  "key": "grocery_trips",
-  "type": "series",
-  "category": "home",
-  "icon": "cart.fill",
-  "unit": "count",
-  "color": "#EF4444",
-  "graphType": "bar"
-}

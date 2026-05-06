@@ -1,9 +1,0 @@
-{
-  "key": "email_zero_sessions",
-  "type": "series",
-  "category": "productivity",
-  "icon": "tray.full.fill",
-  "unit": "count",
-  "color": "#2563EB",
-  "graphType": "bar"
-}

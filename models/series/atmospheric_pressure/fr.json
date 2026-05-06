@@ -1,0 +1,12 @@
+{
+  "description": "Suivez la pression atmosphérique depuis une station météo ou des données météo.",
+  "seo": {
+    "keywords": [
+      "pression",
+      "météo",
+      "baromètre",
+      "environnement"
+    ]
+  },
+  "name": "Pression atmosphérique"
+}

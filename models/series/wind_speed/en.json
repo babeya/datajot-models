@@ -1,0 +1,12 @@
+{
+  "description": "Track wind speed from local weather data or an outdoor weather station.",
+  "seo": {
+    "keywords": [
+      "wind",
+      "speed",
+      "weather",
+      "environment"
+    ]
+  },
+  "name": "Wind Speed"
+}

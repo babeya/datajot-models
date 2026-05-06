@@ -1,9 +1,0 @@
-{
-  "key": "medication_adherence",
-  "type": "series",
-  "category": "health",
-  "icon": "pills.fill",
-  "unit": "percentage",
-  "color": "#F43F5E",
-  "graphType": "bar"
-}

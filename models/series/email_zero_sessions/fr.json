@@ -1,7 +1,0 @@
-{
-  "name": "Sessions boîte zéro",
-  "description": "Nombre de fois où la boîte de réception est revenue à zéro non lus.",
-  "seo": {
-    "keywords": ["email", "boîte zéro", "productivité", "focus"]
-  }
-}

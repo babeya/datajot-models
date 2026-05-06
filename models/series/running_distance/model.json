@@ -1,9 +1,0 @@
-{
-  "key": "running_distance",
-  "type": "series",
-  "category": "fitness",
-  "icon": "figure.run",
-  "unit": "distance_metric",
-  "color": "#2563EB",
-  "graphType": "bar"
-}

@@ -1,9 +1,0 @@
-{
-  "key": "charity_donations",
-  "type": "series",
-  "category": "finance",
-  "icon": "gift.fill",
-  "unit": "currency",
-  "color": "#F43F5E",
-  "graphType": "bar"
-}

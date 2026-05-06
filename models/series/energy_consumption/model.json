@@ -1,9 +1,0 @@
-{
-  "key": "energy_consumption",
-  "type": "series",
-  "category": "energy",
-  "icon": "bolt.fill",
-  "unit": "energy",
-  "color": "#FACC15",
-  "graphType": "bar"
-}

@@ -1,0 +1,12 @@
+{
+  "description": "Track cloud cover percentage from weather data.",
+  "seo": {
+    "keywords": [
+      "clouds",
+      "cloud cover",
+      "weather",
+      "environment"
+    ]
+  },
+  "name": "Cloud Cover"
+}

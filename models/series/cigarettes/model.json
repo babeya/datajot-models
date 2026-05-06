@@ -1,8 +1,0 @@
-{
-  "key": "cigarettes",
-  "type": "series",
-  "category": "health",
-  "icon": "smoke.fill",
-  "color": "#6B7280",
-  "graphType": "bar"
-}

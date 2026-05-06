@@ -4,6 +4,7 @@
   "category": "environment",
   "icon": "thermometer.medium",
   "unit": "temperature_metric",
+  "svc": "outside_temp_deg_c",
   "color": "#EF4444",
   "graphType": "bar"
 }

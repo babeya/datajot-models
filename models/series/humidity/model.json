@@ -4,6 +4,7 @@
   "category": "environment",
   "icon": "humidity.fill",
   "unit": "percentage",
+  "svc": "humidity_percentage",
   "color": "#06B6D4",
   "graphType": "bar"
 }

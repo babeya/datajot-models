@@ -1,0 +1,9 @@
+{
+  "key": "cloud_cover",
+  "type": "series",
+  "category": "environment",
+  "icon": "cloud.fill",
+  "unit": "percentage",
+  "color": "#94A3B8",
+  "graphType": "area"
+}

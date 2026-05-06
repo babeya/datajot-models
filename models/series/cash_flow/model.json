@@ -1,9 +1,0 @@
-{
-  "key": "cash_flow",
-  "type": "series",
-  "category": "business",
-  "icon": "banknote.fill",
-  "unit": "currency",
-  "color": "#16A34A",
-  "graphType": "bar"
-}

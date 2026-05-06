@@ -1,9 +1,0 @@
-{
-  "key": "laundry_cycles",
-  "type": "series",
-  "category": "home",
-  "icon": "washer.fill",
-  "unit": "count",
-  "color": "#60A5FA",
-  "graphType": "bar"
-}

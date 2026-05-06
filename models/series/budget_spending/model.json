@@ -1,9 +1,0 @@
-{
-  "key": "budget_spending",
-  "type": "series",
-  "category": "finance",
-  "icon": "creditcard.fill",
-  "unit": "currency",
-  "color": "#10B981",
-  "graphType": "bar"
-}

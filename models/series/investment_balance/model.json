@@ -1,9 +1,0 @@
-{
-  "key": "investment_balance",
-  "type": "series",
-  "category": "finance",
-  "icon": "chart.line.uptrend.xyaxis",
-  "unit": "currency",
-  "color": "#FACC15",
-  "graphType": "bar"
-}

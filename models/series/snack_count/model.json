@@ -1,9 +1,0 @@
-{
-  "key": "snack_count",
-  "type": "series",
-  "category": "nutrition",
-  "icon": "takeoutbag.and.cup.and.straw.fill",
-  "unit": "count",
-  "color": "#F97316",
-  "graphType": "bar"
-}

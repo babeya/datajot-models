@@ -1,9 +1,0 @@
-{
-  "key": "weight_metric",
-  "type": "series",
-  "category": "health",
-  "icon": "scalemass.fill",
-  "unit": "weight_metric",
-  "color": "#EC4899",
-  "graphType": "bar"
-}

@@ -1,9 +1,0 @@
-{
-  "key": "body_fat_percentage",
-  "type": "series",
-  "category": "health",
-  "icon": "figure.arms.open",
-  "unit": "percentage",
-  "color": "#EC4899",
-  "graphType": "bar"
-}

@@ -1,0 +1,12 @@
+{
+  "description": "Track wind gusts captured by weather data or an outdoor weather station.",
+  "seo": {
+    "keywords": [
+      "wind gust",
+      "wind",
+      "weather",
+      "environment"
+    ]
+  },
+  "name": "Wind Gust"
+}

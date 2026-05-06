@@ -1,9 +1,0 @@
-{
-  "key": "commute_distance",
-  "type": "series",
-  "category": "travel",
-  "icon": "car.fill",
-  "unit": "distance_metric",
-  "color": "#EF4444",
-  "graphType": "bar"
-}

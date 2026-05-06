@@ -1,0 +1,12 @@
+{
+  "description": "Track outdoor visibility from weather data.",
+  "seo": {
+    "keywords": [
+      "visibility",
+      "weather",
+      "fog",
+      "environment"
+    ]
+  },
+  "name": "Visibility"
+}

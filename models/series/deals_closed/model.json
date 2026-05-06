@@ -1,9 +1,0 @@
-{
-  "key": "deals_closed",
-  "type": "series",
-  "category": "business",
-  "icon": "hands.clap.fill",
-  "unit": "count",
-  "color": "#EA580C",
-  "graphType": "bar"
-}

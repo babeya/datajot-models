@@ -1,0 +1,9 @@
+{
+  "key": "wind_gust",
+  "type": "series",
+  "category": "environment",
+  "icon": "wind.circle.fill",
+  "unit": "speed_metric",
+  "color": "#0EA5E9",
+  "graphType": "line"
+}

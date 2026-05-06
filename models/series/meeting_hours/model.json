@@ -1,9 +1,0 @@
-{
-  "key": "meeting_hours",
-  "type": "series",
-  "category": "business",
-  "icon": "person.2.fill",
-  "unit": "duration",
-  "color": "#3B82F6",
-  "graphType": "bar"
-}

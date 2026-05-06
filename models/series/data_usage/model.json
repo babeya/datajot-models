@@ -1,9 +1,0 @@
-{
-  "key": "data_usage",
-  "type": "series",
-  "category": "digital",
-  "icon": "antenna.radiowaves.left.and.right",
-  "unit": "bandwidth",
-  "color": "#6366F1",
-  "graphType": "bar"
-}

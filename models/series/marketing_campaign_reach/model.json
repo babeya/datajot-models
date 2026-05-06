@@ -1,9 +1,0 @@
-{
-  "key": "marketing_campaign_reach",
-  "type": "series",
-  "category": "business",
-  "icon": "megaphone.fill",
-  "unit": "count",
-  "color": "#FB923C",
-  "graphType": "bar"
-}

@@ -1,9 +1,0 @@
-{
-  "key": "app_focus_time",
-  "type": "series",
-  "category": "digital",
-  "icon": "app.fill",
-  "unit": "duration",
-  "color": "#0EA5E9",
-  "graphType": "bar"
-}

@@ -1,0 +1,12 @@
+{
+  "description": "Track dew point temperature from weather data.",
+  "seo": {
+    "keywords": [
+      "dew point",
+      "humidity",
+      "weather",
+      "environment"
+    ]
+  },
+  "name": "Dew Point"
+}

@@ -1,9 +1,0 @@
-{
-  "key": "photography_sessions",
-  "type": "series",
-  "category": "creativity",
-  "icon": "camera.fill",
-  "unit": "count",
-  "color": "#FB7185",
-  "graphType": "bar"
-}

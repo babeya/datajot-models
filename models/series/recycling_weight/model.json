@@ -1,9 +1,0 @@
-{
-  "key": "recycling_weight",
-  "type": "series",
-  "category": "sustainability",
-  "icon": "arrow.3.trianglepath",
-  "unit": "weight_metric",
-  "color": "#22C55E",
-  "graphType": "bar"
-}

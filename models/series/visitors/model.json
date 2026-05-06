@@ -1,8 +1,0 @@
-{
-  "key": "visitors",
-  "type": "series",
-  "category": "business",
-  "icon": "person.2.fill",
-  "color": "#8B5CF6",
-  "graphType": "bar"
-}

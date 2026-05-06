@@ -1,7 +1,0 @@
-{
-  "name": "Electricity Usage",
-  "description": "kWh consumed at home or office.",
-  "seo": {
-    "keywords": ["energy", "electricity", "usage", "power"]
-  }
-}

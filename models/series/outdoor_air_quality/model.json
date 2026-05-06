@@ -4,6 +4,7 @@
   "category": "environment",
   "icon": "cloud.fill",
   "unit": "count",
+  "svc": "air_quality_index",
   "color": "#4B5563",
   "graphType": "bar"
 }

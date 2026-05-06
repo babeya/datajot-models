@@ -1,0 +1,9 @@
+{
+  "key": "rainfall",
+  "type": "series",
+  "category": "environment",
+  "icon": "cloud.rain.fill",
+  "unit": "distance_metric",
+  "color": "#2563EB",
+  "graphType": "bar"
+}

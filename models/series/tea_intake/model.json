@@ -1,9 +1,0 @@
-{
-  "key": "tea_intake",
-  "type": "series",
-  "category": "nutrition",
-  "icon": "cup.and.saucer.fill",
-  "unit": "volume_metric",
-  "color": "#A3E635",
-  "graphType": "bar"
-}

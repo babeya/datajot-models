@@ -1,7 +1,0 @@
-{
-  "name": "Heart Rate Variability",
-  "description": "Milliseconds between beats to gauge recovery.",
-  "seo": {
-    "keywords": ["HRV", "recovery", "health", "readiness"]
-  }
-}

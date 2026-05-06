@@ -1,9 +1,0 @@
-{
-  "key": "cleaning_sessions",
-  "type": "series",
-  "category": "home",
-  "icon": "sparkles",
-  "unit": "count",
-  "color": "#FBBF24",
-  "graphType": "bar"
-}

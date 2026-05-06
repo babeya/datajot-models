@@ -1,0 +1,9 @@
+{
+  "key": "wind_speed",
+  "type": "series",
+  "category": "environment",
+  "icon": "wind",
+  "unit": "speed_metric",
+  "color": "#38BDF8",
+  "graphType": "line"
+}

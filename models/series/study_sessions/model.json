@@ -1,9 +1,0 @@
-{
-  "key": "study_sessions",
-  "type": "series",
-  "category": "learning",
-  "icon": "graduationcap.fill",
-  "unit": "count",
-  "color": "#7C3AED",
-  "graphType": "bar"
-}

@@ -1,9 +1,0 @@
-{
-  "key": "weight_imperial",
-  "type": "series",
-  "category": "health",
-  "icon": "scalemass.fill",
-  "unit": "weight_imperial",
-  "color": "#EC4899",
-  "graphType": "bar"
-}

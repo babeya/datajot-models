@@ -1,0 +1,12 @@
+{
+  "description": "Suivez la température du point de rosée depuis des données météo.",
+  "seo": {
+    "keywords": [
+      "point de rosée",
+      "humidité",
+      "météo",
+      "environnement"
+    ]
+  },
+  "name": "Point de rosée"
+}

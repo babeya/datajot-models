@@ -1,9 +1,0 @@
-{
-  "key": "gratitude_entries",
-  "type": "series",
-  "category": "mindfulness",
-  "icon": "heart.text.square.fill",
-  "unit": "count",
-  "color": "#F472B6",
-  "graphType": "bar"
-}

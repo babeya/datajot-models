@@ -1,0 +1,10 @@
+{
+  "key": "atmospheric_pressure",
+  "type": "series",
+  "category": "environment",
+  "icon": "barometer",
+  "unit": "pressure",
+  "svc": "atmospheric_pressure_hpa",
+  "color": "#64748B",
+  "graphType": "line"
+}

@@ -1,9 +1,0 @@
-{
-  "key": "hydration",
-  "type": "series",
-  "category": "health",
-  "icon": "drop.fill",
-  "unit": "volume_metric",
-  "color": "#3B82F6",
-  "graphType": "bar"
-}

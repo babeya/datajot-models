@@ -1,0 +1,12 @@
+{
+  "description": "Track feels-like outdoor temperature from weather data.",
+  "seo": {
+    "keywords": [
+      "feels like",
+      "temperature",
+      "weather",
+      "environment"
+    ]
+  },
+  "name": "Feels Like Temperature"
+}

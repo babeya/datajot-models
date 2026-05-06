@@ -1,0 +1,12 @@
+{
+  "description": "Track atmospheric pressure from weather stations or forecast data.",
+  "seo": {
+    "keywords": [
+      "pressure",
+      "weather",
+      "barometer",
+      "environment"
+    ]
+  },
+  "name": "Atmospheric Pressure"
+}

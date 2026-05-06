@@ -1,9 +1,0 @@
-{
-  "key": "protein_intake",
-  "type": "series",
-  "category": "nutrition",
-  "icon": "bolt.fill",
-  "unit": "weight_metric",
-  "color": "#F59E0B",
-  "graphType": "bar"
-}

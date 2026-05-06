@@ -1,9 +1,0 @@
-{
-  "key": "reading_minutes",
-  "type": "series",
-  "category": "learning",
-  "icon": "book.fill",
-  "unit": "duration",
-  "color": "#EA580C",
-  "graphType": "bar"
-}

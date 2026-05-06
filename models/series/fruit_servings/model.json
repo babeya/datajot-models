@@ -1,9 +1,0 @@
-{
-  "key": "fruit_servings",
-  "type": "series",
-  "category": "nutrition",
-  "icon": "applelogo",
-  "unit": "count",
-  "color": "#EF4444",
-  "graphType": "bar"
-}

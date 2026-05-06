@@ -1,9 +1,0 @@
-{
-  "key": "workout_sessions",
-  "type": "series",
-  "category": "fitness",
-  "icon": "dumbbell.fill",
-  "unit": "count",
-  "color": "#F97316",
-  "graphType": "bar"
-}

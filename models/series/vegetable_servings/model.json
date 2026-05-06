@@ -1,9 +1,0 @@
-{
-  "key": "vegetable_servings",
-  "type": "series",
-  "category": "nutrition",
-  "icon": "leaf",
-  "unit": "count",
-  "color": "#16A34A",
-  "graphType": "bar"
-}

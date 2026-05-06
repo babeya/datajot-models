@@ -1,8 +1,0 @@
-{
-  "key": "alcohol",
-  "type": "series",
-  "category": "nutrition",
-  "icon": "wineglass.fill",
-  "color": "#DC2626",
-  "graphType": "bar"
-}
