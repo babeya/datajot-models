@@ -5,7 +5,7 @@ import { join } from 'path'
 const BASE_DIR = './models'
 const OUTPUT_DIR = './build'
 const LANGUAGES = ['fr', 'en']
-const MODEL_TYPES = ['series', 'units', 'visualizations']
+const MODEL_TYPES = ['series', 'units', 'svc']
 const TYPE_CATEGORIES = 'categories'
 const TYPE_UNITS = 'units'
 const TYPE_SERIES = 'series'
@@ -143,7 +143,7 @@ const processModelItem = (type) => (unitsMap, categoriesMap, visualizationConfig
  */
 function generateBundle(type, lang, unitsMap = null, categoriesMap = null, visualizationConfigsMap = null) {
   // Handle visualization type by mapping to visualizationConfigs directory
-  const actualType = type === 'visualization' ? TYPE_VISUALIZATION_CONFIGS : type
+  const actualType = type === 'svc' ? TYPE_VISUALIZATION_CONFIGS : type
   const models = readModels(actualType)
   const processItem = processModelItem(actualType)(unitsMap, categoriesMap, visualizationConfigsMap)
   
@@ -295,7 +295,7 @@ const generateIndex = () => {
   const index = {
     series: readModels(TYPE_SERIES).map(key => ({ key })),
     units: readModels(TYPE_UNITS).map(key => ({ key })),
-    visualizations: readModels(TYPE_VISUALIZATION_CONFIGS).map(key => ({ key }))
+    svc: readModels(TYPE_VISUALIZATION_CONFIGS).map(key => ({ key }))
   }
   writeBundleFile(FILE_INDEX, index)
   console.log('✅ Index generated')
