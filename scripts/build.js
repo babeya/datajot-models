@@ -9,7 +9,7 @@ const MODEL_TYPES = ['series', 'units', 'svc']
 const TYPE_CATEGORIES = 'categories'
 const TYPE_UNITS = 'units'
 const TYPE_SERIES = 'series'
-const TYPE_VISUALIZATION_CONFIGS = 'visualizationConfigs'
+const TYPE_VISUALIZATION_CONFIGS = 'svc'
 const FILE_MODEL = 'model.json'
 const FILE_INDEX = 'index.json'
 const ENCODING_UTF8 = 'utf-8'
@@ -218,7 +218,7 @@ const generateVisualizationBundle = (lang, categoriesMap) => {
   return visualizationConfigsModels.map(modelId => {
     try {
       // Try to read with translations first
-      const { model, i18n } = readModelFiles(TYPE_VISUALIZATION_CONFIGS, modelId, lang)
+      const { model, i18n } = readModelFiles('svc', modelId, lang)
       let item = { ...model, ...i18n }
       
       // Inject category if available
@@ -228,7 +228,7 @@ const generateVisualizationBundle = (lang, categoriesMap) => {
     } catch (error) {
       // Fallback to model.json only if translation files don't exist
       if (error.code === 'ENOENT') {
-        const modelPath = join(BASE_DIR, TYPE_VISUALIZATION_CONFIGS, modelId, FILE_MODEL)
+        const modelPath = join(BASE_DIR, 'svc', modelId, FILE_MODEL)
         let model = JSON.parse(readFileSync(modelPath, ENCODING_UTF8))
         
         // Inject category if available
@@ -268,7 +268,7 @@ const generateLanguageBundles = (lang) => {
   for (const type of MODEL_TYPES) {
     let bundle
     
-    if (type === 'visualizations') {
+    if (type === 'svc') {
       bundle = generateVisualizationBundle(lang, categoriesMap)
     } else {
       bundle = type === TYPE_SERIES 

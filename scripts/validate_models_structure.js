@@ -198,7 +198,7 @@ const validators = {
   categories: validateCategory,
   units: validateUnit,
   series: validateSeries,
-  visualizationConfigs: validateVisualizationConfig
+  svc: validateVisualizationConfig
 }
 
 const main = () => {

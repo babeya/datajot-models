@@ -169,7 +169,7 @@ const validateSeriesBundle = (lang) => {
 }
 
 const validateVisualizationsBundle = (lang) => {
-  const visualizationsPath = join(BUILD_DIR, `visualizations-${lang}.json`)
+  const visualizationsPath = join(BUILD_DIR, `svc-${lang}.json`)
   const visualizations = readJsonFile(visualizationsPath)
   if (requireNonEmptyArray(reporter, visualizationsPath, visualizations, 'Visualizations bundle must be a non-empty array')) {
     visualizations.forEach((item, idx) => validateSvcOutput(`${visualizationsPath}[${idx}]`, item))
@@ -179,7 +179,7 @@ const validateVisualizationsBundle = (lang) => {
 
 const deepEqual = (a, b) => JSON.stringify(a) === JSON.stringify(b)
 
-const validateLanguageBundle = (lang, units, series, visualizations) => {
+const validateLanguageBundle = (lang, units, series, svc) => {
   const bundlePath = join(BUILD_DIR, `bundle-${lang}.json`)
   const bundle = readJsonFile(bundlePath)
   if (!requireObject(reporter, bundlePath, bundle, 'Language bundle must be an object')) {
@@ -187,7 +187,7 @@ const validateLanguageBundle = (lang, units, series, visualizations) => {
   }
   reporter.ensure(deepEqual(bundle.units, units), `${bundlePath}: units array does not match units-${lang}.json`)
   reporter.ensure(deepEqual(bundle.series, series), `${bundlePath}: series array does not match series-${lang}.json`)
-  reporter.ensure(deepEqual(bundle.visualizations, visualizations), `${bundlePath}: visualizations array does not match visualizations-${lang}.json`)
+  reporter.ensure(deepEqual(bundle.svc, svc), `${bundlePath}: visualizations array does not match visualizations-${lang}.json`)
 }
 
 const validateIndex = () => {
@@ -196,7 +196,7 @@ const validateIndex = () => {
   if (!requireObject(reporter, indexPath, index, 'Index file must be an object')) {
     return
   }
-  ;['units', 'series', 'visualizations'].forEach((key) => {
+  ;['units', 'series', 'svc'].forEach((key) => {
     const value = index[key]
     if (requireNonEmptyArray(reporter, `${indexPath}.${key}`, value, `${key} list must be a non-empty array`)) {
       value.forEach((entry, idx) => {
