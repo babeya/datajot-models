@@ -3,7 +3,7 @@
   "type": "series",
   "category": "health",
   "icon": "cross.case.fill",
+  "unit": "percentage",
   "color": "#FB7185",
-  "graphType": "area",
-  "unit": "percentage"
+  "graphType": "bar"
 }

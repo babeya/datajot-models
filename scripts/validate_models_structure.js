@@ -10,6 +10,7 @@ import {
   readJsonFile,
   requireString,
   requireNumber,
+  requireBoolean,
   requireNonEmptyArray,
   requireObject,
   requireEnum,
@@ -22,6 +23,22 @@ const __dirname = dirname(__filename)
 const ROOT_MODELS_DIR = join(__dirname, '..', 'models')
 
 const reporter = new ValidationReporter('Model schema validation')
+
+const THRESHOLD_OPERATORS = ['<', '<=', '>', '>=']
+
+const STAT_BOOLEAN_FIELDS = [
+  'showAverage',
+  'showMedian',
+  'showSum',
+  'showCount',
+  'showMax',
+  'showMin',
+  'showAverageOnChart',
+  'showMedianOnChart',
+  'showMaxOnChart',
+  'showMinOnChart',
+  'autoScaleYAxis'
+]
 
 const listModelDirectories = (type) => {
   const typeDir = join(ROOT_MODELS_DIR, type)
@@ -88,6 +105,16 @@ const validateUnit = (dir) => {
   })
 }
 
+const validateSvcStats = (context, svc) => {
+  STAT_BOOLEAN_FIELDS.forEach((field) => {
+    requireBoolean(reporter, `${context}.${field}`, svc[field], `${field} must be a boolean`)
+  })
+
+  ;['showAverageOnChart', 'showMedianOnChart', 'showMaxOnChart', 'showMinOnChart'].forEach((field) => {
+    reporter.ensure(svc[field] === false, `${context}.${field}: chart stats must always be disabled in SVC model configs`)
+  })
+}
+
 const validateSeries = (dir) => {
   const modelPath = join(dir.path, 'model.json')
   const model = readJsonFile(modelPath)
@@ -98,8 +125,20 @@ const validateSeries = (dir) => {
   requireString(reporter, `${modelPath}.icon`, model.icon, 'Series model requires icon string')
   requireString(reporter, `${modelPath}.color`, model.color, 'Series model requires color string')
   requireEnum(reporter, `${modelPath}.graphType`, model.graphType, GRAPH_TYPES, 'Series graphType must be one of')
-  if (model.unit) {
+  if (model.unit !== undefined) {
     requireString(reporter, `${modelPath}.unit`, model.unit, 'Series model unit reference must be a string when provided')
+  }
+  if (model.svc !== undefined) {
+    requireString(reporter, `${modelPath}.svc`, model.svc, 'Series model SVC reference must be a string when provided')
+  }
+  if (model.visualisationConfig !== undefined) {
+    reporter.fail(`${modelPath}: use svc instead of visualisationConfig`)
+  }
+  if (model.visualizationConfig !== undefined) {
+    reporter.fail(`${modelPath}: use svc instead of visualizationConfig`)
+  }
+  if (model.stats !== undefined) {
+    reporter.fail(`${modelPath}: stats must be configured on the referenced svc, not on the series model`)
   }
 
   LANGUAGES.forEach((lang) => {
@@ -124,7 +163,7 @@ const validateVisualizationConfig = (dir) => {
   }
 
   // Vérifier l'unité si elle existe
-  if (model.unit) {
+  if (model.unit !== undefined) {
     requireString(reporter, `${modelPath}.unit`, model.unit, 'VisualizationConfig model unit reference must be a string when provided')
   }
 
@@ -133,20 +172,17 @@ const validateVisualizationConfig = (dir) => {
     model.thresholds.forEach((threshold, idx) => {
       const context = `${modelPath}.thresholds[${idx}]`
       requireNumber(reporter, `${context}.order`, threshold?.order, 'threshold requires order number')
-      requireString(reporter, `${context}.operatorType`, threshold?.operatorType, 'threshold requires operatorType string')
+      requireEnum(reporter, `${context}.operator`, threshold?.operator, THRESHOLD_OPERATORS, 'threshold operator must be one of')
       requireNumber(reporter, `${context}.value`, threshold?.value, 'threshold requires value number')
-      requireString(reporter, `${context}.colorHex`, threshold?.colorHex, 'threshold requires colorHex string')
+      requireString(reporter, `${context}.color`, threshold?.color, 'threshold requires color string')
     })
   }
 
-  // Valider les yAxisBounds si ils existent
-  if (model.yAxisBounds && requireNonEmptyArray(reporter, `${modelPath}.yAxisBounds`, model.yAxisBounds, 'VisualizationConfig model yAxisBounds must be array when provided')) {
-    model.yAxisBounds.forEach((bound, idx) => {
-      const context = `${modelPath}.yAxisBounds[${idx}]`
-      requireNumber(reporter, `${context}.lowerBound`, bound?.lowerBound, 'yAxisBound requires lowerBound number')
-      requireNumber(reporter, `${context}.upperBound`, bound?.upperBound, 'yAxisBound requires upperBound number')
-    })
+  if (model.yAxisBounds !== undefined) {
+    reporter.fail(`${modelPath}: use autoScaleYAxis instead of yAxisBounds`)
   }
+
+  validateSvcStats(modelPath, model)
 
   // Valider les traductions
   LANGUAGES.forEach((lang) => {

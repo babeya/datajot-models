@@ -47,6 +47,12 @@ export const requireNumber = (reporter, context, value, message) => {
   }
 }
 
+export const requireBoolean = (reporter, context, value, message) => {
+  if (typeof value !== 'boolean') {
+    reporter.fail(`${context}: ${message}`)
+  }
+}
+
 export const requireArray = (reporter, context, value, message) => {
   if (!Array.isArray(value)) {
     reporter.fail(`${context}: ${message}`)

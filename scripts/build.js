@@ -17,7 +17,7 @@ const FIELD_KEY = 'key'
 const FIELD_SUB_UNITS = 'subUnits'
 const FIELD_UNIT = 'unit'
 const FIELD_CATEGORY = 'category'
-const FIELD_VISUALIZATION_CONFIG = 'visualizationConfig'
+const FIELD_SVC = 'svc'
 
 mkdirSync(OUTPUT_DIR, { recursive: true })
 
@@ -104,14 +104,14 @@ const injectCategory = (item, categoriesMap) => {
 }
 
 /**
- * Inject full visualizationConfig object if available
+ * Inject full SVC object if available
  */
-const injectVisualizationConfig = (item, visualizationConfigsMap) => {
-  if (item[FIELD_VISUALIZATION_CONFIG] && visualizationConfigsMap) {
-    if (visualizationConfigsMap[item[FIELD_VISUALIZATION_CONFIG]]) {
-      item[FIELD_VISUALIZATION_CONFIG] = visualizationConfigsMap[item[FIELD_VISUALIZATION_CONFIG]]
+const injectSvc = (item, visualizationConfigsMap) => {
+  if (item[FIELD_SVC] && visualizationConfigsMap) {
+    if (visualizationConfigsMap[item[FIELD_SVC]]) {
+      item[FIELD_SVC] = visualizationConfigsMap[item[FIELD_SVC]]
     } else {
-      console.warn(`⚠️  Warning: VisualizationConfig '${item[FIELD_VISUALIZATION_CONFIG]}' not found for series '${item[FIELD_KEY]}'`)
+      console.warn(`⚠️  Warning: SVC '${item[FIELD_SVC]}' not found for series '${item[FIELD_KEY]}'`)
     }
   }
   return item
@@ -130,7 +130,7 @@ const processModelItem = (type) => (unitsMap, categoriesMap, visualizationConfig
   
   if (type === TYPE_SERIES) {
     item = injectUnit(item, unitsMap)
-    item = injectVisualizationConfig(item, visualizationConfigsMap)
+    item = injectSvc(item, visualizationConfigsMap)
   }
   
   item = injectCategory(item, categoriesMap)

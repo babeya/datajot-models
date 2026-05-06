@@ -3,7 +3,7 @@
   "type": "series",
   "category": "environment",
   "icon": "aqi.medium",
+  "unit": "count",
   "color": "#2563EB",
-  "graphType": "line",
-  "unit": "count"
+  "graphType": "bar"
 }

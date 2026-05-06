@@ -3,7 +3,7 @@
   "type": "series",
   "category": "learning",
   "icon": "list.bullet.rectangle",
+  "unit": "percentage",
   "color": "#22D3EE",
-  "graphType": "line",
-  "unit": "percentage"
+  "graphType": "bar"
 }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "energy",
   "icon": "bolt.fill",
+  "unit": "energy",
   "color": "#FACC15",
-  "graphType": "line",
-  "unit": "energy"
+  "graphType": "bar"
 }

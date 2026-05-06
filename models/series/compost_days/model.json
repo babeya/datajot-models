@@ -3,7 +3,7 @@
   "type": "series",
   "category": "sustainability",
   "icon": "leaf.arrow.circlepath",
+  "unit": "count",
   "color": "#65A30D",
-  "graphType": "points",
-  "unit": "count"
+  "graphType": "bar"
 }

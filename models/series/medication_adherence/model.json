@@ -3,7 +3,7 @@
   "type": "series",
   "category": "health",
   "icon": "pills.fill",
+  "unit": "percentage",
   "color": "#F43F5E",
-  "graphType": "bar",
-  "unit": "percentage"
+  "graphType": "bar"
 }

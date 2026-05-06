@@ -141,7 +141,7 @@ type SeriesInputModel = {
   color: string; // Hex color code
   graphType: "line" | "bar" | "area" | "points";
   unit?: string; // Reference to a unit key
-  visualizationConfig?: string; // Reference to a visualization config key
+  svc?: string; // Reference to a visualization config key
 }
 
 // {lang}.json
@@ -170,7 +170,7 @@ type SeriesOutputModel = {
   unit?: UnitOutputModel; // Full unit model
   name: string;
   description: string;
-  visualizationConfig?: VisualizationConfig;
+  svc?: SVC;
   seo: {
     keywords: string[];
   };
@@ -192,9 +192,19 @@ type ThresholdConfig = {
   color: string;
 }
 
-type VisualizationConfig = {
+type SVC = {
   thresholds: ThresholdConfig[];
-
+  showAverage: boolean;
+  showMedian: boolean;
+  showSum: boolean;
+  showCount: boolean;
+  showMax: boolean;
+  showMin: boolean;
+  showAverageOnChart: false;
+  showMedianOnChart: false;
+  showMaxOnChart: false;
+  showMinOnChart: false;
+  autoScaleYAxis: boolean;
 }
 
 ```

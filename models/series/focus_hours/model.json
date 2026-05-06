@@ -3,7 +3,7 @@
   "type": "series",
   "category": "productivity",
   "icon": "hourglass.circle.fill",
+  "unit": "duration",
   "color": "#FACC15",
-  "graphType": "line",
-  "unit": "duration"
+  "graphType": "bar"
 }

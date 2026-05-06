@@ -5,5 +5,5 @@
   "icon": "thermometer.medium",
   "unit": "temperature_imperial",
   "color": "#EF4444",
-  "graphType": "line"
+  "graphType": "bar"
 }

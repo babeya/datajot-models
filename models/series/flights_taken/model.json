@@ -3,7 +3,7 @@
   "type": "series",
   "category": "travel",
   "icon": "airplane",
+  "unit": "count",
   "color": "#0EA5E9",
-  "graphType": "points",
-  "unit": "count"
+  "graphType": "bar"
 }

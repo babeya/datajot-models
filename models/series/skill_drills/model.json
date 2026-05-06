@@ -3,7 +3,7 @@
   "type": "series",
   "category": "learning",
   "icon": "target",
+  "unit": "count",
   "color": "#D946EF",
-  "graphType": "points",
-  "unit": "count"
+  "graphType": "bar"
 }

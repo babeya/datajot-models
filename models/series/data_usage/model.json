@@ -3,7 +3,7 @@
   "type": "series",
   "category": "digital",
   "icon": "antenna.radiowaves.left.and.right",
+  "unit": "bandwidth",
   "color": "#6366F1",
-  "graphType": "line",
-  "unit": "bandwidth"
+  "graphType": "bar"
 }

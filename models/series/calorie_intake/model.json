@@ -3,7 +3,7 @@
   "type": "series",
   "category": "nutrition",
   "icon": "flame.fill",
+  "unit": "energy",
   "color": "#F97316",
-  "graphType": "bar",
-  "unit": "energy"
+  "graphType": "bar"
 }

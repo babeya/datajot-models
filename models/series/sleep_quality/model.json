@@ -3,7 +3,7 @@
   "type": "series",
   "category": "wellness",
   "icon": "sparkles",
+  "unit": "percentage",
   "color": "#6EE7B7",
-  "graphType": "line",
-  "unit": "percentage"
+  "graphType": "bar"
 }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "health",
   "icon": "drop.circle",
+  "unit": "duration",
   "color": "#DB2777",
-  "graphType": "points",
-  "unit": "duration"
+  "graphType": "bar"
 }

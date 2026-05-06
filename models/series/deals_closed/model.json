@@ -3,7 +3,7 @@
   "type": "series",
   "category": "business",
   "icon": "hands.clap.fill",
+  "unit": "count",
   "color": "#EA580C",
-  "graphType": "points",
-  "unit": "count"
+  "graphType": "bar"
 }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "finance",
   "icon": "doc.richtext.fill",
+  "unit": "currency",
   "color": "#6366F1",
-  "graphType": "bar",
-  "unit": "currency"
+  "graphType": "bar"
 }

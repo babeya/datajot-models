@@ -3,7 +3,7 @@
   "type": "series",
   "category": "travel",
   "icon": "gauge.with.dots.needle.67percent",
+  "unit": "distance_imperial",
   "color": "#2563EB",
-  "graphType": "line",
-  "unit": "distance_imperial"
+  "graphType": "bar"
 }

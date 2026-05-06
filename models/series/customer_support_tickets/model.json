@@ -3,7 +3,7 @@
   "type": "series",
   "category": "business",
   "icon": "headphones",
+  "unit": "count",
   "color": "#0EA5E9",
-  "graphType": "line",
-  "unit": "count"
+  "graphType": "bar"
 }

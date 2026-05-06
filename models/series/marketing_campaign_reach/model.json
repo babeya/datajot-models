@@ -3,7 +3,7 @@
   "type": "series",
   "category": "business",
   "icon": "megaphone.fill",
+  "unit": "count",
   "color": "#FB923C",
-  "graphType": "area",
-  "unit": "count"
+  "graphType": "bar"
 }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "wellness",
   "icon": "waveform.path.ecg",
+  "unit": "percentage",
   "color": "#F87171",
-  "graphType": "line",
-  "unit": "percentage"
+  "graphType": "bar"
 }

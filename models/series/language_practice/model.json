@@ -3,7 +3,7 @@
   "type": "series",
   "category": "learning",
   "icon": "character.book.closed.fill",
+  "unit": "duration",
   "color": "#14B8A6",
-  "graphType": "line",
-  "unit": "duration"
+  "graphType": "bar"
 }

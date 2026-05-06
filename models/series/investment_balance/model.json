@@ -3,7 +3,7 @@
   "type": "series",
   "category": "finance",
   "icon": "chart.line.uptrend.xyaxis",
+  "unit": "currency",
   "color": "#FACC15",
-  "graphType": "line",
-  "unit": "currency"
+  "graphType": "bar"
 }

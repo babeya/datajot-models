@@ -3,7 +3,7 @@
   "type": "series",
   "category": "productivity",
   "icon": "ant.fill",
+  "unit": "count",
   "color": "#EA580C",
-  "graphType": "bar",
-  "unit": "count"
+  "graphType": "bar"
 }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "health",
   "icon": "waveform.circle",
+  "unit": "pressure",
   "color": "#F59E0B",
-  "graphType": "line",
-  "unit": "pressure"
+  "graphType": "bar"
 }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "energy",
   "icon": "sun.max.fill",
+  "unit": "energy",
   "color": "#FDBA74",
-  "graphType": "area",
-  "unit": "energy"
+  "graphType": "bar"
 }

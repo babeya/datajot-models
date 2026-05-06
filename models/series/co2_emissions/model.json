@@ -3,7 +3,7 @@
   "type": "series",
   "category": "environment",
   "icon": "carbon.dioxide.cloud",
+  "unit": "weight_metric",
   "color": "#0F172A",
-  "graphType": "line",
-  "unit": "weight_metric"
+  "graphType": "bar"
 }

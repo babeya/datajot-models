@@ -3,7 +3,7 @@
   "type": "series",
   "category": "business",
   "icon": "list.clipboard.fill",
+  "unit": "currency",
   "color": "#F87171",
-  "graphType": "bar",
-  "unit": "currency"
+  "graphType": "bar"
 }

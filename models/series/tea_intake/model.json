@@ -3,7 +3,7 @@
   "type": "series",
   "category": "nutrition",
   "icon": "cup.and.saucer.fill",
+  "unit": "volume_metric",
   "color": "#A3E635",
-  "graphType": "line",
-  "unit": "volume_metric"
+  "graphType": "bar"
 }

@@ -5,39 +5,44 @@
   "thresholds": [
     {
       "order": 1,
-      "operatorType": "<",
       "value": 2,
-      "colorHex": "#22C55E"
+      "operator": "<",
+      "color": "#22C55E"
     },
     {
       "order": 2,
-      "operatorType": "<",
       "value": 4,
-      "colorHex": "#EAB308"
+      "operator": "<",
+      "color": "#EAB308"
     },
     {
       "order": 3,
-      "operatorType": "<",
       "value": 6,
-      "colorHex": "#F97316"
+      "operator": "<",
+      "color": "#F97316"
     },
     {
       "order": 4,
-      "operatorType": "<",
       "value": 8,
-      "colorHex": "#EF4444"
+      "operator": "<",
+      "color": "#EF4444"
     },
     {
       "order": 5,
-      "operatorType": ">=",
       "value": 8,
-      "colorHex": "#7F1D1D"
+      "operator": ">=",
+      "color": "#7F1D1D"
     }
   ],
-  "yAxisBounds": [
-    {
-      "lowerBound": 0,
-      "upperBound": 12
-    }
-  ]
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": false,
+  "showMin": false,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "autoScaleYAxis": true
 }

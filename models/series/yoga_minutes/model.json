@@ -3,7 +3,7 @@
   "type": "series",
   "category": "fitness",
   "icon": "figure.cooldown",
+  "unit": "duration",
   "color": "#34D399",
-  "graphType": "line",
-  "unit": "duration"
+  "graphType": "bar"
 }

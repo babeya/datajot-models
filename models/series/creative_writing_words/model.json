@@ -3,7 +3,7 @@
   "type": "series",
   "category": "creativity",
   "icon": "pencil.and.outline",
+  "unit": "count",
   "color": "#FBBF24",
-  "graphType": "line",
-  "unit": "count"
+  "graphType": "bar"
 }

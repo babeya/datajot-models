@@ -3,7 +3,7 @@
   "type": "series",
   "category": "mindfulness",
   "icon": "wind",
+  "unit": "count",
   "color": "#0EA5E9",
-  "graphType": "bar",
-  "unit": "count"
+  "graphType": "bar"
 }

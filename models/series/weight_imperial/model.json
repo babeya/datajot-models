@@ -5,5 +5,5 @@
   "icon": "scalemass.fill",
   "unit": "weight_imperial",
   "color": "#EC4899",
-  "graphType": "line"
+  "graphType": "bar"
 }

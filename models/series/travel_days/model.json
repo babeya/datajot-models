@@ -3,7 +3,7 @@
   "type": "series",
   "category": "travel",
   "icon": "suitcase.fill",
+  "unit": "count",
   "color": "#F97316",
-  "graphType": "area",
-  "unit": "count"
+  "graphType": "bar"
 }

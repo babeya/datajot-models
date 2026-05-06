@@ -3,7 +3,7 @@
   "type": "series",
   "category": "environment",
   "icon": "cloud.fill",
+  "unit": "count",
   "color": "#4B5563",
-  "graphType": "line",
-  "unit": "count"
+  "graphType": "bar"
 }

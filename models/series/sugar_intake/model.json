@@ -3,7 +3,7 @@
   "type": "series",
   "category": "nutrition",
   "icon": "cube.fill",
+  "unit": "weight_metric",
   "color": "#FB923C",
-  "graphType": "line",
-  "unit": "weight_metric"
+  "graphType": "bar"
 }

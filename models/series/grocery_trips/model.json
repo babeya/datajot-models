@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "cart.fill",
+  "unit": "count",
   "color": "#EF4444",
-  "graphType": "points",
-  "unit": "count"
+  "graphType": "bar"
 }

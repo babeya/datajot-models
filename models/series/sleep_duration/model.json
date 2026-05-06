@@ -3,7 +3,7 @@
   "type": "series",
   "category": "wellness",
   "icon": "bed.double.fill",
+  "unit": "duration",
   "color": "#7C3AED",
-  "graphType": "area",
-  "unit": "duration"
+  "graphType": "bar"
 }

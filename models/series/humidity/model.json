@@ -5,5 +5,5 @@
   "icon": "humidity.fill",
   "unit": "percentage",
   "color": "#06B6D4",
-  "graphType": "line"
+  "graphType": "bar"
 }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "health",
   "icon": "lungs.fill",
+  "unit": "percentage",
   "color": "#0EA5E9",
-  "graphType": "line",
-  "unit": "percentage"
+  "graphType": "bar"
 }

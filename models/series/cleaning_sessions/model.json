@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "sparkles",
+  "unit": "count",
   "color": "#FBBF24",
-  "graphType": "bar",
-  "unit": "count"
+  "graphType": "bar"
 }
