@@ -4,6 +4,7 @@
   "category": "environment",
   "icon": "speaker.wave.3.fill",
   "unit": "count",
+  "decimalPrecision": 0,
   "color": "#F87171",
   "graphType": "bar"
 }

@@ -11,20 +11,8 @@
   },
   "subUnits": {
     "count": {
-      "abbreviation": "u",
-      "title": "Unit\u00e9"
-    },
-    "dozen": {
-      "abbreviation": "dz",
-      "title": "Douzaine"
-    },
-    "hundred": {
-      "abbreviation": "100",
-      "title": "Cent"
-    },
-    "thousand": {
-      "abbreviation": "k",
-      "title": "Millier"
+      "abbreviation": "",
+      "title": ""
     }
   }
 }

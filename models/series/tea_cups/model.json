@@ -1,0 +1,10 @@
+{
+  "key": "tea_cups",
+  "type": "series",
+  "category": "consumption",
+  "icon": "cup.and.saucer",
+  "unit": "count",
+  "decimalPrecision": 0,
+  "color": "#16A34A",
+  "graphType": "bar"
+}

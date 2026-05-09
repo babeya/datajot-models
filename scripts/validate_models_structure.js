@@ -77,6 +77,12 @@ const validateUnit = (dir) => {
       requireString(reporter, `${context}.key`, subUnit?.key, 'subUnit requires key string')
       requireNumber(reporter, `${context}.factor`, subUnit?.factor, 'subUnit.factor must be a valid number')
     })
+    if (model.key === 'count') {
+      reporter.ensure(model.baseUnit === 'count', `${modelPath}: count unit baseUnit must be "count"`)
+      reporter.ensure(model.subUnits.length === 1, `${modelPath}: count unit must define exactly one subUnit`)
+      reporter.ensure(model.subUnits[0]?.key === 'count', `${modelPath}: count unit subUnit key must be "count"`)
+      reporter.ensure(model.subUnits[0]?.factor === 1, `${modelPath}: count unit subUnit factor must be 1`)
+    }
   }
 
   LANGUAGES.forEach((lang) => {
@@ -87,13 +93,19 @@ const validateUnit = (dir) => {
     if (requireObject(reporter, `${langPath}.subUnits`, translation.subUnits, 'Unit translation requires subUnits object')) {
       const translationKeys = Object.keys(translation.subUnits)
       model.subUnits?.forEach((subUnit) => {
-        const tx = translation.subUnits[subUnit.key]
-        if (!tx) {
-          reporter.fail(`${langPath}: missing subUnits entry for key "${subUnit.key}"`)
-          return
+      const tx = translation.subUnits[subUnit.key]
+      if (!tx) {
+        reporter.fail(`${langPath}: missing subUnits entry for key "${subUnit.key}"`)
+        return
+      }
+        const allowsEmptyLabel = model.key === 'count' && subUnit.key === 'count'
+        if (allowsEmptyLabel) {
+          reporter.ensure(typeof tx.title === 'string', `${langPath}.subUnits.${subUnit.key}.title: subUnit translation requires title string`)
+          reporter.ensure(typeof tx.abbreviation === 'string', `${langPath}.subUnits.${subUnit.key}.abbreviation: subUnit translation requires abbreviation string`)
+        } else {
+          requireString(reporter, `${langPath}.subUnits.${subUnit.key}.title`, tx.title, 'subUnit translation requires title string')
+          requireString(reporter, `${langPath}.subUnits.${subUnit.key}.abbreviation`, tx.abbreviation, 'subUnit translation requires abbreviation string')
         }
-        requireString(reporter, `${langPath}.subUnits.${subUnit.key}.title`, tx.title, 'subUnit translation requires title string')
-        requireString(reporter, `${langPath}.subUnits.${subUnit.key}.abbreviation`, tx.abbreviation, 'subUnit translation requires abbreviation string')
       })
       translationKeys.forEach((key) => {
         if (!model.subUnits?.some((subUnit) => subUnit.key === key)) {
@@ -130,6 +142,12 @@ const validateSeries = (dir) => {
   }
   if (model.svc !== undefined) {
     requireString(reporter, `${modelPath}.svc`, model.svc, 'Series model SVC reference must be a string when provided')
+  }
+  if (model.decimalPrecision !== undefined) {
+    requireNumber(reporter, `${modelPath}.decimalPrecision`, model.decimalPrecision, 'Series decimalPrecision must be a valid number when provided')
+  }
+  if (model.unit === 'count') {
+    reporter.ensure(model.decimalPrecision === 0, `${modelPath}: count series must set decimalPrecision to 0`)
   }
   if (model.visualisationConfig !== undefined) {
     reporter.fail(`${modelPath}: use svc instead of visualisationConfig`)

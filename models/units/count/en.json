@@ -11,20 +11,8 @@
   },
   "subUnits": {
     "count": {
-      "abbreviation": "ct",
-      "title": "Count"
-    },
-    "dozen": {
-      "abbreviation": "dz",
-      "title": "Dozen"
-    },
-    "hundred": {
-      "abbreviation": "100",
-      "title": "Hundred"
-    },
-    "thousand": {
-      "abbreviation": "k",
-      "title": "Thousand"
+      "abbreviation": "",
+      "title": ""
     }
   }
 }

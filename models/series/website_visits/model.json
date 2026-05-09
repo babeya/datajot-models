@@ -1,0 +1,10 @@
+{
+  "key": "website_visits",
+  "type": "series",
+  "category": "digital",
+  "icon": "globe",
+  "unit": "count",
+  "decimalPrecision": 0,
+  "color": "#3B82F6",
+  "graphType": "bar"
+}

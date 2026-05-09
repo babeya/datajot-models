@@ -1,0 +1,10 @@
+{
+  "key": "coffee_cups",
+  "type": "series",
+  "category": "consumption",
+  "icon": "cup.and.saucer.fill",
+  "unit": "count",
+  "decimalPrecision": 0,
+  "color": "#92400E",
+  "graphType": "bar"
+}

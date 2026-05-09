@@ -48,15 +48,23 @@ const validateCategoryOutput = (context, category) => {
   reporter.ensure(category.type === 'category', `${context}: category.type must equal "category"`)
 }
 
-const validateSubUnitOutput = (context, subUnit) => {
+const validateSubUnitOutput = (context, subUnit, allowsEmptyLabel = false) => {
   if (!requireObject(reporter, context, subUnit, 'subUnit must be an object')) {
     return
   }
   requireString(reporter, `${context}.key`, subUnit.key, 'subUnit.key must be a non-empty string')
   requireNumber(reporter, `${context}.factor`, subUnit.factor, 'subUnit.factor must be a valid number')
-  requireString(reporter, `${context}.title`, subUnit.title, 'subUnit.title must be a non-empty string')
+  if (allowsEmptyLabel) {
+    reporter.ensure(typeof subUnit.title === 'string', `${context}.title: subUnit.title must be a string`)
+  } else {
+    requireString(reporter, `${context}.title`, subUnit.title, 'subUnit.title must be a non-empty string')
+  }
   if (subUnit.abbreviation !== undefined) {
-    requireString(reporter, `${context}.abbreviation`, subUnit.abbreviation, 'subUnit.abbreviation must be a non-empty string when provided')
+    if (allowsEmptyLabel) {
+      reporter.ensure(typeof subUnit.abbreviation === 'string', `${context}.abbreviation: subUnit.abbreviation must be a string when provided`)
+    } else {
+      requireString(reporter, `${context}.abbreviation`, subUnit.abbreviation, 'subUnit.abbreviation must be a non-empty string when provided')
+    }
   }
 }
 
@@ -72,7 +80,15 @@ const validateUnitOutput = (context, unit) => {
   }
   requireString(reporter, `${context}.baseUnit`, unit.baseUnit, 'baseUnit must be provided')
   if (requireNonEmptyArray(reporter, `${context}.subUnits`, unit.subUnits, 'subUnits must be a non-empty array')) {
-    unit.subUnits.forEach((subUnit, idx) => validateSubUnitOutput(`${context}.subUnits[${idx}]`, subUnit))
+    unit.subUnits.forEach((subUnit, idx) => {
+      validateSubUnitOutput(`${context}.subUnits[${idx}]`, subUnit, unit.key === 'count' && subUnit.key === 'count')
+    })
+    if (unit.key === 'count') {
+      reporter.ensure(unit.baseUnit === 'count', `${context}: count unit baseUnit must be "count"`)
+      reporter.ensure(unit.subUnits.length === 1, `${context}: count unit must define exactly one subUnit`)
+      reporter.ensure(unit.subUnits[0]?.key === 'count', `${context}: count unit subUnit key must be "count"`)
+      reporter.ensure(unit.subUnits[0]?.factor === 1, `${context}: count unit subUnit factor must be 1`)
+    }
   }
   requireString(reporter, `${context}.title`, unit.title, 'Unit title must be provided')
   requireString(reporter, `${context}.description`, unit.description, 'Unit description must be provided')
@@ -135,6 +151,12 @@ const validateSeriesOutput = (context, series) => {
   }
   if (series.svc !== undefined) {
     validateSvcOutput(`${context}.svc`, series.svc)
+  }
+  if (series.decimalPrecision !== undefined) {
+    requireNumber(reporter, `${context}.decimalPrecision`, series.decimalPrecision, 'Series decimalPrecision must be a valid number when provided')
+  }
+  if (series.unit?.key === 'count') {
+    reporter.ensure(series.decimalPrecision === 0, `${context}: count series must set decimalPrecision to 0`)
   }
   if (series.visualisationConfig !== undefined) {
     reporter.fail(`${context}: use svc instead of visualisationConfig`)

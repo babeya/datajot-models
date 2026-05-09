@@ -1,0 +1,10 @@
+{
+  "key": "app_sales",
+  "type": "series",
+  "category": "digital",
+  "icon": "cart.badge.plus",
+  "unit": "count",
+  "decimalPrecision": 0,
+  "color": "#8B5CF6",
+  "graphType": "bar"
+}

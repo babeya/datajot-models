@@ -66,8 +66,8 @@ const transformSubUnits = (model, i18n) => {
     return {
       key: subUnit[FIELD_KEY],
       factor: subUnit.factor,
-      abbreviation: i18nData.abbreviation || subUnit.abbreviation || subUnit[FIELD_KEY],
-      title: i18nData.title || ''
+      abbreviation: i18nData.abbreviation ?? subUnit.abbreviation ?? subUnit[FIELD_KEY],
+      title: i18nData.title ?? ''
     }
   })
 }

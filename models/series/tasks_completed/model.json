@@ -1,0 +1,10 @@
+{
+  "key": "tasks_completed",
+  "type": "series",
+  "category": "productivity",
+  "icon": "checkmark.circle.fill",
+  "unit": "count",
+  "decimalPrecision": 0,
+  "color": "#22C55E",
+  "graphType": "bar"
+}

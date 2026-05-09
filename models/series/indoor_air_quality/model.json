@@ -5,6 +5,7 @@
   "icon": "aqi.medium",
   "unit": "count",
   "svc": "air_quality_index",
+  "decimalPrecision": 0,
   "color": "#2563EB",
   "graphType": "bar"
 }
