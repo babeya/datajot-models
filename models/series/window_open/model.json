@@ -1,0 +1,10 @@
+{
+  "key": "window_open",
+  "type": "series",
+  "category": "home",
+  "icon": "window.vertical.open",
+  "unit": "count",
+  "decimalPrecision": 0,
+  "color": "#14B8A6",
+  "graphType": "bar"
+}

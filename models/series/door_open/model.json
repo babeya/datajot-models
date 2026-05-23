@@ -1,0 +1,10 @@
+{
+  "key": "door_open",
+  "type": "series",
+  "category": "home",
+  "icon": "door.left.hand.open",
+  "unit": "count",
+  "decimalPrecision": 0,
+  "color": "#0EA5E9",
+  "graphType": "bar"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Suivez la fréquence d'ouverture d'une porte au fil du temps.",
+  "seo": {
+    "keywords": [
+      "porte",
+      "ouverte",
+      "maison",
+      "capteur"
+    ]
+  },
+  "name": "Porte ouverte"
+}
