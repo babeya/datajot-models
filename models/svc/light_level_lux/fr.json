@@ -8,5 +8,22 @@
       "ambiance",
       "intérieur"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Sombre"
+    },
+    "2": {
+      "label": "Tamisé"
+    },
+    "3": {
+      "label": "Modéré"
+    },
+    "4": {
+      "label": "Lumineux"
+    },
+    "5": {
+      "label": "Très lumineux"
+    }
   }
 }

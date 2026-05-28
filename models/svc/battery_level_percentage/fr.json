@@ -8,5 +8,22 @@
       "appareil",
       "surveillance"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Critique"
+    },
+    "2": {
+      "label": "Faible"
+    },
+    "3": {
+      "label": "Moyen"
+    },
+    "4": {
+      "label": "Bon"
+    },
+    "5": {
+      "label": "Chargé"
+    }
   }
 }

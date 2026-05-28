@@ -8,5 +8,22 @@
       "device",
       "monitoring"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Critical"
+    },
+    "2": {
+      "label": "Low"
+    },
+    "3": {
+      "label": "Medium"
+    },
+    "4": {
+      "label": "Good"
+    },
+    "5": {
+      "label": "Full"
+    }
   }
 }

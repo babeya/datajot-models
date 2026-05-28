@@ -8,5 +8,22 @@
       "environment",
       "health"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Good"
+    },
+    "2": {
+      "label": "Moderate"
+    },
+    "3": {
+      "label": "Unhealthy for sensitive groups"
+    },
+    "4": {
+      "label": "Unhealthy"
+    },
+    "5": {
+      "label": "Very unhealthy"
+    }
   }
 }

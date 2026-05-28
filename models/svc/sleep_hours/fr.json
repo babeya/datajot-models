@@ -8,5 +8,22 @@
       "santé",
       "bien-être"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Trop court"
+    },
+    "2": {
+      "label": "Court"
+    },
+    "3": {
+      "label": "Léger"
+    },
+    "4": {
+      "label": "Optimal"
+    },
+    "5": {
+      "label": "Long"
+    }
   }
 }

@@ -8,5 +8,22 @@
       "bien-être",
       "productivité"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Faible"
+    },
+    "2": {
+      "label": "Modéré"
+    },
+    "3": {
+      "label": "Élevé"
+    },
+    "4": {
+      "label": "Très élevé"
+    },
+    "5": {
+      "label": "Extrême"
+    }
   }
 }

@@ -8,5 +8,22 @@
       "fahrenheit",
       "météo"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Glacial"
+    },
+    "2": {
+      "label": "Froid"
+    },
+    "3": {
+      "label": "Doux"
+    },
+    "4": {
+      "label": "Chaud"
+    },
+    "5": {
+      "label": "Très chaud"
+    }
   }
 }

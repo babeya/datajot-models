@@ -1,0 +1,12 @@
+{
+  "description": "Track when a light is on or off.",
+  "seo": {
+    "keywords": [
+      "light",
+      "on",
+      "off",
+      "home"
+    ]
+  },
+  "name": "Light On"
+}

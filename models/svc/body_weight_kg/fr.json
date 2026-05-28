@@ -8,5 +8,22 @@
       "fitness",
       "corps"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Très faible"
+    },
+    "2": {
+      "label": "Objectif"
+    },
+    "3": {
+      "label": "Au-dessus de l'objectif"
+    },
+    "4": {
+      "label": "Élevé"
+    },
+    "5": {
+      "label": "Très élevé"
+    }
   }
 }

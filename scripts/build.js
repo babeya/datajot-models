@@ -18,6 +18,7 @@ const FIELD_SUB_UNITS = 'subUnits'
 const FIELD_UNIT = 'unit'
 const FIELD_CATEGORY = 'category'
 const FIELD_SVC = 'svc'
+const FIELD_THRESHOLDS = 'thresholds'
 
 mkdirSync(OUTPUT_DIR, { recursive: true })
 
@@ -84,6 +85,44 @@ const applyUnitTransformation = (item, model, i18n) => {
 }
 
 /**
+ * Transform thresholds by combining model data with translations.
+ */
+const transformThresholds = (model, i18n) => {
+  const modelThresholds = model[FIELD_THRESHOLDS]
+  if (!Array.isArray(modelThresholds) || !modelThresholds.length) {
+    return null
+  }
+
+  const i18nThresholds = i18n[FIELD_THRESHOLDS]
+  if (!i18nThresholds) {
+    throw new Error(`Missing thresholds translations for svc ${model[FIELD_KEY]}`)
+  }
+
+  return modelThresholds.map((threshold) => {
+    const i18nData = i18nThresholds[String(threshold.order)] || {}
+    if (typeof i18nData.label !== 'string' || !i18nData.label.trim()) {
+      throw new Error(`Missing threshold label translation for svc ${model[FIELD_KEY]} order ${threshold.order}`)
+    }
+
+    return {
+      ...threshold,
+      label: i18nData.label
+    }
+  })
+}
+
+/**
+ * Apply visualization config transformation to an item.
+ */
+const applyVisualizationConfigTransformation = (item, model, i18n) => {
+  const thresholdsArray = transformThresholds(model, i18n)
+  if (thresholdsArray) {
+    item[FIELD_THRESHOLDS] = thresholdsArray
+  }
+  return item
+}
+
+/**
  * Inject full unit object if available
  */
 const injectUnit = (item, unitsMap) => {
@@ -126,6 +165,10 @@ const processModelItem = (type) => (unitsMap, categoriesMap, visualizationConfig
   // Apply type-specific transformations
   if (type === TYPE_UNITS) {
     item = applyUnitTransformation(item, model, i18n)
+  }
+
+  if (type === TYPE_VISUALIZATION_CONFIGS) {
+    item = applyVisualizationConfigTransformation(item, model, i18n)
   }
   
   if (type === TYPE_SERIES) {
@@ -193,7 +236,7 @@ const loadVisualizationConfigsMap = (lang) => {
     try {
       // Try to read with translations first
       const { model, i18n } = readModelFiles(TYPE_VISUALIZATION_CONFIGS, configId, lang)
-      visualizationConfigsMap[configId] = { ...model, ...i18n }
+      visualizationConfigsMap[configId] = applyVisualizationConfigTransformation({ ...model, ...i18n }, model, i18n)
     } catch (error) {
       // Fallback to model.json only if translation files don't exist
       if (error.code === 'ENOENT') {
@@ -219,7 +262,7 @@ const generateVisualizationBundle = (lang, categoriesMap) => {
     try {
       // Try to read with translations first
       const { model, i18n } = readModelFiles('svc', modelId, lang)
-      let item = { ...model, ...i18n }
+      let item = applyVisualizationConfigTransformation({ ...model, ...i18n }, model, i18n)
       
       // Inject category if available
       item = injectCategory(item, categoriesMap)

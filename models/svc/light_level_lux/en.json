@@ -8,5 +8,22 @@
       "ambiance",
       "indoor"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Dark"
+    },
+    "2": {
+      "label": "Dim"
+    },
+    "3": {
+      "label": "Moderate"
+    },
+    "4": {
+      "label": "Bright"
+    },
+    "5": {
+      "label": "Very bright"
+    }
   }
 }

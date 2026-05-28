@@ -8,5 +8,22 @@
       "fahrenheit",
       "climat"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Très froid"
+    },
+    "2": {
+      "label": "Froid"
+    },
+    "3": {
+      "label": "Confortable"
+    },
+    "4": {
+      "label": "Chaud"
+    },
+    "5": {
+      "label": "Très chaud"
+    }
   }
 }

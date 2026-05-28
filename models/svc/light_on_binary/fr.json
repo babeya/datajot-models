@@ -1,0 +1,20 @@
+{
+  "label": "Lumière allumée",
+  "description": "Affiche l'état allumé ou éteint d'une lumière.",
+  "seo": {
+    "keywords": [
+      "lumière",
+      "allumée",
+      "éteinte",
+      "état"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Éteinte"
+    },
+    "2": {
+      "label": "Allumée"
+    }
+  }
+}

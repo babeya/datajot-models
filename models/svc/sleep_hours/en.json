@@ -8,5 +8,22 @@
       "health",
       "wellness"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Too short"
+    },
+    "2": {
+      "label": "Short"
+    },
+    "3": {
+      "label": "Light"
+    },
+    "4": {
+      "label": "Optimal"
+    },
+    "5": {
+      "label": "Long"
+    }
   }
 }

@@ -8,5 +8,22 @@
       "barometric",
       "monitoring"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Very low"
+    },
+    "2": {
+      "label": "Low"
+    },
+    "3": {
+      "label": "Normal"
+    },
+    "4": {
+      "label": "High"
+    },
+    "5": {
+      "label": "Very high"
+    }
   }
 }

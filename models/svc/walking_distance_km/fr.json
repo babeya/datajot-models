@@ -8,5 +8,22 @@
       "fitness",
       "activité"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Trop faible"
+    },
+    "2": {
+      "label": "Faible"
+    },
+    "3": {
+      "label": "Modérée"
+    },
+    "4": {
+      "label": "Bonne"
+    },
+    "5": {
+      "label": "Excellente"
+    }
   }
 }

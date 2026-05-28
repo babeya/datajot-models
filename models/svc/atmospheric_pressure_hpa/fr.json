@@ -8,5 +8,22 @@
       "barométrique",
       "surveillance"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Très basse"
+    },
+    "2": {
+      "label": "Basse"
+    },
+    "3": {
+      "label": "Normale"
+    },
+    "4": {
+      "label": "Haute"
+    },
+    "5": {
+      "label": "Très haute"
+    }
   }
 }

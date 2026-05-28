@@ -25,6 +25,7 @@ const ROOT_MODELS_DIR = join(__dirname, '..', 'models')
 const reporter = new ValidationReporter('Model schema validation')
 
 const THRESHOLD_OPERATORS = ['<', '<=', '>', '>=']
+const THRESHOLD_AXIS_LABEL_DISPLAY_MODES = ['value', 'label', 'valueAndLabel']
 
 const STAT_BOOLEAN_FIELDS = [
   'showAverage',
@@ -193,8 +194,19 @@ const validateVisualizationConfig = (dir) => {
       requireEnum(reporter, `${context}.operatorType`, threshold?.operatorType, THRESHOLD_OPERATORS, 'threshold operatorType must be one of')
       requireNumber(reporter, `${context}.value`, threshold?.value, 'threshold requires value number')
       requireString(reporter, `${context}.colorHex`, threshold?.colorHex, 'threshold requires colorHex string')
+      if (threshold?.label !== undefined) {
+        reporter.fail(`${context}: threshold label must be defined in translations`)
+      }
     })
   }
+
+  requireEnum(
+    reporter,
+    `${modelPath}.thresholdAxisLabelDisplayMode`,
+    model.thresholdAxisLabelDisplayMode,
+    THRESHOLD_AXIS_LABEL_DISPLAY_MODES,
+    'thresholdAxisLabelDisplayMode must be one of'
+  )
 
   if (model.yAxisBounds !== undefined) {
     reporter.fail(`${modelPath}: use autoScaleYAxis instead of yAxisBounds`)
@@ -208,6 +220,27 @@ const validateVisualizationConfig = (dir) => {
     const translation = readJsonFile(langPath)
     requireString(reporter, `${langPath}.label`, translation.label, 'VisualizationConfig translation requires label string')
     requireString(reporter, `${langPath}.description`, translation.description, 'VisualizationConfig translation requires description string')
+    if (requireObject(reporter, `${langPath}.thresholds`, translation.thresholds, 'VisualizationConfig translation requires thresholds object')) {
+      const translationKeys = Object.keys(translation.thresholds)
+      model.thresholds?.forEach((threshold) => {
+        const thresholdTranslation = translation.thresholds[String(threshold.order)]
+        if (!thresholdTranslation) {
+          reporter.fail(`${langPath}: missing thresholds entry for order "${threshold.order}"`)
+          return
+        }
+        requireString(
+          reporter,
+          `${langPath}.thresholds.${threshold.order}.label`,
+          thresholdTranslation.label,
+          'threshold translation requires label string'
+        )
+      })
+      translationKeys.forEach((key) => {
+        if (!model.thresholds?.some((threshold) => String(threshold.order) === key)) {
+          reporter.fail(`${langPath}: translation thresholds key "${key}" not defined in model thresholds`)
+        }
+      })
+    }
     validateSeoKeywords(reporter, `${langPath}.seo`, translation.seo)
   })
 }

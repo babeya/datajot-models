@@ -8,5 +8,22 @@
       "workout",
       "activity"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Too short"
+    },
+    "2": {
+      "label": "Light"
+    },
+    "3": {
+      "label": "Moderate"
+    },
+    "4": {
+      "label": "Good"
+    },
+    "5": {
+      "label": "Excellent"
+    }
   }
 }

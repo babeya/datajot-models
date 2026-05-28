@@ -8,5 +8,22 @@
       "entraînement",
       "activité"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Trop courte"
+    },
+    "2": {
+      "label": "Légère"
+    },
+    "3": {
+      "label": "Modérée"
+    },
+    "4": {
+      "label": "Bonne"
+    },
+    "5": {
+      "label": "Excellente"
+    }
   }
 }

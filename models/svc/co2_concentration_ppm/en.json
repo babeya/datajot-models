@@ -8,5 +8,22 @@
       "air quality",
       "indoor"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Good"
+    },
+    "2": {
+      "label": "Fair"
+    },
+    "3": {
+      "label": "High"
+    },
+    "4": {
+      "label": "Very high"
+    },
+    "5": {
+      "label": "Hazardous"
+    }
   }
 }

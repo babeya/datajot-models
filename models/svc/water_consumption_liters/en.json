@@ -8,5 +8,22 @@
       "sustainability",
       "environment"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Too low"
+    },
+    "2": {
+      "label": "Low"
+    },
+    "3": {
+      "label": "Moderate"
+    },
+    "4": {
+      "label": "Good"
+    },
+    "5": {
+      "label": "Excellent"
+    }
   }
 }

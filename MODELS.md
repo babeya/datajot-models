@@ -184,6 +184,7 @@ type SeriesOutputModel = {
 ```typescript
 
 type ThresholdOperator = "<" | "<=" | ">" | ">=";
+type ThresholdAxisLabelDisplayMode = "value" | "label" | "valueAndLabel";
 
 type ThresholdConfig = {
   order: number;
@@ -192,8 +193,29 @@ type ThresholdConfig = {
   colorHex: string;
 }
 
+type ThresholdOutput = ThresholdConfig & {
+  label: string;
+}
+
+type ThresholdTranslation = {
+  label: string;
+}
+
+type VisualizationConfigTranslation = {
+  label: string;
+  description: string;
+  thresholds: Record<string, ThresholdTranslation>; // keyed by threshold order
+  seo: {
+    keywords: string[];
+  };
+}
+
 type SVC = {
-  thresholds: ThresholdConfig[];
+  key: string;
+  type: "visualizationConfig";
+  unit?: string;
+  thresholds: ThresholdOutput[];
+  thresholdAxisLabelDisplayMode: ThresholdAxisLabelDisplayMode;
   showAverage: boolean;
   showMedian: boolean;
   showSum: boolean;
@@ -208,3 +230,21 @@ type SVC = {
 }
 
 ```
+
+Threshold labels are localized. Keep numeric threshold data in `model.json`, and define translated labels in each language file:
+
+```json
+{
+  "label": "Sleep Hours",
+  "description": "Monitor sleep duration for better rest quality and health",
+  "thresholds": {
+    "1": { "label": "Too short" },
+    "2": { "label": "Short" }
+  },
+  "seo": {
+    "keywords": ["sleep", "rest"]
+  }
+}
+```
+
+The build script merges each translation into the corresponding threshold, so generated bundles expose `thresholds` as an array where every threshold includes its localized `label`.

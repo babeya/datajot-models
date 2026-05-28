@@ -8,5 +8,22 @@
       "confort",
       "climat"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Trop sec"
+    },
+    "2": {
+      "label": "Sec"
+    },
+    "3": {
+      "label": "Confortable"
+    },
+    "4": {
+      "label": "Humide"
+    },
+    "5": {
+      "label": "Trop humide"
+    }
   }
 }

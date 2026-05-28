@@ -8,5 +8,22 @@
       "environnement",
       "santé"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Bon"
+    },
+    "2": {
+      "label": "Modéré"
+    },
+    "3": {
+      "label": "Mauvais pour les personnes sensibles"
+    },
+    "4": {
+      "label": "Mauvais"
+    },
+    "5": {
+      "label": "Très mauvais"
+    }
   }
 }

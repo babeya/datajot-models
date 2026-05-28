@@ -8,5 +8,22 @@
       "santé",
       "composition corporelle"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Très faible"
+    },
+    "2": {
+      "label": "Athlétique"
+    },
+    "3": {
+      "label": "Moyen"
+    },
+    "4": {
+      "label": "Élevé"
+    },
+    "5": {
+      "label": "Très élevé"
+    }
   }
 }

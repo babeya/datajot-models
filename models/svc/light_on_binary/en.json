@@ -1,0 +1,20 @@
+{
+  "label": "Light On",
+  "description": "Displays whether a light is on or off.",
+  "seo": {
+    "keywords": [
+      "light",
+      "on",
+      "off",
+      "state"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Off"
+    },
+    "2": {
+      "label": "On"
+    }
+  }
+}

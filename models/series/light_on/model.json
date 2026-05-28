@@ -1,0 +1,10 @@
+{
+  "key": "light_on",
+  "type": "series",
+  "category": "light",
+  "icon": "lightbulb.fill",
+  "svc": "light_on_binary",
+  "decimalPrecision": 0,
+  "color": "#FACC15",
+  "graphType": "bar"
+}

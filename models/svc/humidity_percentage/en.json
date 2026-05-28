@@ -8,5 +8,22 @@
       "comfort",
       "climate"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Too dry"
+    },
+    "2": {
+      "label": "Dry"
+    },
+    "3": {
+      "label": "Comfortable"
+    },
+    "4": {
+      "label": "Humid"
+    },
+    "5": {
+      "label": "Too humid"
+    }
   }
 }

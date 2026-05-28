@@ -44,5 +44,6 @@
   "showMedianOnChart": false,
   "showMaxOnChart": false,
   "showMinOnChart": false,
-  "autoScaleYAxis": true
+  "autoScaleYAxis": true,
+  "thresholdAxisLabelDisplayMode": "valueAndLabel"
 }

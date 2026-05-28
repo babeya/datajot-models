@@ -24,6 +24,7 @@ const BUILD_DIR = join(__dirname, '..', 'build')
 const reporter = new ValidationReporter('Output validation')
 
 const THRESHOLD_OPERATORS = ['<', '<=', '>', '>=']
+const THRESHOLD_AXIS_LABEL_DISPLAY_MODES = ['value', 'label', 'valueAndLabel']
 
 const STAT_BOOLEAN_FIELDS = [
   'showAverage',
@@ -113,6 +114,7 @@ const validateThresholdOutput = (context, threshold) => {
   requireEnum(reporter, `${context}.operatorType`, threshold.operatorType, THRESHOLD_OPERATORS, 'threshold.operatorType must be one of')
   requireNumber(reporter, `${context}.value`, threshold.value, 'threshold.value must be a valid number')
   requireString(reporter, `${context}.colorHex`, threshold.colorHex, 'threshold.colorHex must be provided')
+  requireString(reporter, `${context}.label`, threshold.label, 'threshold.label must be provided')
 }
 
 const validateSvcOutput = (context, svc) => {
@@ -129,6 +131,13 @@ const validateSvcOutput = (context, svc) => {
   if (requireNonEmptyArray(reporter, `${context}.thresholds`, svc.thresholds, 'svc.thresholds must be a non-empty array')) {
     svc.thresholds.forEach((threshold, idx) => validateThresholdOutput(`${context}.thresholds[${idx}]`, threshold))
   }
+  requireEnum(
+    reporter,
+    `${context}.thresholdAxisLabelDisplayMode`,
+    svc.thresholdAxisLabelDisplayMode,
+    THRESHOLD_AXIS_LABEL_DISPLAY_MODES,
+    'thresholdAxisLabelDisplayMode must be one of'
+  )
   if (svc.yAxisBounds !== undefined) {
     reporter.fail(`${context}: use autoScaleYAxis instead of yAxisBounds`)
   }

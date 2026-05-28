@@ -8,5 +8,22 @@
       "celsius",
       "weather"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Freezing"
+    },
+    "2": {
+      "label": "Cold"
+    },
+    "3": {
+      "label": "Mild"
+    },
+    "4": {
+      "label": "Warm"
+    },
+    "5": {
+      "label": "Hot"
+    }
   }
 }

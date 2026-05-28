@@ -8,5 +8,22 @@
       "wellness",
       "productivity"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Low"
+    },
+    "2": {
+      "label": "Moderate"
+    },
+    "3": {
+      "label": "High"
+    },
+    "4": {
+      "label": "Very high"
+    },
+    "5": {
+      "label": "Extreme"
+    }
   }
 }

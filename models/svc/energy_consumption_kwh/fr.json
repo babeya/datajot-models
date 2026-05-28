@@ -8,5 +8,22 @@
       "électricité",
       "efficacité"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Faible"
+    },
+    "2": {
+      "label": "Modérée"
+    },
+    "3": {
+      "label": "Élevée"
+    },
+    "4": {
+      "label": "Très élevée"
+    },
+    "5": {
+      "label": "Extrême"
+    }
   }
 }

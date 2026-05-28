@@ -8,5 +8,22 @@
       "qualité air",
       "intérieur"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Bon"
+    },
+    "2": {
+      "label": "Correct"
+    },
+    "3": {
+      "label": "Élevé"
+    },
+    "4": {
+      "label": "Très élevé"
+    },
+    "5": {
+      "label": "Dangereux"
+    }
   }
 }
