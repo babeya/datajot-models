@@ -1,11 +1,12 @@
 {
-  "description": "Track how often a door is open over time.",
+  "description": "Track whether a door is open or closed.",
   "seo": {
     "keywords": [
       "door",
       "open",
       "home",
-      "sensor"
+      "sensor",
+      "closed"
     ]
   },
   "name": "Door Open"

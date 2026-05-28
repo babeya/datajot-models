@@ -26,6 +26,7 @@ const reporter = new ValidationReporter('Model schema validation')
 
 const THRESHOLD_OPERATORS = ['<', '<=', '>', '>=']
 const THRESHOLD_AXIS_LABEL_DISPLAY_MODES = ['value', 'label', 'valueAndLabel']
+const AGGREGATION_METHODS = ['average', 'sum', 'last', 'min', 'max']
 
 const STAT_BOOLEAN_FIELDS = [
   'showAverage',
@@ -146,6 +147,12 @@ const validateSeries = (dir) => {
   }
   if (model.decimalPrecision !== undefined) {
     requireNumber(reporter, `${modelPath}.decimalPrecision`, model.decimalPrecision, 'Series decimalPrecision must be a valid number when provided')
+  }
+  if (model.aggregationType !== undefined) {
+    reporter.fail(`${modelPath}: use aggregationMethod instead of aggregationType`)
+  }
+  if (model.aggregationMethod !== undefined) {
+    requireEnum(reporter, `${modelPath}.aggregationMethod`, model.aggregationMethod, AGGREGATION_METHODS, 'Series aggregationMethod must be one of')
   }
   if (model.unit === 'count') {
     reporter.ensure(model.decimalPrecision === 0, `${modelPath}: count series must set decimalPrecision to 0`)

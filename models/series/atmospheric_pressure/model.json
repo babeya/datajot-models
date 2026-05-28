@@ -6,5 +6,6 @@
   "unit": "pressure",
   "svc": "atmospheric_pressure_hpa",
   "color": "#64748B",
-  "graphType": "line"
+  "graphType": "line",
+  "aggregationMethod": "average"
 }

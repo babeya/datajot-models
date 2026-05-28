@@ -1,0 +1,20 @@
+{
+  "label": "Fenêtre ouverte",
+  "description": "Affiche l'état ouvert ou fermé d'une fenêtre.",
+  "seo": {
+    "keywords": [
+      "fenêtre",
+      "ouverte",
+      "fermée",
+      "état"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Fermée"
+    },
+    "2": {
+      "label": "Ouverte"
+    }
+  }
+}

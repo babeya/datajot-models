@@ -1,0 +1,30 @@
+{
+  "key": "window_open_binary",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 1,
+      "operatorType": "<",
+      "colorHex": "#334155"
+    },
+    {
+      "order": 2,
+      "value": 1,
+      "operatorType": ">=",
+      "colorHex": "#14B8A6"
+    }
+  ],
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": false,
+  "showMin": false,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "autoScaleYAxis": false,
+  "thresholdAxisLabelDisplayMode": "label"
+}

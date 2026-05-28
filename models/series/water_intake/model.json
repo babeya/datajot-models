@@ -5,5 +5,6 @@
   "icon": "drop.fill",
   "unit": "volume_metric",
   "color": "#0EA5E9",
-  "graphType": "bar"
+  "graphType": "bar",
+  "aggregationMethod": "average"
 }

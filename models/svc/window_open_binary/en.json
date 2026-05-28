@@ -1,0 +1,20 @@
+{
+  "label": "Window Open",
+  "description": "Displays whether a window is open or closed.",
+  "seo": {
+    "keywords": [
+      "window",
+      "open",
+      "closed",
+      "state"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Closed"
+    },
+    "2": {
+      "label": "Open"
+    }
+  }
+}

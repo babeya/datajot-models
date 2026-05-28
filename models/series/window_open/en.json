@@ -1,11 +1,12 @@
 {
-  "description": "Track how often a window is open over time.",
+  "description": "Track whether a window is open or closed.",
   "seo": {
     "keywords": [
       "window",
       "open",
       "home",
-      "sensor"
+      "sensor",
+      "closed"
     ]
   },
   "name": "Window Open"

@@ -25,6 +25,7 @@ const reporter = new ValidationReporter('Output validation')
 
 const THRESHOLD_OPERATORS = ['<', '<=', '>', '>=']
 const THRESHOLD_AXIS_LABEL_DISPLAY_MODES = ['value', 'label', 'valueAndLabel']
+const AGGREGATION_METHODS = ['average', 'sum', 'last', 'min', 'max']
 
 const STAT_BOOLEAN_FIELDS = [
   'showAverage',
@@ -163,6 +164,12 @@ const validateSeriesOutput = (context, series) => {
   }
   if (series.decimalPrecision !== undefined) {
     requireNumber(reporter, `${context}.decimalPrecision`, series.decimalPrecision, 'Series decimalPrecision must be a valid number when provided')
+  }
+  if (series.aggregationType !== undefined) {
+    reporter.fail(`${context}: use aggregationMethod instead of aggregationType`)
+  }
+  if (series.aggregationMethod !== undefined) {
+    requireEnum(reporter, `${context}.aggregationMethod`, series.aggregationMethod, AGGREGATION_METHODS, 'Series aggregationMethod must be one of')
   }
   if (series.unit?.key === 'count') {
     reporter.ensure(series.decimalPrecision === 0, `${context}: count series must set decimalPrecision to 0`)

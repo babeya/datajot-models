@@ -6,5 +6,6 @@
   "svc": "light_on_binary",
   "decimalPrecision": 0,
   "color": "#FACC15",
-  "graphType": "bar"
+  "graphType": "bar",
+  "aggregationMethod": "last"
 }

@@ -1,0 +1,20 @@
+{
+  "label": "Porte ouverte",
+  "description": "Affiche l'état ouvert ou fermé d'une porte.",
+  "seo": {
+    "keywords": [
+      "porte",
+      "ouverte",
+      "fermée",
+      "état"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Fermée"
+    },
+    "2": {
+      "label": "Ouverte"
+    }
+  }
+}

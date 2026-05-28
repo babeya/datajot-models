@@ -142,6 +142,8 @@ type SeriesInputModel = {
   graphType: "line" | "bar" | "area" | "points";
   unit?: string; // Reference to a unit key
   svc?: string; // Reference to a visualization config key
+  decimalPrecision?: number; // Number of decimals to display
+  aggregationMethod: "average" | "sum" | "last" | "min" | "max"; // Defaults to "average" for standard numeric series
 }
 
 // {lang}.json
@@ -168,6 +170,8 @@ type SeriesOutputModel = {
   color: string;
   graphType: "line" | "bar" | "area" | "points";
   unit?: UnitOutputModel; // Full unit model
+  decimalPrecision?: number;
+  aggregationMethod: "average" | "sum" | "last" | "min" | "max";
   name: string;
   description: string;
   svc?: SVC;

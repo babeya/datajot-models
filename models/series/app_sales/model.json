@@ -6,5 +6,6 @@
   "unit": "count",
   "decimalPrecision": 0,
   "color": "#8B5CF6",
-  "graphType": "bar"
+  "graphType": "bar",
+  "aggregationMethod": "average"
 }

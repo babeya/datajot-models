@@ -3,8 +3,9 @@
   "type": "series",
   "category": "home",
   "icon": "window.vertical.open",
-  "unit": "count",
+  "svc": "window_open_binary",
   "decimalPrecision": 0,
   "color": "#14B8A6",
-  "graphType": "bar"
+  "graphType": "bar",
+  "aggregationMethod": "last"
 }

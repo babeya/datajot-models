@@ -6,5 +6,6 @@
   "unit": "temperature_metric",
   "color": "#F97316",
   "graphType": "bar",
-  "svc": "inside_temp_deg_c"
+  "svc": "inside_temp_deg_c",
+  "aggregationMethod": "average"
 }

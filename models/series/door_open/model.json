@@ -3,8 +3,9 @@
   "type": "series",
   "category": "home",
   "icon": "door.left.hand.open",
-  "unit": "count",
+  "svc": "door_open_binary",
   "decimalPrecision": 0,
   "color": "#0EA5E9",
-  "graphType": "bar"
+  "graphType": "bar",
+  "aggregationMethod": "last"
 }

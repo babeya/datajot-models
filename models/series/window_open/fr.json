@@ -1,11 +1,12 @@
 {
-  "description": "Suivez la fréquence d'ouverture d'une fenêtre au fil du temps.",
+  "description": "Suivez l'état ouvert ou fermé d'une fenêtre.",
   "seo": {
     "keywords": [
       "fenêtre",
       "ouverte",
       "maison",
-      "capteur"
+      "capteur",
+      "fermée"
     ]
   },
   "name": "Fenêtre ouverte"
