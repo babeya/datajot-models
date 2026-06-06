@@ -1,6 +1,6 @@
 # DATAJOT-MODELS
 
-Datajot uses this repository as the single source of truth for every model, unit, and category definition that the app ships with. The JSON content under `models/` is transformed into consumable bundles that are published to GitHub Pages at [models.datajot.app](https://models.datajot.app).
+[Datajot](https://www.datajot.app) uses this repository as the single source of truth for every model, unit, and category definition that the app ships with. The JSON content under `models/` is transformed into consumable bundles that are published to GitHub Pages at [models.datajot.app](https://models.datajot.app).
 
 ## Repository structure
 
