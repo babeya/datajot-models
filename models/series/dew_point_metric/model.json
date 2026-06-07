@@ -5,6 +5,6 @@
   "icon": "thermometer.and.liquid.waves",
   "unit": "temperature_metric",
   "color": "#14B8A6",
-  "graphType": "line",
+  "graphType": "area",
   "aggregationMethod": "average"
 }

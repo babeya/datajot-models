@@ -5,6 +5,6 @@
   "icon": "thermometer.sun.fill",
   "unit": "temperature_imperial",
   "color": "#F97316",
-  "graphType": "bar",
+  "graphType": "area",
   "aggregationMethod": "average"
 }

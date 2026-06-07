@@ -5,6 +5,6 @@
   "icon": "thermometer.variable.and.figure",
   "unit": "temperature_metric",
   "color": "#FB7185",
-  "graphType": "line",
+  "graphType": "area",
   "aggregationMethod": "average"
 }

@@ -5,7 +5,7 @@
   "icon": "thermometer.sun.fill",
   "unit": "temperature_metric",
   "color": "#F97316",
-  "graphType": "bar",
+  "graphType": "area",
   "svc": "inside_temp_deg_c",
   "aggregationMethod": "average"
 }
