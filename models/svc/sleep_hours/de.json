@@ -1,0 +1,29 @@
+{
+  "label": "Schlafstunden",
+  "description": "Schlafdauer für bessere Erholung und Gesundheit überwachen",
+  "seo": {
+    "keywords": [
+      "schlaf",
+      "erholung",
+      "gesundheit",
+      "wohlbefinden"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Zu kurz"
+    },
+    "2": {
+      "label": "Kurz"
+    },
+    "3": {
+      "label": "Gering"
+    },
+    "4": {
+      "label": "Optimal"
+    },
+    "5": {
+      "label": "Lang"
+    }
+  }
+}

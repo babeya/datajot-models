@@ -1,0 +1,20 @@
+{
+  "label": "Licht an",
+  "description": "Zeigt an, ob ein Licht an oder aus ist.",
+  "seo": {
+    "keywords": [
+      "licht",
+      "an",
+      "aus",
+      "zustand"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Aus"
+    },
+    "2": {
+      "label": "An"
+    }
+  }
+}

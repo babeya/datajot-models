@@ -1,0 +1,29 @@
+{
+  "label": "Gehstrecke (km)",
+  "description": "Gehstrecke für tägliche Aktivität und Fitnessüberwachung verfolgen",
+  "seo": {
+    "keywords": [
+      "gehen",
+      "entfernung",
+      "fitness",
+      "aktivität"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Zu niedrig"
+    },
+    "2": {
+      "label": "Niedrig"
+    },
+    "3": {
+      "label": "Mäßig"
+    },
+    "4": {
+      "label": "Gut"
+    },
+    "5": {
+      "label": "Ausgezeichnet"
+    }
+  }
+}

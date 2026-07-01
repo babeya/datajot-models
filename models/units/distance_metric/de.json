@@ -1,0 +1,30 @@
+{
+  "title": "Entfernung (metrisch)",
+  "description": "Metrische Entfernungen von Millimetern bis Kilometern.",
+  "seo": {
+    "keywords": [
+      "entfernung",
+      "metrisch",
+      "meter",
+      "kilometer"
+    ]
+  },
+  "subUnits": {
+    "mm": {
+      "abbreviation": "mm",
+      "title": "Millimeter"
+    },
+    "cm": {
+      "abbreviation": "cm",
+      "title": "Zentimeter"
+    },
+    "m": {
+      "abbreviation": "m",
+      "title": "Meter"
+    },
+    "km": {
+      "abbreviation": "km",
+      "title": "Kilometer"
+    }
+  }
+}

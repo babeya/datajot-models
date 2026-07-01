@@ -1,0 +1,12 @@
+{
+  "description": "Taupunkttemperatur aus Wetterdaten verfolgen.",
+  "seo": {
+    "keywords": [
+      "taupunkt",
+      "luftfeuchtigkeit",
+      "wetter",
+      "umwelt"
+    ]
+  },
+  "name": "Taupunkt"
+}

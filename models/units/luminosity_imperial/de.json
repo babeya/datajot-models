@@ -1,0 +1,13 @@
+{
+  "title": "Beleuchtungsstärke (fc)",
+  "description": "Beleuchtungsstärke in Foot-Candles messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "fc": {
+      "abbreviation": "fc",
+      "title": "Foot-Candle"
+    }
+  }
+}

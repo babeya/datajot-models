@@ -1,0 +1,29 @@
+{
+  "label": "Bildschirmzeit (Stunden)",
+  "description": "Bildschirmzeit für besseres digitales Wohlbefinden und Produktivität verfolgen",
+  "seo": {
+    "keywords": [
+      "bildschirmzeit",
+      "digital",
+      "wohlbefinden",
+      "produktivität"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Niedrig"
+    },
+    "2": {
+      "label": "Mäßig"
+    },
+    "3": {
+      "label": "Hoch"
+    },
+    "4": {
+      "label": "Sehr hoch"
+    },
+    "5": {
+      "label": "Extrem"
+    }
+  }
+}

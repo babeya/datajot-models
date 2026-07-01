@@ -1,0 +1,12 @@
+{
+  "name": "CO2-Emissionen",
+  "description": "Geschätzte Kilogramm CO2, die pro Tag ausgestoßen werden.",
+  "seo": {
+    "keywords": [
+      "co2",
+      "kohlenstoff",
+      "umwelt",
+      "emissionen"
+    ]
+  }
+}

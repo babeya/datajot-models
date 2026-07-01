@@ -1,0 +1,17 @@
+{
+  "title": "Größe (ft)",
+  "description": "Größe oder Länge in imperialen Einheiten messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "in": {
+      "abbreviation": "in",
+      "title": "Zoll"
+    },
+    "ft": {
+      "abbreviation": "ft",
+      "title": "Fuß"
+    }
+  }
+}

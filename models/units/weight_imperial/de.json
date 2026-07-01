@@ -1,0 +1,21 @@
+{
+  "title": "Gewicht (lb)",
+  "description": "Gewicht in imperialen Einheiten messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "oz": {
+      "abbreviation": "oz",
+      "title": "Unze"
+    },
+    "lb": {
+      "abbreviation": "lb",
+      "title": "Pfund"
+    },
+    "st": {
+      "abbreviation": "st",
+      "title": "Stone"
+    }
+  }
+}

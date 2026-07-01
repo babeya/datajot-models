@@ -18,7 +18,7 @@ All scripts run with plain Node (no dependencies). Use `npm run <script>` from t
 
 | Command | Description |
 | --- | --- |
-| `npm run build` | Reads every model under `models/`, merges in translations for `en` and `fr`, injects category and unit metadata, then writes the language-specific bundles plus `index.json` to `build/`. |
+| `npm run build` | Reads every model under `models/`, merges in translations for `en`, `fr`, and `de`, injects category and unit metadata, then writes the language-specific bundles plus `index.json` to `build/`. |
 | `npm run validate:models` | Ensures each authoring model adheres to the schema defined in `MODELS.MD` (required fields, enums, localization files, SEO metadata, etc.). |
 | `npm run validate:output` | Verifies the generated bundles in `build/` still match the schema (correct nesting, localized strings, category/unit injection, and bundle/index consistency). |
 | `npm run validate` | Convenience command that runs both validation steps in sequence. |

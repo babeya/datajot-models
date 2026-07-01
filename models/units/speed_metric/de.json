@@ -1,0 +1,22 @@
+{
+  "title": "Geschwindigkeit (metrisch)",
+  "description": "Metrische Geschwindigkeitseinheiten",
+  "subUnits": {
+    "m_s": {
+      "title": "Meter pro Sekunde",
+      "abbreviation": "m/s"
+    },
+    "km_h": {
+      "title": "Kilometer pro Stunde",
+      "abbreviation": "km/h"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "geschwindigkeit",
+      "tempo",
+      "metrisch",
+      "km/h"
+    ]
+  }
+}

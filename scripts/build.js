@@ -4,7 +4,7 @@ import { join } from 'path'
 // Constants
 const BASE_DIR = './models'
 const OUTPUT_DIR = './build'
-const LANGUAGES = ['fr', 'en']
+const LANGUAGES = ['fr', 'en', 'de']
 const MODEL_TYPES = ['series', 'units', 'svc']
 const TYPE_CATEGORIES = 'categories'
 const TYPE_UNITS = 'units'

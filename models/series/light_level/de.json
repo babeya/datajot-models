@@ -1,0 +1,12 @@
+{
+  "description": "Beleuchtungsstärke von einem Sensor oder aus Wetterdaten verfolgen.",
+  "seo": {
+    "keywords": [
+      "licht",
+      "lux",
+      "sensor",
+      "umwelt"
+    ]
+  },
+  "name": "Beleuchtungsstärke"
+}

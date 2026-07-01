@@ -1,0 +1,34 @@
+{
+  "title": "Digitaler Speicher",
+  "description": "Einheiten der digitalen Informationsspeicherung",
+  "subUnits": {
+    "B": {
+      "title": "Byte",
+      "abbreviation": "B"
+    },
+    "kB": {
+      "title": "Kilobyte",
+      "abbreviation": "kB"
+    },
+    "MB": {
+      "title": "Megabyte",
+      "abbreviation": "MB"
+    },
+    "GB": {
+      "title": "Gigabyte",
+      "abbreviation": "GB"
+    },
+    "TB": {
+      "title": "Terabyte",
+      "abbreviation": "TB"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "datenspeicher",
+      "bytes",
+      "speicher",
+      "speicherplatz"
+    ]
+  }
+}

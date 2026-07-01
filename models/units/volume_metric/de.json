@@ -1,0 +1,21 @@
+{
+  "title": "Volumen (l)",
+  "description": "Flüssigkeitsvolumen in metrischen Einheiten messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "ml": {
+      "abbreviation": "ml",
+      "title": "Milliliter"
+    },
+    "cl": {
+      "abbreviation": "cl",
+      "title": "Zentiliter"
+    },
+    "l": {
+      "abbreviation": "l",
+      "title": "Liter"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Frequenz",
+  "description": "Zyklen pro Sekunde für Signale, Gewohnheiten oder wiederholte Aufgaben.",
+  "seo": {
+    "keywords": [
+      "frequenz",
+      "hz",
+      "zyklen",
+      "periode"
+    ]
+  },
+  "subUnits": {
+    "microhz": {
+      "abbreviation": "µHz",
+      "title": "Mikrohertz"
+    },
+    "millihz": {
+      "abbreviation": "mHz",
+      "title": "Millihertz"
+    },
+    "hz": {
+      "abbreviation": "Hz",
+      "title": "Hertz"
+    },
+    "khz": {
+      "abbreviation": "kHz",
+      "title": "Kilohertz"
+    },
+    "mhz": {
+      "abbreviation": "MHz",
+      "title": "Megahertz"
+    },
+    "ghz": {
+      "abbreviation": "GHz",
+      "title": "Gigahertz"
+    }
+  }
+}

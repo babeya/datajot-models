@@ -1,0 +1,25 @@
+{
+  "title": "Kraft",
+  "description": "Krafteinheiten",
+  "subUnits": {
+    "N": {
+      "title": "Newton",
+      "abbreviation": "N"
+    },
+    "kN": {
+      "title": "Kilonewton",
+      "abbreviation": "kN"
+    },
+    "lbf": {
+      "title": "Pfundkraft",
+      "abbreviation": "lbf"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "kraft",
+      "newton",
+      "physik"
+    ]
+  }
+}

@@ -126,7 +126,7 @@ type CategoryOutput = {
 
 ## Series
 
-Series are the main models of the repository. Each series model is defined in its own folder within the `models/series` directory. The model.json file contains the base series model with its id, and language-specific JSON files (e.g., en.json, fr.json) contain translations for the series name and description.
+Series are the main models of the repository. Each series model is defined in its own folder within the `models/series` directory. The model.json file contains the base series model with its id, and language-specific JSON files (e.g., en.json, fr.json, de.json) contain translations for the series name and description.
 
 ### Structure
 

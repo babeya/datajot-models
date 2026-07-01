@@ -1,0 +1,21 @@
+{
+  "title": "Größe (m)",
+  "description": "Größe oder Länge in metrischen Einheiten messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "mm": {
+      "abbreviation": "mm",
+      "title": "Millimeter"
+    },
+    "cm": {
+      "abbreviation": "cm",
+      "title": "Zentimeter"
+    },
+    "m": {
+      "abbreviation": "m",
+      "title": "Meter"
+    }
+  }
+}

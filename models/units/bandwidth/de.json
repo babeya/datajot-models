@@ -1,0 +1,30 @@
+{
+  "title": "Bandbreite",
+  "description": "Einheiten der Datenübertragungsrate",
+  "subUnits": {
+    "bps": {
+      "title": "Bits pro Sekunde",
+      "abbreviation": "bps"
+    },
+    "kbps": {
+      "title": "Kilobits pro Sekunde",
+      "abbreviation": "kbps"
+    },
+    "Mbps": {
+      "title": "Megabits pro Sekunde",
+      "abbreviation": "Mbps"
+    },
+    "Gbps": {
+      "title": "Gigabits pro Sekunde",
+      "abbreviation": "Gbps"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "bandbreite",
+      "geschwindigkeit",
+      "internet",
+      "übertragung"
+    ]
+  }
+}

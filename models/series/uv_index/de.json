@@ -1,0 +1,12 @@
+{
+  "description": "UV-Index aus Wetterdaten verfolgen.",
+  "seo": {
+    "keywords": [
+      "uv",
+      "sonne",
+      "wetter",
+      "umwelt"
+    ]
+  },
+  "name": "UV-Index"
+}

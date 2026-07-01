@@ -1,0 +1,29 @@
+{
+  "label": "Beleuchtungsstärke (Lux)",
+  "description": "Beleuchtungsstärke für bessere Atmosphäre und Energiemanagement verfolgen",
+  "seo": {
+    "keywords": [
+      "licht",
+      "beleuchtungsstärke",
+      "atmosphäre",
+      "innenraum"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Dunkel"
+    },
+    "2": {
+      "label": "Gedimmt"
+    },
+    "3": {
+      "label": "Mäßig"
+    },
+    "4": {
+      "label": "Hell"
+    },
+    "5": {
+      "label": "Sehr hell"
+    }
+  }
+}

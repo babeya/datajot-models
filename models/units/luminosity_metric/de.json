@@ -1,0 +1,13 @@
+{
+  "title": "Beleuchtungsstärke (lx)",
+  "description": "Beleuchtungsstärke in Lux messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "lux": {
+      "abbreviation": "lux",
+      "title": "Lux"
+    }
+  }
+}

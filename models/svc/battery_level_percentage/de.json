@@ -1,0 +1,29 @@
+{
+  "label": "Batteriestand (%)",
+  "description": "Batteriestand in Prozent für die Geräteverwaltung überwachen",
+  "seo": {
+    "keywords": [
+      "batterie",
+      "leistung",
+      "gerät",
+      "überwachung"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Kritisch"
+    },
+    "2": {
+      "label": "Niedrig"
+    },
+    "3": {
+      "label": "Mittel"
+    },
+    "4": {
+      "label": "Gut"
+    },
+    "5": {
+      "label": "Voll"
+    }
+  }
+}

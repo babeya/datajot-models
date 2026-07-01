@@ -1,0 +1,29 @@
+{
+  "title": "Dauer",
+  "description": "Zeitdauer messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "ms": {
+      "abbreviation": "ms",
+      "title": "Millisekunde"
+    },
+    "s": {
+      "abbreviation": "s",
+      "title": "Sekunde"
+    },
+    "min": {
+      "abbreviation": "min",
+      "title": "Minute"
+    },
+    "h": {
+      "abbreviation": "h",
+      "title": "Stunde"
+    },
+    "d": {
+      "abbreviation": "d",
+      "title": "Tag"
+    }
+  }
+}

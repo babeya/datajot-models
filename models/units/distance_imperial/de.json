@@ -1,0 +1,30 @@
+{
+  "title": "Entfernung (imperial)",
+  "description": "Imperiale Entfernungen von Zoll bis Meilen.",
+  "seo": {
+    "keywords": [
+      "entfernung",
+      "imperial",
+      "meilen",
+      "fuß"
+    ]
+  },
+  "subUnits": {
+    "in": {
+      "abbreviation": "in",
+      "title": "Zoll"
+    },
+    "ft": {
+      "abbreviation": "ft",
+      "title": "Fuß"
+    },
+    "yd": {
+      "abbreviation": "yd",
+      "title": "Yard"
+    },
+    "mi": {
+      "abbreviation": "mi",
+      "title": "Meile"
+    }
+  }
+}

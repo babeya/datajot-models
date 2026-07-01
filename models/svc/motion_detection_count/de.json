@@ -1,0 +1,29 @@
+{
+  "label": "Bewegungserkennungen",
+  "description": "Bewegungserkennungen für Sicherheit und Automatisierung überwachen",
+  "seo": {
+    "keywords": [
+      "bewegung",
+      "erkennung",
+      "sicherheit",
+      "automatisierung"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Niedrig"
+    },
+    "2": {
+      "label": "Mäßig"
+    },
+    "3": {
+      "label": "Hoch"
+    },
+    "4": {
+      "label": "Sehr hoch"
+    },
+    "5": {
+      "label": "Extrem"
+    }
+  }
+}

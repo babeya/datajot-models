@@ -1,0 +1,29 @@
+{
+  "label": "Innenraumtemperatur (°C)",
+  "description": "Innenraumtemperatur in Celsius für optimalen Komfort überwachen",
+  "seo": {
+    "keywords": [
+      "temperatur",
+      "innenraum",
+      "celsius",
+      "klima"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Sehr kalt"
+    },
+    "2": {
+      "label": "Kalt"
+    },
+    "3": {
+      "label": "Angenehm"
+    },
+    "4": {
+      "label": "Warm"
+    },
+    "5": {
+      "label": "Heiß"
+    }
+  }
+}

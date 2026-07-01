@@ -1,0 +1,12 @@
+{
+  "name": "Außenluftqualität",
+  "description": "AQI-Messwerte für die lokale Umgebung.",
+  "seo": {
+    "keywords": [
+      "luft",
+      "außen",
+      "umwelt",
+      "AQI"
+    ]
+  }
+}

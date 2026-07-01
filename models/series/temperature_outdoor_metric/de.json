@@ -1,0 +1,12 @@
+{
+  "description": "Außentemperatur in Celsius verfolgen.",
+  "seo": {
+    "keywords": [
+      "temperatur",
+      "außen",
+      "wetter",
+      "celsius"
+    ]
+  },
+  "name": "Außentemperatur (°C)"
+}

@@ -1,0 +1,29 @@
+{
+  "label": "CO2-Konzentration (ppm)",
+  "description": "CO2-Konzentration für bessere Innenraumluftqualität verfolgen",
+  "seo": {
+    "keywords": [
+      "co2",
+      "kohlendioxid",
+      "luftqualität",
+      "innenraum"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Gut"
+    },
+    "2": {
+      "label": "Ausreichend"
+    },
+    "3": {
+      "label": "Hoch"
+    },
+    "4": {
+      "label": "Sehr hoch"
+    },
+    "5": {
+      "label": "Gefährlich"
+    }
+  }
+}

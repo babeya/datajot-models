@@ -1,0 +1,38 @@
+{
+  "title": "Währung",
+  "description": "Gängige Weltwährungen, normalisiert auf USD.",
+  "seo": {
+    "keywords": [
+      "geld",
+      "finanzen",
+      "währung",
+      "ausgabe"
+    ]
+  },
+  "subUnits": {
+    "usd": {
+      "abbreviation": "USD",
+      "title": "US-Dollar"
+    },
+    "eur": {
+      "abbreviation": "EUR",
+      "title": "Euro"
+    },
+    "gbp": {
+      "abbreviation": "GBP",
+      "title": "Britisches Pfund"
+    },
+    "cad": {
+      "abbreviation": "CAD",
+      "title": "Kanadischer Dollar"
+    },
+    "aud": {
+      "abbreviation": "AUD",
+      "title": "Australischer Dollar"
+    },
+    "jpy": {
+      "abbreviation": "JPY",
+      "title": "Japanischer Yen"
+    }
+  }
+}

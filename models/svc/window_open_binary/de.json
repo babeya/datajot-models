@@ -1,0 +1,20 @@
+{
+  "label": "Fenster offen",
+  "description": "Zeigt an, ob ein Fenster offen oder geschlossen ist.",
+  "seo": {
+    "keywords": [
+      "fenster",
+      "offen",
+      "geschlossen",
+      "zustand"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Geschlossen"
+    },
+    "2": {
+      "label": "Offen"
+    }
+  }
+}

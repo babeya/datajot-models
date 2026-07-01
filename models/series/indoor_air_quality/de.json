@@ -1,0 +1,12 @@
+{
+  "name": "Innenraumluftqualität",
+  "description": "AQI- oder VOC-Messwerte, die in Innenräumen erfasst wurden.",
+  "seo": {
+    "keywords": [
+      "luftqualität",
+      "innenraum",
+      "umwelt",
+      "AQI"
+    ]
+  }
+}

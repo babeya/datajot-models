@@ -1,0 +1,22 @@
+{
+  "title": "Blutzucker",
+  "description": "Einheiten der Blutzuckerkonzentration",
+  "subUnits": {
+    "mmol_L": {
+      "title": "Millimol pro Liter",
+      "abbreviation": "mmol/L"
+    },
+    "mg_dL": {
+      "title": "Milligramm pro Deziliter",
+      "abbreviation": "mg/dL"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "glukose",
+      "blutzucker",
+      "gesundheit",
+      "diabetes"
+    ]
+  }
+}

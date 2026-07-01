@@ -1,0 +1,29 @@
+{
+  "label": "Stromverbrauch (W)",
+  "description": "Stromverbrauch in Echtzeit zur Energieoptimierung überwachen",
+  "seo": {
+    "keywords": [
+      "leistung",
+      "verbrauch",
+      "energie",
+      "watt"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Niedrig"
+    },
+    "2": {
+      "label": "Mäßig"
+    },
+    "3": {
+      "label": "Hoch"
+    },
+    "4": {
+      "label": "Sehr hoch"
+    },
+    "5": {
+      "label": "Extrem"
+    }
+  }
+}

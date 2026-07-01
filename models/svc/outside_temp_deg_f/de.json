@@ -1,0 +1,29 @@
+{
+  "label": "Außentemperatur (°F)",
+  "description": "Außentemperatur in Fahrenheit zur Wetterbeobachtung verfolgen",
+  "seo": {
+    "keywords": [
+      "temperatur",
+      "außen",
+      "fahrenheit",
+      "wetter"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Frostig"
+    },
+    "2": {
+      "label": "Kalt"
+    },
+    "3": {
+      "label": "Mild"
+    },
+    "4": {
+      "label": "Warm"
+    },
+    "5": {
+      "label": "Heiß"
+    }
+  }
+}

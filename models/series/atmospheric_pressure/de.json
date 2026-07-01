@@ -1,0 +1,12 @@
+{
+  "description": "Luftdruck aus Wetterstationen oder Vorhersagedaten verfolgen.",
+  "seo": {
+    "keywords": [
+      "druck",
+      "wetter",
+      "barometer",
+      "umwelt"
+    ]
+  },
+  "name": "Luftdruck"
+}

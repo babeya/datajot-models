@@ -1,0 +1,29 @@
+{
+  "label": "Luftfeuchtigkeit (%)",
+  "description": "Luftfeuchtigkeit für optimalen Innenraumkomfort überwachen",
+  "seo": {
+    "keywords": [
+      "luftfeuchtigkeit",
+      "innenraum",
+      "komfort",
+      "klima"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Zu trocken"
+    },
+    "2": {
+      "label": "Trocken"
+    },
+    "3": {
+      "label": "Angenehm"
+    },
+    "4": {
+      "label": "Feucht"
+    },
+    "5": {
+      "label": "Zu feucht"
+    }
+  }
+}

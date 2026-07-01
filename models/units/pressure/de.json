@@ -1,0 +1,43 @@
+{
+  "title": "Druck",
+  "description": "Druckeinheiten",
+  "subUnits": {
+    "Pa": {
+      "title": "Pascal",
+      "abbreviation": "Pa"
+    },
+    "hPa": {
+      "title": "Hektopascal",
+      "abbreviation": "hPa"
+    },
+    "kPa": {
+      "title": "Kilopascal",
+      "abbreviation": "kPa"
+    },
+    "bar": {
+      "title": "Bar",
+      "abbreviation": "bar"
+    },
+    "psi": {
+      "title": "Pfund pro Quadratzoll",
+      "abbreviation": "psi"
+    },
+    "atm": {
+      "title": "Atmosphäre",
+      "abbreviation": "atm"
+    },
+    "mmHg": {
+      "title": "Millimeter Quecksilbersäule",
+      "abbreviation": "mmHg"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "druck",
+      "pascal",
+      "bar",
+      "psi",
+      "atmosphäre"
+    ]
+  }
+}

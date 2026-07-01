@@ -1,0 +1,13 @@
+{
+  "title": "Prozentsatz",
+  "description": "Werte als Prozentsatz messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "percent": {
+      "abbreviation": "percent",
+      "title": "Prozent"
+    }
+  }
+}

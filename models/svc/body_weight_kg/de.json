@@ -1,0 +1,29 @@
+{
+  "label": "Körpergewicht (kg)",
+  "description": "Körpergewicht überwachen, um Gesundheitsfortschritt zu verfolgen",
+  "seo": {
+    "keywords": [
+      "gewicht",
+      "gesundheit",
+      "fitness",
+      "körper"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Sehr niedrig"
+    },
+    "2": {
+      "label": "Ziel"
+    },
+    "3": {
+      "label": "Über dem Ziel"
+    },
+    "4": {
+      "label": "Hoch"
+    },
+    "5": {
+      "label": "Sehr hoch"
+    }
+  }
+}

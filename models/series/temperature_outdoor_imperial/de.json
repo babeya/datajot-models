@@ -1,0 +1,12 @@
+{
+  "description": "Außentemperatur in Fahrenheit verfolgen.",
+  "seo": {
+    "keywords": [
+      "temperatur",
+      "außen",
+      "wetter",
+      "fahrenheit"
+    ]
+  },
+  "name": "Außentemperatur (°F)"
+}

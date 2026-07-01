@@ -1,0 +1,29 @@
+{
+  "label": "Trainingsdauer (Minuten)",
+  "description": "Trainingsdauer verfolgen, um Fitnessziele zu erreichen",
+  "seo": {
+    "keywords": [
+      "workout",
+      "fitness",
+      "training",
+      "aktivität"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Zu kurz"
+    },
+    "2": {
+      "label": "Leicht"
+    },
+    "3": {
+      "label": "Mäßig"
+    },
+    "4": {
+      "label": "Gut"
+    },
+    "5": {
+      "label": "Ausgezeichnet"
+    }
+  }
+}

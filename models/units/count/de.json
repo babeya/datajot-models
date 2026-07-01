@@ -1,0 +1,18 @@
+{
+  "title": "Anzahl",
+  "description": "Allgemeine Zähleinheit für Summen und wiederkehrende Ereignisse.",
+  "seo": {
+    "keywords": [
+      "anzahl",
+      "ereignisse",
+      "zählung",
+      "menge"
+    ]
+  },
+  "subUnits": {
+    "count": {
+      "abbreviation": "",
+      "title": ""
+    }
+  }
+}

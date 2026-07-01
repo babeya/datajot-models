@@ -1,0 +1,23 @@
+{
+  "title": "Geschwindigkeit (imperial)",
+  "description": "Imperiale Geschwindigkeitseinheiten",
+  "subUnits": {
+    "mph": {
+      "title": "Meilen pro Stunde",
+      "abbreviation": "mph"
+    },
+    "kn": {
+      "title": "Knoten",
+      "abbreviation": "kn"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "geschwindigkeit",
+      "tempo",
+      "imperial",
+      "mph",
+      "knoten"
+    ]
+  }
+}

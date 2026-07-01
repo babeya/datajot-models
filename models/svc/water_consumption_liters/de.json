@@ -1,0 +1,29 @@
+{
+  "label": "Wasserverbrauch (Liter)",
+  "description": "Wasserverbrauch für nachhaltiges Leben und Kostenverfolgung überwachen",
+  "seo": {
+    "keywords": [
+      "wasser",
+      "verbrauch",
+      "nachhaltigkeit",
+      "umwelt"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Zu niedrig"
+    },
+    "2": {
+      "label": "Niedrig"
+    },
+    "3": {
+      "label": "Mäßig"
+    },
+    "4": {
+      "label": "Gut"
+    },
+    "5": {
+      "label": "Ausgezeichnet"
+    }
+  }
+}

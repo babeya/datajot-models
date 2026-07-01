@@ -1,0 +1,12 @@
+{
+  "description": "Niederschlagsmengen aus Vorhersagedaten oder einem Regenmesser verfolgen.",
+  "seo": {
+    "keywords": [
+      "regen",
+      "regenmenge",
+      "niederschlag",
+      "wetter"
+    ]
+  },
+  "name": "Niederschlag"
+}

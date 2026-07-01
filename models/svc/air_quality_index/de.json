@@ -1,0 +1,29 @@
+{
+  "label": "Luftqualitätsindex",
+  "description": "Luftqualitätswerte für ein gesünderes Raumklima überwachen",
+  "seo": {
+    "keywords": [
+      "luftqualität",
+      "innenraumluft",
+      "umwelt",
+      "gesundheit"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Gut"
+    },
+    "2": {
+      "label": "Mäßig"
+    },
+    "3": {
+      "label": "Ungesund für empfindliche Gruppen"
+    },
+    "4": {
+      "label": "Ungesund"
+    },
+    "5": {
+      "label": "Sehr ungesund"
+    }
+  }
+}

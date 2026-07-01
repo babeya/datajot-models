@@ -1,0 +1,37 @@
+{
+  "title": "Volumen (gal)",
+  "description": "Flüssigkeitsvolumen in imperialen Einheiten messen",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "floz": {
+      "abbreviation": "floz",
+      "title": "Flüssigunze"
+    },
+    "cup": {
+      "abbreviation": "cup",
+      "title": "Tasse"
+    },
+    "pt": {
+      "abbreviation": "pt",
+      "title": "Pint"
+    },
+    "gal": {
+      "abbreviation": "gal",
+      "title": "Gallone"
+    },
+    "tsp": {
+      "abbreviation": "tsp",
+      "title": "Teelöffel"
+    },
+    "tbsp": {
+      "abbreviation": "tbsp",
+      "title": "Esslöffel"
+    },
+    "qt": {
+      "abbreviation": "qt",
+      "title": "Quart"
+    }
+  }
+}

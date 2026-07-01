@@ -1,0 +1,12 @@
+{
+  "name": "Lärmpegel",
+  "description": "dB-Messwerte von Sensoren oder Smartphone-Messungen.",
+  "seo": {
+    "keywords": [
+      "lärm",
+      "schall",
+      "umwelt",
+      "dezibel"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "label": "Energieverbrauch (kWh)",
+  "description": "Energieverbrauch überwachen, um den Verbrauch zu optimieren und Kosten zu senken",
+  "seo": {
+    "keywords": [
+      "energie",
+      "verbrauch",
+      "leistung",
+      "effizienz"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Niedrig"
+    },
+    "2": {
+      "label": "Mäßig"
+    },
+    "3": {
+      "label": "Hoch"
+    },
+    "4": {
+      "label": "Sehr hoch"
+    },
+    "5": {
+      "label": "Extrem"
+    }
+  }
+}

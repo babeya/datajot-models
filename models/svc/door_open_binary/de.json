@@ -1,0 +1,20 @@
+{
+  "label": "Tür offen",
+  "description": "Zeigt an, ob eine Tür offen oder geschlossen ist.",
+  "seo": {
+    "keywords": [
+      "tür",
+      "offen",
+      "geschlossen",
+      "zustand"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Geschlossen"
+    },
+    "2": {
+      "label": "Offen"
+    }
+  }
+}
