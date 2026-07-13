@@ -6,7 +6,7 @@
   },
   "subUnits": {
     "percent": {
-      "abbreviation": "percent",
+      "abbreviation": "%",
       "title": "Percent"
     }
   }

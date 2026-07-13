@@ -7,7 +7,7 @@
     {
       "key": "percent",
       "factor": 1,
-      "abbreviation": "percent"
+      "abbreviation": "%"
     }
   ]
 }

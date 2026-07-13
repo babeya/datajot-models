@@ -11,11 +11,11 @@
   },
   "subUnits": {
     "in": {
-      "abbreviation": "in",
+      "abbreviation": "po",
       "title": "Pouce"
     },
     "ft": {
-      "abbreviation": "ft",
+      "abbreviation": "pi",
       "title": "Pied"
     },
     "yd": {
