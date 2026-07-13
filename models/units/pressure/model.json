@@ -2,41 +2,41 @@
   "key": "pressure",
   "type": "unit",
   "category": "pressure",
-  "baseUnit": "Pa",
+  "baseUnit": "hPa",
   "subUnits": [
     {
-      "key": "Pa",
-      "factor": 1,
-      "abbreviation": "Pa"
-    },
-    {
       "key": "hPa",
-      "factor": 100,
+      "factor": 1,
       "abbreviation": "hPa"
     },
     {
+      "key": "Pa",
+      "factor": 0.01,
+      "abbreviation": "Pa"
+    },
+    {
       "key": "kPa",
-      "factor": 1000,
+      "factor": 10,
       "abbreviation": "kPa"
     },
     {
       "key": "bar",
-      "factor": 100000,
+      "factor": 1000,
       "abbreviation": "bar"
     },
     {
       "key": "psi",
-      "factor": 6894.76,
+      "factor": 68.9476,
       "abbreviation": "psi"
     },
     {
       "key": "atm",
-      "factor": 101325,
+      "factor": 1013.25,
       "abbreviation": "atm"
     },
     {
       "key": "mmHg",
-      "factor": 133.322,
+      "factor": 1.33322,
       "abbreviation": "mmHg"
     }
   ]
