@@ -1,0 +1,29 @@
+{
+  "label": "Temperatura interior (°F)",
+  "description": "Controla la temperatura interior en grados Fahrenheit para un confort óptimo",
+  "seo": {
+    "keywords": [
+      "temperatura",
+      "interior",
+      "fahrenheit",
+      "clima"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Muy fría"
+    },
+    "2": {
+      "label": "Fría"
+    },
+    "3": {
+      "label": "Confortable"
+    },
+    "4": {
+      "label": "Cálida"
+    },
+    "5": {
+      "label": "Caliente"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Moneda",
+  "description": "Principales monedas del mundo normalizadas al dólar estadounidense.",
+  "seo": {
+    "keywords": [
+      "dinero",
+      "finanzas",
+      "moneda",
+      "gasto"
+    ]
+  },
+  "subUnits": {
+    "usd": {
+      "abbreviation": "USD",
+      "title": "Dólar estadounidense"
+    },
+    "eur": {
+      "abbreviation": "EUR",
+      "title": "Euro"
+    },
+    "gbp": {
+      "abbreviation": "GBP",
+      "title": "Libra esterlina"
+    },
+    "cad": {
+      "abbreviation": "CAD",
+      "title": "Dólar canadiense"
+    },
+    "aud": {
+      "abbreviation": "AUD",
+      "title": "Dólar australiano"
+    },
+    "jpy": {
+      "abbreviation": "JPY",
+      "title": "Yen japonés"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "label": "Índice de calidad del aire",
+  "description": "Controla la calidad del aire para mantener un ambiente interior más saludable",
+  "seo": {
+    "keywords": [
+      "calidad del aire",
+      "aire interior",
+      "medio ambiente",
+      "salud"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Buena"
+    },
+    "2": {
+      "label": "Moderada"
+    },
+    "3": {
+      "label": "Insalubre para grupos sensibles"
+    },
+    "4": {
+      "label": "Insalubre"
+    },
+    "5": {
+      "label": "Muy insalubre"
+    }
+  }
+}

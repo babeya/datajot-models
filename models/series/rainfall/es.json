@@ -1,0 +1,12 @@
+{
+  "description": "Registra la precipitación acumulada a partir de previsiones o de un pluviómetro.",
+  "seo": {
+    "keywords": [
+      "lluvia",
+      "precipitación",
+      "pluviómetro",
+      "tiempo"
+    ]
+  },
+  "name": "Precipitaciones"
+}

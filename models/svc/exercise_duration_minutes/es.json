@@ -1,0 +1,29 @@
+{
+  "label": "Duración del ejercicio (minutos)",
+  "description": "Registra la duración del ejercicio para alcanzar tus objetivos de forma física",
+  "seo": {
+    "keywords": [
+      "ejercicio",
+      "forma física",
+      "entrenamiento",
+      "actividad"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Demasiado corta"
+    },
+    "2": {
+      "label": "Ligera"
+    },
+    "3": {
+      "label": "Moderada"
+    },
+    "4": {
+      "label": "Buena"
+    },
+    "5": {
+      "label": "Excelente"
+    }
+  }
+}

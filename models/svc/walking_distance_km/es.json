@@ -1,0 +1,29 @@
+{
+  "label": "Distancia caminada (km)",
+  "description": "Registra la distancia caminada para controlar la actividad diaria y la forma física",
+  "seo": {
+    "keywords": [
+      "caminar",
+      "distancia",
+      "forma física",
+      "actividad"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Demasiado corta"
+    },
+    "2": {
+      "label": "Corta"
+    },
+    "3": {
+      "label": "Moderada"
+    },
+    "4": {
+      "label": "Buena"
+    },
+    "5": {
+      "label": "Excelente"
+    }
+  }
+}

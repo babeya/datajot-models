@@ -1,0 +1,25 @@
+{
+  "title": "Fuerza",
+  "description": "Unidades de fuerza",
+  "subUnits": {
+    "N": {
+      "title": "Newton",
+      "abbreviation": "N"
+    },
+    "kN": {
+      "title": "Kilonewton",
+      "abbreviation": "kN"
+    },
+    "lbf": {
+      "title": "Libra-fuerza",
+      "abbreviation": "lbf"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "fuerza",
+      "newton",
+      "física"
+    ]
+  }
+}

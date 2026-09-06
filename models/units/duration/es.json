@@ -1,0 +1,29 @@
+{
+  "title": "Duración",
+  "description": "Unidades para medir intervalos de tiempo",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "ms": {
+      "abbreviation": "ms",
+      "title": "Milisegundo"
+    },
+    "s": {
+      "abbreviation": "s",
+      "title": "Segundo"
+    },
+    "min": {
+      "abbreviation": "min",
+      "title": "Minuto"
+    },
+    "h": {
+      "abbreviation": "h",
+      "title": "Hora"
+    },
+    "d": {
+      "abbreviation": "d",
+      "title": "Día"
+    }
+  }
+}

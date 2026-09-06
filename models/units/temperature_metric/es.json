@@ -1,0 +1,13 @@
+{
+  "title": "Temperatura (°C)",
+  "description": "Mide la temperatura en grados Celsius",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "c": {
+      "abbreviation": "°C",
+      "title": "Celsius"
+    }
+  }
+}

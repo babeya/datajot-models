@@ -1,0 +1,29 @@
+{
+  "label": "Temperatura exterior (°C)",
+  "description": "Registra la temperatura exterior en grados Celsius para conocer las condiciones meteorológicas",
+  "seo": {
+    "keywords": [
+      "temperatura",
+      "exterior",
+      "celsius",
+      "tiempo"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Bajo cero"
+    },
+    "2": {
+      "label": "Fría"
+    },
+    "3": {
+      "label": "Templada"
+    },
+    "4": {
+      "label": "Cálida"
+    },
+    "5": {
+      "label": "Caliente"
+    }
+  }
+}

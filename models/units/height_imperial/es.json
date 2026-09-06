@@ -1,0 +1,17 @@
+{
+  "title": "Altura (ft)",
+  "description": "Mide la altura o la longitud en unidades imperiales",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "in": {
+      "abbreviation": "in",
+      "title": "Pulgada"
+    },
+    "ft": {
+      "abbreviation": "ft",
+      "title": "Pie"
+    }
+  }
+}

@@ -20,7 +20,7 @@ File named model.json
 
 ## Translation
 
-Files named with the locale (en.json, fr.json, de.json ...)
+Files named with the supported locale (`en.json`, `fr.json`, `de.json`, or `es.json`)
 
 ```json
 {

@@ -2,6 +2,10 @@
 
 This repository contains various data models used for different applications. Each model is defined in its own file within the `models` directory. 
 
+## Supported locales
+
+Every category, unit, series, and visualization configuration must provide translations in English (`en.json`), French (`fr.json`), German (`de.json`), and Spanish (`es.json`).
+
 ## Categories
 
 Categories are use to group units or series together and providing translation and seo. They are not bundle on their own in the output files
@@ -126,7 +130,7 @@ type CategoryOutput = {
 
 ## Series
 
-Series are the main models of the repository. Each series model is defined in its own folder within the `models/series` directory. The model.json file contains the base series model with its id, and language-specific JSON files (e.g., en.json, fr.json, de.json) contain translations for the series name and description.
+Series are the main models of the repository. Each series model is defined in its own folder within the `models/series` directory. The model.json file contains the base series model with its id, and language-specific JSON files (`en.json`, `fr.json`, `de.json`, and `es.json`) contain translations for the series name and description.
 
 ### Structure
 

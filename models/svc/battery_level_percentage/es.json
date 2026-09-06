@@ -1,0 +1,29 @@
+{
+  "label": "Nivel de batería (%)",
+  "description": "Controla el porcentaje de batería para gestionar tus dispositivos",
+  "seo": {
+    "keywords": [
+      "batería",
+      "energía",
+      "dispositivo",
+      "seguimiento"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Crítico"
+    },
+    "2": {
+      "label": "Bajo"
+    },
+    "3": {
+      "label": "Medio"
+    },
+    "4": {
+      "label": "Bueno"
+    },
+    "5": {
+      "label": "Completo"
+    }
+  }
+}

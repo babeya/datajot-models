@@ -1,0 +1,13 @@
+{
+  "title": "Luminosidad (fc)",
+  "description": "Mide la intensidad luminosa en pies-candela",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "fc": {
+      "abbreviation": "fc",
+      "title": "Pie-candela"
+    }
+  }
+}

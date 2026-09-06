@@ -1,0 +1,29 @@
+{
+  "label": "Consumo de energía (kWh)",
+  "description": "Controla el consumo de energía para optimizar el uso y reducir los costes",
+  "seo": {
+    "keywords": [
+      "energía",
+      "consumo",
+      "potencia",
+      "eficiencia"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Bajo"
+    },
+    "2": {
+      "label": "Moderado"
+    },
+    "3": {
+      "label": "Alto"
+    },
+    "4": {
+      "label": "Muy alto"
+    },
+    "5": {
+      "label": "Extremo"
+    }
+  }
+}

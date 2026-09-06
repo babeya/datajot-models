@@ -1,0 +1,39 @@
+{
+  "title": "Energía",
+  "description": "Unidades de energía y trabajo",
+  "subUnits": {
+    "J": {
+      "title": "Julio",
+      "abbreviation": "J"
+    },
+    "kJ": {
+      "title": "Kilojulio",
+      "abbreviation": "kJ"
+    },
+    "cal": {
+      "title": "Caloría",
+      "abbreviation": "cal"
+    },
+    "kcal": {
+      "title": "Kilocaloría",
+      "abbreviation": "kcal"
+    },
+    "Wh": {
+      "title": "Vatio-hora",
+      "abbreviation": "Wh"
+    },
+    "kWh": {
+      "title": "Kilovatio-hora",
+      "abbreviation": "kWh"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "energía",
+      "calorías",
+      "julios",
+      "potencia",
+      "electricidad"
+    ]
+  }
+}

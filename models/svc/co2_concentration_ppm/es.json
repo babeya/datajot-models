@@ -1,0 +1,29 @@
+{
+  "label": "Concentración de CO₂ (ppm)",
+  "description": "Registra la concentración de CO₂ para mejorar la calidad del aire interior",
+  "seo": {
+    "keywords": [
+      "co2",
+      "dióxido de carbono",
+      "calidad del aire",
+      "interior"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Buena"
+    },
+    "2": {
+      "label": "Aceptable"
+    },
+    "3": {
+      "label": "Alta"
+    },
+    "4": {
+      "label": "Muy alta"
+    },
+    "5": {
+      "label": "Peligrosa"
+    }
+  }
+}

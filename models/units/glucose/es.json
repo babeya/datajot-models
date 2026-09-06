@@ -1,0 +1,22 @@
+{
+  "title": "Glucemia",
+  "description": "Unidades de concentración de glucosa en sangre",
+  "subUnits": {
+    "mmol_L": {
+      "title": "Milimoles por litro",
+      "abbreviation": "mmol/L"
+    },
+    "mg_dL": {
+      "title": "Miligramos por decilitro",
+      "abbreviation": "mg/dL"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "glucosa",
+      "azúcar en sangre",
+      "salud",
+      "diabetes"
+    ]
+  }
+}

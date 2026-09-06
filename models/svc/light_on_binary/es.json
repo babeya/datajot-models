@@ -1,0 +1,20 @@
+{
+  "label": "Luz encendida",
+  "description": "Muestra si una luz está encendida o apagada.",
+  "seo": {
+    "keywords": [
+      "luz",
+      "encendida",
+      "apagada",
+      "estado"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Apagada"
+    },
+    "2": {
+      "label": "Encendida"
+    }
+  }
+}

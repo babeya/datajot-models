@@ -1,0 +1,30 @@
+{
+  "title": "Ancho de banda",
+  "description": "Unidades de velocidad de transferencia de datos",
+  "subUnits": {
+    "bps": {
+      "title": "Bits por segundo",
+      "abbreviation": "bps"
+    },
+    "kbps": {
+      "title": "Kilobits por segundo",
+      "abbreviation": "kbps"
+    },
+    "Mbps": {
+      "title": "Megabits por segundo",
+      "abbreviation": "Mbps"
+    },
+    "Gbps": {
+      "title": "Gigabits por segundo",
+      "abbreviation": "Gbps"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "ancho de banda",
+      "velocidad",
+      "internet",
+      "transferencia"
+    ]
+  }
+}

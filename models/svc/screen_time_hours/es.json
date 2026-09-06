@@ -1,0 +1,29 @@
+{
+  "label": "Tiempo de pantalla (horas)",
+  "description": "Registra el tiempo de pantalla para mejorar el bienestar digital y la productividad",
+  "seo": {
+    "keywords": [
+      "tiempo de pantalla",
+      "digital",
+      "bienestar",
+      "productividad"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Bajo"
+    },
+    "2": {
+      "label": "Moderado"
+    },
+    "3": {
+      "label": "Alto"
+    },
+    "4": {
+      "label": "Muy alto"
+    },
+    "5": {
+      "label": "Extremo"
+    }
+  }
+}

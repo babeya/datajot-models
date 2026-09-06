@@ -1,0 +1,29 @@
+{
+  "label": "Consumo de agua (litros)",
+  "description": "Controla el consumo de agua para fomentar un estilo de vida sostenible y seguir los costes",
+  "seo": {
+    "keywords": [
+      "agua",
+      "consumo",
+      "sostenibilidad",
+      "medio ambiente"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Demasiado bajo"
+    },
+    "2": {
+      "label": "Bajo"
+    },
+    "3": {
+      "label": "Moderado"
+    },
+    "4": {
+      "label": "Bueno"
+    },
+    "5": {
+      "label": "Excelente"
+    }
+  }
+}

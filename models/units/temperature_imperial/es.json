@@ -1,0 +1,13 @@
+{
+  "title": "Temperatura (°F)",
+  "description": "Mide la temperatura en grados Fahrenheit",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "f": {
+      "abbreviation": "°F",
+      "title": "Fahrenheit"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs'
 
-export const LANGUAGES = ['en', 'fr', 'de']
+export const LANGUAGES = ['en', 'fr', 'de', 'es']
 export const MEASUREMENT_SYSTEMS = ['metric', 'imperial']
 export const GRAPH_TYPES = ['line', 'bar', 'area', 'points']
 

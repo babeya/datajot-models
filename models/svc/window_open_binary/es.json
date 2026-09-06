@@ -1,0 +1,20 @@
+{
+  "label": "Ventana abierta",
+  "description": "Muestra si una ventana está abierta o cerrada.",
+  "seo": {
+    "keywords": [
+      "ventana",
+      "abierta",
+      "cerrada",
+      "estado"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Cerrada"
+    },
+    "2": {
+      "label": "Abierta"
+    }
+  }
+}

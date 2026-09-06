@@ -1,0 +1,21 @@
+{
+  "title": "Altura (m)",
+  "description": "Mide la altura o la longitud en unidades métricas",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "mm": {
+      "abbreviation": "mm",
+      "title": "Milímetro"
+    },
+    "cm": {
+      "abbreviation": "cm",
+      "title": "Centímetro"
+    },
+    "m": {
+      "abbreviation": "m",
+      "title": "Metro"
+    }
+  }
+}

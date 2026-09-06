@@ -1,0 +1,34 @@
+{
+  "title": "Almacenamiento digital",
+  "description": "Unidades de almacenamiento de información digital",
+  "subUnits": {
+    "B": {
+      "title": "Byte",
+      "abbreviation": "B"
+    },
+    "kB": {
+      "title": "Kilobyte",
+      "abbreviation": "kB"
+    },
+    "MB": {
+      "title": "Megabyte",
+      "abbreviation": "MB"
+    },
+    "GB": {
+      "title": "Gigabyte",
+      "abbreviation": "GB"
+    },
+    "TB": {
+      "title": "Terabyte",
+      "abbreviation": "TB"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "almacenamiento",
+      "bytes",
+      "memoria",
+      "espacio en disco"
+    ]
+  }
+}

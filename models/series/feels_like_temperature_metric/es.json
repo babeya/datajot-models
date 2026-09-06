@@ -1,0 +1,12 @@
+{
+  "description": "Registra la sensación térmica exterior a partir de datos meteorológicos.",
+  "seo": {
+    "keywords": [
+      "sensación térmica",
+      "temperatura",
+      "tiempo",
+      "medio ambiente"
+    ]
+  },
+  "name": "Sensación térmica"
+}

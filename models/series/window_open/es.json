@@ -1,0 +1,13 @@
+{
+  "description": "Registra si una ventana está abierta o cerrada.",
+  "seo": {
+    "keywords": [
+      "ventana",
+      "abierta",
+      "hogar",
+      "sensor",
+      "cerrada"
+    ]
+  },
+  "name": "Ventana abierta"
+}

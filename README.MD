@@ -12,13 +12,17 @@
 - `build/` is generated output created by the build script. It includes `bundle-<lang>.json`, `series-<lang>.json`, `units-<lang>.json`, and a top-level `index.json` listing the available keys.
 - `scripts/` groups the Node.js utilities that build and validate the repository. Shared validation helpers live in `scripts/utils/`.
 
+## Supported locales
+
+Every model is localized in English (`en`), French (`fr`), German (`de`), and Spanish (`es`). A model directory must contain one translation JSON file for each of these four locales.
+
 ## Available scripts
 
 All scripts run with plain Node (no dependencies). Use `npm run <script>` from the repo root.
 
 | Command | Description |
 | --- | --- |
-| `npm run build` | Reads every model under `models/`, merges in translations for `en`, `fr`, and `de`, injects category and unit metadata, then writes the language-specific bundles plus `index.json` to `build/`. |
+| `npm run build` | Reads every model under `models/`, merges in translations for `en`, `fr`, `de`, and `es`, injects category and unit metadata, then writes the language-specific bundles plus `index.json` to `build/`. |
 | `npm run validate:models` | Ensures each authoring model adheres to the schema defined in `MODELS.MD` (required fields, enums, localization files, SEO metadata, etc.). |
 | `npm run validate:output` | Verifies the generated bundles in `build/` still match the schema (correct nesting, localized strings, category/unit injection, and bundle/index consistency). |
 | `npm run validate` | Convenience command that runs both validation steps in sequence. |

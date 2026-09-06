@@ -1,0 +1,13 @@
+{
+  "description": "Registra si una puerta está abierta o cerrada.",
+  "seo": {
+    "keywords": [
+      "puerta",
+      "abierta",
+      "hogar",
+      "sensor",
+      "cerrada"
+    ]
+  },
+  "name": "Puerta abierta"
+}

@@ -1,0 +1,29 @@
+{
+  "label": "Nivel de luz (lux)",
+  "description": "Registra los niveles de luz para mejorar el ambiente y la gestión energética",
+  "seo": {
+    "keywords": [
+      "luz",
+      "luminosidad",
+      "ambiente",
+      "interior"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Oscuro"
+    },
+    "2": {
+      "label": "Tenue"
+    },
+    "3": {
+      "label": "Moderado"
+    },
+    "4": {
+      "label": "Brillante"
+    },
+    "5": {
+      "label": "Muy brillante"
+    }
+  }
+}
