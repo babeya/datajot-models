@@ -1,0 +1,29 @@
+{
+  "label": "Temperatura interior (°C)",
+  "description": "Controla la temperatura interior en grados Celsius para un confort óptimo",
+  "seo": {
+    "keywords": [
+      "temperatura",
+      "interior",
+      "celsius",
+      "clima"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Muy fría"
+    },
+    "2": {
+      "label": "Fría"
+    },
+    "3": {
+      "label": "Confortable"
+    },
+    "4": {
+      "label": "Cálida"
+    },
+    "5": {
+      "label": "Caliente"
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 The bundling script output 3 types of bundles
 
+Bundles are generated for English (`en`), French (`fr`), German (`de`), and Spanish (`es`).
+
 ## UnitBundle
 
 Unit are bundled together to be fetched separately if needed.

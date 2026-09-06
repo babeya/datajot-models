@@ -1,0 +1,29 @@
+{
+  "label": "Presión atmosférica (hPa)",
+  "description": "Registra los cambios de presión atmosférica para el seguimiento meteorológico",
+  "seo": {
+    "keywords": [
+      "presión atmosférica",
+      "tiempo",
+      "barométrica",
+      "seguimiento"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Muy baja"
+    },
+    "2": {
+      "label": "Baja"
+    },
+    "3": {
+      "label": "Normal"
+    },
+    "4": {
+      "label": "Alta"
+    },
+    "5": {
+      "label": "Muy alta"
+    }
+  }
+}

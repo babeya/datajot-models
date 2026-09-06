@@ -1,0 +1,21 @@
+{
+  "title": "Velocidad (métrica)",
+  "description": "Unidades métricas de velocidad",
+  "subUnits": {
+    "m_s": {
+      "title": "Metros por segundo",
+      "abbreviation": "m/s"
+    },
+    "km_h": {
+      "title": "Kilómetros por hora",
+      "abbreviation": "km/h"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "velocidad",
+      "métrica",
+      "km/h"
+    ]
+  }
+}

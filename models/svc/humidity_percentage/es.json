@@ -1,0 +1,29 @@
+{
+  "label": "Humedad (%)",
+  "description": "Controla los niveles de humedad para un confort interior óptimo",
+  "seo": {
+    "keywords": [
+      "humedad",
+      "interior",
+      "confort",
+      "clima"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Demasiado baja"
+    },
+    "2": {
+      "label": "Baja"
+    },
+    "3": {
+      "label": "Confortable"
+    },
+    "4": {
+      "label": "Alta"
+    },
+    "5": {
+      "label": "Demasiado alta"
+    }
+  }
+}

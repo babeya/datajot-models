@@ -1,0 +1,21 @@
+{
+  "title": "Volumen (L)",
+  "description": "Mide volúmenes líquidos en unidades métricas",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "ml": {
+      "abbreviation": "ml",
+      "title": "Mililitro"
+    },
+    "cl": {
+      "abbreviation": "cl",
+      "title": "Centilitro"
+    },
+    "l": {
+      "abbreviation": "l",
+      "title": "Litro"
+    }
+  }
+}

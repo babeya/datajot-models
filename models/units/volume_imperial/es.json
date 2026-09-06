@@ -1,0 +1,37 @@
+{
+  "title": "Volumen (gal)",
+  "description": "Mide volúmenes líquidos en unidades imperiales",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "floz": {
+      "abbreviation": "fl oz",
+      "title": "Onza líquida"
+    },
+    "cup": {
+      "abbreviation": "taza",
+      "title": "Taza"
+    },
+    "pt": {
+      "abbreviation": "pt",
+      "title": "Pinta"
+    },
+    "gal": {
+      "abbreviation": "gal",
+      "title": "Galón"
+    },
+    "tsp": {
+      "abbreviation": "cdta",
+      "title": "Cucharadita"
+    },
+    "tbsp": {
+      "abbreviation": "cda",
+      "title": "Cucharada"
+    },
+    "qt": {
+      "abbreviation": "qt",
+      "title": "Cuarto de galón"
+    }
+  }
+}

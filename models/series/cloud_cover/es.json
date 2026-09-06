@@ -1,0 +1,12 @@
+{
+  "description": "Registra el porcentaje de nubosidad a partir de datos meteorológicos.",
+  "seo": {
+    "keywords": [
+      "nubes",
+      "nubosidad",
+      "tiempo",
+      "medio ambiente"
+    ]
+  },
+  "name": "Nubosidad"
+}

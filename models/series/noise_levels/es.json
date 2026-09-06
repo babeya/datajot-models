@@ -1,0 +1,12 @@
+{
+  "name": "Niveles de ruido",
+  "description": "Lecturas en dB procedentes de sensores o mediciones del teléfono.",
+  "seo": {
+    "keywords": [
+      "ruido",
+      "sonido",
+      "medio ambiente",
+      "decibelios"
+    ]
+  }
+}

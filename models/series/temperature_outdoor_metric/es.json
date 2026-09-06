@@ -1,0 +1,12 @@
+{
+  "description": "Registra la temperatura exterior en grados Celsius.",
+  "seo": {
+    "keywords": [
+      "temperatura",
+      "exterior",
+      "tiempo",
+      "celsius"
+    ]
+  },
+  "name": "Temperatura exterior (°C)"
+}

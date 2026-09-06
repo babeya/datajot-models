@@ -1,0 +1,29 @@
+{
+  "label": "Horas de sueño",
+  "description": "Controla la duración del sueño para mejorar la calidad del descanso y la salud",
+  "seo": {
+    "keywords": [
+      "sueño",
+      "descanso",
+      "salud",
+      "bienestar"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Demasiado corto"
+    },
+    "2": {
+      "label": "Corto"
+    },
+    "3": {
+      "label": "Ligero"
+    },
+    "4": {
+      "label": "Óptimo"
+    },
+    "5": {
+      "label": "Largo"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "label": "Consumo de potencia (W)",
+  "description": "Controla el consumo de potencia en tiempo real para optimizar la energía",
+  "seo": {
+    "keywords": [
+      "potencia",
+      "consumo",
+      "energía",
+      "vatios"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Bajo"
+    },
+    "2": {
+      "label": "Moderado"
+    },
+    "3": {
+      "label": "Alto"
+    },
+    "4": {
+      "label": "Muy alto"
+    },
+    "5": {
+      "label": "Extremo"
+    }
+  }
+}

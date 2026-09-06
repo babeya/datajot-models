@@ -1,0 +1,21 @@
+{
+  "title": "Peso (kg)",
+  "description": "Mide el peso en unidades métricas",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "mg": {
+      "abbreviation": "mg",
+      "title": "Miligramo"
+    },
+    "g": {
+      "abbreviation": "g",
+      "title": "Gramo"
+    },
+    "kg": {
+      "abbreviation": "kg",
+      "title": "Kilogramo"
+    }
+  }
+}

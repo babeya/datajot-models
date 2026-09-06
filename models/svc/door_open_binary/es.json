@@ -1,0 +1,20 @@
+{
+  "label": "Puerta abierta",
+  "description": "Muestra si una puerta está abierta o cerrada.",
+  "seo": {
+    "keywords": [
+      "puerta",
+      "abierta",
+      "cerrada",
+      "estado"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Cerrada"
+    },
+    "2": {
+      "label": "Abierta"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "label": "Porcentaje de grasa corporal (%)",
+  "description": "Registra tu porcentaje de grasa corporal para alcanzar tus objetivos de salud y forma física",
+  "seo": {
+    "keywords": [
+      "grasa corporal",
+      "forma física",
+      "salud",
+      "composición corporal"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Muy bajo"
+    },
+    "2": {
+      "label": "En forma"
+    },
+    "3": {
+      "label": "Promedio"
+    },
+    "4": {
+      "label": "Alto"
+    },
+    "5": {
+      "label": "Muy alto"
+    }
+  }
+}

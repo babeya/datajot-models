@@ -1,0 +1,30 @@
+{
+  "title": "Distancia (métrica)",
+  "description": "Distancias métricas desde milímetros hasta kilómetros.",
+  "seo": {
+    "keywords": [
+      "distancia",
+      "métrica",
+      "metros",
+      "kilómetros"
+    ]
+  },
+  "subUnits": {
+    "mm": {
+      "abbreviation": "mm",
+      "title": "Milímetro"
+    },
+    "cm": {
+      "abbreviation": "cm",
+      "title": "Centímetro"
+    },
+    "m": {
+      "abbreviation": "m",
+      "title": "Metro"
+    },
+    "km": {
+      "abbreviation": "km",
+      "title": "Kilómetro"
+    }
+  }
+}

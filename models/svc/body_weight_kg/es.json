@@ -1,0 +1,29 @@
+{
+  "label": "Peso corporal (kg)",
+  "description": "Controla tu peso corporal para seguir la evolución de tu salud",
+  "seo": {
+    "keywords": [
+      "peso",
+      "salud",
+      "forma física",
+      "cuerpo"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Muy bajo"
+    },
+    "2": {
+      "label": "Objetivo"
+    },
+    "3": {
+      "label": "Por encima del objetivo"
+    },
+    "4": {
+      "label": "Alto"
+    },
+    "5": {
+      "label": "Muy alto"
+    }
+  }
+}

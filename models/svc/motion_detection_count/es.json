@@ -1,0 +1,29 @@
+{
+  "label": "Detecciones de movimiento",
+  "description": "Controla los eventos de detección de movimiento para seguridad y automatización",
+  "seo": {
+    "keywords": [
+      "movimiento",
+      "detección",
+      "seguridad",
+      "automatización"
+    ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Bajas"
+    },
+    "2": {
+      "label": "Moderadas"
+    },
+    "3": {
+      "label": "Altas"
+    },
+    "4": {
+      "label": "Muy altas"
+    },
+    "5": {
+      "label": "Extremas"
+    }
+  }
+}

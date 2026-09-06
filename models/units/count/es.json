@@ -1,0 +1,18 @@
+{
+  "title": "Recuento",
+  "description": "Unidad genérica para contabilizar elementos y eventos recurrentes.",
+  "seo": {
+    "keywords": [
+      "recuento",
+      "eventos",
+      "conteo",
+      "cantidad"
+    ]
+  },
+  "subUnits": {
+    "count": {
+      "abbreviation": "",
+      "title": ""
+    }
+  }
+}

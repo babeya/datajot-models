@@ -11,5 +11,6 @@ Each category folder contains:
 - `en.json`: English translations (name)
 - `fr.json`: French translations (name)
 - `de.json`: German translations (name)
+- `es.json`: Spanish translations (name)
 
 Categories are not bundled separately but are injected into series and units models during the build process.

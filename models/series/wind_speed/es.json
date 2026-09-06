@@ -1,0 +1,12 @@
+{
+  "description": "Registra la velocidad del viento a partir de datos meteorológicos locales o una estación exterior.",
+  "seo": {
+    "keywords": [
+      "viento",
+      "velocidad",
+      "tiempo",
+      "medio ambiente"
+    ]
+  },
+  "name": "Velocidad del viento"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Peso (lb)",
+  "description": "Mide el peso en unidades imperiales",
+  "seo": {
+    "keywords": []
+  },
+  "subUnits": {
+    "oz": {
+      "abbreviation": "oz",
+      "title": "Onza"
+    },
+    "lb": {
+      "abbreviation": "lb",
+      "title": "Libra"
+    },
+    "st": {
+      "abbreviation": "st",
+      "title": "Stone"
+    }
+  }
+}

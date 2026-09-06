@@ -1,0 +1,12 @@
+{
+  "description": "Registra la temperatura del punto de rocío a partir de datos meteorológicos.",
+  "seo": {
+    "keywords": [
+      "punto de rocío",
+      "humedad",
+      "tiempo",
+      "medio ambiente"
+    ]
+  },
+  "name": "Punto de rocío"
+}

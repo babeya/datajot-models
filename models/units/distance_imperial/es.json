@@ -1,0 +1,30 @@
+{
+  "title": "Distancia (imperial)",
+  "description": "Distancias imperiales desde pulgadas hasta millas.",
+  "seo": {
+    "keywords": [
+      "distancia",
+      "imperial",
+      "millas",
+      "pies"
+    ]
+  },
+  "subUnits": {
+    "in": {
+      "abbreviation": "in",
+      "title": "Pulgada"
+    },
+    "ft": {
+      "abbreviation": "ft",
+      "title": "Pie"
+    },
+    "yd": {
+      "abbreviation": "yd",
+      "title": "Yarda"
+    },
+    "mi": {
+      "abbreviation": "mi",
+      "title": "Milla"
+    }
+  }
+}

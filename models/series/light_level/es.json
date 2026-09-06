@@ -1,0 +1,12 @@
+{
+  "description": "Registra el nivel de luz de un sensor o de datos meteorológicos.",
+  "seo": {
+    "keywords": [
+      "luz",
+      "lux",
+      "sensor",
+      "medio ambiente"
+    ]
+  },
+  "name": "Nivel de luz"
+}
