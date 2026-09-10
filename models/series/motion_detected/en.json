@@ -1,0 +1,12 @@
+{
+  "name": "Motion Detected",
+  "description": "Track the current binary motion state reported by a HomeKit sensor.",
+  "seo": {
+    "keywords": [
+      "motion detected",
+      "HomeKit",
+      "motion sensor",
+      "home"
+    ]
+  }
+}

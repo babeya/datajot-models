@@ -1,6 +1,6 @@
 {
-  "label": "Concentration CO2 (ppm)",
-  "description": "Suivez la concentration de CO2 pour une meilleure qualité d'air intérieur",
+  "label": "Concentration de CO₂ (ppm)",
+  "description": "Suivez la concentration de CO₂ pour une meilleure qualité de l'air intérieur",
   "seo": {
     "keywords": [
       "co2",
@@ -11,19 +11,19 @@
   },
   "thresholds": {
     "1": {
-      "label": "Bon"
+      "label": "Bonne"
     },
     "2": {
-      "label": "Correct"
+      "label": "Correcte"
     },
     "3": {
-      "label": "Élevé"
+      "label": "Élevée"
     },
     "4": {
-      "label": "Très élevé"
+      "label": "Très élevée"
     },
     "5": {
-      "label": "Dangereux"
+      "label": "Dangereuse"
     }
   }
 }

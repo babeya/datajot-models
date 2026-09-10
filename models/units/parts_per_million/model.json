@@ -1,0 +1,13 @@
+{
+  "key": "parts_per_million",
+  "type": "unit",
+  "category": "ratio",
+  "baseUnit": "ppm",
+  "subUnits": [
+    {
+      "key": "ppm",
+      "factor": 1,
+      "abbreviation": "ppm"
+    }
+  ]
+}

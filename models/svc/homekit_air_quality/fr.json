@@ -1,0 +1,20 @@
+{
+  "label": "Qualité de l'air HomeKit",
+  "description": "Affiche l'état catégoriel de la qualité de l'air transmis par HomeKit.",
+  "seo": {
+    "keywords": [
+      "HomeKit",
+      "qualité de l'air",
+      "état catégoriel",
+      "environnement intérieur"
+    ]
+  },
+  "thresholds": {
+    "1": { "label": "Inconnue" },
+    "2": { "label": "Excellente" },
+    "3": { "label": "Bonne" },
+    "4": { "label": "Moyenne" },
+    "5": { "label": "Inférieure" },
+    "6": { "label": "Mauvaise" }
+  }
+}

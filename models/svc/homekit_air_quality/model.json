@@ -1,37 +1,42 @@
 {
-  "key": "co2_concentration_ppm",
+  "key": "homekit_air_quality",
   "type": "visualizationConfig",
-  "unit": "parts_per_million",
   "thresholds": [
     {
       "order": 1,
-      "value": 600,
+      "value": 1,
+      "operatorType": "<",
+      "colorHex": "#64748B"
+    },
+    {
+      "order": 2,
+      "value": 2,
       "operatorType": "<",
       "colorHex": "#22C55E"
     },
     {
-      "order": 2,
-      "value": 800,
+      "order": 3,
+      "value": 3,
+      "operatorType": "<",
+      "colorHex": "#84CC16"
+    },
+    {
+      "order": 4,
+      "value": 4,
       "operatorType": "<",
       "colorHex": "#EAB308"
     },
     {
-      "order": 3,
-      "value": 1000,
+      "order": 5,
+      "value": 5,
       "operatorType": "<",
       "colorHex": "#F97316"
     },
     {
-      "order": 4,
-      "value": 1500,
-      "operatorType": "<",
-      "colorHex": "#EF4444"
-    },
-    {
-      "order": 5,
-      "value": 1500,
+      "order": 6,
+      "value": 5,
       "operatorType": ">=",
-      "colorHex": "#7F1D1D"
+      "colorHex": "#EF4444"
     }
   ],
   "showAverage": false,
@@ -44,6 +49,6 @@
   "showMedianOnChart": false,
   "showMaxOnChart": false,
   "showMinOnChart": false,
-  "autoScaleYAxis": true,
-  "thresholdAxisLabelDisplayMode": "valueAndLabel"
+  "autoScaleYAxis": false,
+  "thresholdAxisLabelDisplayMode": "label"
 }

@@ -1,0 +1,18 @@
+{
+  "title": "Parts per million",
+  "description": "Measure concentrations in parts per million.",
+  "seo": {
+    "keywords": [
+      "parts per million",
+      "ppm",
+      "concentration",
+      "ratio"
+    ]
+  },
+  "subUnits": {
+    "ppm": {
+      "abbreviation": "ppm",
+      "title": "Parts per million"
+    }
+  }
+}

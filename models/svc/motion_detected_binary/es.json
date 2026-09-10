@@ -1,0 +1,16 @@
+{
+  "label": "Detección de movimiento",
+  "description": "Muestra si un sensor de HomeKit detecta movimiento en ese momento.",
+  "seo": {
+    "keywords": [
+      "detección de movimiento",
+      "HomeKit",
+      "sensor de movimiento",
+      "estado binario"
+    ]
+  },
+  "thresholds": {
+    "1": { "label": "Sin movimiento" },
+    "2": { "label": "Movimiento detectado" }
+  }
+}

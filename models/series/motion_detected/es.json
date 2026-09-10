@@ -1,0 +1,12 @@
+{
+  "name": "Movimiento detectado",
+  "description": "Registra el estado binario actual comunicado por un sensor de movimiento de HomeKit.",
+  "seo": {
+    "keywords": [
+      "movimiento detectado",
+      "HomeKit",
+      "sensor de movimiento",
+      "hogar"
+    ]
+  }
+}

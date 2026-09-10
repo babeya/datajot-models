@@ -1,0 +1,11 @@
+{
+  "key": "homekit_air_quality",
+  "type": "series",
+  "category": "environment",
+  "icon": "aqi.medium",
+  "svc": "homekit_air_quality",
+  "decimalPrecision": 0,
+  "color": "#22C55E",
+  "graphType": "bar",
+  "aggregationMethod": "last"
+}

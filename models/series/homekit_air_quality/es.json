@@ -1,0 +1,12 @@
+{
+  "name": "Calidad del aire de HomeKit",
+  "description": "Registra el estado categórico de la calidad del aire de HomeKit, de Desconocida a Mala, y no una medición continua del ICA.",
+  "seo": {
+    "keywords": [
+      "calidad del aire de HomeKit",
+      "calidad del aire categórica",
+      "estado del aire",
+      "ambiente interior"
+    ]
+  }
+}

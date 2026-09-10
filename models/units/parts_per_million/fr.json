@@ -1,0 +1,18 @@
+{
+  "title": "Parties par million",
+  "description": "Mesurez les concentrations en parties par million.",
+  "seo": {
+    "keywords": [
+      "parties par million",
+      "ppm",
+      "concentration",
+      "rapport"
+    ]
+  },
+  "subUnits": {
+    "ppm": {
+      "abbreviation": "ppm",
+      "title": "Parties par million"
+    }
+  }
+}

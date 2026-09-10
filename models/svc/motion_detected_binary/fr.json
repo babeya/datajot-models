@@ -1,0 +1,16 @@
+{
+  "label": "Détection de mouvement",
+  "description": "Affiche si un capteur HomeKit détecte actuellement un mouvement.",
+  "seo": {
+    "keywords": [
+      "détection de mouvement",
+      "HomeKit",
+      "capteur de mouvement",
+      "état binaire"
+    ]
+  },
+  "thresholds": {
+    "1": { "label": "Aucun mouvement" },
+    "2": { "label": "Mouvement détecté" }
+  }
+}
