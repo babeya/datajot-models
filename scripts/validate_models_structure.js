@@ -252,6 +252,63 @@ const validateVisualizationConfig = (dir) => {
   })
 }
 
+const buildModelRegistry = (type) => {
+  const registry = new Map()
+
+  listModelDirectories(type).forEach((dir) => {
+    const modelPath = join(dir.path, 'model.json')
+    const model = readJsonFile(modelPath)
+
+    reporter.ensure(model.key === dir.id, `${modelPath}: model key must match directory name "${dir.id}"`)
+    reporter.ensure(!registry.has(model.key), `${modelPath}: duplicate ${type} key "${model.key}"`)
+    registry.set(model.key, { dir, model, modelPath })
+  })
+
+  return registry
+}
+
+const validateReference = (registry, context, key, referencedType) => {
+  if (typeof key === 'string' && key.trim()) {
+    reporter.ensure(registry.has(key), `${context}: unresolved ${referencedType} reference "${key}"`)
+  }
+}
+
+const validateModelReferences = (registries) => {
+  registries.units.forEach(({ model, modelPath }) => {
+    validateReference(registries.categories, `${modelPath}.category`, model.category, 'category')
+    if (typeof model.baseUnit === 'string' && Array.isArray(model.subUnits)) {
+      reporter.ensure(
+        model.subUnits.some((subUnit) => subUnit.key === model.baseUnit),
+        `${modelPath}.baseUnit: unresolved subUnit reference "${model.baseUnit}"`
+      )
+    }
+  })
+
+  registries.svc.forEach(({ model, modelPath }) => {
+    if (model.unit !== undefined) {
+      validateReference(registries.units, `${modelPath}.unit`, model.unit, 'unit')
+    }
+  })
+
+  registries.series.forEach(({ model, modelPath }) => {
+    validateReference(registries.categories, `${modelPath}.category`, model.category, 'category')
+    if (model.unit !== undefined) {
+      validateReference(registries.units, `${modelPath}.unit`, model.unit, 'unit')
+    }
+    if (model.svc !== undefined) {
+      validateReference(registries.svc, `${modelPath}.svc`, model.svc, 'SVC')
+
+      const svcUnit = registries.svc.get(model.svc)?.model.unit
+      if (model.unit !== undefined && svcUnit !== undefined) {
+        reporter.ensure(
+          model.unit === svcUnit,
+          `${modelPath}: series unit "${model.unit}" must match SVC unit "${svcUnit}"`
+        )
+      }
+    }
+  })
+}
+
 const validators = {
   categories: validateCategory,
   units: validateUnit,
@@ -260,10 +317,14 @@ const validators = {
 }
 
 const main = () => {
+  const registries = Object.fromEntries(
+    Object.keys(validators).map((type) => [type, buildModelRegistry(type)])
+  )
+
   Object.entries(validators).forEach(([type, validator]) => {
-    const directories = listModelDirectories(type)
-    directories.forEach((dir) => validator(dir))
+    registries[type].forEach(({ dir }) => validator(dir))
   })
+  validateModelReferences(registries)
 
   if (reporter.errors.length) {
     console.error('❌ Model validation failed:')

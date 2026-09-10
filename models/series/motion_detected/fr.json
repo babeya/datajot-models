@@ -1,0 +1,12 @@
+{
+  "name": "Mouvement détecté",
+  "description": "Suivez l'état binaire instantané transmis par un capteur de mouvement HomeKit.",
+  "seo": {
+    "keywords": [
+      "mouvement détecté",
+      "HomeKit",
+      "capteur de mouvement",
+      "maison"
+    ]
+  }
+}

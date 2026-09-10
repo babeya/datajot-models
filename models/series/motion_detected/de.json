@@ -1,0 +1,12 @@
+{
+  "name": "Bewegung erkannt",
+  "description": "Erfassen Sie den aktuellen binären Bewegungszustand eines HomeKit-Sensors.",
+  "seo": {
+    "keywords": [
+      "Bewegung erkannt",
+      "HomeKit",
+      "Bewegungssensor",
+      "Zuhause"
+    ]
+  }
+}

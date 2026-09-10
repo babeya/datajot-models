@@ -1,0 +1,12 @@
+{
+  "name": "HomeKit-Luftqualität",
+  "description": "Erfassen Sie den kategorischen HomeKit-Luftqualitätszustand von Unbekannt bis Schlecht, nicht einen kontinuierlichen AQI-Messwert.",
+  "seo": {
+    "keywords": [
+      "HomeKit-Luftqualität",
+      "kategorische Luftqualität",
+      "Luftqualitätszustand",
+      "Innenraum"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "label": "Bewegungserkennung",
+  "description": "Zeigt an, ob ein HomeKit-Sensor derzeit eine Bewegung erkennt.",
+  "seo": {
+    "keywords": [
+      "Bewegungserkennung",
+      "HomeKit",
+      "Bewegungssensor",
+      "binärer Zustand"
+    ]
+  },
+  "thresholds": {
+    "1": { "label": "Keine Bewegung" },
+    "2": { "label": "Bewegung erkannt" }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Teile pro Million",
+  "description": "Konzentrationen in Teilen pro Million messen.",
+  "seo": {
+    "keywords": [
+      "teile pro million",
+      "ppm",
+      "konzentration",
+      "verhältnis"
+    ]
+  },
+  "subUnits": {
+    "ppm": {
+      "abbreviation": "ppm",
+      "title": "Teile pro Million"
+    }
+  }
+}

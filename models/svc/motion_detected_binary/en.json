@@ -1,0 +1,16 @@
+{
+  "label": "Motion Detection",
+  "description": "Displays whether a HomeKit sensor currently detects motion.",
+  "seo": {
+    "keywords": [
+      "motion detection",
+      "HomeKit",
+      "motion sensor",
+      "binary state"
+    ]
+  },
+  "thresholds": {
+    "1": { "label": "No motion" },
+    "2": { "label": "Motion detected" }
+  }
+}

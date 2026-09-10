@@ -1,0 +1,11 @@
+{
+  "key": "motion_detected",
+  "type": "series",
+  "category": "home",
+  "icon": "figure.walk.motion",
+  "svc": "motion_detected_binary",
+  "decimalPrecision": 0,
+  "color": "#F97316",
+  "graphType": "bar",
+  "aggregationMethod": "last"
+}

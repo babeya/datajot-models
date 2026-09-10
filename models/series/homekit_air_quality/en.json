@@ -1,0 +1,12 @@
+{
+  "name": "HomeKit Air Quality",
+  "description": "Track HomeKit's categorical air quality state, from Unknown to Poor, rather than a continuous AQI measurement.",
+  "seo": {
+    "keywords": [
+      "HomeKit air quality",
+      "categorical air quality",
+      "air quality state",
+      "indoor environment"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "label": "HomeKit Air Quality",
+  "description": "Displays the categorical air quality state reported by HomeKit.",
+  "seo": {
+    "keywords": [
+      "HomeKit",
+      "air quality",
+      "categorical state",
+      "indoor environment"
+    ]
+  },
+  "thresholds": {
+    "1": { "label": "Unknown" },
+    "2": { "label": "Excellent" },
+    "3": { "label": "Good" },
+    "4": { "label": "Fair" },
+    "5": { "label": "Inferior" },
+    "6": { "label": "Poor" }
+  }
+}
