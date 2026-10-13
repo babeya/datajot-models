@@ -1,0 +1,10 @@
+{
+  "title": "Pression atmosphérique (hPa)",
+  "description": "Mesurez la pression atmosphérique en hectopascals, avec un affichage qui reste en hPa.",
+  "subUnits": {
+    "hPa": { "title": "Hectopascal", "abbreviation": "hPa" }
+  },
+  "seo": {
+    "keywords": ["pression atmosphérique", "hectopascal", "hPa", "météo", "baromètre"]
+  }
+}

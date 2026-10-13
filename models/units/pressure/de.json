@@ -29,6 +29,14 @@
     "mmHg": {
       "title": "Millimeter Quecksilbersäule",
       "abbreviation": "mmHg"
+    },
+    "inHg": {
+      "title": "Zoll Quecksilbersäule",
+      "abbreviation": "inHg"
+    },
+    "mbar": {
+      "title": "Millibar",
+      "abbreviation": "mbar"
     }
   },
   "seo": {

@@ -29,6 +29,14 @@
     "mmHg": {
       "title": "Milímetro de mercurio",
       "abbreviation": "mmHg"
+    },
+    "inHg": {
+      "title": "Pulgada de mercurio",
+      "abbreviation": "inHg"
+    },
+    "mbar": {
+      "title": "Milibar",
+      "abbreviation": "mbar"
     }
   },
   "seo": {

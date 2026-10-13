@@ -46,7 +46,7 @@ Units are defined in the `models/units` directory. Similar to series, each unit 
 // model.json
 type SubUnit = {
   key: string; // Unique identifier for the sub-unit
-  factor: number; // Conversion factor to the base unit
+  factor: number; // Number of base units in one sub-unit: valueInBase = value * factor
 }
 
 type UnitInputModel = {
@@ -70,6 +70,16 @@ type UnitTranslationModel = {
 }
 
 ```
+
+For example, with `hPa` as the pressure base unit, `Pa` has a factor of `0.01`,
+`kPa` has a factor of `10`, and `inHg` has a factor of `33.8639`. To convert
+between sub-units, use `valueInTarget = value * source.factor / target.factor`.
+
+DataJot may automatically choose a display sub-unit from the unit's `subUnits`.
+Use a dedicated unit with only the intended sub-unit when a template must keep
+a fixed display unit. The atmospheric-pressure series and its visualization
+configuration use `pressure_hpa` so both values and thresholds remain in hPa.
+The general `pressure` unit remains available for other pressure measurements.
 
 ### Output
 

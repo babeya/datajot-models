@@ -3,7 +3,7 @@
   "type": "series",
   "category": "environment",
   "icon": "barometer",
-  "unit": "pressure",
+  "unit": "pressure_hpa",
   "svc": "atmospheric_pressure_hpa",
   "color": "#64748B",
   "graphType": "line",

@@ -1,0 +1,14 @@
+{
+  "key": "pressure_hpa",
+  "type": "unit",
+  "category": "pressure",
+  "system": "metric",
+  "baseUnit": "hPa",
+  "subUnits": [
+    {
+      "key": "hPa",
+      "factor": 1,
+      "abbreviation": "hPa"
+    }
+  ]
+}

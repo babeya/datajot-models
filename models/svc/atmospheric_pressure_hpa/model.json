@@ -1,7 +1,7 @@
 {
   "key": "atmospheric_pressure_hpa",
   "type": "visualizationConfig",
-  "unit": "pressure",
+  "unit": "pressure_hpa",
   "thresholds": [
     {
       "order": 1,

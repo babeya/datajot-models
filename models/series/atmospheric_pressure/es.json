@@ -1,5 +1,5 @@
 {
-  "description": "Registra la presión atmosférica de estaciones meteorológicas o datos de previsión.",
+  "description": "Registra la presión atmosférica en hectopascales (hPa) de Tiempo de Apple o de una estación meteorológica. En Atajos, convierte la presión a hPa antes de añadirla a la serie.",
   "seo": {
     "keywords": [
       "presión",
