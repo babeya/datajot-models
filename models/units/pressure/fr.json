@@ -8,7 +8,9 @@
     "bar": { "title": "Bar", "abbreviation": "bar" },
     "psi": { "title": "Livre par pouce carré", "abbreviation": "psi" },
     "atm": { "title": "Atmosphère", "abbreviation": "atm" },
-    "mmHg": { "title": "Millimètre de mercure", "abbreviation": "mmHg" }
+    "mmHg": { "title": "Millimètre de mercure", "abbreviation": "mmHg" },
+    "inHg": { "title": "Pouce de mercure", "abbreviation": "inHg" },
+    "mbar": { "title": "Millibar", "abbreviation": "mbar" }
   },
   "seo": {
     "keywords": ["pression", "pascal", "bar", "psi", "atmosphère"]

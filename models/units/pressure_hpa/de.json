@@ -1,0 +1,10 @@
+{
+  "title": "Luftdruck (hPa)",
+  "description": "Miss den Luftdruck in Hektopascal, wobei die Anzeige immer in hPa bleibt.",
+  "subUnits": {
+    "hPa": { "title": "Hektopascal", "abbreviation": "hPa" }
+  },
+  "seo": {
+    "keywords": ["Luftdruck", "Hektopascal", "hPa", "Wetter", "Barometer"]
+  }
+}

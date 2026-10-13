@@ -38,6 +38,16 @@
       "key": "mmHg",
       "factor": 1.33322,
       "abbreviation": "mmHg"
+    },
+    {
+      "key": "inHg",
+      "factor": 33.8639,
+      "abbreviation": "inHg"
+    },
+    {
+      "key": "mbar",
+      "factor": 1,
+      "abbreviation": "mbar"
     }
   ]
 }

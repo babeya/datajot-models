@@ -1,5 +1,5 @@
 {
-  "description": "Track atmospheric pressure from weather stations or forecast data.",
+  "description": "Track atmospheric pressure in hectopascals (hPa) from Apple Weather or a weather station. In Shortcuts, convert the pressure to hPa before adding it to the series.",
   "seo": {
     "keywords": [
       "pressure",

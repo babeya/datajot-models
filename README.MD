@@ -35,3 +35,39 @@ All scripts run with plain Node (no dependencies). Use `npm run <script>` from t
 4. Optionally run `npm run validate:output` to confirm the produced bundles are structurally sound before publishing.
 
 Following this loop keeps the published data at models.datajot.app synchronized with the curated model sources in this repository.
+
+## Weather values from Apple Shortcuts
+
+DataJot's add-measure action receives a number without its source unit. Convert
+each weather measurement to the destination series unit in Shortcuts before
+passing its numeric value to DataJot. Changing the units displayed by Apple
+Weather does not change the units expected by an existing DataJot series.
+
+The current weather templates expect these units when creating a new series:
+
+| Template | Input unit |
+| --- | --- |
+| `atmospheric_pressure` | hPa |
+| `temperature_outdoor_metric`, `feels_like_temperature_metric`, `dew_point_metric` | °C |
+| `temperature_outdoor_imperial` | °F |
+| `wind_speed`, `wind_gust` | m/s |
+| `rainfall`, `visibility` | m |
+| `humidity`, `cloud_cover` | % (for example, `65` for 65%) |
+| `uv_index` | Index value, without a physical unit |
+
+Atmospheric pressure uses the dedicated `pressure_hpa` unit, which keeps its
+display in hPa. The `atmospheric_pressure_hpa` visualization thresholds are
+also expressed in hPa. The general-purpose `pressure` unit includes other
+pressure units for conversion, including `inHg` and `mbar`; those units are not
+part of the weather template's automatic display selection.
+
+With hPa as the destination, `101.325 kPa` becomes `1013.25 hPa`, `101325 Pa`
+becomes `1013.25 hPa`, and `1013.25 mbar` remains `1013.25 hPa`. Foundation uses
+`1 inHg = 33.8639 hPa`. See Apple's [UnitPressure conversion table](https://developer.apple.com/documentation/foundation/unitpressure)
+and [Weather unit settings](https://support.apple.com/guide/iphone/check-the-weather-iph1ac0b35f/26/ios/26).
+
+Publishing an updated template does not migrate units already saved in DataJot.
+For an existing atmospheric-pressure series whose measurements are already in
+hPa, associate the new **Atmospheric Pressure (hPa)** unit and select its `hPa`
+sub-unit. Measurements recorded in another unit must be converted separately;
+changing an abbreviation alone does not convert stored numbers.

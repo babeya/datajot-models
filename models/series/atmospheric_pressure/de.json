@@ -1,5 +1,5 @@
 {
-  "description": "Luftdruck aus Wetterstationen oder Vorhersagedaten verfolgen.",
+  "description": "Verfolge den Luftdruck in Hektopascal (hPa) aus Apple Wetter oder einer Wetterstation. Wandle den Druck in Kurzbefehle in hPa um, bevor du ihn zur Datenreihe hinzufügst.",
   "seo": {
     "keywords": [
       "druck",

@@ -1,5 +1,5 @@
 {
-  "description": "Suivez la pression atmosphérique depuis une station météo ou des données météo.",
+  "description": "Suivez la pression atmosphérique en hectopascals (hPa) depuis Météo Apple ou une station météo. Dans Raccourcis, convertissez la pression en hPa avant de l’ajouter à la série.",
   "seo": {
     "keywords": [
       "pression",

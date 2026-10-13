@@ -1,0 +1,10 @@
+{
+  "title": "Presión atmosférica (hPa)",
+  "description": "Mide la presión atmosférica en hectopascales, manteniendo los valores mostrados en hPa.",
+  "subUnits": {
+    "hPa": { "title": "Hectopascal", "abbreviation": "hPa" }
+  },
+  "seo": {
+    "keywords": ["presión atmosférica", "hectopascal", "hPa", "tiempo", "barómetro"]
+  }
+}
