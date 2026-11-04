@@ -1,0 +1,18 @@
+{
+  "label": "État cible de la porte",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Ouverte"
+    },
+    "2": {
+      "label": "Fermée"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État cible de la porte",
+      "HomeKit"
+    ]
+  }
+}

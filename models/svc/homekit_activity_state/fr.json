@@ -1,0 +1,21 @@
+{
+  "label": "État d’activité",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Inactif"
+    },
+    "2": {
+      "label": "En attente"
+    },
+    "3": {
+      "label": "En fonctionnement"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État d’activité",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Anwesenheit erkannt",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Nicht belegt; 1 = Belegt.",
+  "seo": {
+    "keywords": [
+      "Anwesenheit erkannt",
+      "HomeKit"
+    ]
+  }
+}

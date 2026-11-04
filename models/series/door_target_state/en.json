@@ -1,0 +1,10 @@
+{
+  "name": "Target door state",
+  "description": "HomeKit state, without a physical unit. 0 = Open; 1 = Closed.",
+  "seo": {
+    "keywords": [
+      "Target door state",
+      "HomeKit"
+    ]
+  }
+}

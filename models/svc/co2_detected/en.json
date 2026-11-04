@@ -1,0 +1,18 @@
+{
+  "label": "CO₂ detected",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "CO₂ not detected"
+    },
+    "2": {
+      "label": "CO₂ detected"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "CO₂ detected",
+      "HomeKit"
+    ]
+  }
+}

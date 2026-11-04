@@ -1,16 +1,18 @@
 {
-  "label": "Détection de mouvement",
-  "description": "Affiche si un capteur HomeKit détecte actuellement un mouvement.",
+  "label": "Mouvement détecté",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Aucun mouvement"
+    },
+    "2": {
+      "label": "Mouvement détecté"
+    }
+  },
   "seo": {
     "keywords": [
-      "détection de mouvement",
-      "HomeKit",
-      "capteur de mouvement",
-      "état binaire"
+      "Mouvement détecté",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": { "label": "Aucun mouvement" },
-    "2": { "label": "Mouvement détecté" }
   }
 }

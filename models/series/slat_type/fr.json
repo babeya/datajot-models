@@ -1,0 +1,10 @@
+{
+  "name": "Orientation des lamelles",
+  "description": "État HomeKit, sans unité physique. 0 = Horizontales; 1 = Verticales.",
+  "seo": {
+    "keywords": [
+      "Orientation des lamelles",
+      "HomeKit"
+    ]
+  }
+}

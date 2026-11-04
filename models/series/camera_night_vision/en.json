@@ -1,0 +1,10 @@
+{
+  "name": "Night vision",
+  "description": "HomeKit state, without a physical unit. 0 = Disabled; 1 = Enabled.",
+  "seo": {
+    "keywords": [
+      "Night vision",
+      "HomeKit"
+    ]
+  }
+}

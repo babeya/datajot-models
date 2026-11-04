@@ -1,0 +1,10 @@
+{
+  "name": "Visibilidad objetivo",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Mostrar; 1 = Ocultar.",
+  "seo": {
+    "keywords": [
+      "Visibilidad objetivo",
+      "HomeKit"
+    ]
+  }
+}

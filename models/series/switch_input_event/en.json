@@ -1,0 +1,10 @@
+{
+  "name": "Switch input event",
+  "description": "HomeKit state, without a physical unit. 0 = Single press; 1 = Double press; 2 = Long press.",
+  "seo": {
+    "keywords": [
+      "Switch input event",
+      "HomeKit"
+    ]
+  }
+}

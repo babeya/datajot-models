@@ -1,0 +1,18 @@
+{
+  "label": "Batterie schwach",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Normal"
+    },
+    "2": {
+      "label": "Schwach"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Batterie schwach",
+      "HomeKit"
+    ]
+  }
+}

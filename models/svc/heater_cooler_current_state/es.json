@@ -1,0 +1,24 @@
+{
+  "label": "Estado del calefactor/refrigerador",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Inactivo"
+    },
+    "2": {
+      "label": "En espera"
+    },
+    "3": {
+      "label": "Calentando"
+    },
+    "4": {
+      "label": "Enfriando"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado del calefactor/refrigerador",
+      "HomeKit"
+    ]
+  }
+}

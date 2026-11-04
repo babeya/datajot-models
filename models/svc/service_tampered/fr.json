@@ -1,0 +1,18 @@
+{
+  "label": "État de sabotage",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Aucun sabotage"
+    },
+    "2": {
+      "label": "Sabotage détecté"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de sabotage",
+      "HomeKit"
+    ]
+  }
+}

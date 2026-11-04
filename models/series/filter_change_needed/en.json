@@ -1,0 +1,10 @@
+{
+  "name": "Filter replacement",
+  "description": "HomeKit state, without a physical unit. 0 = Not needed; 1 = Needed.",
+  "seo": {
+    "keywords": [
+      "Filter replacement",
+      "HomeKit"
+    ]
+  }
+}

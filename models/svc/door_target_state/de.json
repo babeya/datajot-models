@@ -1,0 +1,18 @@
+{
+  "label": "Türzielzustand",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Offen"
+    },
+    "2": {
+      "label": "Geschlossen"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Türzielzustand",
+      "HomeKit"
+    ]
+  }
+}

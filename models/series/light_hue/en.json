@@ -1,0 +1,10 @@
+{
+  "name": "Light hue",
+  "description": "Raw HomeKit value — Light hue (°).",
+  "seo": {
+    "keywords": [
+      "Light hue",
+      "HomeKit"
+    ]
+  }
+}

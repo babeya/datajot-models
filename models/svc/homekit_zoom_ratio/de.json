@@ -1,0 +1,11 @@
+{
+  "label": "Zoomfaktor",
+  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Zoomfaktor",
+      "HomeKit"
+    ]
+  }
+}

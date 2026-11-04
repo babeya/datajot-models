@@ -1,0 +1,10 @@
+{
+  "name": "Movimiento de apertura",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Cerrando; 1 = Abriendo; 2 = Detenido.",
+  "seo": {
+    "keywords": [
+      "Movimiento de apertura",
+      "HomeKit"
+    ]
+  }
+}

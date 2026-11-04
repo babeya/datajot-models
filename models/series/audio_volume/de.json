@@ -1,0 +1,10 @@
+{
+  "name": "Lautstärke",
+  "description": "HomeKit-Rohwert — Lautstärke (%).",
+  "seo": {
+    "keywords": [
+      "Lautstärke",
+      "HomeKit"
+    ]
+  }
+}

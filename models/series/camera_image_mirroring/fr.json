@@ -1,0 +1,10 @@
+{
+  "name": "Image en miroir",
+  "description": "État HomeKit, sans unité physique. 0 = Non inversée; 1 = Inversée en miroir.",
+  "seo": {
+    "keywords": [
+      "Image en miroir",
+      "HomeKit"
+    ]
+  }
+}

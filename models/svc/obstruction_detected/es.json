@@ -1,0 +1,18 @@
+{
+  "label": "Obstáculo detectado",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Sin obstáculo"
+    },
+    "2": {
+      "label": "Obstáculo detectado"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Obstáculo detectado",
+      "HomeKit"
+    ]
+  }
+}

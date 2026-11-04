@@ -1,0 +1,18 @@
+{
+  "label": "Occupancy detected",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Unoccupied"
+    },
+    "2": {
+      "label": "Occupied"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Occupancy detected",
+      "HomeKit"
+    ]
+  }
+}

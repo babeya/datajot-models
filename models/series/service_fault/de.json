@@ -1,0 +1,10 @@
+{
+  "name": "Dienstfehler",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Kein Fehler; 1 = Allgemeiner Fehler.",
+  "seo": {
+    "keywords": [
+      "Dienstfehler",
+      "HomeKit"
+    ]
+  }
+}

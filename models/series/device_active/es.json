@@ -1,0 +1,10 @@
+{
+  "name": "Activación",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Inactivo; 1 = Activo.",
+  "seo": {
+    "keywords": [
+      "Activación",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "label": "État du chauffage-climatiseur",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Inactif"
+    },
+    "2": {
+      "label": "En attente"
+    },
+    "3": {
+      "label": "En chauffage"
+    },
+    "4": {
+      "label": "En refroidissement"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État du chauffage-climatiseur",
+      "HomeKit"
+    ]
+  }
+}

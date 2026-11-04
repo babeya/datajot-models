@@ -1,0 +1,10 @@
+{
+  "name": "Ladezustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Lädt nicht; 1 = Wird geladen; 2 = Nicht aufladbar.",
+  "seo": {
+    "keywords": [
+      "Ladezustand",
+      "HomeKit"
+    ]
+  }
+}

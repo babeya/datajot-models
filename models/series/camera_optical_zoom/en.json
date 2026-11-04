@@ -1,0 +1,10 @@
+{
+  "name": "Optical zoom",
+  "description": "Raw HomeKit value — Optical zoom, a dimensionless zoom ratio.",
+  "seo": {
+    "keywords": [
+      "Optical zoom",
+      "HomeKit"
+    ]
+  }
+}

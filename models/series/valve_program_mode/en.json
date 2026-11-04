@@ -1,0 +1,10 @@
+{
+  "name": "Watering program mode",
+  "description": "HomeKit state, without a physical unit. 0 = Not scheduled; 1 = Scheduled; 2 = Schedule overridden manually.",
+  "seo": {
+    "keywords": [
+      "Watering program mode",
+      "HomeKit"
+    ]
+  }
+}

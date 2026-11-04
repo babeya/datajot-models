@@ -1,0 +1,18 @@
+{
+  "label": "Blockierungsstatus",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Nicht blockiert"
+    },
+    "2": {
+      "label": "Blockiert"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Blockierungsstatus",
+      "HomeKit"
+    ]
+  }
+}

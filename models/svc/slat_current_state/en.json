@@ -1,0 +1,21 @@
+{
+  "label": "Slat state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Stationary"
+    },
+    "2": {
+      "label": "Jammed"
+    },
+    "3": {
+      "label": "Oscillating"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Slat state",
+      "HomeKit"
+    ]
+  }
+}

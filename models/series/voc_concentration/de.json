@@ -1,0 +1,10 @@
+{
+  "name": "VOC-Konzentration",
+  "description": "HomeKit-Rohwert — VOC-Konzentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "VOC-Konzentration",
+      "HomeKit"
+    ]
+  }
+}

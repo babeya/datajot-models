@@ -1,0 +1,24 @@
+{
+  "label": "Visibilidad actual",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Visible"
+    },
+    "2": {
+      "label": "Oculto"
+    },
+    "3": {
+      "label": "Conectado"
+    },
+    "4": {
+      "label": "Siempre visible"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Visibilidad actual",
+      "HomeKit"
+    ]
+  }
+}

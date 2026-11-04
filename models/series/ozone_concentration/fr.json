@@ -1,0 +1,10 @@
+{
+  "name": "Concentration d’ozone",
+  "description": "Valeur brute HomeKit — Concentration d’ozone (µg/m³).",
+  "seo": {
+    "keywords": [
+      "Concentration d’ozone",
+      "HomeKit"
+    ]
+  }
+}

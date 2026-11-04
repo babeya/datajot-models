@@ -1,0 +1,18 @@
+{
+  "label": "État de sortie de l’interrupteur",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Arrêt"
+    },
+    "2": {
+      "label": "Marche"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de sortie de l’interrupteur",
+      "HomeKit"
+    ]
+  }
+}

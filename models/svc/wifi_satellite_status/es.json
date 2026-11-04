@@ -1,0 +1,21 @@
+{
+  "label": "Estado del satélite Wi-Fi",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Desconocido"
+    },
+    "2": {
+      "label": "Conectado"
+    },
+    "3": {
+      "label": "No conectado"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado del satélite Wi-Fi",
+      "HomeKit"
+    ]
+  }
+}

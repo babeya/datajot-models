@@ -1,14 +1,6 @@
 {
   "label": "Fenster offen",
-  "description": "Zeigt an, ob ein Fenster offen oder geschlossen ist.",
-  "seo": {
-    "keywords": [
-      "fenster",
-      "offen",
-      "geschlossen",
-      "zustand"
-    ]
-  },
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
   "thresholds": {
     "1": {
       "label": "Geschlossen"
@@ -16,5 +8,11 @@
     "2": {
       "label": "Offen"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Fenster offen",
+      "HomeKit"
+    ]
   }
 }

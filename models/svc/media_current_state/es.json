@@ -1,0 +1,30 @@
+{
+  "label": "Estado de reproducción",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Reproduciendo"
+    },
+    "2": {
+      "label": "En pausa"
+    },
+    "3": {
+      "label": "Detenido"
+    },
+    "4": {
+      "label": "Desconocido"
+    },
+    "5": {
+      "label": "Cargando"
+    },
+    "6": {
+      "label": "Interrumpido"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado de reproducción",
+      "HomeKit"
+    ]
+  }
+}

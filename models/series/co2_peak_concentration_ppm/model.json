@@ -1,0 +1,12 @@
+{
+  "key": "co2_peak_concentration_ppm",
+  "type": "series",
+  "category": "environment",
+  "icon": "aqi.medium",
+  "color": "#0891B2",
+  "graphType": "line",
+  "svc": "gas_concentration_ppm",
+  "decimalPrecision": 1,
+  "aggregationMethod": "last",
+  "unit": "parts_per_million"
+}

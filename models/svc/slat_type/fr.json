@@ -1,0 +1,18 @@
+{
+  "label": "Orientation des lamelles",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Horizontales"
+    },
+    "2": {
+      "label": "Verticales"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Orientation des lamelles",
+      "HomeKit"
+    ]
+  }
+}

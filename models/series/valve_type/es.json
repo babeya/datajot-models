@@ -1,0 +1,10 @@
+{
+  "name": "Tipo de válvula",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Válvula genérica; 1 = Riego; 2 = Cabezal de ducha; 3 = Grifo.",
+  "seo": {
+    "keywords": [
+      "Tipo de válvula",
+      "HomeKit"
+    ]
+  }
+}

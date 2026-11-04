@@ -1,0 +1,10 @@
+{
+  "name": "VOC concentration",
+  "description": "Raw HomeKit value — VOC concentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "VOC concentration",
+      "HomeKit"
+    ]
+  }
+}

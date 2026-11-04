@@ -1,0 +1,21 @@
+{
+  "label": "État des lamelles",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Immobiles"
+    },
+    "2": {
+      "label": "Bloquées"
+    },
+    "3": {
+      "label": "En oscillation"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État des lamelles",
+      "HomeKit"
+    ]
+  }
+}

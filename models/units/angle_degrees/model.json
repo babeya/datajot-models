@@ -1,0 +1,12 @@
+{
+  "key": "angle_degrees",
+  "type": "unit",
+  "category": "home",
+  "baseUnit": "degree",
+  "subUnits": [
+    {
+      "key": "degree",
+      "factor": 1
+    }
+  ]
+}

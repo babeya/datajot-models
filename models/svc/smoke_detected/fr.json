@@ -1,0 +1,18 @@
+{
+  "label": "Fumée détectée",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Aucune fumée détectée"
+    },
+    "2": {
+      "label": "Fumée détectée"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Fumée détectée",
+      "HomeKit"
+    ]
+  }
+}

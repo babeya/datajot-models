@@ -1,0 +1,10 @@
+{
+  "name": "Alarmanlagenzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Zuhause scharf; 1 = Abwesend scharf; 2 = Nachts scharf; 3 = Unscharf; 4 = Ausgelöst.",
+  "seo": {
+    "keywords": [
+      "Alarmanlagenzustand",
+      "HomeKit"
+    ]
+  }
+}

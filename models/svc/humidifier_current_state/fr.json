@@ -1,0 +1,24 @@
+{
+  "label": "État de l’humidificateur-déshumidificateur",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Inactif"
+    },
+    "2": {
+      "label": "En attente"
+    },
+    "3": {
+      "label": "En humidification"
+    },
+    "4": {
+      "label": "En déshumidification"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de l’humidificateur-déshumidificateur",
+      "HomeKit"
+    ]
+  }
+}

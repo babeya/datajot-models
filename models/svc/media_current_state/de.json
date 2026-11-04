@@ -1,0 +1,30 @@
+{
+  "label": "Wiedergabestatus",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Wiedergabe"
+    },
+    "2": {
+      "label": "Pausiert"
+    },
+    "3": {
+      "label": "Gestoppt"
+    },
+    "4": {
+      "label": "Unbekannt"
+    },
+    "5": {
+      "label": "Lädt"
+    },
+    "6": {
+      "label": "Unterbrochen"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Wiedergabestatus",
+      "HomeKit"
+    ]
+  }
+}

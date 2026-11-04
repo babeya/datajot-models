@@ -1,0 +1,10 @@
+{
+  "name": "Image rotation",
+  "description": "Raw HomeKit value — Image rotation (°).",
+  "seo": {
+    "keywords": [
+      "Image rotation",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Orientación de lamas",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Horizontal"
+    },
+    "2": {
+      "label": "Vertical"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Orientación de lamas",
+      "HomeKit"
+    ]
+  }
+}

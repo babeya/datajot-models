@@ -1,0 +1,21 @@
+{
+  "label": "Target humidifier mode",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Automatic"
+    },
+    "2": {
+      "label": "Humidify"
+    },
+    "3": {
+      "label": "Dehumidify"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Target humidifier mode",
+      "HomeKit"
+    ]
+  }
+}

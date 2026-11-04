@@ -1,0 +1,10 @@
+{
+  "name": "Slat orientation",
+  "description": "HomeKit state, without a physical unit. 0 = Horizontal; 1 = Vertical.",
+  "seo": {
+    "keywords": [
+      "Slat orientation",
+      "HomeKit"
+    ]
+  }
+}

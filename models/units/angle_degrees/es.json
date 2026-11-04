@@ -1,0 +1,16 @@
+{
+  "title": "Ángulo",
+  "description": "Ángulo almacenado y mostrado en grados.",
+  "subUnits": {
+    "degree": {
+      "title": "Grado",
+      "abbreviation": "°"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Ángulo",
+      "HomeKit"
+    ]
+  }
+}

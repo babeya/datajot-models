@@ -1,0 +1,16 @@
+{
+  "title": "Angle",
+  "description": "Angle enregistré et affiché en degrés.",
+  "subUnits": {
+    "degree": {
+      "title": "Degré",
+      "abbreviation": "°"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Angle",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Heiz-/Kühlgerät-Zielmodus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Automatisch; 1 = Heizen; 2 = Kühlen.",
+  "seo": {
+    "keywords": [
+      "Heiz-/Kühlgerät-Zielmodus",
+      "HomeKit"
+    ]
+  }
+}

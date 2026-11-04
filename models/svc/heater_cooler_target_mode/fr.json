@@ -1,0 +1,21 @@
+{
+  "label": "Mode cible du chauffage-climatiseur",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Automatique"
+    },
+    "2": {
+      "label": "Chauffage"
+    },
+    "3": {
+      "label": "Refroidissement"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Mode cible du chauffage-climatiseur",
+      "HomeKit"
+    ]
+  }
+}

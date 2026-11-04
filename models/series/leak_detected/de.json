@@ -1,0 +1,10 @@
+{
+  "name": "Leck erkannt",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Kein Leck erkannt; 1 = Leck erkannt.",
+  "seo": {
+    "keywords": [
+      "Leck erkannt",
+      "HomeKit"
+    ]
+  }
+}

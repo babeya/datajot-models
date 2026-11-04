@@ -1,0 +1,18 @@
+{
+  "label": "Service operational status",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Inactive"
+    },
+    "2": {
+      "label": "Active"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Service operational status",
+      "HomeKit"
+    ]
+  }
+}

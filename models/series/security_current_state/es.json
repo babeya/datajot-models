@@ -1,0 +1,10 @@
+{
+  "name": "Estado de la alarma",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Armada en casa; 1 = Armada en ausencia; 2 = Armada de noche; 3 = Desarmada; 4 = Activada.",
+  "seo": {
+    "keywords": [
+      "Estado de la alarma",
+      "HomeKit"
+    ]
+  }
+}

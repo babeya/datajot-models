@@ -1,0 +1,21 @@
+{
+  "label": "Événement de l’interrupteur",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Appui simple"
+    },
+    "2": {
+      "label": "Double appui"
+    },
+    "3": {
+      "label": "Appui long"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Événement de l’interrupteur",
+      "HomeKit"
+    ]
+  }
+}

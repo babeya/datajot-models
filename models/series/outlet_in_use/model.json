@@ -1,0 +1,11 @@
+{
+  "key": "outlet_in_use",
+  "type": "series",
+  "category": "home",
+  "icon": "power",
+  "color": "#0891B2",
+  "graphType": "bar",
+  "svc": "outlet_in_use",
+  "decimalPrecision": 0,
+  "aggregationMethod": "last"
+}

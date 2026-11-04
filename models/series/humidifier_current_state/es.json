@@ -1,0 +1,10 @@
+{
+  "name": "Estado del humidificador/deshumidificador",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Inactivo; 1 = En espera; 2 = Humidificando; 3 = Deshumidificando.",
+  "seo": {
+    "keywords": [
+      "Estado del humidificador/deshumidificador",
+      "HomeKit"
+    ]
+  }
+}

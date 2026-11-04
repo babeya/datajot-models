@@ -1,0 +1,10 @@
+{
+  "name": "Visibilidad actual",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Visible; 1 = Oculto; 2 = Conectado; 3 = Siempre visible.",
+  "seo": {
+    "keywords": [
+      "Visibilidad actual",
+      "HomeKit"
+    ]
+  }
+}

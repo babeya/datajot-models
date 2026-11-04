@@ -89,7 +89,7 @@ const applyUnitTransformation = (item, model, i18n) => {
  */
 const transformThresholds = (model, i18n) => {
   const modelThresholds = model[FIELD_THRESHOLDS]
-  if (!Array.isArray(modelThresholds) || !modelThresholds.length) {
+  if (!Array.isArray(modelThresholds)) {
     return null
   }
 

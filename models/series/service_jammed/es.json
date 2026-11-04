@@ -1,0 +1,10 @@
+{
+  "name": "Estado de atasco",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin atasco; 1 = Atascado.",
+  "seo": {
+    "keywords": [
+      "Estado de atasco",
+      "HomeKit"
+    ]
+  }
+}

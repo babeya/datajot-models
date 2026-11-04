@@ -1,0 +1,10 @@
+{
+  "name": "Partikelgrößenklasse",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = 2,5 µm; 1 = 10 µm.",
+  "seo": {
+    "keywords": [
+      "Partikelgrößenklasse",
+      "HomeKit"
+    ]
+  }
+}

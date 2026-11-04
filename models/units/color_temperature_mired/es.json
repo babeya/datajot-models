@@ -1,0 +1,16 @@
+{
+  "title": "Temperatura de color (mired)",
+  "description": "Megakelvin recíproco de HomeKit. Kelvin = 1 000 000 / mired; sin subunidad kelvin multiplicativa.",
+  "subUnits": {
+    "mired": {
+      "title": "Mired",
+      "abbreviation": "mired"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Temperatura de color (mired)",
+      "HomeKit"
+    ]
+  }
+}

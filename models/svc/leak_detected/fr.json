@@ -1,0 +1,18 @@
+{
+  "label": "Fuite détectée",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Aucune fuite détectée"
+    },
+    "2": {
+      "label": "Fuite détectée"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Fuite détectée",
+      "HomeKit"
+    ]
+  }
+}

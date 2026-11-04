@@ -1,0 +1,54 @@
+{
+  "label": "Modo de imagen",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Estándar"
+    },
+    "2": {
+      "label": "Cine"
+    },
+    "3": {
+      "label": "Deporte"
+    },
+    "4": {
+      "label": "Juego"
+    },
+    "5": {
+      "label": "Foto"
+    },
+    "6": {
+      "label": "Vívido"
+    },
+    "7": {
+      "label": "Oscuro"
+    },
+    "8": {
+      "label": "Claro"
+    },
+    "9": {
+      "label": "Ordenador"
+    },
+    "10": {
+      "label": "Noche"
+    },
+    "11": {
+      "label": "Calibrado"
+    },
+    "12": {
+      "label": "Personalizado 1"
+    },
+    "13": {
+      "label": "Personalizado 2"
+    },
+    "14": {
+      "label": "Personalizado 3"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Modo de imagen",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "CO-Konzentration",
+  "description": "HomeKit-Rohwert — CO-Konzentration (ppm).",
+  "seo": {
+    "keywords": [
+      "CO-Konzentration",
+      "HomeKit"
+    ]
+  }
+}

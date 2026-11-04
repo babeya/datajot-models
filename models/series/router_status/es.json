@@ -1,0 +1,10 @@
+{
+  "name": "Estado del router",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Preparado; 1 = No preparado.",
+  "seo": {
+    "keywords": [
+      "Estado del router",
+      "HomeKit"
+    ]
+  }
+}

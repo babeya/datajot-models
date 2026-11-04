@@ -1,0 +1,10 @@
+{
+  "name": "Seuil de chauffage",
+  "description": "Valeur brute HomeKit — Seuil de chauffage (°C).",
+  "seo": {
+    "keywords": [
+      "Seuil de chauffage",
+      "HomeKit"
+    ]
+  }
+}

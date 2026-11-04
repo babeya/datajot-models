@@ -1,0 +1,21 @@
+{
+  "label": "État chauffage et refroidissement",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "À l’arrêt"
+    },
+    "2": {
+      "label": "Chauffage"
+    },
+    "3": {
+      "label": "Refroidissement"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État chauffage et refroidissement",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "État cible de la serrure",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Déverrouillée"
+    },
+    "2": {
+      "label": "Verrouillée"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État cible de la serrure",
+      "HomeKit"
+    ]
+  }
+}

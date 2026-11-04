@@ -1,0 +1,10 @@
+{
+  "name": "Humidifier/dehumidifier state",
+  "description": "HomeKit state, without a physical unit. 0 = Inactive; 1 = Idle; 2 = Humidifying; 3 = Dehumidifying.",
+  "seo": {
+    "keywords": [
+      "Humidifier/dehumidifier state",
+      "HomeKit"
+    ]
+  }
+}

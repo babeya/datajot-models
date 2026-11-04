@@ -1,0 +1,18 @@
+{
+  "label": "Filter replacement",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Not needed"
+    },
+    "2": {
+      "label": "Needed"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Filter replacement",
+      "HomeKit"
+    ]
+  }
+}

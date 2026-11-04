@@ -1,0 +1,10 @@
+{
+  "name": "Temperatura de color",
+  "description": "Valor bruto de HomeKit — Temperatura de color (mired).",
+  "seo": {
+    "keywords": [
+      "Temperatura de color",
+      "HomeKit"
+    ]
+  }
+}

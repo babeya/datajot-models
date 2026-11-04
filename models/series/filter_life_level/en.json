@@ -1,0 +1,10 @@
+{
+  "name": "Filter life remaining",
+  "description": "Raw HomeKit value — Filter life remaining (%).",
+  "seo": {
+    "keywords": [
+      "Filter life remaining",
+      "HomeKit"
+    ]
+  }
+}

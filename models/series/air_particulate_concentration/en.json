@@ -1,0 +1,10 @@
+{
+  "name": "Airborne particle concentration",
+  "description": "Raw HomeKit value — Airborne particle concentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "Airborne particle concentration",
+      "HomeKit"
+    ]
+  }
+}

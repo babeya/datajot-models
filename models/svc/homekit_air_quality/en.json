@@ -1,20 +1,30 @@
 {
-  "label": "HomeKit Air Quality",
-  "description": "Displays the categorical air quality state reported by HomeKit.",
+  "label": "Air quality",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Unknown"
+    },
+    "2": {
+      "label": "Excellent"
+    },
+    "3": {
+      "label": "Good"
+    },
+    "4": {
+      "label": "Fair"
+    },
+    "5": {
+      "label": "Inferior"
+    },
+    "6": {
+      "label": "Poor"
+    }
+  },
   "seo": {
     "keywords": [
-      "HomeKit",
-      "air quality",
-      "categorical state",
-      "indoor environment"
+      "Air quality",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": { "label": "Unknown" },
-    "2": { "label": "Excellent" },
-    "3": { "label": "Good" },
-    "4": { "label": "Fair" },
-    "5": { "label": "Inferior" },
-    "6": { "label": "Poor" }
   }
 }

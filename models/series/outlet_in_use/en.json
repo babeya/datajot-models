@@ -1,0 +1,10 @@
+{
+  "name": "Outlet occupied",
+  "description": "HomeKit state, without a physical unit. 0 = No device connected; 1 = Device connected.",
+  "seo": {
+    "keywords": [
+      "Outlet occupied",
+      "HomeKit"
+    ]
+  }
+}

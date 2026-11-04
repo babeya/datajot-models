@@ -1,0 +1,18 @@
+{
+  "label": "Rotation direction",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Clockwise"
+    },
+    "2": {
+      "label": "Counterclockwise"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Rotation direction",
+      "HomeKit"
+    ]
+  }
+}

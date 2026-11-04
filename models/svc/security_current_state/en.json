@@ -1,0 +1,27 @@
+{
+  "label": "Security system state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Stay armed"
+    },
+    "2": {
+      "label": "Away armed"
+    },
+    "3": {
+      "label": "Night armed"
+    },
+    "4": {
+      "label": "Disarmed"
+    },
+    "5": {
+      "label": "Triggered"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Security system state",
+      "HomeKit"
+    ]
+  }
+}

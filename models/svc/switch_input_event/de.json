@@ -1,0 +1,21 @@
+{
+  "label": "Schalterereignis",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Einfachdruck"
+    },
+    "2": {
+      "label": "Doppeldruck"
+    },
+    "3": {
+      "label": "Langer Druck"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Schalterereignis",
+      "HomeKit"
+    ]
+  }
+}

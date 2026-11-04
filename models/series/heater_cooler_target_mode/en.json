@@ -1,0 +1,10 @@
+{
+  "name": "Target heater/cooler mode",
+  "description": "HomeKit state, without a physical unit. 0 = Automatic; 1 = Heat; 2 = Cool.",
+  "seo": {
+    "keywords": [
+      "Target heater/cooler mode",
+      "HomeKit"
+    ]
+  }
+}

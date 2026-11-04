@@ -1,0 +1,11 @@
+{
+  "key": "camera_image_mirroring",
+  "type": "series",
+  "category": "home",
+  "icon": "play.tv",
+  "color": "#0891B2",
+  "graphType": "bar",
+  "svc": "camera_image_mirroring",
+  "decimalPrecision": 0,
+  "aggregationMethod": "last"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Nivel de batería",
+  "description": "Valor bruto de HomeKit — Nivel de batería (%).",
+  "seo": {
+    "keywords": [
+      "Nivel de batería",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Mode du programme d’arrosage",
+  "description": "État HomeKit, sans unité physique. 0 = Non programmé; 1 = Programmé; 2 = Programme remplacé manuellement.",
+  "seo": {
+    "keywords": [
+      "Mode du programme d’arrosage",
+      "HomeKit"
+    ]
+  }
+}

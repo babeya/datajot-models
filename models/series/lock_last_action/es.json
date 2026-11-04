@@ -1,0 +1,10 @@
+{
+  "name": "Última acción de la cerradura",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Bloqueada manualmente desde dentro; 1 = Desbloqueada manualmente desde dentro; 2 = Bloqueada manualmente desde fuera; 3 = Desbloqueada manualmente desde fuera; 4 = Bloqueada con teclado; 5 = Desbloqueada con teclado; 6 = Bloqueada a distancia; 7 = Desbloqueada a distancia; 8 = Bloqueada tras el plazo; 9 = Bloqueada manualmente; 10 = Desbloqueada manualmente.",
+  "seo": {
+    "keywords": [
+      "Última acción de la cerradura",
+      "HomeKit"
+    ]
+  }
+}

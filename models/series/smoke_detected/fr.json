@@ -1,0 +1,10 @@
+{
+  "name": "Fumée détectée",
+  "description": "État HomeKit, sans unité physique. 0 = Aucune fumée détectée; 1 = Fumée détectée.",
+  "seo": {
+    "keywords": [
+      "Fumée détectée",
+      "HomeKit"
+    ]
+  }
+}

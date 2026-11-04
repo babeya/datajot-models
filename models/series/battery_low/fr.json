@@ -1,0 +1,10 @@
+{
+  "name": "Batterie faible",
+  "description": "État HomeKit, sans unité physique. 0 = Normale; 1 = Faible.",
+  "seo": {
+    "keywords": [
+      "Batterie faible",
+      "HomeKit"
+    ]
+  }
+}

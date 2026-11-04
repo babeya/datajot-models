@@ -1,0 +1,10 @@
+{
+  "name": "CO concentration",
+  "description": "Raw HomeKit value — CO concentration (ppm).",
+  "seo": {
+    "keywords": [
+      "CO concentration",
+      "HomeKit"
+    ]
+  }
+}

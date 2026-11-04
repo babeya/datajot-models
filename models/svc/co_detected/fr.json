@@ -1,0 +1,18 @@
+{
+  "label": "CO détecté",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "CO non détecté"
+    },
+    "2": {
+      "label": "CO détecté"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "CO détecté",
+      "HomeKit"
+    ]
+  }
+}

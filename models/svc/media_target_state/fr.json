@@ -1,0 +1,21 @@
+{
+  "label": "État cible de lecture",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Lecture"
+    },
+    "2": {
+      "label": "Pause"
+    },
+    "3": {
+      "label": "Arrêt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État cible de lecture",
+      "HomeKit"
+    ]
+  }
+}

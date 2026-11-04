@@ -1,0 +1,10 @@
+{
+  "name": "Door state",
+  "description": "HomeKit state, without a physical unit. 0 = Open; 1 = Closed; 2 = Opening; 3 = Closing; 4 = Stopped.",
+  "seo": {
+    "keywords": [
+      "Door state",
+      "HomeKit"
+    ]
+  }
+}

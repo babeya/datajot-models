@@ -1,0 +1,10 @@
+{
+  "name": "Déplacement de l’ouvrant",
+  "description": "État HomeKit, sans unité physique. 0 = En fermeture; 1 = En ouverture; 2 = À l’arrêt.",
+  "seo": {
+    "keywords": [
+      "Déplacement de l’ouvrant",
+      "HomeKit"
+    ]
+  }
+}

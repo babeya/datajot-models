@@ -1,0 +1,12 @@
+{
+  "key": "heating_temperature_threshold",
+  "type": "series",
+  "category": "home",
+  "icon": "thermometer.medium",
+  "color": "#0891B2",
+  "graphType": "line",
+  "svc": "homekit_temperature_setpoint",
+  "decimalPrecision": 1,
+  "aggregationMethod": "last",
+  "unit": "temperature_metric"
+}

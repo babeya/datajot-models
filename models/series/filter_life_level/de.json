@@ -1,0 +1,10 @@
+{
+  "name": "Verbleibende Filterlebensdauer",
+  "description": "HomeKit-Rohwert — Verbleibende Filterlebensdauer (%).",
+  "seo": {
+    "keywords": [
+      "Verbleibende Filterlebensdauer",
+      "HomeKit"
+    ]
+  }
+}

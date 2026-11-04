@@ -1,0 +1,10 @@
+{
+  "name": "Closed captions",
+  "description": "HomeKit state, without a physical unit. 0 = Disabled; 1 = Enabled.",
+  "seo": {
+    "keywords": [
+      "Closed captions",
+      "HomeKit"
+    ]
+  }
+}

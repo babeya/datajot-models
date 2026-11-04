@@ -1,0 +1,18 @@
+{
+  "label": "Défaut du service",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Aucun défaut"
+    },
+    "2": {
+      "label": "Défaut général"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Défaut du service",
+      "HomeKit"
+    ]
+  }
+}

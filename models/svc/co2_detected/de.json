@@ -1,0 +1,18 @@
+{
+  "label": "CO₂ erkannt",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Kein CO₂ erkannt"
+    },
+    "2": {
+      "label": "CO₂ erkannt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "CO₂ erkannt",
+      "HomeKit"
+    ]
+  }
+}

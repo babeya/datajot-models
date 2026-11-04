@@ -1,0 +1,10 @@
+{
+  "name": "Heiz-/Kühlgerätzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Inaktiv; 1 = Bereit; 2 = Heizt; 3 = Kühlt.",
+  "seo": {
+    "keywords": [
+      "Heiz-/Kühlgerätzustand",
+      "HomeKit"
+    ]
+  }
+}

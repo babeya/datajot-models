@@ -1,0 +1,10 @@
+{
+  "name": "Lamellenausrichtung",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Horizontal; 1 = Vertikal.",
+  "seo": {
+    "keywords": [
+      "Lamellenausrichtung",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Categoría de partículas",
+  "description": "Estado de HomeKit, sin unidad física. 0 = 2,5 µm; 1 = 10 µm.",
+  "seo": {
+    "keywords": [
+      "Categoría de partículas",
+      "HomeKit"
+    ]
+  }
+}

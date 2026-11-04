@@ -1,0 +1,12 @@
+{
+  "key": "mass_concentration",
+  "type": "unit",
+  "category": "environment",
+  "baseUnit": "ug_m3",
+  "subUnits": [
+    {
+      "key": "ug_m3",
+      "factor": 1
+    }
+  ]
+}

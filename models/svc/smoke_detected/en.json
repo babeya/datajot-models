@@ -1,0 +1,18 @@
+{
+  "label": "Smoke detected",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "No smoke detected"
+    },
+    "2": {
+      "label": "Smoke detected"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Smoke detected",
+      "HomeKit"
+    ]
+  }
+}

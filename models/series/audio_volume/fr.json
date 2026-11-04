@@ -1,0 +1,10 @@
+{
+  "name": "Volume sonore",
+  "description": "Valeur brute HomeKit — Volume sonore (%).",
+  "seo": {
+    "keywords": [
+      "Volume sonore",
+      "HomeKit"
+    ]
+  }
+}

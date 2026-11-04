@@ -1,0 +1,10 @@
+{
+  "name": "État de lecture",
+  "description": "État HomeKit, sans unité physique. 0 = En lecture; 1 = En pause; 2 = Arrêté; 3 = Inconnu; 4 = Chargement; 5 = Interrompu.",
+  "seo": {
+    "keywords": [
+      "État de lecture",
+      "HomeKit"
+    ]
+  }
+}

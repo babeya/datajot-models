@@ -1,0 +1,10 @@
+{
+  "name": "WLAN-Satellitenstatus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Unbekannt; 1 = Verbunden; 2 = Nicht verbunden.",
+  "seo": {
+    "keywords": [
+      "WLAN-Satellitenstatus",
+      "HomeKit"
+    ]
+  }
+}

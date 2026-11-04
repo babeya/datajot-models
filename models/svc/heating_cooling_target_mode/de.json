@@ -1,0 +1,24 @@
+{
+  "label": "Thermostat-Zielmodus",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Aus"
+    },
+    "2": {
+      "label": "Heizen"
+    },
+    "3": {
+      "label": "Kühlen"
+    },
+    "4": {
+      "label": "Automatisch"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Thermostat-Zielmodus",
+      "HomeKit"
+    ]
+  }
+}

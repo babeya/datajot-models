@@ -1,0 +1,10 @@
+{
+  "name": "Estado objetivo de reproducción",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Reproducir; 1 = Pausar; 2 = Detener.",
+  "seo": {
+    "keywords": [
+      "Estado objetivo de reproducción",
+      "HomeKit"
+    ]
+  }
+}

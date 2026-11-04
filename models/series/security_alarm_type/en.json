@@ -1,0 +1,10 @@
+{
+  "name": "Alarm type",
+  "description": "HomeKit state, without a physical unit. 0 = No alarm; 1 = Unknown alarm type.",
+  "seo": {
+    "keywords": [
+      "Alarm type",
+      "HomeKit"
+    ]
+  }
+}

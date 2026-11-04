@@ -1,0 +1,18 @@
+{
+  "label": "Marche de l’appareil",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Arrêt"
+    },
+    "2": {
+      "label": "Marche"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Marche de l’appareil",
+      "HomeKit"
+    ]
+  }
+}

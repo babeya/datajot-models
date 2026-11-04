@@ -1,0 +1,11 @@
+{
+  "label": "Gas concentration (ppm)",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Gas concentration (ppm)",
+      "HomeKit"
+    ]
+  }
+}

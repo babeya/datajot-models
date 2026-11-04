@@ -1,0 +1,21 @@
+{
+  "label": "Activity state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Inactive"
+    },
+    "2": {
+      "label": "Idle"
+    },
+    "3": {
+      "label": "Active"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Activity state",
+      "HomeKit"
+    ]
+  }
+}

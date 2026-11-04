@@ -1,0 +1,10 @@
+{
+  "name": "PM10-Konzentration",
+  "description": "HomeKit-Rohwert — PM10-Konzentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "PM10-Konzentration",
+      "HomeKit"
+    ]
+  }
+}

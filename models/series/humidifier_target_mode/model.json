@@ -1,0 +1,11 @@
+{
+  "key": "humidifier_target_mode",
+  "type": "series",
+  "category": "home",
+  "icon": "humidity.fill",
+  "color": "#0891B2",
+  "graphType": "bar",
+  "svc": "humidifier_target_mode",
+  "decimalPrecision": 0,
+  "aggregationMethod": "last"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Modo objetivo del calefactor/refrigerador",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Automático; 1 = Calefacción; 2 = Refrigeración.",
+  "seo": {
+    "keywords": [
+      "Modo objetivo del calefactor/refrigerador",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "label": "État de lecture",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "En lecture"
+    },
+    "2": {
+      "label": "En pause"
+    },
+    "3": {
+      "label": "Arrêté"
+    },
+    "4": {
+      "label": "Inconnu"
+    },
+    "5": {
+      "label": "Chargement"
+    },
+    "6": {
+      "label": "Interrompu"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de lecture",
+      "HomeKit"
+    ]
+  }
+}

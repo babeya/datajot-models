@@ -1,0 +1,10 @@
+{
+  "name": "Light brightness",
+  "description": "Raw HomeKit value — Light brightness (%).",
+  "seo": {
+    "keywords": [
+      "Light brightness",
+      "HomeKit"
+    ]
+  }
+}

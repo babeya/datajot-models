@@ -1,29 +1,11 @@
 {
-  "label": "Light Level (lux)",
-  "description": "Track light levels for better ambiance and energy management",
+  "label": "Illuminance (lx)",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "light",
-      "luminosity",
-      "ambiance",
-      "indoor"
+      "Illuminance (lx)",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Dark"
-    },
-    "2": {
-      "label": "Dim"
-    },
-    "3": {
-      "label": "Moderate"
-    },
-    "4": {
-      "label": "Bright"
-    },
-    "5": {
-      "label": "Very bright"
-    }
   }
 }

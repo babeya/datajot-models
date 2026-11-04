@@ -1,0 +1,10 @@
+{
+  "name": "Mode cible de l’humidificateur",
+  "description": "État HomeKit, sans unité physique. 0 = Automatique; 1 = Humidification; 2 = Déshumidification.",
+  "seo": {
+    "keywords": [
+      "Mode cible de l’humidificateur",
+      "HomeKit"
+    ]
+  }
+}

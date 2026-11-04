@@ -1,0 +1,10 @@
+{
+  "name": "Fuga detectada",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin fuga detectada; 1 = Fuga detectada.",
+  "seo": {
+    "keywords": [
+      "Fuga detectada",
+      "HomeKit"
+    ]
+  }
+}

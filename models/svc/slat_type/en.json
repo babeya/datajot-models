@@ -1,0 +1,18 @@
+{
+  "label": "Slat orientation",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Horizontal"
+    },
+    "2": {
+      "label": "Vertical"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Slat orientation",
+      "HomeKit"
+    ]
+  }
+}

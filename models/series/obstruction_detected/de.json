@@ -1,0 +1,10 @@
+{
+  "name": "Hindernis erkannt",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Kein Hindernis; 1 = Hindernis erkannt.",
+  "seo": {
+    "keywords": [
+      "Hindernis erkannt",
+      "HomeKit"
+    ]
+  }
+}

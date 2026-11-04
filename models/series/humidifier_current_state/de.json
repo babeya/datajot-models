@@ -1,0 +1,10 @@
+{
+  "name": "Befeuchter-/Entfeuchterzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Inaktiv; 1 = Bereit; 2 = Befeuchtet; 3 = Entfeuchtet.",
+  "seo": {
+    "keywords": [
+      "Befeuchter-/Entfeuchterzustand",
+      "HomeKit"
+    ]
+  }
+}

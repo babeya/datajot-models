@@ -1,0 +1,10 @@
+{
+  "name": "Target fan mode",
+  "description": "HomeKit state, without a physical unit. 0 = Manual; 1 = Automatic.",
+  "seo": {
+    "keywords": [
+      "Target fan mode",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Service in use",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Not in use"
+    },
+    "2": {
+      "label": "In use"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Service in use",
+      "HomeKit"
+    ]
+  }
+}

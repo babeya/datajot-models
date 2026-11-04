@@ -1,0 +1,11 @@
+{
+  "label": "Neigung (°)",
+  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Neigung (°)",
+      "HomeKit"
+    ]
+  }
+}

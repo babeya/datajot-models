@@ -1,0 +1,10 @@
+{
+  "name": "Seuil de refroidissement",
+  "description": "Valeur brute HomeKit — Seuil de refroidissement (°C).",
+  "seo": {
+    "keywords": [
+      "Seuil de refroidissement",
+      "HomeKit"
+    ]
+  }
+}

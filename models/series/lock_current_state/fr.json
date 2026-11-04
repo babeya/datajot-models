@@ -1,0 +1,10 @@
+{
+  "name": "État de la serrure",
+  "description": "État HomeKit, sans unité physique. 0 = Déverrouillée; 1 = Verrouillée; 2 = Bloquée; 3 = Inconnue.",
+  "seo": {
+    "keywords": [
+      "État de la serrure",
+      "HomeKit"
+    ]
+  }
+}

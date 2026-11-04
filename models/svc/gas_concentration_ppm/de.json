@@ -1,0 +1,11 @@
+{
+  "label": "Gaskonzentration (ppm)",
+  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Gaskonzentration (ppm)",
+      "HomeKit"
+    ]
+  }
+}

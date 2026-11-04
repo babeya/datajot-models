@@ -1,0 +1,18 @@
+{
+  "label": "Image en miroir",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Non inversée"
+    },
+    "2": {
+      "label": "Inversée en miroir"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Image en miroir",
+      "HomeKit"
+    ]
+  }
+}

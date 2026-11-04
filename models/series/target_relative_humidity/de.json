@@ -1,0 +1,10 @@
+{
+  "name": "Zielluftfeuchtigkeit",
+  "description": "HomeKit-Rohwert — Zielluftfeuchtigkeit (%).",
+  "seo": {
+    "keywords": [
+      "Zielluftfeuchtigkeit",
+      "HomeKit"
+    ]
+  }
+}

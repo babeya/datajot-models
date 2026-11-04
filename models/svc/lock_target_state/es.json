@@ -1,0 +1,18 @@
+{
+  "label": "Estado objetivo de la cerradura",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Desbloqueada"
+    },
+    "2": {
+      "label": "Bloqueada"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado objetivo de la cerradura",
+      "HomeKit"
+    ]
+  }
+}

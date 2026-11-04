@@ -1,0 +1,10 @@
+{
+  "name": "Estado de la puerta",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Abierta; 1 = Cerrada; 2 = Abriendo; 3 = Cerrando; 4 = Detenida.",
+  "seo": {
+    "keywords": [
+      "Estado de la puerta",
+      "HomeKit"
+    ]
+  }
+}

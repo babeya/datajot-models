@@ -1,0 +1,10 @@
+{
+  "name": "Cooling threshold",
+  "description": "Raw HomeKit value — Cooling threshold (°C).",
+  "seo": {
+    "keywords": [
+      "Cooling threshold",
+      "HomeKit"
+    ]
+  }
+}

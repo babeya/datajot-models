@@ -1,29 +1,11 @@
 {
-  "label": "Concentration de CO₂ (ppm)",
-  "description": "Suivez la concentration de CO₂ pour une meilleure qualité de l'air intérieur",
+  "label": "Concentration de CO₂",
+  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "co2",
-      "dioxyde carbone",
-      "qualité air",
-      "intérieur"
+      "Concentration de CO₂",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Bonne"
-    },
-    "2": {
-      "label": "Correcte"
-    },
-    "3": {
-      "label": "Élevée"
-    },
-    "4": {
-      "label": "Très élevée"
-    },
-    "5": {
-      "label": "Dangereuse"
-    }
   }
 }

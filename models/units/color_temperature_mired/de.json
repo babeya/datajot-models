@@ -1,0 +1,16 @@
+{
+  "title": "Farbtemperatur (Mired)",
+  "description": "Reziprokes Megakelvin aus HomeKit. Kelvin = 1.000.000 / Mired; keine multiplikative Kelvin-Untereinheit.",
+  "subUnits": {
+    "mired": {
+      "title": "Mired",
+      "abbreviation": "mired"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Farbtemperatur (Mired)",
+      "HomeKit"
+    ]
+  }
+}

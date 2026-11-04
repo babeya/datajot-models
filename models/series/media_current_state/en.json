@@ -1,0 +1,10 @@
+{
+  "name": "Media playback state",
+  "description": "HomeKit state, without a physical unit. 0 = Playing; 1 = Paused; 2 = Stopped; 3 = Unknown; 4 = Loading; 5 = Interrupted.",
+  "seo": {
+    "keywords": [
+      "Media playback state",
+      "HomeKit"
+    ]
+  }
+}

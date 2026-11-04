@@ -1,0 +1,10 @@
+{
+  "name": "Digital zoom",
+  "description": "Raw HomeKit value — Digital zoom, a dimensionless zoom ratio.",
+  "seo": {
+    "keywords": [
+      "Digital zoom",
+      "HomeKit"
+    ]
+  }
+}

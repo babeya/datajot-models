@@ -1,0 +1,11 @@
+{
+  "label": "Zoom ratio",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Zoom ratio",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,29 +1,11 @@
 {
-  "label": "CO2-Konzentration (ppm)",
-  "description": "CO2-Konzentration für bessere Innenraumluftqualität verfolgen",
+  "label": "CO₂-Konzentration",
+  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "co2",
-      "kohlendioxid",
-      "luftqualität",
-      "innenraum"
+      "CO₂-Konzentration",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Gut"
-    },
-    "2": {
-      "label": "Ausreichend"
-    },
-    "3": {
-      "label": "Hoch"
-    },
-    "4": {
-      "label": "Sehr hoch"
-    },
-    "5": {
-      "label": "Gefährlich"
-    }
   }
 }

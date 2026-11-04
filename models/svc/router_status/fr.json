@@ -1,0 +1,18 @@
+{
+  "label": "État du routeur",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Prêt"
+    },
+    "2": {
+      "label": "Non prêt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État du routeur",
+      "HomeKit"
+    ]
+  }
+}

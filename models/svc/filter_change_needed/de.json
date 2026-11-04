@@ -1,0 +1,18 @@
+{
+  "label": "Filterwechsel",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Nicht erforderlich"
+    },
+    "2": {
+      "label": "Erforderlich"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Filterwechsel",
+      "HomeKit"
+    ]
+  }
+}

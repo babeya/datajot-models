@@ -1,0 +1,10 @@
+{
+  "name": "État de blocage",
+  "description": "État HomeKit, sans unité physique. 0 = Non bloqué; 1 = Bloqué.",
+  "seo": {
+    "keywords": [
+      "État de blocage",
+      "HomeKit"
+    ]
+  }
+}

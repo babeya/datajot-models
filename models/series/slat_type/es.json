@@ -1,0 +1,10 @@
+{
+  "name": "Orientación de lamas",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Horizontal; 1 = Vertical.",
+  "seo": {
+    "keywords": [
+      "Orientación de lamas",
+      "HomeKit"
+    ]
+  }
+}

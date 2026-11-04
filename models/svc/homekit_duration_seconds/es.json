@@ -1,0 +1,11 @@
+{
+  "label": "Duración",
+  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Duración",
+      "HomeKit"
+    ]
+  }
+}

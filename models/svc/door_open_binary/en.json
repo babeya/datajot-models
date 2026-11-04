@@ -1,14 +1,6 @@
 {
-  "label": "Door Open",
-  "description": "Displays whether a door is open or closed.",
-  "seo": {
-    "keywords": [
-      "door",
-      "open",
-      "closed",
-      "state"
-    ]
-  },
+  "label": "Door open",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
   "thresholds": {
     "1": {
       "label": "Closed"
@@ -16,5 +8,11 @@
     "2": {
       "label": "Open"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Door open",
+      "HomeKit"
+    ]
   }
 }

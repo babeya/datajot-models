@@ -1,0 +1,10 @@
+{
+  "name": "Estado de calefacción y refrigeración",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Apagado; 1 = Calentando; 2 = Enfriando.",
+  "seo": {
+    "keywords": [
+      "Estado de calefacción y refrigeración",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Batteriestand",
+  "description": "HomeKit-Rohwert — Batteriestand (%).",
+  "seo": {
+    "keywords": [
+      "Batteriestand",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Tamper status",
+  "description": "HomeKit state, without a physical unit. 0 = Not tampered; 1 = Tampered.",
+  "seo": {
+    "keywords": [
+      "Tamper status",
+      "HomeKit"
+    ]
+  }
+}

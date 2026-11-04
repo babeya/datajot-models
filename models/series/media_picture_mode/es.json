@@ -1,0 +1,10 @@
+{
+  "name": "Modo de imagen",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Estándar; 1 = Cine; 2 = Deporte; 3 = Juego; 4 = Foto; 5 = Vívido; 6 = Oscuro; 7 = Claro; 8 = Ordenador; 9 = Noche; 10 = Calibrado; 11 = Personalizado 1; 12 = Personalizado 2; 13 = Personalizado 3.",
+  "seo": {
+    "keywords": [
+      "Modo de imagen",
+      "HomeKit"
+    ]
+  }
+}

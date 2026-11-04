@@ -1,0 +1,21 @@
+{
+  "label": "Öffnungsbewegung",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Schließt sich"
+    },
+    "2": {
+      "label": "Öffnet sich"
+    },
+    "3": {
+      "label": "Angehalten"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Öffnungsbewegung",
+      "HomeKit"
+    ]
+  }
+}

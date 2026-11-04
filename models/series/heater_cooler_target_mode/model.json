@@ -1,0 +1,11 @@
+{
+  "key": "heater_cooler_target_mode",
+  "type": "series",
+  "category": "home",
+  "icon": "thermometer.medium",
+  "color": "#0891B2",
+  "graphType": "bar",
+  "svc": "heater_cooler_target_mode",
+  "decimalPrecision": 0,
+  "aggregationMethod": "last"
+}

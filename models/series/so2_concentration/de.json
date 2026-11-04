@@ -1,0 +1,10 @@
+{
+  "name": "SO₂-Konzentration",
+  "description": "HomeKit-Rohwert — SO₂-Konzentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "SO₂-Konzentration",
+      "HomeKit"
+    ]
+  }
+}

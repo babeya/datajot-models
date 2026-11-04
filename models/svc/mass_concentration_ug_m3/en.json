@@ -1,0 +1,11 @@
+{
+  "label": "Mass concentration (µg/m³)",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Mass concentration (µg/m³)",
+      "HomeKit"
+    ]
+  }
+}

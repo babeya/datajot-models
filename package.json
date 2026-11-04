@@ -6,7 +6,8 @@
     "build": "node scripts/build.js",
     "validate:models": "node scripts/validate_models_structure.js",
     "validate:output": "node scripts/validate_output_models.js",
-    "validate": "npm run validate:models && npm run validate:output"
+    "validate:homekit": "node scripts/validate_homekit.js",
+    "validate": "npm run validate:models && npm run validate:output && npm run validate:homekit"
   },
   "description": "Models of Datajot",
   "main": "index.js",

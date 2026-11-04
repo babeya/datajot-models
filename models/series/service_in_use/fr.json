@@ -1,0 +1,10 @@
+{
+  "name": "Service en cours",
+  "description": "État HomeKit, sans unité physique. 0 = À l’arrêt; 1 = En cours.",
+  "seo": {
+    "keywords": [
+      "Service en cours",
+      "HomeKit"
+    ]
+  }
+}

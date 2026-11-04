@@ -1,0 +1,18 @@
+{
+  "label": "Router status",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Ready"
+    },
+    "2": {
+      "label": "Not ready"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Router status",
+      "HomeKit"
+    ]
+  }
+}

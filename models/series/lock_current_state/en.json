@@ -1,0 +1,10 @@
+{
+  "name": "Lock state",
+  "description": "HomeKit state, without a physical unit. 0 = Unsecured; 1 = Secured; 2 = Jammed; 3 = Unknown.",
+  "seo": {
+    "keywords": [
+      "Lock state",
+      "HomeKit"
+    ]
+  }
+}

@@ -7,5 +7,6 @@
   "color": "#F97316",
   "graphType": "area",
   "svc": "inside_temp_deg_c",
-  "aggregationMethod": "average"
+  "aggregationMethod": "average",
+  "decimalPrecision": 1
 }

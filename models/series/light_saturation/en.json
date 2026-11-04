@@ -1,0 +1,10 @@
+{
+  "name": "Color saturation",
+  "description": "Raw HomeKit value — Color saturation (%).",
+  "seo": {
+    "keywords": [
+      "Color saturation",
+      "HomeKit"
+    ]
+  }
+}

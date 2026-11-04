@@ -1,0 +1,10 @@
+{
+  "name": "Farbtemperatur",
+  "description": "HomeKit-Rohwert — Farbtemperatur (mired).",
+  "seo": {
+    "keywords": [
+      "Farbtemperatur",
+      "HomeKit"
+    ]
+  }
+}

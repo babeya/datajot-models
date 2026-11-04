@@ -1,39 +1,10 @@
 {
   "key": "co2_concentration_ppm",
   "type": "visualizationConfig",
-  "unit": "parts_per_million",
-  "thresholds": [
-    {
-      "order": 1,
-      "value": 600,
-      "operatorType": "<",
-      "colorHex": "#22C55E"
-    },
-    {
-      "order": 2,
-      "value": 800,
-      "operatorType": "<",
-      "colorHex": "#EAB308"
-    },
-    {
-      "order": 3,
-      "value": 1000,
-      "operatorType": "<",
-      "colorHex": "#F97316"
-    },
-    {
-      "order": 4,
-      "value": 1500,
-      "operatorType": "<",
-      "colorHex": "#EF4444"
-    },
-    {
-      "order": 5,
-      "value": 1500,
-      "operatorType": ">=",
-      "colorHex": "#7F1D1D"
-    }
-  ],
+  "thresholds": [],
+  "thresholdAxisLabelDisplayMode": "value",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
   "showAverage": false,
   "showMedian": false,
   "showSum": false,
@@ -44,6 +15,5 @@
   "showMedianOnChart": false,
   "showMaxOnChart": false,
   "showMinOnChart": false,
-  "autoScaleYAxis": true,
-  "thresholdAxisLabelDisplayMode": "valueAndLabel"
+  "unit": "parts_per_million"
 }

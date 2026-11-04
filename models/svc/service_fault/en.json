@@ -1,0 +1,18 @@
+{
+  "label": "Service fault",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "No fault"
+    },
+    "2": {
+      "label": "General fault"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Service fault",
+      "HomeKit"
+    ]
+  }
+}

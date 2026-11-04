@@ -1,0 +1,10 @@
+{
+  "name": "Image mirroring",
+  "description": "HomeKit state, without a physical unit. 0 = Not mirrored; 1 = Mirrored.",
+  "seo": {
+    "keywords": [
+      "Image mirroring",
+      "HomeKit"
+    ]
+  }
+}

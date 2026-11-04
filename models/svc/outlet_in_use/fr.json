@@ -1,0 +1,18 @@
+{
+  "label": "Prise utilisée",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Aucun appareil branché"
+    },
+    "2": {
+      "label": "Appareil branché"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Prise utilisée",
+      "HomeKit"
+    ]
+  }
+}

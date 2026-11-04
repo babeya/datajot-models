@@ -1,0 +1,11 @@
+{
+  "label": "Massenkonzentration (µg/m³)",
+  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Massenkonzentration (µg/m³)",
+      "HomeKit"
+    ]
+  }
+}

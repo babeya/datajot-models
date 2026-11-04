@@ -1,0 +1,10 @@
+{
+  "name": "État des lamelles",
+  "description": "État HomeKit, sans unité physique. 0 = Immobiles; 1 = Bloquées; 2 = En oscillation.",
+  "seo": {
+    "keywords": [
+      "État des lamelles",
+      "HomeKit"
+    ]
+  }
+}

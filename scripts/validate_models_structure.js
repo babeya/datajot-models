@@ -11,6 +11,7 @@ import {
   requireString,
   requireNumber,
   requireBoolean,
+  requireArray,
   requireNonEmptyArray,
   requireObject,
   requireEnum,
@@ -179,6 +180,7 @@ const validateSeries = (dir) => {
 const validateVisualizationConfig = (dir) => {
   const modelPath = join(dir.path, 'model.json')
   const model = readJsonFile(modelPath)
+  const thresholds = Array.isArray(model.thresholds) ? model.thresholds : []
 
   requireString(reporter, `${modelPath}.key`, model.key, 'VisualizationConfig model requires string key')
   reporter.ensure(model.type === 'visualizationConfig', `${modelPath}: VisualizationConfig model.type must equal "visualizationConfig"`)
@@ -194,7 +196,7 @@ const validateVisualizationConfig = (dir) => {
   }
 
   // Valider les thresholds si ils existent
-  if (model.thresholds && requireNonEmptyArray(reporter, `${modelPath}.thresholds`, model.thresholds, 'VisualizationConfig model thresholds must be array when provided')) {
+  if (requireArray(reporter, `${modelPath}.thresholds`, model.thresholds, 'VisualizationConfig model thresholds must be an array (possibly empty)')) {
     model.thresholds.forEach((threshold, idx) => {
       const context = `${modelPath}.thresholds[${idx}]`
       requireNumber(reporter, `${context}.order`, threshold?.order, 'threshold requires order number')
@@ -220,6 +222,9 @@ const validateVisualizationConfig = (dir) => {
   }
 
   validateSvcStats(modelPath, model)
+  if (model.includesEmptyAggregates !== undefined) {
+    requireBoolean(reporter, `${modelPath}.includesEmptyAggregates`, model.includesEmptyAggregates, 'includesEmptyAggregates must be a boolean when provided')
+  }
 
   // Valider les traductions
   LANGUAGES.forEach((lang) => {
@@ -229,7 +234,7 @@ const validateVisualizationConfig = (dir) => {
     requireString(reporter, `${langPath}.description`, translation.description, 'VisualizationConfig translation requires description string')
     if (requireObject(reporter, `${langPath}.thresholds`, translation.thresholds, 'VisualizationConfig translation requires thresholds object')) {
       const translationKeys = Object.keys(translation.thresholds)
-      model.thresholds?.forEach((threshold) => {
+      thresholds.forEach((threshold) => {
         const thresholdTranslation = translation.thresholds[String(threshold.order)]
         if (!thresholdTranslation) {
           reporter.fail(`${langPath}: missing thresholds entry for order "${threshold.order}"`)
@@ -243,7 +248,7 @@ const validateVisualizationConfig = (dir) => {
         )
       })
       translationKeys.forEach((key) => {
-        if (!model.thresholds?.some((threshold) => String(threshold.order) === key)) {
+        if (!thresholds.some((threshold) => String(threshold.order) === key)) {
           reporter.fail(`${langPath}: translation thresholds key "${key}" not defined in model thresholds`)
         }
       })

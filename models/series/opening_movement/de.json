@@ -1,0 +1,10 @@
+{
+  "name": "Öffnungsbewegung",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Schließt sich; 1 = Öffnet sich; 2 = Angehalten.",
+  "seo": {
+    "keywords": [
+      "Öffnungsbewegung",
+      "HomeKit"
+    ]
+  }
+}

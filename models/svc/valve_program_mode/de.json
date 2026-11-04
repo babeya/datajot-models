@@ -1,0 +1,21 @@
+{
+  "label": "Bewässerungsprogrammmodus",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Nicht geplant"
+    },
+    "2": {
+      "label": "Geplant"
+    },
+    "3": {
+      "label": "Zeitplan manuell übersteuert"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Bewässerungsprogrammmodus",
+      "HomeKit"
+    ]
+  }
+}

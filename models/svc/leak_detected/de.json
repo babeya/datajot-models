@@ -1,0 +1,18 @@
+{
+  "label": "Leck erkannt",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Kein Leck erkannt"
+    },
+    "2": {
+      "label": "Leck erkannt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Leck erkannt",
+      "HomeKit"
+    ]
+  }
+}

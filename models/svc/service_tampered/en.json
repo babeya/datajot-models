@@ -1,0 +1,18 @@
+{
+  "label": "Tamper status",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Not tampered"
+    },
+    "2": {
+      "label": "Tampered"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Tamper status",
+      "HomeKit"
+    ]
+  }
+}

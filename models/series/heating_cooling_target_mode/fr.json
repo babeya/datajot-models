@@ -1,0 +1,10 @@
+{
+  "name": "Mode cible du thermostat",
+  "description": "État HomeKit, sans unité physique. 0 = Arrêt; 1 = Chauffage; 2 = Refroidissement; 3 = Automatique.",
+  "seo": {
+    "keywords": [
+      "Mode cible du thermostat",
+      "HomeKit"
+    ]
+  }
+}

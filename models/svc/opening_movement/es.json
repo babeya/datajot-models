@@ -1,0 +1,21 @@
+{
+  "label": "Movimiento de apertura",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Cerrando"
+    },
+    "2": {
+      "label": "Abriendo"
+    },
+    "3": {
+      "label": "Detenido"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Movimiento de apertura",
+      "HomeKit"
+    ]
+  }
+}

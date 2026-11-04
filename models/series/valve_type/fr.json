@@ -1,0 +1,10 @@
+{
+  "name": "Type de vanne",
+  "description": "État HomeKit, sans unité physique. 0 = Vanne générique; 1 = Arrosage; 2 = Pommeau de douche; 3 = Robinet.",
+  "seo": {
+    "keywords": [
+      "Type de vanne",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Dernière action de serrure",
+  "description": "État HomeKit, sans unité physique. 0 = Verrouillée manuellement de l’intérieur; 1 = Déverrouillée manuellement de l’intérieur; 2 = Verrouillée manuellement de l’extérieur; 3 = Déverrouillée manuellement de l’extérieur; 4 = Verrouillée par clavier; 5 = Déverrouillée par clavier; 6 = Verrouillée à distance; 7 = Déverrouillée à distance; 8 = Verrouillée après délai; 9 = Verrouillée manuellement; 10 = Déverrouillée manuellement.",
+  "seo": {
+    "keywords": [
+      "Dernière action de serrure",
+      "HomeKit"
+    ]
+  }
+}

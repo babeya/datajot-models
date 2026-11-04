@@ -1,0 +1,27 @@
+{
+  "label": "Alarmanlagenzustand",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Zuhause scharf"
+    },
+    "2": {
+      "label": "Abwesend scharf"
+    },
+    "3": {
+      "label": "Nachts scharf"
+    },
+    "4": {
+      "label": "Unscharf"
+    },
+    "5": {
+      "label": "Ausgelöst"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Alarmanlagenzustand",
+      "HomeKit"
+    ]
+  }
+}

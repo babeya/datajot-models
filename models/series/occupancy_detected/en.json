@@ -1,0 +1,10 @@
+{
+  "name": "Occupancy detected",
+  "description": "HomeKit state, without a physical unit. 0 = Unoccupied; 1 = Occupied.",
+  "seo": {
+    "keywords": [
+      "Occupancy detected",
+      "HomeKit"
+    ]
+  }
+}

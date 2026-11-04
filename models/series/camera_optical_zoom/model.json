@@ -1,0 +1,11 @@
+{
+  "key": "camera_optical_zoom",
+  "type": "series",
+  "category": "home",
+  "icon": "play.tv",
+  "color": "#0891B2",
+  "graphType": "line",
+  "svc": "homekit_zoom_ratio",
+  "decimalPrecision": 2,
+  "aggregationMethod": "last"
+}

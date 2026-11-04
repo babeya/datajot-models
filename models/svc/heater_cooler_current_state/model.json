@@ -1,0 +1,43 @@
+{
+  "key": "heater_cooler_current_state",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0,
+      "operatorType": "<=",
+      "colorHex": "#64748B"
+    },
+    {
+      "order": 2,
+      "value": 1,
+      "operatorType": "<=",
+      "colorHex": "#0EA5E9"
+    },
+    {
+      "order": 3,
+      "value": 2,
+      "operatorType": "<=",
+      "colorHex": "#A78BFA"
+    },
+    {
+      "order": 4,
+      "value": 3,
+      "operatorType": "<=",
+      "colorHex": "#14B8A6"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "label",
+  "autoScaleYAxis": false,
+  "includesEmptyAggregates": false,
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": false,
+  "showMin": false,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false
+}

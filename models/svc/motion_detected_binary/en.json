@@ -1,16 +1,18 @@
 {
-  "label": "Motion Detection",
-  "description": "Displays whether a HomeKit sensor currently detects motion.",
+  "label": "Motion detected",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "No motion"
+    },
+    "2": {
+      "label": "Motion detected"
+    }
+  },
   "seo": {
     "keywords": [
-      "motion detection",
-      "HomeKit",
-      "motion sensor",
-      "binary state"
+      "Motion detected",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": { "label": "No motion" },
-    "2": { "label": "Motion detected" }
   }
 }

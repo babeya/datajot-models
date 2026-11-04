@@ -1,0 +1,10 @@
+{
+  "name": "Evento del interruptor",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Pulsación simple; 1 = Pulsación doble; 2 = Pulsación larga.",
+  "seo": {
+    "keywords": [
+      "Evento del interruptor",
+      "HomeKit"
+    ]
+  }
+}

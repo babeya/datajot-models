@@ -1,0 +1,24 @@
+{
+  "label": "Aktuelle Sichtbarkeit",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Angezeigt"
+    },
+    "2": {
+      "label": "Ausgeblendet"
+    },
+    "3": {
+      "label": "Verbunden"
+    },
+    "4": {
+      "label": "Immer angezeigt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Aktuelle Sichtbarkeit",
+      "HomeKit"
+    ]
+  }
+}

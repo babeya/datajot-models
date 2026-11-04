@@ -1,0 +1,18 @@
+{
+  "label": "Sens de rotation",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Horaire"
+    },
+    "2": {
+      "label": "Antihoraire"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Sens de rotation",
+      "HomeKit"
+    ]
+  }
+}

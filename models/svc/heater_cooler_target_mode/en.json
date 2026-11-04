@@ -1,0 +1,21 @@
+{
+  "label": "Target heater/cooler mode",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Automatic"
+    },
+    "2": {
+      "label": "Heat"
+    },
+    "3": {
+      "label": "Cool"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Target heater/cooler mode",
+      "HomeKit"
+    ]
+  }
+}

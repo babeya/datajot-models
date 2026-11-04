@@ -1,0 +1,11 @@
+{
+  "label": "Concentración másica (µg/m³)",
+  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Concentración másica (µg/m³)",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,29 +1,11 @@
 {
-  "label": "Indoor Temperature (°C)",
-  "description": "Monitor indoor temperature in Celsius for optimal comfort",
+  "label": "Indoor temperature (°C)",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "temperature",
-      "indoor",
-      "celsius",
-      "climate"
+      "Indoor temperature (°C)",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Very cold"
-    },
-    "2": {
-      "label": "Cold"
-    },
-    "3": {
-      "label": "Comfortable"
-    },
-    "4": {
-      "label": "Warm"
-    },
-    "5": {
-      "label": "Hot"
-    }
   }
 }

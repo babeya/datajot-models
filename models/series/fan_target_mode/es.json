@@ -1,0 +1,10 @@
+{
+  "name": "Modo objetivo del ventilador",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Manual; 1 = Automático.",
+  "seo": {
+    "keywords": [
+      "Modo objetivo del ventilador",
+      "HomeKit"
+    ]
+  }
+}

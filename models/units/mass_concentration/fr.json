@@ -1,0 +1,16 @@
+{
+  "title": "Concentration massique",
+  "description": "Masse par volume d’air en µg/m³. Aucune conversion en ppm sans données physiques supplémentaires.",
+  "subUnits": {
+    "ug_m3": {
+      "title": "Microgrammes par mètre cube",
+      "abbreviation": "µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Concentration massique",
+      "HomeKit"
+    ]
+  }
+}

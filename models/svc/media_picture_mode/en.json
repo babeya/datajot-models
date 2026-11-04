@@ -1,0 +1,54 @@
+{
+  "label": "Picture mode",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Standard"
+    },
+    "2": {
+      "label": "Movie"
+    },
+    "3": {
+      "label": "Sport"
+    },
+    "4": {
+      "label": "Game"
+    },
+    "5": {
+      "label": "Photo"
+    },
+    "6": {
+      "label": "Vivid"
+    },
+    "7": {
+      "label": "Dark"
+    },
+    "8": {
+      "label": "Bright"
+    },
+    "9": {
+      "label": "Computer"
+    },
+    "10": {
+      "label": "Night"
+    },
+    "11": {
+      "label": "Calibrated"
+    },
+    "12": {
+      "label": "Custom 1"
+    },
+    "13": {
+      "label": "Custom 2"
+    },
+    "14": {
+      "label": "Custom 3"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Picture mode",
+      "HomeKit"
+    ]
+  }
+}

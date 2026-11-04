@@ -1,0 +1,21 @@
+{
+  "label": "Heating and cooling state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Off"
+    },
+    "2": {
+      "label": "Heating"
+    },
+    "3": {
+      "label": "Cooling"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Heating and cooling state",
+      "HomeKit"
+    ]
+  }
+}

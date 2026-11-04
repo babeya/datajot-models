@@ -1,0 +1,10 @@
+{
+  "name": "Charging state",
+  "description": "HomeKit state, without a physical unit. 0 = Not charging; 1 = Charging; 2 = Not chargeable.",
+  "seo": {
+    "keywords": [
+      "Charging state",
+      "HomeKit"
+    ]
+  }
+}

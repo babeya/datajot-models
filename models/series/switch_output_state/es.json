@@ -1,0 +1,10 @@
+{
+  "name": "Estado de salida del interruptor",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Apagada; 1 = Encendida.",
+  "seo": {
+    "keywords": [
+      "Estado de salida del interruptor",
+      "HomeKit"
+    ]
+  }
+}

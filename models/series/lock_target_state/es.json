@@ -1,0 +1,10 @@
+{
+  "name": "Estado objetivo de la cerradura",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Desbloqueada; 1 = Bloqueada.",
+  "seo": {
+    "keywords": [
+      "Estado objetivo de la cerradura",
+      "HomeKit"
+    ]
+  }
+}

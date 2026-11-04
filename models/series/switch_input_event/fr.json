@@ -1,0 +1,10 @@
+{
+  "name": "Événement de l’interrupteur",
+  "description": "État HomeKit, sans unité physique. 0 = Appui simple; 1 = Double appui; 2 = Appui long.",
+  "seo": {
+    "keywords": [
+      "Événement de l’interrupteur",
+      "HomeKit"
+    ]
+  }
+}

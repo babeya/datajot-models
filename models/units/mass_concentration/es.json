@@ -1,0 +1,16 @@
+{
+  "title": "Concentración másica",
+  "description": "Masa por volumen de aire en µg/m³. Sin conversión a ppm sin datos físicos adicionales.",
+  "subUnits": {
+    "ug_m3": {
+      "title": "Microgramos por metro cúbico",
+      "abbreviation": "µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Concentración másica",
+      "HomeKit"
+    ]
+  }
+}

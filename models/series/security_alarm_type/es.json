@@ -1,0 +1,10 @@
+{
+  "name": "Tipo de alarma",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin alarma; 1 = Tipo de alarma desconocido.",
+  "seo": {
+    "keywords": [
+      "Tipo de alarma",
+      "HomeKit"
+    ]
+  }
+}

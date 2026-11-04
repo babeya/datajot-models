@@ -1,0 +1,21 @@
+{
+  "label": "Estado de calefacción y refrigeración",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Apagado"
+    },
+    "2": {
+      "label": "Calentando"
+    },
+    "3": {
+      "label": "Enfriando"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado de calefacción y refrigeración",
+      "HomeKit"
+    ]
+  }
+}

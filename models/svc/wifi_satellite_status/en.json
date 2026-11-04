@@ -1,0 +1,21 @@
+{
+  "label": "Wi-Fi satellite status",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Unknown"
+    },
+    "2": {
+      "label": "Connected"
+    },
+    "3": {
+      "label": "Not connected"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Wi-Fi satellite status",
+      "HomeKit"
+    ]
+  }
+}

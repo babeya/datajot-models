@@ -1,0 +1,10 @@
+{
+  "name": "Estado de carga",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin cargar; 1 = Cargando; 2 = No recargable.",
+  "seo": {
+    "keywords": [
+      "Estado de carga",
+      "HomeKit"
+    ]
+  }
+}

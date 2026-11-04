@@ -4,41 +4,44 @@
   "thresholds": [
     {
       "order": 1,
-      "value": 1,
-      "operatorType": "<",
+      "value": 0,
+      "operatorType": "<=",
       "colorHex": "#64748B"
     },
     {
       "order": 2,
-      "value": 2,
-      "operatorType": "<",
+      "value": 1,
+      "operatorType": "<=",
       "colorHex": "#22C55E"
     },
     {
       "order": 3,
-      "value": 3,
-      "operatorType": "<",
+      "value": 2,
+      "operatorType": "<=",
       "colorHex": "#84CC16"
     },
     {
       "order": 4,
-      "value": 4,
-      "operatorType": "<",
+      "value": 3,
+      "operatorType": "<=",
       "colorHex": "#EAB308"
     },
     {
       "order": 5,
-      "value": 5,
-      "operatorType": "<",
+      "value": 4,
+      "operatorType": "<=",
       "colorHex": "#F97316"
     },
     {
       "order": 6,
       "value": 5,
-      "operatorType": ">=",
+      "operatorType": "<=",
       "colorHex": "#EF4444"
     }
   ],
+  "thresholdAxisLabelDisplayMode": "label",
+  "autoScaleYAxis": false,
+  "includesEmptyAggregates": false,
   "showAverage": false,
   "showMedian": false,
   "showSum": false,
@@ -48,7 +51,5 @@
   "showAverageOnChart": false,
   "showMedianOnChart": false,
   "showMaxOnChart": false,
-  "showMinOnChart": false,
-  "autoScaleYAxis": false,
-  "thresholdAxisLabelDisplayMode": "label"
+  "showMinOnChart": false
 }

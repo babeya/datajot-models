@@ -1,0 +1,12 @@
+{
+  "key": "light_brightness",
+  "type": "series",
+  "category": "light",
+  "icon": "lightbulb.fill",
+  "color": "#0891B2",
+  "graphType": "line",
+  "svc": "homekit_percentage",
+  "decimalPrecision": 0,
+  "aggregationMethod": "last",
+  "unit": "percentage"
+}
