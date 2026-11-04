@@ -1,0 +1,10 @@
+{
+  "name": "Target opening position",
+  "description": "Raw HomeKit value — Target opening position (%).",
+  "seo": {
+    "keywords": [
+      "Target opening position",
+      "HomeKit"
+    ]
+  }
+}

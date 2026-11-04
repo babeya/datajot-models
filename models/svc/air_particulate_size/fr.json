@@ -1,0 +1,18 @@
+{
+  "label": "Catégorie de particules",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "2,5 µm"
+    },
+    "2": {
+      "label": "10 µm"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Catégorie de particules",
+      "HomeKit"
+    ]
+  }
+}

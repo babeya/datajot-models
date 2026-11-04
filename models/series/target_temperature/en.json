@@ -1,0 +1,10 @@
+{
+  "name": "Target temperature",
+  "description": "Raw HomeKit value — Target temperature (°C).",
+  "seo": {
+    "keywords": [
+      "Target temperature",
+      "HomeKit"
+    ]
+  }
+}

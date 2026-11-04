@@ -1,0 +1,27 @@
+{
+  "label": "État de l’alarme",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Armée à domicile"
+    },
+    "2": {
+      "label": "Armée en absence"
+    },
+    "3": {
+      "label": "Armée la nuit"
+    },
+    "4": {
+      "label": "Désarmée"
+    },
+    "5": {
+      "label": "Déclenchée"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de l’alarme",
+      "HomeKit"
+    ]
+  }
+}

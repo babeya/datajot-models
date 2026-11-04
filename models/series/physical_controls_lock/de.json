@@ -1,0 +1,10 @@
+{
+  "name": "Bedienelemente sperren",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Entsperrt; 1 = Gesperrt.",
+  "seo": {
+    "keywords": [
+      "Bedienelemente sperren",
+      "HomeKit"
+    ]
+  }
+}

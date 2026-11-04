@@ -1,0 +1,10 @@
+{
+  "name": "Letzte Schlossaktion",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Innen manuell verriegelt; 1 = Innen manuell entriegelt; 2 = Außen manuell verriegelt; 3 = Außen manuell entriegelt; 4 = Per Tastenfeld verriegelt; 5 = Per Tastenfeld entriegelt; 6 = Aus der Ferne verriegelt; 7 = Aus der Ferne entriegelt; 8 = Nach Zeitablauf verriegelt; 9 = Manuell verriegelt; 10 = Manuell entriegelt.",
+  "seo": {
+    "keywords": [
+      "Letzte Schlossaktion",
+      "HomeKit"
+    ]
+  }
+}

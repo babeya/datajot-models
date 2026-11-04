@@ -1,0 +1,10 @@
+{
+  "name": "Estado de reproducción",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Reproduciendo; 1 = En pausa; 2 = Detenido; 3 = Desconocido; 4 = Cargando; 5 = Interrumpido.",
+  "seo": {
+    "keywords": [
+      "Estado de reproducción",
+      "HomeKit"
+    ]
+  }
+}

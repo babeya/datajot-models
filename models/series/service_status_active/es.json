@@ -1,0 +1,10 @@
+{
+  "name": "Estado operativo del servicio",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Inactivo; 1 = Activo.",
+  "seo": {
+    "keywords": [
+      "Estado operativo del servicio",
+      "HomeKit"
+    ]
+  }
+}

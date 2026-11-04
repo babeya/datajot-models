@@ -1,0 +1,12 @@
+{
+  "key": "fan_rotation_speed",
+  "type": "series",
+  "category": "home",
+  "icon": "fan.fill",
+  "color": "#0891B2",
+  "graphType": "line",
+  "svc": "homekit_percentage",
+  "decimalPrecision": 1,
+  "aggregationMethod": "last",
+  "unit": "percentage"
+}

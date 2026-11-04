@@ -1,0 +1,24 @@
+{
+  "label": "Type de vanne",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Vanne générique"
+    },
+    "2": {
+      "label": "Arrosage"
+    },
+    "3": {
+      "label": "Pommeau de douche"
+    },
+    "4": {
+      "label": "Robinet"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Type de vanne",
+      "HomeKit"
+    ]
+  }
+}

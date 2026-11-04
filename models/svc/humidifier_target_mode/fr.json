@@ -1,0 +1,21 @@
+{
+  "label": "Mode cible de l’humidificateur",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Automatique"
+    },
+    "2": {
+      "label": "Humidification"
+    },
+    "3": {
+      "label": "Déshumidification"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Mode cible de l’humidificateur",
+      "HomeKit"
+    ]
+  }
+}

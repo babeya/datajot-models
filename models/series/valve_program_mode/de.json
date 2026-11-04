@@ -1,0 +1,10 @@
+{
+  "name": "Bewässerungsprogrammmodus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Nicht geplant; 1 = Geplant; 2 = Zeitplan manuell übersteuert.",
+  "seo": {
+    "keywords": [
+      "Bewässerungsprogrammmodus",
+      "HomeKit"
+    ]
+  }
+}

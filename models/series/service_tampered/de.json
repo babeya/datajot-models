@@ -1,0 +1,10 @@
+{
+  "name": "Manipulationsstatus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Nicht manipuliert; 1 = Manipuliert.",
+  "seo": {
+    "keywords": [
+      "Manipulationsstatus",
+      "HomeKit"
+    ]
+  }
+}

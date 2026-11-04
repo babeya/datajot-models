@@ -1,0 +1,10 @@
+{
+  "name": "Auto-lock delay",
+  "description": "Raw HomeKit value — Auto-lock delay (s).",
+  "seo": {
+    "keywords": [
+      "Auto-lock delay",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Slat state",
+  "description": "HomeKit state, without a physical unit. 0 = Stationary; 1 = Jammed; 2 = Oscillating.",
+  "seo": {
+    "keywords": [
+      "Slat state",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Türzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Offen; 1 = Geschlossen; 2 = Öffnet sich; 3 = Schließt sich; 4 = Angehalten.",
+  "seo": {
+    "keywords": [
+      "Türzustand",
+      "HomeKit"
+    ]
+  }
+}

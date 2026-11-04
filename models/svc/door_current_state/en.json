@@ -1,0 +1,27 @@
+{
+  "label": "Door state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Open"
+    },
+    "2": {
+      "label": "Closed"
+    },
+    "3": {
+      "label": "Opening"
+    },
+    "4": {
+      "label": "Closing"
+    },
+    "5": {
+      "label": "Stopped"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Door state",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Winkel",
+  "description": "Winkel wird in Grad gespeichert und angezeigt.",
+  "subUnits": {
+    "degree": {
+      "title": "Grad",
+      "abbreviation": "°"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Winkel",
+      "HomeKit"
+    ]
+  }
+}

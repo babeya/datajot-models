@@ -1,0 +1,10 @@
+{
+  "name": "Mode cible du chauffage-climatiseur",
+  "description": "État HomeKit, sans unité physique. 0 = Automatique; 1 = Chauffage; 2 = Refroidissement.",
+  "seo": {
+    "keywords": [
+      "Mode cible du chauffage-climatiseur",
+      "HomeKit"
+    ]
+  }
+}

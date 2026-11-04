@@ -1,0 +1,85 @@
+{
+  "key": "lock_last_action",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0,
+      "operatorType": "<=",
+      "colorHex": "#64748B"
+    },
+    {
+      "order": 2,
+      "value": 1,
+      "operatorType": "<=",
+      "colorHex": "#0EA5E9"
+    },
+    {
+      "order": 3,
+      "value": 2,
+      "operatorType": "<=",
+      "colorHex": "#A78BFA"
+    },
+    {
+      "order": 4,
+      "value": 3,
+      "operatorType": "<=",
+      "colorHex": "#14B8A6"
+    },
+    {
+      "order": 5,
+      "value": 4,
+      "operatorType": "<=",
+      "colorHex": "#F59E0B"
+    },
+    {
+      "order": 6,
+      "value": 5,
+      "operatorType": "<=",
+      "colorHex": "#EC4899"
+    },
+    {
+      "order": 7,
+      "value": 6,
+      "operatorType": "<=",
+      "colorHex": "#38BDF8"
+    },
+    {
+      "order": 8,
+      "value": 7,
+      "operatorType": "<=",
+      "colorHex": "#A3E635"
+    },
+    {
+      "order": 9,
+      "value": 8,
+      "operatorType": "<=",
+      "colorHex": "#FB923C"
+    },
+    {
+      "order": 10,
+      "value": 9,
+      "operatorType": "<=",
+      "colorHex": "#818CF8"
+    },
+    {
+      "order": 11,
+      "value": 10,
+      "operatorType": "<=",
+      "colorHex": "#2DD4BF"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "label",
+  "autoScaleYAxis": false,
+  "includesEmptyAggregates": false,
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": false,
+  "showMin": false,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false
+}

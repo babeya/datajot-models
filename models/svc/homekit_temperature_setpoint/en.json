@@ -1,0 +1,11 @@
+{
+  "label": "Temperature setting",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Temperature setting",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Jammed status",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Not jammed"
+    },
+    "2": {
+      "label": "Jammed"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Jammed status",
+      "HomeKit"
+    ]
+  }
+}

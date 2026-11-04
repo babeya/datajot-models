@@ -1,0 +1,10 @@
+{
+  "name": "Leak detected",
+  "description": "HomeKit state, without a physical unit. 0 = No leak detected; 1 = Leak detected.",
+  "seo": {
+    "keywords": [
+      "Leak detected",
+      "HomeKit"
+    ]
+  }
+}

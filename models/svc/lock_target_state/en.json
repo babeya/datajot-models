@@ -1,0 +1,18 @@
+{
+  "label": "Target lock state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Unsecured"
+    },
+    "2": {
+      "label": "Secured"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Target lock state",
+      "HomeKit"
+    ]
+  }
+}

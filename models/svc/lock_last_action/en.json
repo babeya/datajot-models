@@ -1,0 +1,45 @@
+{
+  "label": "Last lock action",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Secured manually inside"
+    },
+    "2": {
+      "label": "Unsecured manually inside"
+    },
+    "3": {
+      "label": "Secured manually outside"
+    },
+    "4": {
+      "label": "Unsecured manually outside"
+    },
+    "5": {
+      "label": "Secured with keypad"
+    },
+    "6": {
+      "label": "Unsecured with keypad"
+    },
+    "7": {
+      "label": "Secured remotely"
+    },
+    "8": {
+      "label": "Unsecured remotely"
+    },
+    "9": {
+      "label": "Secured after timeout"
+    },
+    "10": {
+      "label": "Secured manually"
+    },
+    "11": {
+      "label": "Unsecured manually"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Last lock action",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Type d’alarme",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Aucune alarme"
+    },
+    "2": {
+      "label": "Type d’alarme inconnu"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Type d’alarme",
+      "HomeKit"
+    ]
+  }
+}

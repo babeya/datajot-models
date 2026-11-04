@@ -1,0 +1,10 @@
+{
+  "name": "Rauch erkannt",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Kein Rauch erkannt; 1 = Rauch erkannt.",
+  "seo": {
+    "keywords": [
+      "Rauch erkannt",
+      "HomeKit"
+    ]
+  }
+}

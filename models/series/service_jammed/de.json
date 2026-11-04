@@ -1,0 +1,10 @@
+{
+  "name": "Blockierungsstatus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Nicht blockiert; 1 = Blockiert.",
+  "seo": {
+    "keywords": [
+      "Blockierungsstatus",
+      "HomeKit"
+    ]
+  }
+}

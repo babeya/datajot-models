@@ -1,0 +1,24 @@
+{
+  "label": "Tipo de válvula",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Válvula genérica"
+    },
+    "2": {
+      "label": "Riego"
+    },
+    "3": {
+      "label": "Cabezal de ducha"
+    },
+    "4": {
+      "label": "Grifo"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Tipo de válvula",
+      "HomeKit"
+    ]
+  }
+}

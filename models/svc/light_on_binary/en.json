@@ -1,14 +1,6 @@
 {
-  "label": "Light On",
-  "description": "Displays whether a light is on or off.",
-  "seo": {
-    "keywords": [
-      "light",
-      "on",
-      "off",
-      "state"
-    ]
-  },
+  "label": "Light on",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
   "thresholds": {
     "1": {
       "label": "Off"
@@ -16,5 +8,11 @@
     "2": {
       "label": "On"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Light on",
+      "HomeKit"
+    ]
   }
 }

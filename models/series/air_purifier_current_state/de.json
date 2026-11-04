@@ -1,0 +1,10 @@
+{
+  "name": "Luftreinigerzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Inaktiv; 1 = Bereit; 2 = Aktiv.",
+  "seo": {
+    "keywords": [
+      "Luftreinigerzustand",
+      "HomeKit"
+    ]
+  }
+}

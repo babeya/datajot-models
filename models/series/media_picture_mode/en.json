@@ -1,0 +1,10 @@
+{
+  "name": "Picture mode",
+  "description": "HomeKit state, without a physical unit. 0 = Standard; 1 = Movie; 2 = Sport; 3 = Game; 4 = Photo; 5 = Vivid; 6 = Dark; 7 = Bright; 8 = Computer; 9 = Night; 10 = Calibrated; 11 = Custom 1; 12 = Custom 2; 13 = Custom 3.",
+  "seo": {
+    "keywords": [
+      "Picture mode",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Ozonkonzentration",
+  "description": "HomeKit-Rohwert — Ozonkonzentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "Ozonkonzentration",
+      "HomeKit"
+    ]
+  }
+}

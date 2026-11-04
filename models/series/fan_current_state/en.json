@@ -1,0 +1,10 @@
+{
+  "name": "Fan state",
+  "description": "HomeKit state, without a physical unit. 0 = Inactive; 1 = Idle; 2 = Active.",
+  "seo": {
+    "keywords": [
+      "Fan state",
+      "HomeKit"
+    ]
+  }
+}

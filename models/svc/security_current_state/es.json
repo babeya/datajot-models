@@ -1,0 +1,27 @@
+{
+  "label": "Estado de la alarma",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Armada en casa"
+    },
+    "2": {
+      "label": "Armada en ausencia"
+    },
+    "3": {
+      "label": "Armada de noche"
+    },
+    "4": {
+      "label": "Desarmada"
+    },
+    "5": {
+      "label": "Activada"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado de la alarma",
+      "HomeKit"
+    ]
+  }
+}

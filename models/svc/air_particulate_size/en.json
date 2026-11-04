@@ -1,0 +1,18 @@
+{
+  "label": "Particle size category",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "2.5 µm"
+    },
+    "2": {
+      "label": "10 µm"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Particle size category",
+      "HomeKit"
+    ]
+  }
+}

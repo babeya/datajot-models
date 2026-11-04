@@ -1,0 +1,45 @@
+{
+  "label": "Letzte Schlossaktion",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Innen manuell verriegelt"
+    },
+    "2": {
+      "label": "Innen manuell entriegelt"
+    },
+    "3": {
+      "label": "Außen manuell verriegelt"
+    },
+    "4": {
+      "label": "Außen manuell entriegelt"
+    },
+    "5": {
+      "label": "Per Tastenfeld verriegelt"
+    },
+    "6": {
+      "label": "Per Tastenfeld entriegelt"
+    },
+    "7": {
+      "label": "Aus der Ferne verriegelt"
+    },
+    "8": {
+      "label": "Aus der Ferne entriegelt"
+    },
+    "9": {
+      "label": "Nach Zeitablauf verriegelt"
+    },
+    "10": {
+      "label": "Manuell verriegelt"
+    },
+    "11": {
+      "label": "Manuell entriegelt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Letzte Schlossaktion",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,14 +1,6 @@
 {
   "label": "Fenêtre ouverte",
-  "description": "Affiche l'état ouvert ou fermé d'une fenêtre.",
-  "seo": {
-    "keywords": [
-      "fenêtre",
-      "ouverte",
-      "fermée",
-      "état"
-    ]
-  },
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
   "thresholds": {
     "1": {
       "label": "Fermée"
@@ -16,5 +8,11 @@
     "2": {
       "label": "Ouverte"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Fenêtre ouverte",
+      "HomeKit"
+    ]
   }
 }

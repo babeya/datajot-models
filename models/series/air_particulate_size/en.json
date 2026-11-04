@@ -1,0 +1,10 @@
+{
+  "name": "Particle size category",
+  "description": "HomeKit state, without a physical unit. 0 = 2.5 µm; 1 = 10 µm.",
+  "seo": {
+    "keywords": [
+      "Particle size category",
+      "HomeKit"
+    ]
+  }
+}

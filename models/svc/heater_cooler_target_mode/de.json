@@ -1,0 +1,21 @@
+{
+  "label": "Heiz-/Kühlgerät-Zielmodus",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Automatisch"
+    },
+    "2": {
+      "label": "Heizen"
+    },
+    "3": {
+      "label": "Kühlen"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Heiz-/Kühlgerät-Zielmodus",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "label": "Tilt (°)",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Tilt (°)",
+      "HomeKit"
+    ]
+  }
+}

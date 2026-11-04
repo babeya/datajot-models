@@ -1,0 +1,10 @@
+{
+  "name": "Security system state",
+  "description": "HomeKit state, without a physical unit. 0 = Stay armed; 1 = Away armed; 2 = Night armed; 3 = Disarmed; 4 = Triggered.",
+  "seo": {
+    "keywords": [
+      "Security system state",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Verrouillage des commandes",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Déverrouillées"
+    },
+    "2": {
+      "label": "Verrouillées"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Verrouillage des commandes",
+      "HomeKit"
+    ]
+  }
+}

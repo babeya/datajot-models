@@ -1,0 +1,12 @@
+{
+  "key": "audio_volume",
+  "type": "series",
+  "category": "home",
+  "icon": "play.tv",
+  "color": "#0891B2",
+  "graphType": "line",
+  "svc": "homekit_percentage",
+  "decimalPrecision": 0,
+  "aggregationMethod": "last",
+  "unit": "percentage"
+}

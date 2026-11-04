@@ -1,29 +1,11 @@
 {
-  "label": "CO2 Concentration (ppm)",
-  "description": "Track CO2 concentration for better indoor air quality",
+  "label": "CO₂ concentration",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "co2",
-      "carbon dioxide",
-      "air quality",
-      "indoor"
+      "CO₂ concentration",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Good"
-    },
-    "2": {
-      "label": "Fair"
-    },
-    "3": {
-      "label": "High"
-    },
-    "4": {
-      "label": "Very high"
-    },
-    "5": {
-      "label": "Hazardous"
-    }
   }
 }

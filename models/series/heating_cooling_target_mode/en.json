@@ -1,0 +1,10 @@
+{
+  "name": "Target thermostat mode",
+  "description": "HomeKit state, without a physical unit. 0 = Off; 1 = Heat; 2 = Cool; 3 = Automatic.",
+  "seo": {
+    "keywords": [
+      "Target thermostat mode",
+      "HomeKit"
+    ]
+  }
+}

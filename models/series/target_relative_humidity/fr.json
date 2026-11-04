@@ -1,0 +1,10 @@
+{
+  "name": "Humidité cible",
+  "description": "Valeur brute HomeKit — Humidité cible (%).",
+  "seo": {
+    "keywords": [
+      "Humidité cible",
+      "HomeKit"
+    ]
+  }
+}

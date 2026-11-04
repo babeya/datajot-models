@@ -1,0 +1,18 @@
+{
+  "label": "Subtítulos",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Desactivados"
+    },
+    "2": {
+      "label": "Activados"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Subtítulos",
+      "HomeKit"
+    ]
+  }
+}

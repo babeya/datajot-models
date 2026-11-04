@@ -1,0 +1,10 @@
+{
+  "name": "Nachtsicht",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Deaktiviert; 1 = Aktiviert.",
+  "seo": {
+    "keywords": [
+      "Nachtsicht",
+      "HomeKit"
+    ]
+  }
+}

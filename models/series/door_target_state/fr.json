@@ -1,0 +1,10 @@
+{
+  "name": "État cible de la porte",
+  "description": "État HomeKit, sans unité physique. 0 = Ouverte; 1 = Fermée.",
+  "seo": {
+    "keywords": [
+      "État cible de la porte",
+      "HomeKit"
+    ]
+  }
+}

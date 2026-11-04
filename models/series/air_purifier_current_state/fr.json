@@ -1,0 +1,10 @@
+{
+  "name": "État du purificateur",
+  "description": "État HomeKit, sans unité physique. 0 = Inactif; 1 = En attente; 2 = En fonctionnement.",
+  "seo": {
+    "keywords": [
+      "État du purificateur",
+      "HomeKit"
+    ]
+  }
+}

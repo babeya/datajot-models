@@ -1,0 +1,10 @@
+{
+  "name": "Last lock action",
+  "description": "HomeKit state, without a physical unit. 0 = Secured manually inside; 1 = Unsecured manually inside; 2 = Secured manually outside; 3 = Unsecured manually outside; 4 = Secured with keypad; 5 = Unsecured with keypad; 6 = Secured remotely; 7 = Unsecured remotely; 8 = Secured after timeout; 9 = Secured manually; 10 = Unsecured manually.",
+  "seo": {
+    "keywords": [
+      "Last lock action",
+      "HomeKit"
+    ]
+  }
+}

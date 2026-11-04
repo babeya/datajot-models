@@ -1,29 +1,11 @@
 {
-  "label": "Humidity (%)",
-  "description": "Monitor humidity levels for optimal indoor comfort",
+  "label": "Relative humidity",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "humidity",
-      "indoor",
-      "comfort",
-      "climate"
+      "Relative humidity",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Too dry"
-    },
-    "2": {
-      "label": "Dry"
-    },
-    "3": {
-      "label": "Comfortable"
-    },
-    "4": {
-      "label": "Humid"
-    },
-    "5": {
-      "label": "Too humid"
-    }
   }
 }

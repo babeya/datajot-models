@@ -1,0 +1,18 @@
+{
+  "label": "Mode de fonctionnement",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Manuel"
+    },
+    "2": {
+      "label": "Automatique"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Mode de fonctionnement",
+      "HomeKit"
+    ]
+  }
+}

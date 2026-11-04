@@ -1,0 +1,10 @@
+{
+  "name": "Encendido del dispositivo",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Apagado; 1 = Encendido.",
+  "seo": {
+    "keywords": [
+      "Encendido del dispositivo",
+      "HomeKit"
+    ]
+  }
+}

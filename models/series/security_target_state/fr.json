@@ -1,0 +1,10 @@
+{
+  "name": "Mode cible de l’alarme",
+  "description": "État HomeKit, sans unité physique. 0 = Armée à domicile; 1 = Armée en absence; 2 = Armée la nuit; 3 = Désarmée.",
+  "seo": {
+    "keywords": [
+      "Mode cible de l’alarme",
+      "HomeKit"
+    ]
+  }
+}

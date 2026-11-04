@@ -1,0 +1,24 @@
+{
+  "label": "Schlosszustand",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Entriegelt"
+    },
+    "2": {
+      "label": "Verriegelt"
+    },
+    "3": {
+      "label": "Blockiert"
+    },
+    "4": {
+      "label": "Unbekannt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Schlosszustand",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "État de blocage",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Non bloqué"
+    },
+    "2": {
+      "label": "Bloqué"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de blocage",
+      "HomeKit"
+    ]
+  }
+}

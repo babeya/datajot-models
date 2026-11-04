@@ -10,6 +10,7 @@ import {
   requireString,
   requireNumber,
   requireBoolean,
+  requireArray,
   requireObject,
   requireNonEmptyArray,
   requireEnum,
@@ -129,7 +130,7 @@ const validateSvcOutput = (context, svc) => {
   if (svc.unit !== undefined) {
     requireString(reporter, `${context}.unit`, svc.unit, 'svc.unit must be a string when provided')
   }
-  if (requireNonEmptyArray(reporter, `${context}.thresholds`, svc.thresholds, 'svc.thresholds must be a non-empty array')) {
+  if (requireArray(reporter, `${context}.thresholds`, svc.thresholds, 'svc.thresholds must be an array (possibly empty)')) {
     svc.thresholds.forEach((threshold, idx) => validateThresholdOutput(`${context}.thresholds[${idx}]`, threshold))
   }
   requireEnum(
@@ -143,6 +144,9 @@ const validateSvcOutput = (context, svc) => {
     reporter.fail(`${context}: use autoScaleYAxis instead of yAxisBounds`)
   }
   validateSvcStatsOutput(context, svc)
+  if (svc.includesEmptyAggregates !== undefined) {
+    requireBoolean(reporter, `${context}.includesEmptyAggregates`, svc.includesEmptyAggregates, 'includesEmptyAggregates must be a boolean when provided')
+  }
   validateSeoKeywords(reporter, `${context}.seo`, svc.seo)
 }
 

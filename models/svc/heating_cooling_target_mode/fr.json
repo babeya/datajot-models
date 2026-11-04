@@ -1,0 +1,24 @@
+{
+  "label": "Mode cible du thermostat",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Arrêt"
+    },
+    "2": {
+      "label": "Chauffage"
+    },
+    "3": {
+      "label": "Refroidissement"
+    },
+    "4": {
+      "label": "Automatique"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Mode cible du thermostat",
+      "HomeKit"
+    ]
+  }
+}

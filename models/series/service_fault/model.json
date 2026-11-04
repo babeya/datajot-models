@@ -1,0 +1,11 @@
+{
+  "key": "service_fault",
+  "type": "series",
+  "category": "home",
+  "icon": "sensor.fill",
+  "color": "#0891B2",
+  "graphType": "bar",
+  "svc": "service_fault",
+  "decimalPrecision": 0,
+  "aggregationMethod": "last"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Ventiltyp",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Allgemeines Ventil; 1 = Bewässerung; 2 = Duschkopf; 3 = Wasserhahn.",
+  "seo": {
+    "keywords": [
+      "Ventiltyp",
+      "HomeKit"
+    ]
+  }
+}

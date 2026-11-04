@@ -1,0 +1,10 @@
+{
+  "name": "Modo del programa de riego",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin programar; 1 = Programado; 2 = Programa anulado manualmente.",
+  "seo": {
+    "keywords": [
+      "Modo del programa de riego",
+      "HomeKit"
+    ]
+  }
+}

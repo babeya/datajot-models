@@ -1,0 +1,18 @@
+{
+  "label": "Betriebsstatus des Dienstes",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Inaktiv"
+    },
+    "2": {
+      "label": "Aktiv"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Betriebsstatus des Dienstes",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "label": "Target playback state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Play"
+    },
+    "2": {
+      "label": "Pause"
+    },
+    "3": {
+      "label": "Stop"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Target playback state",
+      "HomeKit"
+    ]
+  }
+}

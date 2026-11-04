@@ -1,0 +1,10 @@
+{
+  "name": "Schalterereignis",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Einfachdruck; 1 = Doppeldruck; 2 = Langer Druck.",
+  "seo": {
+    "keywords": [
+      "Schalterereignis",
+      "HomeKit"
+    ]
+  }
+}

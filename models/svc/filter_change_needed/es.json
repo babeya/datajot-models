@@ -1,0 +1,18 @@
+{
+  "label": "Cambio de filtro",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "No necesario"
+    },
+    "2": {
+      "label": "Necesario"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Cambio de filtro",
+      "HomeKit"
+    ]
+  }
+}

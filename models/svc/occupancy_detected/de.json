@@ -1,0 +1,18 @@
+{
+  "label": "Anwesenheit erkannt",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Nicht belegt"
+    },
+    "2": {
+      "label": "Belegt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Anwesenheit erkannt",
+      "HomeKit"
+    ]
+  }
+}

@@ -25,7 +25,8 @@ All scripts run with plain Node (no dependencies). Use `npm run <script>` from t
 | `npm run build` | Reads every model under `models/`, merges in translations for `en`, `fr`, `de`, and `es`, injects category and unit metadata, then writes the language-specific bundles plus `index.json` to `build/`. |
 | `npm run validate:models` | Ensures each authoring model adheres to the schema defined in `MODELS.MD` (required fields, enums, localization files, SEO metadata, etc.). |
 | `npm run validate:output` | Verifies the generated bundles in `build/` still match the schema (correct nesting, localized strings, category/unit injection, and bundle/index consistency). |
-| `npm run validate` | Convenience command that runs both validation steps in sequence. |
+| `npm run validate:homekit` | Checks all 103 HomeKit mappings, localized state codes, references, raw units and historical keys after building. |
+| `npm run validate` | Runs source, output and HomeKit semantic validation in sequence. |
 
 ## Typical workflow
 
@@ -35,6 +36,17 @@ All scripts run with plain Node (no dependencies). Use `npm run <script>` from t
 4. Optionally run `npm run validate:output` to confirm the produced bundles are structurally sound before publishing.
 
 Following this loop keeps the published data at models.datajot.app synchronized with the curated model sources in this repository.
+
+## HomeKit catalogue
+
+The [HomeKit integration contract](docs/homekit.md) and its
+[103-characteristic mapping](docs/homekit-mapping.json) document the delivered
+templates, raw units, state codes, priorities and application changes still
+required. They are integration documentation and are never included in bundles.
+After building, run `npm run validate:homekit` to check the full mapping,
+localized state labels, raw-unit examples and preservation of historical keys.
+Adding templates here does not update HomeKit's explicit template selection in
+the application or its embedded fallback bundles.
 
 ## Weather values from Apple Shortcuts
 

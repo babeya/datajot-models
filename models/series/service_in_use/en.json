@@ -1,0 +1,10 @@
+{
+  "name": "Service in use",
+  "description": "HomeKit state, without a physical unit. 0 = Not in use; 1 = In use.",
+  "seo": {
+    "keywords": [
+      "Service in use",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Router status",
+  "description": "HomeKit state, without a physical unit. 0 = Ready; 1 = Not ready.",
+  "seo": {
+    "keywords": [
+      "Router status",
+      "HomeKit"
+    ]
+  }
+}

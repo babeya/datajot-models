@@ -1,0 +1,11 @@
+{
+  "label": "Rapport de zoom",
+  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Rapport de zoom",
+      "HomeKit"
+    ]
+  }
+}

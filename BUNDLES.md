@@ -52,3 +52,10 @@ type Bundle = {
 }
 
 ```
+
+The HomeKit integration matrix under `docs/` is not part of any bundle. Neutral
+visualization configurations contain `thresholds: []`; translated categorical
+configurations contain a threshold at each raw HomeKit code. Optional
+`includesEmptyAggregates: false` is preserved in both standalone and embedded
+configurations. Rebuild all four languages before synchronizing the app's
+`SharedTemplates/bundle-{en,fr,de,es}.json` fallback resources.

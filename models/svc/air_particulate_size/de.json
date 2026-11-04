@@ -1,0 +1,18 @@
+{
+  "label": "Partikelgrößenklasse",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "2,5 µm"
+    },
+    "2": {
+      "label": "10 µm"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Partikelgrößenklasse",
+      "HomeKit"
+    ]
+  }
+}

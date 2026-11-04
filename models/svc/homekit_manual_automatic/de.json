@@ -1,0 +1,18 @@
+{
+  "label": "Betriebsmodus",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Manuell"
+    },
+    "2": {
+      "label": "Automatisch"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Betriebsmodus",
+      "HomeKit"
+    ]
+  }
+}

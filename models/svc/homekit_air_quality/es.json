@@ -1,20 +1,30 @@
 {
-  "label": "Calidad del aire de HomeKit",
-  "description": "Muestra el estado categórico de la calidad del aire comunicado por HomeKit.",
+  "label": "Calidad del aire",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Desconocida"
+    },
+    "2": {
+      "label": "Excelente"
+    },
+    "3": {
+      "label": "Buena"
+    },
+    "4": {
+      "label": "Aceptable"
+    },
+    "5": {
+      "label": "Inferior"
+    },
+    "6": {
+      "label": "Mala"
+    }
+  },
   "seo": {
     "keywords": [
-      "HomeKit",
-      "calidad del aire",
-      "estado categórico",
-      "ambiente interior"
+      "Calidad del aire",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": { "label": "Desconocida" },
-    "2": { "label": "Excelente" },
-    "3": { "label": "Buena" },
-    "4": { "label": "Aceptable" },
-    "5": { "label": "Inferior" },
-    "6": { "label": "Mala" }
   }
 }

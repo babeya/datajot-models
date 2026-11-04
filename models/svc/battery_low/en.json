@@ -1,0 +1,18 @@
+{
+  "label": "Low battery",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Normal"
+    },
+    "2": {
+      "label": "Low"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Low battery",
+      "HomeKit"
+    ]
+  }
+}

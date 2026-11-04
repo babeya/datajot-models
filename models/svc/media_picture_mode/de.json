@@ -1,0 +1,54 @@
+{
+  "label": "Bildmodus",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Standard"
+    },
+    "2": {
+      "label": "Film"
+    },
+    "3": {
+      "label": "Sport"
+    },
+    "4": {
+      "label": "Spiel"
+    },
+    "5": {
+      "label": "Foto"
+    },
+    "6": {
+      "label": "Lebhaft"
+    },
+    "7": {
+      "label": "Dunkel"
+    },
+    "8": {
+      "label": "Hell"
+    },
+    "9": {
+      "label": "Computer"
+    },
+    "10": {
+      "label": "Nacht"
+    },
+    "11": {
+      "label": "Kalibriert"
+    },
+    "12": {
+      "label": "Benutzerdefiniert 1"
+    },
+    "13": {
+      "label": "Benutzerdefiniert 2"
+    },
+    "14": {
+      "label": "Benutzerdefiniert 3"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Bildmodus",
+      "HomeKit"
+    ]
+  }
+}

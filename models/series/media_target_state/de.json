@@ -1,0 +1,10 @@
+{
+  "name": "Wiedergabezielzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Wiedergeben; 1 = Pausieren; 2 = Stoppen.",
+  "seo": {
+    "keywords": [
+      "Wiedergabezielzustand",
+      "HomeKit"
+    ]
+  }
+}

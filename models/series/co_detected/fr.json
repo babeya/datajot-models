@@ -1,0 +1,10 @@
+{
+  "name": "CO détecté",
+  "description": "État HomeKit, sans unité physique. 0 = CO non détecté; 1 = CO détecté.",
+  "seo": {
+    "keywords": [
+      "CO détecté",
+      "HomeKit"
+    ]
+  }
+}

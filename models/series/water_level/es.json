@@ -1,0 +1,10 @@
+{
+  "name": "Nivel de agua",
+  "description": "Valor bruto de HomeKit — Nivel de agua (%).",
+  "seo": {
+    "keywords": [
+      "Nivel de agua",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Verrouillage des commandes",
+  "description": "État HomeKit, sans unité physique. 0 = Déverrouillées; 1 = Verrouillées.",
+  "seo": {
+    "keywords": [
+      "Verrouillage des commandes",
+      "HomeKit"
+    ]
+  }
+}

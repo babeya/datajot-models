@@ -1,0 +1,10 @@
+{
+  "name": "Valve type",
+  "description": "HomeKit state, without a physical unit. 0 = Generic valve; 1 = Irrigation; 2 = Shower head; 3 = Water faucet.",
+  "seo": {
+    "keywords": [
+      "Valve type",
+      "HomeKit"
+    ]
+  }
+}

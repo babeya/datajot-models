@@ -1,0 +1,10 @@
+{
+  "name": "Position de l’ouvrant",
+  "description": "Valeur brute HomeKit — Position de l’ouvrant (%).",
+  "seo": {
+    "keywords": [
+      "Position de l’ouvrant",
+      "HomeKit"
+    ]
+  }
+}

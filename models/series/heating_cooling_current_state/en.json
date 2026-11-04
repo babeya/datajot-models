@@ -1,0 +1,10 @@
+{
+  "name": "Heating and cooling state",
+  "description": "HomeKit state, without a physical unit. 0 = Off; 1 = Heating; 2 = Cooling.",
+  "seo": {
+    "keywords": [
+      "Heating and cooling state",
+      "HomeKit"
+    ]
+  }
+}

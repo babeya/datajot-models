@@ -1,0 +1,10 @@
+{
+  "name": "Obstáculo detectado",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin obstáculo; 1 = Obstáculo detectado.",
+  "seo": {
+    "keywords": [
+      "Obstáculo detectado",
+      "HomeKit"
+    ]
+  }
+}

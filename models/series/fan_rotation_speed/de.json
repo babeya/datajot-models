@@ -1,0 +1,10 @@
+{
+  "name": "Lüftergeschwindigkeit",
+  "description": "HomeKit-Rohwert — Lüftergeschwindigkeit (%).",
+  "seo": {
+    "keywords": [
+      "Lüftergeschwindigkeit",
+      "HomeKit"
+    ]
+  }
+}

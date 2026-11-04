@@ -1,0 +1,10 @@
+{
+  "name": "Target humidifier mode",
+  "description": "HomeKit state, without a physical unit. 0 = Automatic; 1 = Humidify; 2 = Dehumidify.",
+  "seo": {
+    "keywords": [
+      "Target humidifier mode",
+      "HomeKit"
+    ]
+  }
+}

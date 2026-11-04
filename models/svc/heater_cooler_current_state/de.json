@@ -1,0 +1,24 @@
+{
+  "label": "Heiz-/Kühlgerätzustand",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Inaktiv"
+    },
+    "2": {
+      "label": "Bereit"
+    },
+    "3": {
+      "label": "Heizt"
+    },
+    "4": {
+      "label": "Kühlt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Heiz-/Kühlgerätzustand",
+      "HomeKit"
+    ]
+  }
+}

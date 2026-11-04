@@ -1,0 +1,10 @@
+{
+  "name": "NO₂-Konzentration",
+  "description": "HomeKit-Rohwert — NO₂-Konzentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "NO₂-Konzentration",
+      "HomeKit"
+    ]
+  }
+}

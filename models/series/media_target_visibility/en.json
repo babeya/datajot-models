@@ -1,0 +1,10 @@
+{
+  "name": "Target visibility",
+  "description": "HomeKit state, without a physical unit. 0 = Show; 1 = Hide.",
+  "seo": {
+    "keywords": [
+      "Target visibility",
+      "HomeKit"
+    ]
+  }
+}

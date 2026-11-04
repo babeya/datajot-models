@@ -1,0 +1,10 @@
+{
+  "name": "Silencio de audio",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sonido activo; 1 = Silenciado.",
+  "seo": {
+    "keywords": [
+      "Silencio de audio",
+      "HomeKit"
+    ]
+  }
+}

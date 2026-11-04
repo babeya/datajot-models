@@ -1,0 +1,10 @@
+{
+  "name": "Zielsichtbarkeit",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Anzeigen; 1 = Ausblenden.",
+  "seo": {
+    "keywords": [
+      "Zielsichtbarkeit",
+      "HomeKit"
+    ]
+  }
+}

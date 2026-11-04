@@ -1,29 +1,11 @@
 {
-  "label": "Humidité (%)",
-  "description": "Surveillez l'humidité pour un confort intérieur optimal",
+  "label": "Humidité relative",
+  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "humidité",
-      "intérieur",
-      "confort",
-      "climat"
+      "Humidité relative",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Trop sec"
-    },
-    "2": {
-      "label": "Sec"
-    },
-    "3": {
-      "label": "Confortable"
-    },
-    "4": {
-      "label": "Humide"
-    },
-    "5": {
-      "label": "Trop humide"
-    }
   }
 }

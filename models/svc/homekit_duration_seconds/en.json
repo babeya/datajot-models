@@ -1,0 +1,11 @@
+{
+  "label": "Duration",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
+  "seo": {
+    "keywords": [
+      "Duration",
+      "HomeKit"
+    ]
+  }
+}

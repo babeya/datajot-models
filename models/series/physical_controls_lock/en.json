@@ -1,0 +1,10 @@
+{
+  "name": "Physical controls lock",
+  "description": "HomeKit state, without a physical unit. 0 = Unlocked; 1 = Locked.",
+  "seo": {
+    "keywords": [
+      "Physical controls lock",
+      "HomeKit"
+    ]
+  }
+}

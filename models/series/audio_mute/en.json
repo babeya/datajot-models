@@ -1,0 +1,10 @@
+{
+  "name": "Audio mute",
+  "description": "HomeKit state, without a physical unit. 0 = Unmuted; 1 = Muted.",
+  "seo": {
+    "keywords": [
+      "Audio mute",
+      "HomeKit"
+    ]
+  }
+}

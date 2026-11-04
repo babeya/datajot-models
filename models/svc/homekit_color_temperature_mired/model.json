@@ -1,0 +1,19 @@
+{
+  "key": "homekit_color_temperature_mired",
+  "type": "visualizationConfig",
+  "thresholds": [],
+  "thresholdAxisLabelDisplayMode": "value",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": false,
+  "showMin": false,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "unit": "color_temperature_mired"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Estado del calefactor/refrigerador",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Inactivo; 1 = En espera; 2 = Calentando; 3 = Enfriando.",
+  "seo": {
+    "keywords": [
+      "Estado del calefactor/refrigerador",
+      "HomeKit"
+    ]
+  }
+}

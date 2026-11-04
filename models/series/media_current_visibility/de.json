@@ -1,0 +1,10 @@
+{
+  "name": "Aktuelle Sichtbarkeit",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Angezeigt; 1 = Ausgeblendet; 2 = Verbunden; 3 = Immer angezeigt.",
+  "seo": {
+    "keywords": [
+      "Aktuelle Sichtbarkeit",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Wi-Fi satellite status",
+  "description": "HomeKit state, without a physical unit. 0 = Unknown; 1 = Connected; 2 = Not connected.",
+  "seo": {
+    "keywords": [
+      "Wi-Fi satellite status",
+      "HomeKit"
+    ]
+  }
+}

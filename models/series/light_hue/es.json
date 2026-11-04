@@ -1,0 +1,10 @@
+{
+  "name": "Tono de luz",
+  "description": "Valor bruto de HomeKit — Tono de luz (°).",
+  "seo": {
+    "keywords": [
+      "Tono de luz",
+      "HomeKit"
+    ]
+  }
+}

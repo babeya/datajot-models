@@ -1,0 +1,10 @@
+{
+  "name": "Schalterausgangszustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Aus; 1 = Ein.",
+  "seo": {
+    "keywords": [
+      "Schalterausgangszustand",
+      "HomeKit"
+    ]
+  }
+}

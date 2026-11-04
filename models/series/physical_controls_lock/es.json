@@ -1,0 +1,10 @@
+{
+  "name": "Bloqueo de controles físicos",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Desbloqueados; 1 = Bloqueados.",
+  "seo": {
+    "keywords": [
+      "Bloqueo de controles físicos",
+      "HomeKit"
+    ]
+  }
+}

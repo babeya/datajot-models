@@ -1,0 +1,24 @@
+{
+  "label": "Zielmodus der Alarmanlage",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Zuhause scharf"
+    },
+    "2": {
+      "label": "Abwesend scharf"
+    },
+    "3": {
+      "label": "Nachts scharf"
+    },
+    "4": {
+      "label": "Unscharf"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Zielmodus der Alarmanlage",
+      "HomeKit"
+    ]
+  }
+}

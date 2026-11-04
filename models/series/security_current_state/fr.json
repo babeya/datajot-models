@@ -1,0 +1,10 @@
+{
+  "name": "État de l’alarme",
+  "description": "État HomeKit, sans unité physique. 0 = Armée à domicile; 1 = Armée en absence; 2 = Armée la nuit; 3 = Désarmée; 4 = Déclenchée.",
+  "seo": {
+    "keywords": [
+      "État de l’alarme",
+      "HomeKit"
+    ]
+  }
+}

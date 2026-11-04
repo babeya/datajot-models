@@ -1,0 +1,10 @@
+{
+  "name": "État cible de lecture",
+  "description": "État HomeKit, sans unité physique. 0 = Lecture; 1 = Pause; 2 = Arrêt.",
+  "seo": {
+    "keywords": [
+      "État cible de lecture",
+      "HomeKit"
+    ]
+  }
+}

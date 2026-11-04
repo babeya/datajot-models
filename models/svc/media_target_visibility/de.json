@@ -1,0 +1,18 @@
+{
+  "label": "Zielsichtbarkeit",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Anzeigen"
+    },
+    "2": {
+      "label": "Ausblenden"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Zielsichtbarkeit",
+      "HomeKit"
+    ]
+  }
+}

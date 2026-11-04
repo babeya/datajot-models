@@ -1,0 +1,16 @@
+{
+  "title": "Massenkonzentration",
+  "description": "Masse pro Luftvolumen in µg/m³. Keine Umrechnung in ppm ohne zusätzliche physikalische Daten.",
+  "subUnits": {
+    "ug_m3": {
+      "title": "Mikrogramm pro Kubikmeter",
+      "abbreviation": "µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Massenkonzentration",
+      "HomeKit"
+    ]
+  }
+}

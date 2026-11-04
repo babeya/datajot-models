@@ -1,0 +1,24 @@
+{
+  "label": "Ventiltyp",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Allgemeines Ventil"
+    },
+    "2": {
+      "label": "Bewässerung"
+    },
+    "3": {
+      "label": "Duschkopf"
+    },
+    "4": {
+      "label": "Wasserhahn"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Ventiltyp",
+      "HomeKit"
+    ]
+  }
+}

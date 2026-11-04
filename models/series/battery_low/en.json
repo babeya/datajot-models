@@ -1,0 +1,10 @@
+{
+  "name": "Low battery",
+  "description": "HomeKit state, without a physical unit. 0 = Normal; 1 = Low.",
+  "seo": {
+    "keywords": [
+      "Low battery",
+      "HomeKit"
+    ]
+  }
+}

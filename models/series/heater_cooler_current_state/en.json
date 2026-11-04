@@ -1,0 +1,10 @@
+{
+  "name": "Heater/cooler state",
+  "description": "HomeKit state, without a physical unit. 0 = Inactive; 1 = Idle; 2 = Heating; 3 = Cooling.",
+  "seo": {
+    "keywords": [
+      "Heater/cooler state",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "label": "Türzustand",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Offen"
+    },
+    "2": {
+      "label": "Geschlossen"
+    },
+    "3": {
+      "label": "Öffnet sich"
+    },
+    "4": {
+      "label": "Schließt sich"
+    },
+    "5": {
+      "label": "Angehalten"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Türzustand",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Battery level",
+  "description": "Raw HomeKit value — Battery level (%).",
+  "seo": {
+    "keywords": [
+      "Battery level",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Humidifier threshold",
+  "description": "Raw HomeKit value — Humidifier threshold (%).",
+  "seo": {
+    "keywords": [
+      "Humidifier threshold",
+      "HomeKit"
+    ]
+  }
+}

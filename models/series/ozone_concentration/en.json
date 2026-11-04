@@ -1,0 +1,10 @@
+{
+  "name": "Ozone concentration",
+  "description": "Raw HomeKit value — Ozone concentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "Ozone concentration",
+      "HomeKit"
+    ]
+  }
+}

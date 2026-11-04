@@ -1,0 +1,10 @@
+{
+  "name": "Présence détectée",
+  "description": "État HomeKit, sans unité physique. 0 = Absence; 1 = Présence.",
+  "seo": {
+    "keywords": [
+      "Présence détectée",
+      "HomeKit"
+    ]
+  }
+}

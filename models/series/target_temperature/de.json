@@ -1,0 +1,10 @@
+{
+  "name": "Zieltemperatur",
+  "description": "HomeKit-Rohwert — Zieltemperatur (°C).",
+  "seo": {
+    "keywords": [
+      "Zieltemperatur",
+      "HomeKit"
+    ]
+  }
+}

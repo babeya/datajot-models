@@ -1,29 +1,11 @@
 {
-  "label": "Beleuchtungsstärke (Lux)",
-  "description": "Beleuchtungsstärke für bessere Atmosphäre und Energiemanagement verfolgen",
+  "label": "Beleuchtungsstärke (lx)",
+  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "licht",
-      "beleuchtungsstärke",
-      "atmosphäre",
-      "innenraum"
+      "Beleuchtungsstärke (lx)",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Dunkel"
-    },
-    "2": {
-      "label": "Gedimmt"
-    },
-    "3": {
-      "label": "Mäßig"
-    },
-    "4": {
-      "label": "Hell"
-    },
-    "5": {
-      "label": "Sehr hell"
-    }
   }
 }

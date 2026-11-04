@@ -1,0 +1,12 @@
+{
+  "key": "color_temperature_mired",
+  "type": "unit",
+  "category": "light",
+  "baseUnit": "mired",
+  "subUnits": [
+    {
+      "key": "mired",
+      "factor": 1
+    }
+  ]
+}

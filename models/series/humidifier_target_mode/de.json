@@ -1,0 +1,10 @@
+{
+  "name": "Befeuchter-Zielmodus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Automatisch; 1 = Befeuchten; 2 = Entfeuchten.",
+  "seo": {
+    "keywords": [
+      "Befeuchter-Zielmodus",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,29 +1,11 @@
 {
-  "label": "Innenraumtemperatur (°C)",
-  "description": "Innenraumtemperatur in Celsius für optimalen Komfort überwachen",
+  "label": "Innentemperatur (°C)",
+  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "temperatur",
-      "innenraum",
-      "celsius",
-      "klima"
+      "Innentemperatur (°C)",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Sehr kalt"
-    },
-    "2": {
-      "label": "Kalt"
-    },
-    "3": {
-      "label": "Angenehm"
-    },
-    "4": {
-      "label": "Warm"
-    },
-    "5": {
-      "label": "Heiß"
-    }
   }
 }

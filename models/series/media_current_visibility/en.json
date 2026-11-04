@@ -1,0 +1,10 @@
+{
+  "name": "Current visibility",
+  "description": "HomeKit state, without a physical unit. 0 = Shown; 1 = Hidden; 2 = Connected; 3 = Always shown.",
+  "seo": {
+    "keywords": [
+      "Current visibility",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Operating mode",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Manual"
+    },
+    "2": {
+      "label": "Automatic"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Operating mode",
+      "HomeKit"
+    ]
+  }
+}

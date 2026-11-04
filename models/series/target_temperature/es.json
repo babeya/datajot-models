@@ -1,0 +1,10 @@
+{
+  "name": "Temperatura objetivo",
+  "description": "Valor bruto de HomeKit — Temperatura objetivo (°C).",
+  "seo": {
+    "keywords": [
+      "Temperatura objetivo",
+      "HomeKit"
+    ]
+  }
+}

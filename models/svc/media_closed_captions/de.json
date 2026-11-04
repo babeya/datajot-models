@@ -1,0 +1,18 @@
+{
+  "label": "Untertitel",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Deaktiviert"
+    },
+    "2": {
+      "label": "Aktiviert"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Untertitel",
+      "HomeKit"
+    ]
+  }
+}

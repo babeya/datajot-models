@@ -1,0 +1,10 @@
+{
+  "name": "Concentration de PM2,5",
+  "description": "Valeur brute HomeKit — Concentration de PM2,5 (µg/m³).",
+  "seo": {
+    "keywords": [
+      "Concentration de PM2,5",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Schlosszustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Entriegelt; 1 = Verriegelt; 2 = Blockiert; 3 = Unbekannt.",
+  "seo": {
+    "keywords": [
+      "Schlosszustand",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": "Visibilidad objetivo",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Mostrar"
+    },
+    "2": {
+      "label": "Ocultar"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Visibilidad objetivo",
+      "HomeKit"
+    ]
+  }
+}

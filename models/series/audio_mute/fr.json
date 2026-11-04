@@ -1,0 +1,10 @@
+{
+  "name": "Son coupé",
+  "description": "État HomeKit, sans unité physique. 0 = Son actif; 1 = Son coupé.",
+  "seo": {
+    "keywords": [
+      "Son coupé",
+      "HomeKit"
+    ]
+  }
+}

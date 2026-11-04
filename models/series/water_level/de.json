@@ -1,0 +1,10 @@
+{
+  "name": "Wasserstand",
+  "description": "HomeKit-Rohwert — Wasserstand (%).",
+  "seo": {
+    "keywords": [
+      "Wasserstand",
+      "HomeKit"
+    ]
+  }
+}

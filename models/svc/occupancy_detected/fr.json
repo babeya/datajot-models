@@ -1,0 +1,18 @@
+{
+  "label": "Présence détectée",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Absence"
+    },
+    "2": {
+      "label": "Présence"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Présence détectée",
+      "HomeKit"
+    ]
+  }
+}

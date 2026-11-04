@@ -1,0 +1,10 @@
+{
+  "name": "Opening movement",
+  "description": "HomeKit state, without a physical unit. 0 = Closing; 1 = Opening; 2 = Stopped.",
+  "seo": {
+    "keywords": [
+      "Opening movement",
+      "HomeKit"
+    ]
+  }
+}

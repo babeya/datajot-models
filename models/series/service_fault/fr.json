@@ -1,0 +1,10 @@
+{
+  "name": "Défaut du service",
+  "description": "État HomeKit, sans unité physique. 0 = Aucun défaut; 1 = Défaut général.",
+  "seo": {
+    "keywords": [
+      "Défaut du service",
+      "HomeKit"
+    ]
+  }
+}

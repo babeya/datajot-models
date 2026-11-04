@@ -1,0 +1,10 @@
+{
+  "name": "Luftreiniger-Zielmodus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Manuell; 1 = Automatisch.",
+  "seo": {
+    "keywords": [
+      "Luftreiniger-Zielmodus",
+      "HomeKit"
+    ]
+  }
+}

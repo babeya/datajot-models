@@ -1,0 +1,10 @@
+{
+  "name": "Fan speed",
+  "description": "Raw HomeKit value — Fan speed (%).",
+  "seo": {
+    "keywords": [
+      "Fan speed",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,29 +1,11 @@
 {
   "label": "Temperatura interior (°C)",
-  "description": "Controla la temperatura interior en grados Celsius para un confort óptimo",
+  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "temperatura",
-      "interior",
-      "celsius",
-      "clima"
+      "Temperatura interior (°C)",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Muy fría"
-    },
-    "2": {
-      "label": "Fría"
-    },
-    "3": {
-      "label": "Confortable"
-    },
-    "4": {
-      "label": "Cálida"
-    },
-    "5": {
-      "label": "Caliente"
-    }
   }
 }

@@ -1,0 +1,10 @@
+{
+  "name": "Target playback state",
+  "description": "HomeKit state, without a physical unit. 0 = Play; 1 = Pause; 2 = Stop.",
+  "seo": {
+    "keywords": [
+      "Target playback state",
+      "HomeKit"
+    ]
+  }
+}

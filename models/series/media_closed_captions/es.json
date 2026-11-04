@@ -1,0 +1,10 @@
+{
+  "name": "Subtítulos",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Desactivados; 1 = Activados.",
+  "seo": {
+    "keywords": [
+      "Subtítulos",
+      "HomeKit"
+    ]
+  }
+}

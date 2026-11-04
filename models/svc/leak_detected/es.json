@@ -1,0 +1,18 @@
+{
+  "label": "Fuga detectada",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Sin fuga detectada"
+    },
+    "2": {
+      "label": "Fuga detectada"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Fuga detectada",
+      "HomeKit"
+    ]
+  }
+}

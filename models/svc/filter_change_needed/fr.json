@@ -1,0 +1,18 @@
+{
+  "label": "Remplacement du filtre",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Non nécessaire"
+    },
+    "2": {
+      "label": "Nécessaire"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Remplacement du filtre",
+      "HomeKit"
+    ]
+  }
+}

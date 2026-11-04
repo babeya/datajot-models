@@ -1,0 +1,10 @@
+{
+  "name": "Enchufe ocupado",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin dispositivo conectado; 1 = Dispositivo conectado.",
+  "seo": {
+    "keywords": [
+      "Enchufe ocupado",
+      "HomeKit"
+    ]
+  }
+}

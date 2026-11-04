@@ -1,0 +1,10 @@
+{
+  "name": "Velocidad del ventilador",
+  "description": "Valor bruto de HomeKit — Velocidad del ventilador (%).",
+  "seo": {
+    "keywords": [
+      "Velocidad del ventilador",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Modo objetivo del termostato",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Apagado; 1 = Calefacción; 2 = Refrigeración; 3 = Automático.",
+  "seo": {
+    "keywords": [
+      "Modo objetivo del termostato",
+      "HomeKit"
+    ]
+  }
+}

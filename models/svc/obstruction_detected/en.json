@@ -1,0 +1,18 @@
+{
+  "label": "Obstruction detected",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "No obstruction"
+    },
+    "2": {
+      "label": "Obstruction detected"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Obstruction detected",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "PM10 concentration",
+  "description": "Raw HomeKit value — PM10 concentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "PM10 concentration",
+      "HomeKit"
+    ]
+  }
+}

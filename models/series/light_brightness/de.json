@@ -1,0 +1,10 @@
+{
+  "name": "Lichthelligkeit",
+  "description": "HomeKit-Rohwert — Lichthelligkeit (%).",
+  "seo": {
+    "keywords": [
+      "Lichthelligkeit",
+      "HomeKit"
+    ]
+  }
+}

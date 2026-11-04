@@ -1,0 +1,10 @@
+{
+  "name": "Humedad objetivo",
+  "description": "Valor bruto de HomeKit — Humedad objetivo (%).",
+  "seo": {
+    "keywords": [
+      "Humedad objetivo",
+      "HomeKit"
+    ]
+  }
+}

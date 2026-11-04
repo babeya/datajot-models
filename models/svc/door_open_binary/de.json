@@ -1,14 +1,6 @@
 {
   "label": "Tür offen",
-  "description": "Zeigt an, ob eine Tür offen oder geschlossen ist.",
-  "seo": {
-    "keywords": [
-      "tür",
-      "offen",
-      "geschlossen",
-      "zustand"
-    ]
-  },
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
   "thresholds": {
     "1": {
       "label": "Geschlossen"
@@ -16,5 +8,11 @@
     "2": {
       "label": "Offen"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Tür offen",
+      "HomeKit"
+    ]
   }
 }

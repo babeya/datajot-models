@@ -1,0 +1,10 @@
+{
+  "name": "Sens de rotation",
+  "description": "État HomeKit, sans unité physique. 0 = Horaire; 1 = Antihoraire.",
+  "seo": {
+    "keywords": [
+      "Sens de rotation",
+      "HomeKit"
+    ]
+  }
+}

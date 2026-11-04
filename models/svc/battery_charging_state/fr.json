@@ -1,0 +1,21 @@
+{
+  "label": "État de charge",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Pas en charge"
+    },
+    "2": {
+      "label": "En charge"
+    },
+    "3": {
+      "label": "Non rechargeable"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de charge",
+      "HomeKit"
+    ]
+  }
+}

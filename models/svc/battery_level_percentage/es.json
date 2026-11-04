@@ -1,29 +1,11 @@
 {
-  "label": "Nivel de batería (%)",
-  "description": "Controla el porcentaje de batería para gestionar tus dispositivos",
+  "label": "Nivel de batería",
+  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "batería",
-      "energía",
-      "dispositivo",
-      "seguimiento"
+      "Nivel de batería",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Crítico"
-    },
-    "2": {
-      "label": "Bajo"
-    },
-    "3": {
-      "label": "Medio"
-    },
-    "4": {
-      "label": "Bueno"
-    },
-    "5": {
-      "label": "Completo"
-    }
   }
 }

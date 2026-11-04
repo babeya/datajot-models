@@ -1,0 +1,18 @@
+{
+  "label": "Estado de atasco",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Sin atasco"
+    },
+    "2": {
+      "label": "Atascado"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado de atasco",
+      "HomeKit"
+    ]
+  }
+}

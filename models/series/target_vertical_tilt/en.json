@@ -1,0 +1,10 @@
+{
+  "name": "Target vertical tilt",
+  "description": "Raw HomeKit value — Target vertical tilt (°).",
+  "seo": {
+    "keywords": [
+      "Target vertical tilt",
+      "HomeKit"
+    ]
+  }
+}

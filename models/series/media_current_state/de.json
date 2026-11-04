@@ -1,0 +1,10 @@
+{
+  "name": "Wiedergabestatus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Wiedergabe; 1 = Pausiert; 2 = Gestoppt; 3 = Unbekannt; 4 = Lädt; 5 = Unterbrochen.",
+  "seo": {
+    "keywords": [
+      "Wiedergabestatus",
+      "HomeKit"
+    ]
+  }
+}

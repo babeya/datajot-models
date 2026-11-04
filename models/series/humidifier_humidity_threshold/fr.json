@@ -1,0 +1,10 @@
+{
+  "name": "Seuil d’humidification",
+  "description": "Valeur brute HomeKit — Seuil d’humidification (%).",
+  "seo": {
+    "keywords": [
+      "Seuil d’humidification",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Target lock state",
+  "description": "HomeKit state, without a physical unit. 0 = Unsecured; 1 = Secured.",
+  "seo": {
+    "keywords": [
+      "Target lock state",
+      "HomeKit"
+    ]
+  }
+}

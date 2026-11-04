@@ -1,0 +1,10 @@
+{
+  "name": "Zielmodus der Alarmanlage",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Zuhause scharf; 1 = Abwesend scharf; 2 = Nachts scharf; 3 = Unscharf.",
+  "seo": {
+    "keywords": [
+      "Zielmodus der Alarmanlage",
+      "HomeKit"
+    ]
+  }
+}

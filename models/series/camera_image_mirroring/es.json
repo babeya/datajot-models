@@ -1,0 +1,10 @@
+{
+  "name": "Imagen en espejo",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin reflejo; 1 = Reflejada.",
+  "seo": {
+    "keywords": [
+      "Imagen en espejo",
+      "HomeKit"
+    ]
+  }
+}

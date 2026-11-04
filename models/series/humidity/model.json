@@ -7,5 +7,6 @@
   "svc": "humidity_percentage",
   "color": "#06B6D4",
   "graphType": "area",
-  "aggregationMethod": "average"
+  "aggregationMethod": "average",
+  "decimalPrecision": 1
 }

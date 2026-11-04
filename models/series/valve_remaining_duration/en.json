@@ -1,0 +1,10 @@
+{
+  "name": "Remaining duration",
+  "description": "Raw HomeKit value — Remaining duration (s).",
+  "seo": {
+    "keywords": [
+      "Remaining duration",
+      "HomeKit"
+    ]
+  }
+}

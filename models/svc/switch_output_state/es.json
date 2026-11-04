@@ -1,0 +1,18 @@
+{
+  "label": "Estado de salida del interruptor",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Apagada"
+    },
+    "2": {
+      "label": "Encendida"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Estado de salida del interruptor",
+      "HomeKit"
+    ]
+  }
+}

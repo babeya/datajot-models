@@ -1,0 +1,10 @@
+{
+  "name": "Partikelkonzentration",
+  "description": "HomeKit-Rohwert — Partikelkonzentration (µg/m³).",
+  "seo": {
+    "keywords": [
+      "Partikelkonzentration",
+      "HomeKit"
+    ]
+  }
+}

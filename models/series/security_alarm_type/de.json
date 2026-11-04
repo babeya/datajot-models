@@ -1,0 +1,10 @@
+{
+  "name": "Alarmtyp",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Kein Alarm; 1 = Unbekannter Alarmtyp.",
+  "seo": {
+    "keywords": [
+      "Alarmtyp",
+      "HomeKit"
+    ]
+  }
+}

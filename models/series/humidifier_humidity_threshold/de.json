@@ -1,0 +1,10 @@
+{
+  "name": "Befeuchtungsschwelle",
+  "description": "HomeKit-Rohwert — Befeuchtungsschwelle (%).",
+  "seo": {
+    "keywords": [
+      "Befeuchtungsschwelle",
+      "HomeKit"
+    ]
+  }
+}

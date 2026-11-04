@@ -1,0 +1,21 @@
+{
+  "label": "Mode du programme d’arrosage",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Non programmé"
+    },
+    "2": {
+      "label": "Programmé"
+    },
+    "3": {
+      "label": "Programme remplacé manuellement"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Mode du programme d’arrosage",
+      "HomeKit"
+    ]
+  }
+}

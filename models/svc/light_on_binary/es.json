@@ -1,14 +1,6 @@
 {
   "label": "Luz encendida",
-  "description": "Muestra si una luz está encendida o apagada.",
-  "seo": {
-    "keywords": [
-      "luz",
-      "encendida",
-      "apagada",
-      "estado"
-    ]
-  },
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
   "thresholds": {
     "1": {
       "label": "Apagada"
@@ -16,5 +8,11 @@
     "2": {
       "label": "Encendida"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Luz encendida",
+      "HomeKit"
+    ]
   }
 }

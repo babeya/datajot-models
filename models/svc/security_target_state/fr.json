@@ -1,0 +1,24 @@
+{
+  "label": "Mode cible de l’alarme",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Armée à domicile"
+    },
+    "2": {
+      "label": "Armée en absence"
+    },
+    "3": {
+      "label": "Armée la nuit"
+    },
+    "4": {
+      "label": "Désarmée"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Mode cible de l’alarme",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,5400 @@
+{
+  "schemaVersion": 1,
+  "applicationCommit": "832dde91383bfab0379c580313b26f5d6f1b92f6",
+  "catalogueBaseline": "e98ec69",
+  "verifiedOn": "2026-11-04",
+  "verification": "Public Apple HomeKit SDK headers HMCharacteristicDefines.h and HMCharacteristicTypes.h (iPhoneOS27.1.sdk), cross-checked with HomeKitADK and Apple documentation. Localized labels are catalogue editorial translations.",
+  "characteristics": [
+    {
+      "identifier": "temperature",
+      "homekitConstant": "HMCharacteristicTypeCurrentTemperature",
+      "series": {
+        "key": "temperature_indoor_metric",
+        "status": "existing",
+        "modified": true
+      },
+      "unit": {
+        "key": "temperature_metric",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "inside_temp_deg_c",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "accessoryMetadata": true
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrenttemperature",
+      "integrationStatus": "already_mapped",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "humidity",
+      "homekitConstant": "HMCharacteristicTypeCurrentRelativeHumidity",
+      "series": {
+        "key": "humidity",
+        "status": "existing",
+        "modified": true
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "humidity_percentage",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentrelativehumidity",
+      "integrationStatus": "already_mapped",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "carbonDioxide",
+      "homekitConstant": "HMCharacteristicTypeCarbonDioxideLevel",
+      "series": {
+        "key": "co2_concentration_ppm",
+        "status": "existing",
+        "modified": false
+      },
+      "unit": {
+        "key": "parts_per_million",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "co2_concentration_ppm",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbondioxidelevel",
+      "integrationStatus": "already_mapped",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "airQuality",
+      "homekitConstant": "HMCharacteristicTypeAirQuality",
+      "series": {
+        "key": "homekit_air_quality",
+        "status": "existing",
+        "modified": false
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "homekit_air_quality",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueairquality",
+      "integrationStatus": "already_mapped",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Unknown",
+            "fr": "Inconnue",
+            "de": "Unbekannt",
+            "es": "Desconocida"
+          },
+          "publicSymbol": "HMCharacteristicValueAirQualityUnknown",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Excellent",
+            "fr": "Excellente",
+            "de": "Ausgezeichnet",
+            "es": "Excelente"
+          },
+          "publicSymbol": "HMCharacteristicValueAirQualityExcellent",
+          "colorHex": "#22C55E"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Good",
+            "fr": "Bonne",
+            "de": "Gut",
+            "es": "Buena"
+          },
+          "publicSymbol": "HMCharacteristicValueAirQualityGood",
+          "colorHex": "#84CC16"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Fair",
+            "fr": "Moyenne",
+            "de": "Mäßig",
+            "es": "Aceptable"
+          },
+          "publicSymbol": "HMCharacteristicValueAirQualityFair",
+          "colorHex": "#EAB308"
+        },
+        {
+          "code": 4,
+          "labels": {
+            "en": "Inferior",
+            "fr": "Médiocre",
+            "de": "Minderwertig",
+            "es": "Inferior"
+          },
+          "publicSymbol": "HMCharacteristicValueAirQualityInferior",
+          "colorHex": "#F97316"
+        },
+        {
+          "code": 5,
+          "labels": {
+            "en": "Poor",
+            "fr": "Mauvaise",
+            "de": "Schlecht",
+            "es": "Mala"
+          },
+          "publicSymbol": "HMCharacteristicValueAirQualityPoor",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueAirQuality"
+    },
+    {
+      "identifier": "lightLevel",
+      "homekitConstant": "HMCharacteristicTypeCurrentLightLevel",
+      "series": {
+        "key": "light_level",
+        "status": "existing",
+        "modified": true
+      },
+      "unit": {
+        "key": "luminosity_metric",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "light_level_lux",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentlightlevel",
+      "integrationStatus": "already_mapped",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "contactState",
+      "homekitConstant": "HMCharacteristicTypeContactState",
+      "series": {
+        "key": "door_open",
+        "status": "existing",
+        "modified": false
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "door_open_binary",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecontactstate",
+      "integrationStatus": "already_mapped",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "Correspondance historique de contact : 0 = contact détecté, 1 = contact absent. window_open uniquement si le service confirme une fenêtre ; aucun choix automatique sans contexte.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Closed",
+            "fr": "Fermée",
+            "de": "Geschlossen",
+            "es": "Cerrada"
+          },
+          "publicSymbol": "HMCharacteristicValueContactStateDetected",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Open",
+            "fr": "Ouverte",
+            "de": "Offen",
+            "es": "Abierta"
+          },
+          "publicSymbol": "HMCharacteristicValueContactStateNone",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueContactState"
+    },
+    {
+      "identifier": "motionDetected",
+      "homekitConstant": "HMCharacteristicTypeMotionDetected",
+      "series": {
+        "key": "motion_detected",
+        "status": "existing",
+        "modified": false
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "motion_detected_binary",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypemotiondetected",
+      "integrationStatus": "already_mapped",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "No motion",
+            "fr": "Aucun mouvement",
+            "de": "Keine Bewegung",
+            "es": "Sin movimiento"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Motion detected",
+            "fr": "Mouvement détecté",
+            "de": "Bewegung erkannt",
+            "es": "Movimiento detectado"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "occupancyDetected",
+      "homekitConstant": "HMCharacteristicTypeOccupancyDetected",
+      "series": {
+        "key": "occupancy_detected",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "occupancy_detected",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueoccupancystatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Unoccupied",
+            "fr": "Absence",
+            "de": "Nicht belegt",
+            "es": "Sin presencia"
+          },
+          "publicSymbol": "HMCharacteristicValueOccupancyStatusNotOccupied",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Occupied",
+            "fr": "Présence",
+            "de": "Belegt",
+            "es": "Con presencia"
+          },
+          "publicSymbol": "HMCharacteristicValueOccupancyStatusOccupied",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueOccupancyStatus"
+    },
+    {
+      "identifier": "powerState",
+      "homekitConstant": "HMCharacteristicTypePowerState",
+      "series": {
+        "key": "device_power_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "device_power_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypepowerstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "Modèle générique par défaut. light_on/light_on_binary seulement si le service est explicitement une lumière ; jamais une puissance en watts.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Off",
+            "fr": "Arrêt",
+            "de": "Aus",
+            "es": "Apagado"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "On",
+            "fr": "Marche",
+            "de": "Ein",
+            "es": "Encendido"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "outletInUse",
+      "homekitConstant": "HMCharacteristicTypeOutletInUse",
+      "series": {
+        "key": "outlet_in_use",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "outlet_in_use",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeoutletinuse",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "Un appareil peut être branché même éteint ; cet état ne mesure ni la consommation ni la puissance.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "No device connected",
+            "fr": "Aucun appareil branché",
+            "de": "Kein Gerät angeschlossen",
+            "es": "Sin dispositivo conectado"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Device connected",
+            "fr": "Appareil branché",
+            "de": "Gerät angeschlossen",
+            "es": "Dispositivo conectado"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "currentPosition",
+      "homekitConstant": "HMCharacteristicTypeCurrentPosition",
+      "series": {
+        "key": "opening_position",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentposition",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "0 = fermeture complète ; 100 = ouverture complète. Position observée, distincte du contact et de la consigne.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "carbonDioxidePeakLevel",
+      "homekitConstant": "HMCharacteristicTypeCarbonDioxidePeakLevel",
+      "series": {
+        "key": "co2_peak_concentration_ppm",
+        "status": "added"
+      },
+      "unit": {
+        "key": "parts_per_million",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "gas_concentration_ppm",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbondioxidepeaklevel",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Raccordement explicite au nouveau modèle de pic. La clé co2_concentration_ppm reste disponible ; les séries existantes ne sont pas migrées.",
+      "decision": "ready",
+      "previousTemplateKey": "co2_concentration_ppm"
+    },
+    {
+      "identifier": "carbonMonoxide",
+      "homekitConstant": "HMCharacteristicTypeCarbonMonoxideLevel",
+      "series": {
+        "key": "co_concentration_ppm",
+        "status": "added"
+      },
+      "unit": {
+        "key": "parts_per_million",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "gas_concentration_ppm",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbonmonoxidelevel",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "carbonMonoxidePeakLevel",
+      "homekitConstant": "HMCharacteristicTypeCarbonMonoxidePeakLevel",
+      "series": {
+        "key": "co_peak_concentration_ppm",
+        "status": "added"
+      },
+      "unit": {
+        "key": "parts_per_million",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "gas_concentration_ppm",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbonmonoxidepeaklevel",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "airParticulateDensity",
+      "homekitConstant": "HMCharacteristicTypeAirParticulateDensity",
+      "series": {
+        "key": "air_particulate_concentration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "mass_concentration",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "mass_concentration_ug_m3",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeairparticulatedensity",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Concentration générique ; conserver séparément la caractéristique airParticulateSize, sans déduire PM2,5 ou PM10 en son absence.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "ozoneDensity",
+      "homekitConstant": "HMCharacteristicTypeOzoneDensity",
+      "series": {
+        "key": "ozone_concentration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "mass_concentration",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "mass_concentration_ug_m3",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeozonedensity",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "nitrogenDioxideDensity",
+      "homekitConstant": "HMCharacteristicTypeNitrogenDioxideDensity",
+      "series": {
+        "key": "no2_concentration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "mass_concentration",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "mass_concentration_ug_m3",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypenitrogendioxidedensity",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "sulphurDioxideDensity",
+      "homekitConstant": "HMCharacteristicTypeSulphurDioxideDensity",
+      "series": {
+        "key": "so2_concentration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "mass_concentration",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "mass_concentration_ug_m3",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypesulphurdioxidedensity",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "pm2_5Density",
+      "homekitConstant": "HMCharacteristicTypePM2_5Density",
+      "series": {
+        "key": "pm2_5_concentration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "mass_concentration",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "mass_concentration_ug_m3",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypepm2_5density",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "pm10Density",
+      "homekitConstant": "HMCharacteristicTypePM10Density",
+      "series": {
+        "key": "pm10_concentration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "mass_concentration",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "mass_concentration_ug_m3",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypepm10density",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "volatileOrganicCompoundDensity",
+      "homekitConstant": "HMCharacteristicTypeVolatileOrganicCompoundDensity",
+      "series": {
+        "key": "voc_concentration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "mass_concentration",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "mass_concentration_ug_m3",
+        "status": "added"
+      },
+      "aggregationMethod": "average",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypevolatileorganiccompounddensity",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "airParticulateSize",
+      "homekitConstant": "HMCharacteristicTypeAirParticulateSize",
+      "series": {
+        "key": "air_particulate_size",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "air_particulate_size",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueairparticulatesize",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "2.5 µm",
+            "fr": "2,5 µm",
+            "de": "2,5 µm",
+            "es": "2,5 µm"
+          },
+          "publicSymbol": "HMCharacteristicValueAirParticulateSize2_5",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "10 µm",
+            "fr": "10 µm",
+            "de": "10 µm",
+            "es": "10 µm"
+          },
+          "publicSymbol": "HMCharacteristicValueAirParticulateSize10",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueAirParticulateSize"
+    },
+    {
+      "identifier": "smokeDetected",
+      "homekitConstant": "HMCharacteristicTypeSmokeDetected",
+      "series": {
+        "key": "smoke_detected",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "smoke_detected",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluesmokedetectionstatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "No smoke detected",
+            "fr": "Aucune fumée détectée",
+            "de": "Kein Rauch erkannt",
+            "es": "Sin humo detectado"
+          },
+          "publicSymbol": "HMCharacteristicValueSmokeDetectionStatusNone",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Smoke detected",
+            "fr": "Fumée détectée",
+            "de": "Rauch erkannt",
+            "es": "Humo detectado"
+          },
+          "publicSymbol": "HMCharacteristicValueSmokeDetectionStatusDetected",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueSmokeDetectionStatus"
+    },
+    {
+      "identifier": "leakDetected",
+      "homekitConstant": "HMCharacteristicTypeLeakDetected",
+      "series": {
+        "key": "leak_detected",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "leak_detected",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueleakstatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "No leak detected",
+            "fr": "Aucune fuite détectée",
+            "de": "Kein Leck erkannt",
+            "es": "Sin fuga detectada"
+          },
+          "publicSymbol": "HMCharacteristicValueLeakStatusNone",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Leak detected",
+            "fr": "Fuite détectée",
+            "de": "Leck erkannt",
+            "es": "Fuga detectada"
+          },
+          "publicSymbol": "HMCharacteristicValueLeakStatusDetected",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueLeakStatus"
+    },
+    {
+      "identifier": "carbonMonoxideDetected",
+      "homekitConstant": "HMCharacteristicTypeCarbonMonoxideDetected",
+      "series": {
+        "key": "co_detected",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "co_detected",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecarbonmonoxidedetectionstatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "CO not detected",
+            "fr": "CO non détecté",
+            "de": "Kein CO erkannt",
+            "es": "CO no detectado"
+          },
+          "publicSymbol": "HMCharacteristicValueCarbonMonoxideDetectionStatusNotDetected",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "CO detected",
+            "fr": "CO détecté",
+            "de": "CO erkannt",
+            "es": "CO detectado"
+          },
+          "publicSymbol": "HMCharacteristicValueCarbonMonoxideDetectionStatusDetected",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCarbonMonoxideDetectionStatus"
+    },
+    {
+      "identifier": "carbonDioxideDetected",
+      "homekitConstant": "HMCharacteristicTypeCarbonDioxideDetected",
+      "series": {
+        "key": "co2_detected",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "co2_detected",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecarbondioxidedetectionstatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "CO₂ not detected",
+            "fr": "CO₂ non détecté",
+            "de": "Kein CO₂ erkannt",
+            "es": "CO₂ no detectado"
+          },
+          "publicSymbol": "HMCharacteristicValueCarbonDioxideDetectionStatusNotDetected",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "CO₂ detected",
+            "fr": "CO₂ détecté",
+            "de": "CO₂ erkannt",
+            "es": "CO₂ detectado"
+          },
+          "publicSymbol": "HMCharacteristicValueCarbonDioxideDetectionStatusDetected",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCarbonDioxideDetectionStatus"
+    },
+    {
+      "identifier": "obstructionDetected",
+      "homekitConstant": "HMCharacteristicTypeObstructionDetected",
+      "series": {
+        "key": "obstruction_detected",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "obstruction_detected",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeobstructiondetected",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "No obstruction",
+            "fr": "Aucun obstacle",
+            "de": "Kein Hindernis",
+            "es": "Sin obstáculo"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Obstruction detected",
+            "fr": "Obstacle détecté",
+            "de": "Hindernis erkannt",
+            "es": "Obstáculo detectado"
+          },
+          "colorHex": "#EF4444"
+        }
+      ]
+    },
+    {
+      "identifier": "brightness",
+      "homekitConstant": "HMCharacteristicTypeBrightness",
+      "series": {
+        "key": "light_brightness",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypebrightness",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "saturation",
+      "homekitConstant": "HMCharacteristicTypeSaturation",
+      "series": {
+        "key": "light_saturation",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypesaturation",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "hue",
+      "homekitConstant": "HMCharacteristicTypeHue",
+      "series": {
+        "key": "light_hue",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_angle_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 360
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypehue",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Angle circulaire : last, sans moyenne arithmétique ni interpolation entre 360° et 0°.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "colorTemperature",
+      "homekitConstant": "HMCharacteristicTypeColorTemperature",
+      "series": {
+        "key": "light_color_temperature",
+        "status": "added"
+      },
+      "unit": {
+        "key": "color_temperature_mired",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_color_temperature_mired",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": 1,
+        "maximum": 4294967295,
+        "accessoryMetadata": true
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecolortemperature",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Bornes effectives fournies par les métadonnées de l’accessoire. Aucune borne UInt32 utilisée comme axe, aucune conversion multiplicative en kelvin.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "outputState",
+      "homekitConstant": "HMCharacteristicTypeOutputState",
+      "series": {
+        "key": "switch_output_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "switch_output_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeoutputstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "État de présentation d’un interrupteur programmable binaire, pas une mesure électrique.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Off",
+            "fr": "Arrêt",
+            "de": "Aus",
+            "es": "Apagada"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "On",
+            "fr": "Marche",
+            "de": "Ein",
+            "es": "Encendida"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "active",
+      "homekitConstant": "HMCharacteristicTypeActive",
+      "series": {
+        "key": "device_active",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "device_active",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueactivationstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Inactive",
+            "fr": "Inactive",
+            "de": "Inaktiv",
+            "es": "Inactivo"
+          },
+          "publicSymbol": "HMCharacteristicValueActivationStateInactive",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Active",
+            "fr": "Active",
+            "de": "Aktiv",
+            "es": "Activo"
+          },
+          "publicSymbol": "HMCharacteristicValueActivationStateActive",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueActivationState"
+    },
+    {
+      "identifier": "inUse",
+      "homekitConstant": "HMCharacteristicTypeInUse",
+      "series": {
+        "key": "service_in_use",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "service_in_use",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueusagestate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Not in use",
+            "fr": "À l’arrêt",
+            "de": "Nicht in Betrieb",
+            "es": "Sin uso"
+          },
+          "publicSymbol": "HMCharacteristicValueUsageStateNotInUse",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "In use",
+            "fr": "En cours",
+            "de": "In Betrieb",
+            "es": "En uso"
+          },
+          "publicSymbol": "HMCharacteristicValueUsageStateInUse",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueUsageState"
+    },
+    {
+      "identifier": "targetPosition",
+      "homekitConstant": "HMCharacteristicTypeTargetPosition",
+      "series": {
+        "key": "opening_target_position",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargetposition",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "currentHorizontalTilt",
+      "homekitConstant": "HMCharacteristicTypeCurrentHorizontalTilt",
+      "series": {
+        "key": "horizontal_tilt",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_tilt_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": -90,
+        "maximum": 90
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrenthorizontaltilt",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "targetHorizontalTilt",
+      "homekitConstant": "HMCharacteristicTypeTargetHorizontalTilt",
+      "series": {
+        "key": "target_horizontal_tilt",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_tilt_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": -90,
+        "maximum": 90
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargethorizontaltilt",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "currentVerticalTilt",
+      "homekitConstant": "HMCharacteristicTypeCurrentVerticalTilt",
+      "series": {
+        "key": "vertical_tilt",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_tilt_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": -90,
+        "maximum": 90
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentverticaltilt",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "targetVerticalTilt",
+      "homekitConstant": "HMCharacteristicTypeTargetVerticalTilt",
+      "series": {
+        "key": "target_vertical_tilt",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_tilt_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": -90,
+        "maximum": 90
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargetverticaltilt",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "currentTilt",
+      "homekitConstant": "HMCharacteristicTypeCurrentTilt",
+      "series": {
+        "key": "slat_tilt",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_tilt_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": -90,
+        "maximum": 90
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrenttilt",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "targetTilt",
+      "homekitConstant": "HMCharacteristicTypeTargetTilt",
+      "series": {
+        "key": "target_slat_tilt",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_tilt_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": -90,
+        "maximum": 90
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargettilt",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "currentDoorState",
+      "homekitConstant": "HMCharacteristicTypeCurrentDoorState",
+      "series": {
+        "key": "door_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "door_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluedoorstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Open",
+            "fr": "Ouverte",
+            "de": "Offen",
+            "es": "Abierta"
+          },
+          "publicSymbol": "HMCharacteristicValueDoorStateOpen",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Closed",
+            "fr": "Fermée",
+            "de": "Geschlossen",
+            "es": "Cerrada"
+          },
+          "publicSymbol": "HMCharacteristicValueDoorStateClosed",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Opening",
+            "fr": "En ouverture",
+            "de": "Öffnet sich",
+            "es": "Abriendo"
+          },
+          "publicSymbol": "HMCharacteristicValueDoorStateOpening",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Closing",
+            "fr": "En fermeture",
+            "de": "Schließt sich",
+            "es": "Cerrando"
+          },
+          "publicSymbol": "HMCharacteristicValueDoorStateClosing",
+          "colorHex": "#14B8A6"
+        },
+        {
+          "code": 4,
+          "labels": {
+            "en": "Stopped",
+            "fr": "Arrêtée",
+            "de": "Angehalten",
+            "es": "Detenida"
+          },
+          "publicSymbol": "HMCharacteristicValueDoorStateStopped",
+          "colorHex": "#F59E0B"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueDoorState"
+    },
+    {
+      "identifier": "targetDoorState",
+      "homekitConstant": "HMCharacteristicTypeTargetDoorState",
+      "series": {
+        "key": "door_target_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "door_target_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetdoorstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Open",
+            "fr": "Ouverte",
+            "de": "Offen",
+            "es": "Abierta"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetDoorStateOpen",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Closed",
+            "fr": "Fermée",
+            "de": "Geschlossen",
+            "es": "Cerrada"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetDoorStateClosed",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetDoorState"
+    },
+    {
+      "identifier": "slatType",
+      "homekitConstant": "HMCharacteristicTypeSlatType",
+      "series": {
+        "key": "slat_type",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "slat_type",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueslattype",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Horizontal",
+            "fr": "Horizontales",
+            "de": "Horizontal",
+            "es": "Horizontal"
+          },
+          "publicSymbol": "HMCharacteristicValueSlatTypeHorizontal",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Vertical",
+            "fr": "Verticales",
+            "de": "Vertikal",
+            "es": "Vertical"
+          },
+          "publicSymbol": "HMCharacteristicValueSlatTypeVertical",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueSlatType"
+    },
+    {
+      "identifier": "positionState",
+      "homekitConstant": "HMCharacteristicTypePositionState",
+      "series": {
+        "key": "opening_movement",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "opening_movement",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluepositionstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Closing",
+            "fr": "En fermeture",
+            "de": "Schließt sich",
+            "es": "Cerrando"
+          },
+          "publicSymbol": "HMCharacteristicValuePositionStateClosing",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Opening",
+            "fr": "En ouverture",
+            "de": "Öffnet sich",
+            "es": "Abriendo"
+          },
+          "publicSymbol": "HMCharacteristicValuePositionStateOpening",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Stopped",
+            "fr": "À l’arrêt",
+            "de": "Angehalten",
+            "es": "Detenido"
+          },
+          "publicSymbol": "HMCharacteristicValuePositionStateStopped",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValuePositionState"
+    },
+    {
+      "identifier": "currentSlatState",
+      "homekitConstant": "HMCharacteristicTypeCurrentSlatState",
+      "series": {
+        "key": "slat_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "slat_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentslatstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Stationary",
+            "fr": "Immobiles",
+            "de": "Stillstehend",
+            "es": "Inmóviles"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSlatStateStationary",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Jammed",
+            "fr": "Bloquées",
+            "de": "Blockiert",
+            "es": "Atascadas"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSlatStateJammed",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Oscillating",
+            "fr": "En oscillation",
+            "de": "Schwingend",
+            "es": "Oscilando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSlatStateOscillating",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentSlatState"
+    },
+    {
+      "identifier": "currentLockMechanismState",
+      "homekitConstant": "HMCharacteristicTypeCurrentLockMechanismState",
+      "series": {
+        "key": "lock_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "lock_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluelockmechanismstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Unsecured",
+            "fr": "Déverrouillée",
+            "de": "Entriegelt",
+            "es": "Desbloqueada"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismStateUnsecured",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Secured",
+            "fr": "Verrouillée",
+            "de": "Verriegelt",
+            "es": "Bloqueada"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismStateSecured",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Jammed",
+            "fr": "Bloquée",
+            "de": "Blockiert",
+            "es": "Atascada"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismStateJammed",
+          "colorHex": "#F59E0B"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Unknown",
+            "fr": "Inconnue",
+            "de": "Unbekannt",
+            "es": "Desconocida"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismStateUnknown",
+          "colorHex": "#64748B"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueLockMechanismState"
+    },
+    {
+      "identifier": "targetSecuritySystemState",
+      "homekitConstant": "HMCharacteristicTypeTargetSecuritySystemState",
+      "series": {
+        "key": "security_target_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "security_target_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetsecuritysystemstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Stay armed",
+            "fr": "Armée à domicile",
+            "de": "Zuhause scharf",
+            "es": "Armada en casa"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateStayArm",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Away armed",
+            "fr": "Armée en absence",
+            "de": "Abwesend scharf",
+            "es": "Armada en ausencia"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateAwayArm",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Night armed",
+            "fr": "Armée la nuit",
+            "de": "Nachts scharf",
+            "es": "Armada de noche"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateNightArm",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Disarmed",
+            "fr": "Désarmée",
+            "de": "Unscharf",
+            "es": "Desarmada"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateDisarm",
+          "colorHex": "#14B8A6"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetSecuritySystemState"
+    },
+    {
+      "identifier": "targetLockMechanismState",
+      "homekitConstant": "HMCharacteristicTypeTargetLockMechanismState",
+      "series": {
+        "key": "lock_target_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "lock_target_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetlockmechanismstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Unsecured",
+            "fr": "Déverrouillée",
+            "de": "Entriegelt",
+            "es": "Desbloqueada"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetLockMechanismStateUnsecured",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Secured",
+            "fr": "Verrouillée",
+            "de": "Verriegelt",
+            "es": "Bloqueada"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetLockMechanismStateSecured",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetLockMechanismState"
+    },
+    {
+      "identifier": "securitySystemAlarmType",
+      "homekitConstant": "HMCharacteristicTypeSecuritySystemAlarmType",
+      "series": {
+        "key": "security_alarm_type",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "security_alarm_type",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluesecuritysystemalarmtype",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "No alarm",
+            "fr": "Aucune alarme",
+            "de": "Kein Alarm",
+            "es": "Sin alarma"
+          },
+          "publicSymbol": "HMCharacteristicValueSecuritySystemAlarmTypeNoAlarm",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Unknown alarm type",
+            "fr": "Type d’alarme inconnu",
+            "de": "Unbekannter Alarmtyp",
+            "es": "Tipo de alarma desconocido"
+          },
+          "publicSymbol": "HMCharacteristicValueSecuritySystemAlarmTypeUnknown",
+          "colorHex": "#64748B"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueSecuritySystemAlarmType"
+    },
+    {
+      "identifier": "lockPhysicalControls",
+      "homekitConstant": "HMCharacteristicTypeLockPhysicalControls",
+      "series": {
+        "key": "physical_controls_lock",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "physical_controls_lock",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluelockphysicalcontrolsstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Unlocked",
+            "fr": "Déverrouillées",
+            "de": "Entsperrt",
+            "es": "Desbloqueados"
+          },
+          "publicSymbol": "HMCharacteristicValueLockPhysicalControlsStateNotLocked",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Locked",
+            "fr": "Verrouillées",
+            "de": "Gesperrt",
+            "es": "Bloqueados"
+          },
+          "publicSymbol": "HMCharacteristicValueLockPhysicalControlsStateLocked",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueLockPhysicalControlsState"
+    },
+    {
+      "identifier": "currentSecuritySystemState",
+      "homekitConstant": "HMCharacteristicTypeCurrentSecuritySystemState",
+      "series": {
+        "key": "security_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "security_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentsecuritysystemstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Stay armed",
+            "fr": "Armée à domicile",
+            "de": "Zuhause scharf",
+            "es": "Armada en casa"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateStayArm",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Away armed",
+            "fr": "Armée en absence",
+            "de": "Abwesend scharf",
+            "es": "Armada en ausencia"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateAwayArm",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Night armed",
+            "fr": "Armée la nuit",
+            "de": "Nachts scharf",
+            "es": "Armada de noche"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateNightArm",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Disarmed",
+            "fr": "Désarmée",
+            "de": "Unscharf",
+            "es": "Desarmada"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateDisarmed",
+          "colorHex": "#14B8A6"
+        },
+        {
+          "code": 4,
+          "labels": {
+            "en": "Triggered",
+            "fr": "Déclenchée",
+            "de": "Ausgelöst",
+            "es": "Activada"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateTriggered",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentSecuritySystemState"
+    },
+    {
+      "identifier": "lockMechanismLastKnownAction",
+      "homekitConstant": "HMCharacteristicTypeLockMechanismLastKnownAction",
+      "series": {
+        "key": "lock_last_action",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "lock_last_action",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluelockmechanismlastknownaction",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Secured manually inside",
+            "fr": "Verrouillée manuellement de l’intérieur",
+            "de": "Innen manuell verriegelt",
+            "es": "Bloqueada manualmente desde dentro"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementInterior",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Unsecured manually inside",
+            "fr": "Déverrouillée manuellement de l’intérieur",
+            "de": "Innen manuell entriegelt",
+            "es": "Desbloqueada manualmente desde dentro"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementInterior",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Secured manually outside",
+            "fr": "Verrouillée manuellement de l’extérieur",
+            "de": "Außen manuell verriegelt",
+            "es": "Bloqueada manualmente desde fuera"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementExterior",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Unsecured manually outside",
+            "fr": "Déverrouillée manuellement de l’extérieur",
+            "de": "Außen manuell entriegelt",
+            "es": "Desbloqueada manualmente desde fuera"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementExterior",
+          "colorHex": "#14B8A6"
+        },
+        {
+          "code": 4,
+          "labels": {
+            "en": "Secured with keypad",
+            "fr": "Verrouillée par clavier",
+            "de": "Per Tastenfeld verriegelt",
+            "es": "Bloqueada con teclado"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredWithKeypad",
+          "colorHex": "#F59E0B"
+        },
+        {
+          "code": 5,
+          "labels": {
+            "en": "Unsecured with keypad",
+            "fr": "Déverrouillée par clavier",
+            "de": "Per Tastenfeld entriegelt",
+            "es": "Desbloqueada con teclado"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredWithKeypad",
+          "colorHex": "#EC4899"
+        },
+        {
+          "code": 6,
+          "labels": {
+            "en": "Secured remotely",
+            "fr": "Verrouillée à distance",
+            "de": "Aus der Ferne verriegelt",
+            "es": "Bloqueada a distancia"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredRemotely",
+          "colorHex": "#38BDF8"
+        },
+        {
+          "code": 7,
+          "labels": {
+            "en": "Unsecured remotely",
+            "fr": "Déverrouillée à distance",
+            "de": "Aus der Ferne entriegelt",
+            "es": "Desbloqueada a distancia"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredRemotely",
+          "colorHex": "#A3E635"
+        },
+        {
+          "code": 8,
+          "labels": {
+            "en": "Secured after timeout",
+            "fr": "Verrouillée après délai",
+            "de": "Nach Zeitablauf verriegelt",
+            "es": "Bloqueada tras el plazo"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout",
+          "colorHex": "#FB923C"
+        },
+        {
+          "code": 9,
+          "labels": {
+            "en": "Secured manually",
+            "fr": "Verrouillée manuellement",
+            "de": "Manuell verriegelt",
+            "es": "Bloqueada manualmente"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement",
+          "colorHex": "#818CF8"
+        },
+        {
+          "code": 10,
+          "labels": {
+            "en": "Unsecured manually",
+            "fr": "Déverrouillée manuellement",
+            "de": "Manuell entriegelt",
+            "es": "Desbloqueada manualmente"
+          },
+          "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement",
+          "colorHex": "#2DD4BF"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueLockMechanismLastKnownAction"
+    },
+    {
+      "identifier": "lockManagementAutoSecureTimeout",
+      "homekitConstant": "HMCharacteristicTypeLockManagementAutoSecureTimeout",
+      "series": {
+        "key": "lock_auto_secure_timeout",
+        "status": "added"
+      },
+      "unit": {
+        "key": "duration",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_duration_seconds",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 4294967295
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypelockmanagementautosecuretimeout",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Secondes brutes. Le domaine UInt32 ne définit pas les bornes du graphique.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "targetTemperature",
+      "homekitConstant": "HMCharacteristicTypeTargetTemperature",
+      "series": {
+        "key": "target_temperature",
+        "status": "added"
+      },
+      "unit": {
+        "key": "temperature_metric",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_temperature_setpoint",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "accessoryMetadata": true
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargettemperature",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "heatingThreshold",
+      "homekitConstant": "HMCharacteristicTypeHeatingThreshold",
+      "series": {
+        "key": "heating_temperature_threshold",
+        "status": "added"
+      },
+      "unit": {
+        "key": "temperature_metric",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_temperature_setpoint",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "accessoryMetadata": true
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeheatingthreshold",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "coolingThreshold",
+      "homekitConstant": "HMCharacteristicTypeCoolingThreshold",
+      "series": {
+        "key": "cooling_temperature_threshold",
+        "status": "added"
+      },
+      "unit": {
+        "key": "temperature_metric",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_temperature_setpoint",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "accessoryMetadata": true
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecoolingthreshold",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "targetRelativeHumidity",
+      "homekitConstant": "HMCharacteristicTypeTargetRelativeHumidity",
+      "series": {
+        "key": "target_relative_humidity",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargetrelativehumidity",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "humidifierThreshold",
+      "homekitConstant": "HMCharacteristicTypeHumidifierThreshold",
+      "series": {
+        "key": "humidifier_humidity_threshold",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypehumidifierthreshold",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "dehumidifierThreshold",
+      "homekitConstant": "HMCharacteristicTypeDehumidifierThreshold",
+      "series": {
+        "key": "dehumidifier_humidity_threshold",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypedehumidifierthreshold",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "currentHeatingCooling",
+      "homekitConstant": "HMCharacteristicTypeCurrentHeatingCooling",
+      "series": {
+        "key": "heating_cooling_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "heating_cooling_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentheatingcooling",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Off",
+            "fr": "À l’arrêt",
+            "de": "Aus",
+            "es": "Apagado"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHeatingCoolingOff",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Heating",
+            "fr": "Chauffage",
+            "de": "Heizen",
+            "es": "Calentando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHeatingCoolingHeat",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Cooling",
+            "fr": "Refroidissement",
+            "de": "Kühlen",
+            "es": "Enfriando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHeatingCoolingCool",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentHeatingCooling"
+    },
+    {
+      "identifier": "targetHeaterCoolerState",
+      "homekitConstant": "HMCharacteristicTypeTargetHeaterCoolerState",
+      "series": {
+        "key": "heater_cooler_target_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "heater_cooler_target_mode",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetheatercoolerstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetHeaterCoolerStateAutomatic",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Heat",
+            "fr": "Chauffage",
+            "de": "Heizen",
+            "es": "Calefacción"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetHeaterCoolerStateHeat",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Cool",
+            "fr": "Refroidissement",
+            "de": "Kühlen",
+            "es": "Refrigeración"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetHeaterCoolerStateCool",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetHeaterCoolerState"
+    },
+    {
+      "identifier": "targetHumidifierDehumidifierState",
+      "homekitConstant": "HMCharacteristicTypeTargetHumidifierDehumidifierState",
+      "series": {
+        "key": "humidifier_target_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "humidifier_target_mode",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargethumidifierdehumidifierstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetHumidifierDehumidifierStateAutomatic",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Humidify",
+            "fr": "Humidification",
+            "de": "Befeuchten",
+            "es": "Humidificar"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetHumidifierDehumidifierStateHumidify",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Dehumidify",
+            "fr": "Déshumidification",
+            "de": "Entfeuchten",
+            "es": "Deshumidificar"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetHumidifierDehumidifierState"
+    },
+    {
+      "identifier": "targetHeatingCooling",
+      "homekitConstant": "HMCharacteristicTypeTargetHeatingCooling",
+      "series": {
+        "key": "heating_cooling_target_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "heating_cooling_target_mode",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueheatingcooling",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Off",
+            "fr": "Arrêt",
+            "de": "Aus",
+            "es": "Apagado"
+          },
+          "publicSymbol": "HMCharacteristicValueHeatingCoolingOff",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Heat",
+            "fr": "Chauffage",
+            "de": "Heizen",
+            "es": "Calefacción"
+          },
+          "publicSymbol": "HMCharacteristicValueHeatingCoolingHeat",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Cool",
+            "fr": "Refroidissement",
+            "de": "Kühlen",
+            "es": "Refrigeración"
+          },
+          "publicSymbol": "HMCharacteristicValueHeatingCoolingCool",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          },
+          "publicSymbol": "HMCharacteristicValueHeatingCoolingAuto",
+          "colorHex": "#14B8A6"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueHeatingCooling"
+    },
+    {
+      "identifier": "currentHeaterCoolerState",
+      "homekitConstant": "HMCharacteristicTypeCurrentHeaterCoolerState",
+      "series": {
+        "key": "heater_cooler_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "heater_cooler_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentheatercoolerstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Inactive",
+            "fr": "Inactif",
+            "de": "Inaktiv",
+            "es": "Inactivo"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHeaterCoolerStateInactive",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Idle",
+            "fr": "En attente",
+            "de": "Bereit",
+            "es": "En espera"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHeaterCoolerStateIdle",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Heating",
+            "fr": "En chauffage",
+            "de": "Heizt",
+            "es": "Calentando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHeaterCoolerStateHeating",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Cooling",
+            "fr": "En refroidissement",
+            "de": "Kühlt",
+            "es": "Enfriando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHeaterCoolerStateCooling",
+          "colorHex": "#14B8A6"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentHeaterCoolerState"
+    },
+    {
+      "identifier": "currentHumidifierDehumidifierState",
+      "homekitConstant": "HMCharacteristicTypeCurrentHumidifierDehumidifierState",
+      "series": {
+        "key": "humidifier_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "humidifier_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrenthumidifierdehumidifierstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Inactive",
+            "fr": "Inactif",
+            "de": "Inaktiv",
+            "es": "Inactivo"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHumidifierDehumidifierStateInactive",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Idle",
+            "fr": "En attente",
+            "de": "Bereit",
+            "es": "En espera"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Humidifying",
+            "fr": "En humidification",
+            "de": "Befeuchtet",
+            "es": "Humidificando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHumidifierDehumidifierStateHumidifying",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Dehumidifying",
+            "fr": "En déshumidification",
+            "de": "Entfeuchtet",
+            "es": "Deshumidificando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentHumidifierDehumidifierStateDehumidifying",
+          "colorHex": "#14B8A6"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentHumidifierDehumidifierState"
+    },
+    {
+      "identifier": "rotationSpeed",
+      "homekitConstant": "HMCharacteristicTypeRotationSpeed",
+      "series": {
+        "key": "fan_rotation_speed",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictyperotationspeed",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "filterLifeLevel",
+      "homekitConstant": "HMCharacteristicTypeFilterLifeLevel",
+      "series": {
+        "key": "filter_life_level",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypefilterlifelevel",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "currentFanState",
+      "homekitConstant": "HMCharacteristicTypeCurrentFanState",
+      "series": {
+        "key": "fan_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "homekit_activity_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentfanstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Inactive",
+            "fr": "Inactif",
+            "de": "Inaktiv",
+            "es": "Inactivo"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentFanStateInactive",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Idle",
+            "fr": "En attente",
+            "de": "Bereit",
+            "es": "En espera"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentFanStateIdle",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Active",
+            "fr": "En fonctionnement",
+            "de": "Aktiv",
+            "es": "En funcionamiento"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentFanStateActive",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentFanState"
+    },
+    {
+      "identifier": "currentAirPurifierState",
+      "homekitConstant": "HMCharacteristicTypeCurrentAirPurifierState",
+      "series": {
+        "key": "air_purifier_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "homekit_activity_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentairpurifierstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Inactive",
+            "fr": "Inactif",
+            "de": "Inaktiv",
+            "es": "Inactivo"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentAirPurifierStateInactive",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Idle",
+            "fr": "En attente",
+            "de": "Bereit",
+            "es": "En espera"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentAirPurifierStateIdle",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Active",
+            "fr": "En fonctionnement",
+            "de": "Aktiv",
+            "es": "En funcionamiento"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentAirPurifierStateActive",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentAirPurifierState"
+    },
+    {
+      "identifier": "rotationDirection",
+      "homekitConstant": "HMCharacteristicTypeRotationDirection",
+      "series": {
+        "key": "fan_rotation_direction",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "fan_rotation_direction",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluerotationdirection",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Clockwise",
+            "fr": "Horaire",
+            "de": "Im Uhrzeigersinn",
+            "es": "Horario"
+          },
+          "publicSymbol": "HMCharacteristicValueRotationDirectionClockwise",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Counterclockwise",
+            "fr": "Antihoraire",
+            "de": "Gegen den Uhrzeigersinn",
+            "es": "Antihorario"
+          },
+          "publicSymbol": "HMCharacteristicValueRotationDirectionCounterClockwise",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueRotationDirection"
+    },
+    {
+      "identifier": "targetFanState",
+      "homekitConstant": "HMCharacteristicTypeTargetFanState",
+      "series": {
+        "key": "fan_target_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "homekit_manual_automatic",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetfanstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Manual",
+            "fr": "Manuel",
+            "de": "Manuell",
+            "es": "Manual"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetFanStateManual",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetFanStateAutomatic",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetFanState"
+    },
+    {
+      "identifier": "targetAirPurifierState",
+      "homekitConstant": "HMCharacteristicTypeTargetAirPurifierState",
+      "series": {
+        "key": "air_purifier_target_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "homekit_manual_automatic",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetairpurifierstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Manual",
+            "fr": "Manuel",
+            "de": "Manuell",
+            "es": "Manual"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetAirPurifierStateManual",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetAirPurifierStateAutomatic",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetAirPurifierState"
+    },
+    {
+      "identifier": "swingMode",
+      "homekitConstant": "HMCharacteristicTypeSwingMode",
+      "series": {
+        "key": "fan_swing_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "fan_swing_mode",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueswingmode",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Disabled",
+            "fr": "Désactivée",
+            "de": "Deaktiviert",
+            "es": "Desactivada"
+          },
+          "publicSymbol": "HMCharacteristicValueSwingModeDisabled",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Enabled",
+            "fr": "Activée",
+            "de": "Aktiviert",
+            "es": "Activada"
+          },
+          "publicSymbol": "HMCharacteristicValueSwingModeEnabled",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueSwingMode"
+    },
+    {
+      "identifier": "filterChangeIndication",
+      "homekitConstant": "HMCharacteristicTypeFilterChangeIndication",
+      "series": {
+        "key": "filter_change_needed",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "filter_change_needed",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluefilterchange",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Not needed",
+            "fr": "Non nécessaire",
+            "de": "Nicht erforderlich",
+            "es": "No necesario"
+          },
+          "publicSymbol": "HMCharacteristicValueFilterChangeNotNeeded",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Needed",
+            "fr": "Nécessaire",
+            "de": "Erforderlich",
+            "es": "Necesario"
+          },
+          "publicSymbol": "HMCharacteristicValueFilterChangeNeeded",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueFilterChange"
+    },
+    {
+      "identifier": "waterLevel",
+      "homekitConstant": "HMCharacteristicTypeWaterLevel",
+      "series": {
+        "key": "water_level",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 1,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypewaterlevel",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "setDuration",
+      "homekitConstant": "HMCharacteristicTypeSetDuration",
+      "series": {
+        "key": "valve_set_duration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "duration",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_duration_seconds",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 3600
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypesetduration",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "remainingDuration",
+      "homekitConstant": "HMCharacteristicTypeRemainingDuration",
+      "series": {
+        "key": "valve_remaining_duration",
+        "status": "added"
+      },
+      "unit": {
+        "key": "duration",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_duration_seconds",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "minimum": 0,
+        "maximum": 3600
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictyperemainingduration",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "valveType",
+      "homekitConstant": "HMCharacteristicTypeValveType",
+      "series": {
+        "key": "valve_type",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "valve_type",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluevalvetype",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Generic valve",
+            "fr": "Vanne générique",
+            "de": "Allgemeines Ventil",
+            "es": "Válvula genérica"
+          },
+          "publicSymbol": "HMCharacteristicValueValveTypeGenericValve",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Irrigation",
+            "fr": "Arrosage",
+            "de": "Bewässerung",
+            "es": "Riego"
+          },
+          "publicSymbol": "HMCharacteristicValueValveTypeIrrigation",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Shower head",
+            "fr": "Pommeau de douche",
+            "de": "Duschkopf",
+            "es": "Cabezal de ducha"
+          },
+          "publicSymbol": "HMCharacteristicValueValveTypeShowerHead",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Water faucet",
+            "fr": "Robinet",
+            "de": "Wasserhahn",
+            "es": "Grifo"
+          },
+          "publicSymbol": "HMCharacteristicValueValveTypeWaterFaucet",
+          "colorHex": "#14B8A6"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueValveType"
+    },
+    {
+      "identifier": "programMode",
+      "homekitConstant": "HMCharacteristicTypeProgramMode",
+      "series": {
+        "key": "valve_program_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "valve_program_mode",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P1",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueprogrammode",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Not scheduled",
+            "fr": "Non programmé",
+            "de": "Nicht geplant",
+            "es": "Sin programar"
+          },
+          "publicSymbol": "HMCharacteristicValueProgramModeNotScheduled",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Scheduled",
+            "fr": "Programmé",
+            "de": "Geplant",
+            "es": "Programado"
+          },
+          "publicSymbol": "HMCharacteristicValueProgramModeScheduled",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Schedule overridden manually",
+            "fr": "Programme remplacé manuellement",
+            "de": "Zeitplan manuell übersteuert",
+            "es": "Programa anulado manualmente"
+          },
+          "publicSymbol": "HMCharacteristicValueProgramModeScheduleOverriddenToManual",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueProgramMode"
+    },
+    {
+      "identifier": "batteryLevel",
+      "homekitConstant": "HMCharacteristicTypeBatteryLevel",
+      "series": {
+        "key": "battery_level",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "battery_level_percentage",
+        "status": "existing",
+        "modified": true
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypebatterylevel",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "statusLowBattery",
+      "homekitConstant": "HMCharacteristicTypeStatusLowBattery",
+      "series": {
+        "key": "battery_low",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "battery_low",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluebatterystatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Normal",
+            "fr": "Normale",
+            "de": "Normal",
+            "es": "Normal"
+          },
+          "publicSymbol": "HMCharacteristicValueBatteryStatusNormal",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Low",
+            "fr": "Faible",
+            "de": "Schwach",
+            "es": "Baja"
+          },
+          "publicSymbol": "HMCharacteristicValueBatteryStatusLow",
+          "colorHex": "#F59E0B"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueBatteryStatus"
+    },
+    {
+      "identifier": "chargingState",
+      "homekitConstant": "HMCharacteristicTypeChargingState",
+      "series": {
+        "key": "battery_charging_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "battery_charging_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P0",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluechargingstate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Not charging",
+            "fr": "Pas en charge",
+            "de": "Lädt nicht",
+            "es": "Sin cargar"
+          },
+          "publicSymbol": "HMCharacteristicValueChargingStateNone",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Charging",
+            "fr": "En charge",
+            "de": "Wird geladen",
+            "es": "Cargando"
+          },
+          "publicSymbol": "HMCharacteristicValueChargingStateInProgress",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Not chargeable",
+            "fr": "Non rechargeable",
+            "de": "Nicht aufladbar",
+            "es": "No recargable"
+          },
+          "publicSymbol": "HMCharacteristicValueChargingStateNotChargeable",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueChargingState"
+    },
+    {
+      "identifier": "statusActive",
+      "homekitConstant": "HMCharacteristicTypeStatusActive",
+      "series": {
+        "key": "service_status_active",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "service_status_active",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypestatusactive",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "État de fonctionnement du service ; distinct du réglage active et de la disponibilité réseau de l’app.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Inactive",
+            "fr": "Inactif",
+            "de": "Inaktiv",
+            "es": "Inactivo"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Active",
+            "fr": "Actif",
+            "de": "Aktiv",
+            "es": "Activo"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "statusFault",
+      "homekitConstant": "HMCharacteristicTypeStatusFault",
+      "series": {
+        "key": "service_fault",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "service_fault",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluestatusfault",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "No fault",
+            "fr": "Aucun défaut",
+            "de": "Kein Fehler",
+            "es": "Sin fallo"
+          },
+          "publicSymbol": "HMCharacteristicValueStatusFaultNoFault",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "General fault",
+            "fr": "Défaut général",
+            "de": "Allgemeiner Fehler",
+            "es": "Fallo general"
+          },
+          "publicSymbol": "HMCharacteristicValueStatusFaultGeneralFault",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueStatusFault"
+    },
+    {
+      "identifier": "statusJammed",
+      "homekitConstant": "HMCharacteristicTypeStatusJammed",
+      "series": {
+        "key": "service_jammed",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "service_jammed",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluejammedstatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Not jammed",
+            "fr": "Non bloqué",
+            "de": "Nicht blockiert",
+            "es": "Sin atasco"
+          },
+          "publicSymbol": "HMCharacteristicValueJammedStatusNone",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Jammed",
+            "fr": "Bloqué",
+            "de": "Blockiert",
+            "es": "Atascado"
+          },
+          "publicSymbol": "HMCharacteristicValueJammedStatusJammed",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueJammedStatus"
+    },
+    {
+      "identifier": "statusTampered",
+      "homekitConstant": "HMCharacteristicTypeStatusTampered",
+      "series": {
+        "key": "service_tampered",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "service_tampered",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetamperedstatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Not tampered",
+            "fr": "Aucun sabotage",
+            "de": "Nicht manipuliert",
+            "es": "Sin manipulación"
+          },
+          "publicSymbol": "HMCharacteristicValueTamperedStatusNone",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Tampered",
+            "fr": "Sabotage détecté",
+            "de": "Manipuliert",
+            "es": "Manipulación detectada"
+          },
+          "publicSymbol": "HMCharacteristicValueTamperedStatusTampered",
+          "colorHex": "#EF4444"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTamperedStatus"
+    },
+    {
+      "identifier": "inputEvent",
+      "homekitConstant": "HMCharacteristicTypeInputEvent",
+      "series": {
+        "key": "switch_input_event",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "switch_input_event",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueinputevent",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "Dernier type d’appui observé ; aucun comptage, aucune durée de maintien implicite.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Single press",
+            "fr": "Appui simple",
+            "de": "Einfachdruck",
+            "es": "Pulsación simple"
+          },
+          "publicSymbol": "HMCharacteristicValueInputEventSinglePress",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Double press",
+            "fr": "Double appui",
+            "de": "Doppeldruck",
+            "es": "Pulsación doble"
+          },
+          "publicSymbol": "HMCharacteristicValueInputEventDoublePress",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Long press",
+            "fr": "Appui long",
+            "de": "Langer Druck",
+            "es": "Pulsación larga"
+          },
+          "publicSymbol": "HMCharacteristicValueInputEventLongPress",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueInputEvent"
+    },
+    {
+      "identifier": "volume",
+      "homekitConstant": "HMCharacteristicTypeVolume",
+      "series": {
+        "key": "audio_volume",
+        "status": "added"
+      },
+      "unit": {
+        "key": "percentage",
+        "status": "existing",
+        "modified": false
+      },
+      "configuration": {
+        "key": "homekit_percentage",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "minimum": 0,
+        "maximum": 100
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypevolume",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "mute",
+      "homekitConstant": "HMCharacteristicTypeMute",
+      "series": {
+        "key": "audio_mute",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "audio_mute",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypemute",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Unmuted",
+            "fr": "Son actif",
+            "de": "Ton an",
+            "es": "Sonido activo"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Muted",
+            "fr": "Son coupé",
+            "de": "Stumm",
+            "es": "Silenciado"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "nightVision",
+      "homekitConstant": "HMCharacteristicTypeNightVision",
+      "series": {
+        "key": "camera_night_vision",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "camera_night_vision",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypenightvision",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Disabled",
+            "fr": "Désactivée",
+            "de": "Deaktiviert",
+            "es": "Desactivada"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Enabled",
+            "fr": "Activée",
+            "de": "Aktiviert",
+            "es": "Activada"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "imageMirroring",
+      "homekitConstant": "HMCharacteristicTypeImageMirroring",
+      "series": {
+        "key": "camera_image_mirroring",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "camera_image_mirroring",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeimagemirroring",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "Miroir autour de l’axe vertical.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Not mirrored",
+            "fr": "Non inversée",
+            "de": "Nicht gespiegelt",
+            "es": "Sin reflejo"
+          },
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Mirrored",
+            "fr": "Inversée en miroir",
+            "de": "Gespiegelt",
+            "es": "Reflejada"
+          },
+          "colorHex": "#0EA5E9"
+        }
+      ]
+    },
+    {
+      "identifier": "opticalZoom",
+      "homekitConstant": "HMCharacteristicTypeOpticalZoom",
+      "series": {
+        "key": "camera_optical_zoom",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Rapport de zoom sans dimension."
+      },
+      "configuration": {
+        "key": "homekit_zoom_ratio",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 2,
+      "priority": "P2",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeopticalzoom",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Rapport sans dimension ; limites de l’accessoire, aucune unité physique ni conversion en pourcentage.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "digitalZoom",
+      "homekitConstant": "HMCharacteristicTypeDigitalZoom",
+      "series": {
+        "key": "camera_digital_zoom",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Rapport de zoom sans dimension."
+      },
+      "configuration": {
+        "key": "homekit_zoom_ratio",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 2,
+      "priority": "P2",
+      "domain": {
+        "minimum": 0
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypedigitalzoom",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": "Rapport sans dimension ; limites de l’accessoire, aucune unité physique ni conversion en pourcentage.",
+      "decision": "ready"
+    },
+    {
+      "identifier": "imageRotation",
+      "homekitConstant": "HMCharacteristicTypeImageRotation",
+      "series": {
+        "key": "camera_image_rotation",
+        "status": "added"
+      },
+      "unit": {
+        "key": "angle_degrees",
+        "status": "added"
+      },
+      "configuration": {
+        "key": "homekit_angle_degrees",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          90,
+          180,
+          270
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeimagerotation",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "neutral",
+      "serviceCondition": null,
+      "decision": "ready"
+    },
+    {
+      "identifier": "currentMediaState",
+      "homekitConstant": "HMCharacteristicTypeCurrentMediaState",
+      "series": {
+        "key": "media_current_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "media_current_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentmediastate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Playing",
+            "fr": "En lecture",
+            "de": "Wiedergabe",
+            "es": "Reproduciendo"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentMediaStatePlaying",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Paused",
+            "fr": "En pause",
+            "de": "Pausiert",
+            "es": "En pausa"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentMediaStatePaused",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Stopped",
+            "fr": "Arrêté",
+            "de": "Gestoppt",
+            "es": "Detenido"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentMediaStateStopped",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Unknown",
+            "fr": "Inconnu",
+            "de": "Unbekannt",
+            "es": "Desconocido"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentMediaStateUnknown",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 4,
+          "labels": {
+            "en": "Loading",
+            "fr": "Chargement",
+            "de": "Lädt",
+            "es": "Cargando"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentMediaStateLoading",
+          "colorHex": "#F59E0B"
+        },
+        {
+          "code": 5,
+          "labels": {
+            "en": "Interrupted",
+            "fr": "Interrompu",
+            "de": "Unterbrochen",
+            "es": "Interrumpido"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentMediaStateInterrupted",
+          "colorHex": "#EC4899"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentMediaState"
+    },
+    {
+      "identifier": "targetMediaState",
+      "homekitConstant": "HMCharacteristicTypeTargetMediaState",
+      "series": {
+        "key": "media_target_state",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "media_target_state",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetmediastate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Play",
+            "fr": "Lecture",
+            "de": "Wiedergeben",
+            "es": "Reproducir"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetMediaStatePlay",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Pause",
+            "fr": "Pause",
+            "de": "Pausieren",
+            "es": "Pausar"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetMediaStatePause",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Stop",
+            "fr": "Arrêt",
+            "de": "Stoppen",
+            "es": "Detener"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetMediaStateStop",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetMediaState"
+    },
+    {
+      "identifier": "wifiSatelliteStatus",
+      "homekitConstant": "HMCharacteristicTypeWiFiSatelliteStatus",
+      "series": {
+        "key": "wifi_satellite_status",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "wifi_satellite_status",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluewifisatellitestatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Unknown",
+            "fr": "Inconnu",
+            "de": "Unbekannt",
+            "es": "Desconocido"
+          },
+          "publicSymbol": "HMCharacteristicValueWiFiSatelliteStatusUnknown",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Connected",
+            "fr": "Connecté",
+            "de": "Verbunden",
+            "es": "Conectado"
+          },
+          "publicSymbol": "HMCharacteristicValueWiFiSatelliteStatusConnected",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Not connected",
+            "fr": "Non connecté",
+            "de": "Nicht verbunden",
+            "es": "No conectado"
+          },
+          "publicSymbol": "HMCharacteristicValueWiFiSatelliteStatusNotConnected",
+          "colorHex": "#A78BFA"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueWiFiSatelliteStatus"
+    },
+    {
+      "identifier": "currentVisibilityState",
+      "homekitConstant": "HMCharacteristicTypeCurrentVisibilityState",
+      "series": {
+        "key": "media_current_visibility",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "media_current_visibility",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluecurrentvisibilitystate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Shown",
+            "fr": "Visible",
+            "de": "Angezeigt",
+            "es": "Visible"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateShown",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Hidden",
+            "fr": "Masqué",
+            "de": "Ausgeblendet",
+            "es": "Oculto"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateHidden",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Connected",
+            "fr": "Connecté",
+            "de": "Verbunden",
+            "es": "Conectado"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateConnected",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Always shown",
+            "fr": "Toujours visible",
+            "de": "Immer angezeigt",
+            "es": "Siempre visible"
+          },
+          "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateAlwaysShown",
+          "colorHex": "#14B8A6"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueCurrentVisibilityState"
+    },
+    {
+      "identifier": "targetVisibilityState",
+      "homekitConstant": "HMCharacteristicTypeTargetVisibilityState",
+      "series": {
+        "key": "media_target_visibility",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "media_target_visibility",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluetargetvisibilitystate",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Show",
+            "fr": "Afficher",
+            "de": "Anzeigen",
+            "es": "Mostrar"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetVisibilityStateShow",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Hide",
+            "fr": "Masquer",
+            "de": "Ausblenden",
+            "es": "Ocultar"
+          },
+          "publicSymbol": "HMCharacteristicValueTargetVisibilityStateHide",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueTargetVisibilityState"
+    },
+    {
+      "identifier": "routerStatus",
+      "homekitConstant": "HMCharacteristicTypeRouterStatus",
+      "series": {
+        "key": "router_status",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "router_status",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluerouterstatus",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": "0 = configuration HomeKit déployée, 1 = non déployée ; distinct de la disponibilité de l’appareil dans l’app.",
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Ready",
+            "fr": "Prêt",
+            "de": "Bereit",
+            "es": "Preparado"
+          },
+          "publicSymbol": "HMCharacteristicValueRouterStatusReady",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Not ready",
+            "fr": "Non prêt",
+            "de": "Nicht bereit",
+            "es": "No preparado"
+          },
+          "publicSymbol": "HMCharacteristicValueRouterStatusNotReady",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueRouterStatus"
+    },
+    {
+      "identifier": "closedCaptions",
+      "homekitConstant": "HMCharacteristicTypeClosedCaptions",
+      "series": {
+        "key": "media_closed_captions",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "media_closed_captions",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvalueclosedcaptions",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Disabled",
+            "fr": "Désactivés",
+            "de": "Deaktiviert",
+            "es": "Desactivados"
+          },
+          "publicSymbol": "HMCharacteristicValueClosedCaptionsDisabled",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Enabled",
+            "fr": "Activés",
+            "de": "Aktiviert",
+            "es": "Activados"
+          },
+          "publicSymbol": "HMCharacteristicValueClosedCaptionsEnabled",
+          "colorHex": "#0EA5E9"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValueClosedCaptions"
+    },
+    {
+      "identifier": "pictureMode",
+      "homekitConstant": "HMCharacteristicTypePictureMode",
+      "series": {
+        "key": "media_picture_mode",
+        "status": "added"
+      },
+      "unit": {
+        "key": null,
+        "status": "none",
+        "reason": "Codes sans unité physique."
+      },
+      "configuration": {
+        "key": "media_picture_mode",
+        "status": "added"
+      },
+      "aggregationMethod": "last",
+      "decimalPrecision": 0,
+      "priority": "P2",
+      "domain": {
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristicvaluepicturemode",
+      "integrationStatus": "requires_app_mapping",
+      "thresholdPolicy": "categorical_codes",
+      "serviceCondition": null,
+      "decision": "ready",
+      "states": [
+        {
+          "code": 0,
+          "labels": {
+            "en": "Standard",
+            "fr": "Standard",
+            "de": "Standard",
+            "es": "Estándar"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeStandard",
+          "colorHex": "#64748B"
+        },
+        {
+          "code": 1,
+          "labels": {
+            "en": "Movie",
+            "fr": "Cinéma",
+            "de": "Film",
+            "es": "Cine"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeMovie",
+          "colorHex": "#0EA5E9"
+        },
+        {
+          "code": 2,
+          "labels": {
+            "en": "Sport",
+            "fr": "Sport",
+            "de": "Sport",
+            "es": "Deporte"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeSport",
+          "colorHex": "#A78BFA"
+        },
+        {
+          "code": 3,
+          "labels": {
+            "en": "Game",
+            "fr": "Jeu",
+            "de": "Spiel",
+            "es": "Juego"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeGame",
+          "colorHex": "#14B8A6"
+        },
+        {
+          "code": 4,
+          "labels": {
+            "en": "Photo",
+            "fr": "Photo",
+            "de": "Foto",
+            "es": "Foto"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModePhoto",
+          "colorHex": "#F59E0B"
+        },
+        {
+          "code": 5,
+          "labels": {
+            "en": "Vivid",
+            "fr": "Vif",
+            "de": "Lebhaft",
+            "es": "Vívido"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeVivid",
+          "colorHex": "#EC4899"
+        },
+        {
+          "code": 6,
+          "labels": {
+            "en": "Dark",
+            "fr": "Sombre",
+            "de": "Dunkel",
+            "es": "Oscuro"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeDark",
+          "colorHex": "#38BDF8"
+        },
+        {
+          "code": 7,
+          "labels": {
+            "en": "Bright",
+            "fr": "Clair",
+            "de": "Hell",
+            "es": "Claro"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeBright",
+          "colorHex": "#A3E635"
+        },
+        {
+          "code": 8,
+          "labels": {
+            "en": "Computer",
+            "fr": "Ordinateur",
+            "de": "Computer",
+            "es": "Ordenador"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeComputer",
+          "colorHex": "#FB923C"
+        },
+        {
+          "code": 9,
+          "labels": {
+            "en": "Night",
+            "fr": "Nuit",
+            "de": "Nacht",
+            "es": "Noche"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeNight",
+          "colorHex": "#818CF8"
+        },
+        {
+          "code": 10,
+          "labels": {
+            "en": "Calibrated",
+            "fr": "Calibré",
+            "de": "Kalibriert",
+            "es": "Calibrado"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeCalibrated",
+          "colorHex": "#2DD4BF"
+        },
+        {
+          "code": 11,
+          "labels": {
+            "en": "Custom 1",
+            "fr": "Personnalisé 1",
+            "de": "Benutzerdefiniert 1",
+            "es": "Personalizado 1"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeCustom1",
+          "colorHex": "#F472B6"
+        },
+        {
+          "code": 12,
+          "labels": {
+            "en": "Custom 2",
+            "fr": "Personnalisé 2",
+            "de": "Benutzerdefiniert 2",
+            "es": "Personalizado 2"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeCustom2",
+          "colorHex": "#FACC15"
+        },
+        {
+          "code": 13,
+          "labels": {
+            "en": "Custom 3",
+            "fr": "Personnalisé 3",
+            "de": "Benutzerdefiniert 3",
+            "es": "Personalizado 3"
+          },
+          "publicSymbol": "HMCharacteristicValuePictureModeCustom3",
+          "colorHex": "#94A3B8"
+        }
+      ],
+      "publicEnum": "HMCharacteristicValuePictureMode"
+    }
+  ],
+  "baselineKeys": {
+    "series": [
+      "app_sales",
+      "atmospheric_pressure",
+      "cloud_cover",
+      "co2_concentration_ppm",
+      "co2_emissions",
+      "coffee_cups",
+      "dew_point_metric",
+      "door_open",
+      "feels_like_temperature_metric",
+      "homekit_air_quality",
+      "humidity",
+      "indoor_air_quality",
+      "light_level",
+      "light_on",
+      "motion_detected",
+      "noise_levels",
+      "outdoor_air_quality",
+      "rainfall",
+      "tasks_completed",
+      "tea_cups",
+      "temperature_indoor_imperial",
+      "temperature_indoor_metric",
+      "temperature_outdoor_imperial",
+      "temperature_outdoor_metric",
+      "uv_index",
+      "visibility",
+      "water_intake",
+      "water_usage",
+      "website_visits",
+      "wind_gust",
+      "wind_speed",
+      "window_open"
+    ],
+    "units": [
+      "bandwidth",
+      "count",
+      "currency",
+      "distance_imperial",
+      "distance_metric",
+      "duration",
+      "energy",
+      "force",
+      "frequency",
+      "glucose",
+      "height_imperial",
+      "height_metric",
+      "luminosity_imperial",
+      "luminosity_metric",
+      "parts_per_million",
+      "percentage",
+      "pressure",
+      "pressure_hpa",
+      "speed_imperial",
+      "speed_metric",
+      "storage",
+      "temperature_imperial",
+      "temperature_metric",
+      "volume_imperial",
+      "volume_metric",
+      "weight_imperial",
+      "weight_metric"
+    ],
+    "svc": [
+      "air_quality_index",
+      "atmospheric_pressure_hpa",
+      "battery_level_percentage",
+      "body_fat_percentage",
+      "body_weight_kg",
+      "co2_concentration_ppm",
+      "door_open_binary",
+      "energy_consumption_kwh",
+      "exercise_duration_minutes",
+      "homekit_air_quality",
+      "humidity_percentage",
+      "inside_temp_deg_c",
+      "inside_temp_deg_f",
+      "light_level_lux",
+      "light_on_binary",
+      "motion_detected_binary",
+      "motion_detection_count",
+      "outside_temp_deg_c",
+      "outside_temp_deg_f",
+      "power_consumption_watts",
+      "screen_time_hours",
+      "sleep_hours",
+      "walking_distance_km",
+      "water_consumption_liters",
+      "window_open_binary"
+    ]
+  }
+}

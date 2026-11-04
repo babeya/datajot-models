@@ -1,39 +1,10 @@
 {
   "key": "light_level_lux",
   "type": "visualizationConfig",
-  "unit": "luminosity_metric",
-  "thresholds": [
-    {
-      "order": 1,
-      "value": 10,
-      "operatorType": "<",
-      "colorHex": "#312E81"
-    },
-    {
-      "order": 2,
-      "value": 100,
-      "operatorType": "<",
-      "colorHex": "#4F46E5"
-    },
-    {
-      "order": 3,
-      "value": 500,
-      "operatorType": "<",
-      "colorHex": "#EAB308"
-    },
-    {
-      "order": 4,
-      "value": 1000,
-      "operatorType": "<",
-      "colorHex": "#F97316"
-    },
-    {
-      "order": 5,
-      "value": 1000,
-      "operatorType": ">=",
-      "colorHex": "#FDE047"
-    }
-  ],
+  "thresholds": [],
+  "thresholdAxisLabelDisplayMode": "value",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
   "showAverage": false,
   "showMedian": false,
   "showSum": false,
@@ -44,6 +15,5 @@
   "showMedianOnChart": false,
   "showMaxOnChart": false,
   "showMinOnChart": false,
-  "autoScaleYAxis": true,
-  "thresholdAxisLabelDisplayMode": "valueAndLabel"
+  "unit": "luminosity_metric"
 }

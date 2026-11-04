@@ -1,20 +1,18 @@
 {
-  "label": "Licht an",
-  "description": "Zeigt an, ob ein Licht an oder aus ist.",
-  "seo": {
-    "keywords": [
-      "licht",
-      "an",
-      "aus",
-      "zustand"
-    ]
-  },
+  "label": "Licht eingeschaltet",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
   "thresholds": {
     "1": {
       "label": "Aus"
     },
     "2": {
-      "label": "An"
+      "label": "Ein"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Licht eingeschaltet",
+      "HomeKit"
+    ]
   }
 }

@@ -1,0 +1,24 @@
+{
+  "label": "Current visibility",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Shown"
+    },
+    "2": {
+      "label": "Hidden"
+    },
+    "3": {
+      "label": "Connected"
+    },
+    "4": {
+      "label": "Always shown"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Current visibility",
+      "HomeKit"
+    ]
+  }
+}

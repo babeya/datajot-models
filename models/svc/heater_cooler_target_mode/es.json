@@ -1,0 +1,21 @@
+{
+  "label": "Modo objetivo del calefactor/refrigerador",
+  "description": "Estados de HomeKit; se conserva el último código observado. Se omiten las lecturas ausentes.",
+  "thresholds": {
+    "1": {
+      "label": "Automático"
+    },
+    "2": {
+      "label": "Calefacción"
+    },
+    "3": {
+      "label": "Refrigeración"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Modo objetivo del calefactor/refrigerador",
+      "HomeKit"
+    ]
+  }
+}

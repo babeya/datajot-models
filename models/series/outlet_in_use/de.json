@@ -1,0 +1,10 @@
+{
+  "name": "Steckdose belegt",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Kein Gerät angeschlossen; 1 = Gerät angeschlossen.",
+  "seo": {
+    "keywords": [
+      "Steckdose belegt",
+      "HomeKit"
+    ]
+  }
+}

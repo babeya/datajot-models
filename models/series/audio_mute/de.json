@@ -1,0 +1,10 @@
+{
+  "name": "Stummschaltung",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Ton an; 1 = Stumm.",
+  "seo": {
+    "keywords": [
+      "Stummschaltung",
+      "HomeKit"
+    ]
+  }
+}

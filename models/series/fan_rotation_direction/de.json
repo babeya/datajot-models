@@ -1,0 +1,10 @@
+{
+  "name": "Drehrichtung",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Im Uhrzeigersinn; 1 = Gegen den Uhrzeigersinn.",
+  "seo": {
+    "keywords": [
+      "Drehrichtung",
+      "HomeKit"
+    ]
+  }
+}

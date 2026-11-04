@@ -1,0 +1,18 @@
+{
+  "label": "État opérationnel du service",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Inactif"
+    },
+    "2": {
+      "label": "Actif"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État opérationnel du service",
+      "HomeKit"
+    ]
+  }
+}

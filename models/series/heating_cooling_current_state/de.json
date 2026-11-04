@@ -1,0 +1,10 @@
+{
+  "name": "Heiz- und Kühlzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Aus; 1 = Heizen; 2 = Kühlen.",
+  "seo": {
+    "keywords": [
+      "Heiz- und Kühlzustand",
+      "HomeKit"
+    ]
+  }
+}

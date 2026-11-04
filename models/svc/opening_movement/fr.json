@@ -1,0 +1,21 @@
+{
+  "label": "Déplacement de l’ouvrant",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "En fermeture"
+    },
+    "2": {
+      "label": "En ouverture"
+    },
+    "3": {
+      "label": "À l’arrêt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Déplacement de l’ouvrant",
+      "HomeKit"
+    ]
+  }
+}

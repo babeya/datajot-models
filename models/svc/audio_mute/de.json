@@ -1,0 +1,18 @@
+{
+  "label": "Stummschaltung",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Ton an"
+    },
+    "2": {
+      "label": "Stumm"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Stummschaltung",
+      "HomeKit"
+    ]
+  }
+}

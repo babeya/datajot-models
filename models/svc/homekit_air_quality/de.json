@@ -1,20 +1,30 @@
 {
-  "label": "HomeKit-Luftqualität",
-  "description": "Zeigt den von HomeKit gemeldeten kategorischen Luftqualitätszustand an.",
+  "label": "Luftqualität",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Unbekannt"
+    },
+    "2": {
+      "label": "Ausgezeichnet"
+    },
+    "3": {
+      "label": "Gut"
+    },
+    "4": {
+      "label": "Mäßig"
+    },
+    "5": {
+      "label": "Minderwertig"
+    },
+    "6": {
+      "label": "Schlecht"
+    }
+  },
   "seo": {
     "keywords": [
-      "HomeKit",
       "Luftqualität",
-      "kategorischer Zustand",
-      "Innenraum"
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": { "label": "Unbekannt" },
-    "2": { "label": "Ausgezeichnet" },
-    "3": { "label": "Gut" },
-    "4": { "label": "Mittelmäßig" },
-    "5": { "label": "Minderwertig" },
-    "6": { "label": "Schlecht" }
   }
 }

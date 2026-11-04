@@ -1,0 +1,18 @@
+{
+  "label": "Bedienelemente sperren",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Entsperrt"
+    },
+    "2": {
+      "label": "Gesperrt"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Bedienelemente sperren",
+      "HomeKit"
+    ]
+  }
+}

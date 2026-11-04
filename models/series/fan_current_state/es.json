@@ -1,0 +1,10 @@
+{
+  "name": "Estado del ventilador",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Inactivo; 1 = En espera; 2 = En funcionamiento.",
+  "seo": {
+    "keywords": [
+      "Estado del ventilador",
+      "HomeKit"
+    ]
+  }
+}

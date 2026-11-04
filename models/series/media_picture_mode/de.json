@@ -1,0 +1,10 @@
+{
+  "name": "Bildmodus",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Standard; 1 = Film; 2 = Sport; 3 = Spiel; 4 = Foto; 5 = Lebhaft; 6 = Dunkel; 7 = Hell; 8 = Computer; 9 = Nacht; 10 = Kalibriert; 11 = Benutzerdefiniert 1; 12 = Benutzerdefiniert 2; 13 = Benutzerdefiniert 3.",
+  "seo": {
+    "keywords": [
+      "Bildmodus",
+      "HomeKit"
+    ]
+  }
+}

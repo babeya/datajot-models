@@ -1,0 +1,18 @@
+{
+  "label": "Dienstfehler",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Kein Fehler"
+    },
+    "2": {
+      "label": "Allgemeiner Fehler"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Dienstfehler",
+      "HomeKit"
+    ]
+  }
+}

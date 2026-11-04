@@ -1,14 +1,6 @@
 {
   "label": "Porte ouverte",
-  "description": "Affiche l'état ouvert ou fermé d'une porte.",
-  "seo": {
-    "keywords": [
-      "porte",
-      "ouverte",
-      "fermée",
-      "état"
-    ]
-  },
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
   "thresholds": {
     "1": {
       "label": "Fermée"
@@ -16,5 +8,11 @@
     "2": {
       "label": "Ouverte"
     }
+  },
+  "seo": {
+    "keywords": [
+      "Porte ouverte",
+      "HomeKit"
+    ]
   }
 }

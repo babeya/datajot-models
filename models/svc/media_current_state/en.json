@@ -1,0 +1,30 @@
+{
+  "label": "Media playback state",
+  "description": "HomeKit states; the last observed code is kept. Missing readings are omitted.",
+  "thresholds": {
+    "1": {
+      "label": "Playing"
+    },
+    "2": {
+      "label": "Paused"
+    },
+    "3": {
+      "label": "Stopped"
+    },
+    "4": {
+      "label": "Unknown"
+    },
+    "5": {
+      "label": "Loading"
+    },
+    "6": {
+      "label": "Interrupted"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Media playback state",
+      "HomeKit"
+    ]
+  }
+}

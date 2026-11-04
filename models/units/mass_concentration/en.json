@@ -1,0 +1,16 @@
+{
+  "title": "Mass concentration",
+  "description": "Mass per volume of air in µg/m³. No conversion to ppm without additional physical data.",
+  "subUnits": {
+    "ug_m3": {
+      "title": "Micrograms per cubic meter",
+      "abbreviation": "µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Mass concentration",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "label": "Aktivitätszustand",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Inaktiv"
+    },
+    "2": {
+      "label": "Bereit"
+    },
+    "3": {
+      "label": "Aktiv"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Aktivitätszustand",
+      "HomeKit"
+    ]
+  }
+}

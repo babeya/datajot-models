@@ -1,0 +1,21 @@
+{
+  "label": "Ladezustand",
+  "description": "HomeKit-Zustände; der zuletzt beobachtete Code wird beibehalten. Fehlende Werte werden ausgelassen.",
+  "thresholds": {
+    "1": {
+      "label": "Lädt nicht"
+    },
+    "2": {
+      "label": "Wird geladen"
+    },
+    "3": {
+      "label": "Nicht aufladbar"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Ladezustand",
+      "HomeKit"
+    ]
+  }
+}

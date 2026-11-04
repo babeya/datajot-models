@@ -1,29 +1,11 @@
 {
-  "label": "Battery Level (%)",
-  "description": "Monitor battery level percentage for device management",
+  "label": "Battery level",
+  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
+  "thresholds": {},
   "seo": {
     "keywords": [
-      "battery",
-      "power",
-      "device",
-      "monitoring"
+      "Battery level",
+      "HomeKit"
     ]
-  },
-  "thresholds": {
-    "1": {
-      "label": "Critical"
-    },
-    "2": {
-      "label": "Low"
-    },
-    "3": {
-      "label": "Medium"
-    },
-    "4": {
-      "label": "Good"
-    },
-    "5": {
-      "label": "Full"
-    }
   }
 }

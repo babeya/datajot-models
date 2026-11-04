@@ -1,0 +1,45 @@
+{
+  "label": "Dernière action de serrure",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Verrouillée manuellement de l’intérieur"
+    },
+    "2": {
+      "label": "Déverrouillée manuellement de l’intérieur"
+    },
+    "3": {
+      "label": "Verrouillée manuellement de l’extérieur"
+    },
+    "4": {
+      "label": "Déverrouillée manuellement de l’extérieur"
+    },
+    "5": {
+      "label": "Verrouillée par clavier"
+    },
+    "6": {
+      "label": "Déverrouillée par clavier"
+    },
+    "7": {
+      "label": "Verrouillée à distance"
+    },
+    "8": {
+      "label": "Déverrouillée à distance"
+    },
+    "9": {
+      "label": "Verrouillée après délai"
+    },
+    "10": {
+      "label": "Verrouillée manuellement"
+    },
+    "11": {
+      "label": "Déverrouillée manuellement"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Dernière action de serrure",
+      "HomeKit"
+    ]
+  }
+}

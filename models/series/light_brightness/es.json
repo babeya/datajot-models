@@ -1,0 +1,10 @@
+{
+  "name": "Intensidad luminosa",
+  "description": "Valor bruto de HomeKit — Intensidad luminosa (%).",
+  "seo": {
+    "keywords": [
+      "Intensidad luminosa",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Lamellenzustand",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Stillstehend; 1 = Blockiert; 2 = Schwingend.",
+  "seo": {
+    "keywords": [
+      "Lamellenzustand",
+      "HomeKit"
+    ]
+  }
+}

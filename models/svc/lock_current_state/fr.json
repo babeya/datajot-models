@@ -1,0 +1,24 @@
+{
+  "label": "État de la serrure",
+  "description": "États HomeKit ; le dernier code observé est conservé. Les lectures absentes sont omises.",
+  "thresholds": {
+    "1": {
+      "label": "Déverrouillée"
+    },
+    "2": {
+      "label": "Verrouillée"
+    },
+    "3": {
+      "label": "Bloquée"
+    },
+    "4": {
+      "label": "Inconnue"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "État de la serrure",
+      "HomeKit"
+    ]
+  }
+}

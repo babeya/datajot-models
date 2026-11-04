@@ -232,7 +232,7 @@ type SVC = {
   key: string;
   type: "visualizationConfig";
   unit?: string;
-  thresholds: ThresholdOutput[];
+  thresholds: ThresholdOutput[]; // Empty for neutral numeric visualizations
   thresholdAxisLabelDisplayMode: ThresholdAxisLabelDisplayMode;
   showAverage: boolean;
   showMedian: boolean;
@@ -245,6 +245,7 @@ type SVC = {
   showMaxOnChart: false;
   showMinOnChart: false;
   autoScaleYAxis: boolean;
+  includesEmptyAggregates?: boolean; // False omits missing buckets; supported by SVCTemplate
 }
 
 ```
@@ -266,3 +267,20 @@ Threshold labels are localized. Keep numeric threshold data in `model.json`, and
 ```
 
 The build script merges each translation into the corresponding threshold, so generated bundles expose `thresholds` as an array where every threshold includes its localized `label`.
+
+A neutral numeric configuration uses `thresholds: []` in `model.json` and
+`thresholds: {}` in each translation. The generated configuration still contains
+an empty array, as required by the Swift decoder. Do not invent interpretation
+thresholds just to populate this array.
+
+For categorical HomeKit states, use one threshold per raw code with `value` equal
+to that code and `operatorType: "<="`, ordered by increasing code. This supports
+both first-matching color lookup and exact-value label lookup in DataJot.
+Use `aggregationMethod: "last"`, zero decimals, label-only thresholds, and disable
+all statistics. Valid domains belong to the HomeKit integration contract, not to
+new bundle fields. Out-of-domain readings must be rejected by the application.
+
+HomeKit configurations set `includesEmptyAggregates: false`. Missing readings
+remain absent; a recorded zero is a real reading, including an explicit unknown
+state when defined by HomeKit. The catalogue does not express state duration or
+forward filling.

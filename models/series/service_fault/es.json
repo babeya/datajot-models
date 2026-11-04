@@ -1,0 +1,10 @@
+{
+  "name": "Fallo del servicio",
+  "description": "Estado de HomeKit, sin unidad física. 0 = Sin fallo; 1 = Fallo general.",
+  "seo": {
+    "keywords": [
+      "Fallo del servicio",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Rotation direction",
+  "description": "HomeKit state, without a physical unit. 0 = Clockwise; 1 = Counterclockwise.",
+  "seo": {
+    "keywords": [
+      "Rotation direction",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Bildspiegelung",
+  "description": "HomeKit-Zustand ohne physikalische Einheit. 0 = Nicht gespiegelt; 1 = Gespiegelt.",
+  "seo": {
+    "keywords": [
+      "Bildspiegelung",
+      "HomeKit"
+    ]
+  }
+}
