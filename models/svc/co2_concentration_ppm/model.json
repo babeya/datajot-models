@@ -1,16 +1,47 @@
 {
   "key": "co2_concentration_ppm",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 800,
+      "operatorType": "<",
+      "colorHex": "#22C55E"
+    },
+    {
+      "order": 2,
+      "value": 1000,
+      "operatorType": "<",
+      "colorHex": "#84CC16"
+    },
+    {
+      "order": 3,
+      "value": 1500,
+      "operatorType": "<",
+      "colorHex": "#F59E0B"
+    },
+    {
+      "order": 4,
+      "value": 2000,
+      "operatorType": "<",
+      "colorHex": "#F97316"
+    },
+    {
+      "order": 5,
+      "value": 2000,
+      "operatorType": ">=",
+      "colorHex": "#EF4444"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
-  "showAverage": false,
+  "showAverage": true,
   "showMedian": false,
   "showSum": false,
   "showCount": false,
-  "showMax": false,
-  "showMin": false,
+  "showMax": true,
+  "showMin": true,
   "showAverageOnChart": false,
   "showMedianOnChart": false,
   "showMaxOnChart": false,

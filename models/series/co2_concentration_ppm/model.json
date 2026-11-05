@@ -6,7 +6,7 @@
   "unit": "parts_per_million",
   "svc": "co2_concentration_ppm",
   "decimalPrecision": 1,
-  "color": "#10B981",
-  "graphType": "line",
+  "color": "#22C55E",
+  "graphType": "area",
   "aggregationMethod": "average"
 }

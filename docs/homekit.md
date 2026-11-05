@@ -1,19 +1,23 @@
 # Catalogue HomeKit — contrat d’intégration
 
-Livraison du 4 novembre 2026, issue [datajot-models#7](https://github.com/babeya/datajot-models/issues/7),
+Catalogue du 4 novembre 2026, issue [datajot-models#7](https://github.com/babeya/datajot-models/issues/7),
 en lien avec [datajot#95](https://github.com/babeya/datajot/issues/95).
+Personnalisation des visualisations du 5 novembre 2026 :
+[datajot-models#9](https://github.com/babeya/datajot-models/issues/9).
 Référence applicative : [`832dde91`](https://github.com/babeya/datajot/tree/832dde91383bfab0379c580313b26f5d6f1b92f6).
 Réaudit du catalogue : `e98ec69`, 32 séries, 27 unités, 25 configurations.
 
-Le catalogue contient désormais **128 séries, 30 unités et 89 configurations** :
-96 séries, 3 unités et 64 configurations ajoutées. Les 103 caractéristiques ont
-une correspondance prête ; aucune définition n’est bloquée. Chaque famille réutilise
-les unités et configurations compatibles : les sept polluants massiques partagent
-une configuration neutre ; les pourcentages, durées et inclinaisons partagent leurs
-configurations ; ventilateur et purificateur partagent leurs domaines d’activité
-et de mode manuel/automatique. Les séries gardent des noms distincts pour identifier
-le polluant, le rôle courant/cible/pic et l’orientation. Leur nombre ne pilote pas
-la couverture : c’est la liste des identifiants applicatifs qui est contrôlée.
+Le catalogue contient **128 séries, 30 unités et 107 configurations** :
+96 séries, 3 unités et 82 configurations ajoutées depuis la référence initiale,
+dont 18 configurations dédiées à la personnalisation. Les 103 caractéristiques
+ont une correspondance prête : **43 mesures numériques avec seuils** et
+**60 états avec couleurs par code**. Les unités restent partagées ; les
+configurations ne sont réutilisées que pour des mesures de même sens.
+Ouverture, luminosité, saturation, humidité cible, vitesse, filtre, eau et volume
+ont ainsi leurs propres bandes malgré leur unité commune en pourcentage.
+Les polluants, les pics et la rotation d’image ont des configurations adaptées.
+Les séries gardent leurs noms distincts pour identifier le polluant, le rôle
+courant/cible/pic et l’orientation.
 
 Ces ressources sont livrées dans les sources et les bundles locaux reconstruits.
 **Le raccordement applicatif reste à réaliser** : cette livraison ne rend pas les
@@ -29,6 +33,8 @@ Aucun fichier du dépôt applicatif ni aucune série personnelle n’a été mod
   ajustées. `baselineKeys` conserve l’inventaire historique vérifié.
 - [Table des codes](homekit-states.md) : codes, symboles publics Apple, libellés français
   et couleurs. Les quatre traductions figurent aussi dans chaque configuration source.
+- [Visualisations](homekit-visualizations.md) : seuils, palettes, statistiques et
+  sources des repères pour les 43 mesures numériques.
 - `models/{units,series,svc}/` : source de vérité des définitions et traductions.
   La matrice documente le raccordement, sans introduire de champ de bundle.
 - `scripts/validate_homekit.js` : contrôles reproductibles du contrat et du rendu des codes.
@@ -59,16 +65,31 @@ codes. Aucun opérateur JSON `==` n’est ajouté. Les couleurs catégorielles n
 pas une échelle générale de gravité ; les détections de fumée, fuite, gaz et obstacle
 ainsi que les défauts utilisent du rouge, les états inconnus du gris.
 
-Toutes les visualisations continues concernées sont **neutres**, avec `thresholds: []`.
-Les anciennes configurations `co2_concentration_ppm`, `inside_temp_deg_c`,
-`humidity_percentage`, `light_level_lux` et `battery_level_percentage` conservent
-leurs clés et unités mais perdent leurs bandes interprétatives non justifiées par
-une source dans le dépôt. Cela concerne aussi leur réutilisation hors HomeKit dans
-les nouveaux modèles créés à partir du catalogue. Le signal `statusLowBattery`
-reste distinct : il rapporte l’indication propre à l’accessoire, sans seuil déduit
-du pourcentage. Aucun seuil CO₂ n’est réutilisé pour CO, ozone, NO₂, SO₂, COV ou PM.
+La température intérieure conserve le préréglage partagé `inside_temp_deg_c` et
+ses cinq bandes de confort historiques : < 16 °C, < 19 °C, < 21 °C, < 24 °C et
+≥ 24 °C, du bleu au rouge, avec leurs libellés dans les quatre langues.
+La moyenne, le minimum et le maximum sont affichés ; les lignes statistiques
+sur le graphique restent désactivées. La matrice identifie ce choix par
+`thresholdPolicy: "comfort_bands"`. Il s’agit du préréglage du catalogue, commun
+aux modèles HomeKit et généraux, sans qualification sanitaire. Les lectures
+absentes restent omises avec `includesEmptyAggregates: false`.
+
+Les autres mesures ont aussi des bandes personnalisées : repères intérieurs pour
+l’humidité et le CO₂, plages d’éclairement, cercle chromatique pour la teinte,
+blanc froid vers blanc chaud pour les mired, niveaux de réserve, ouverture,
+réglages, durées et zoom. Les lectures de concentration CO et massique utilisent
+des plages numériques descriptives propres à chaque polluant, avec un dégradé
+bleu/violet, sans AQI ni interprétation sanitaire d’une lecture instantanée.
+Les seuils, sources et choix éditoriaux sont détaillés dans les
+[visualisations](homekit-visualizations.md).
+
+Les mesures observées affichent moyenne, minimum et maximum. Les pics affichent
+seulement le maximum ; les réglages et niveaux affichent minimum et maximum.
+La teinte, les inclinaisons et la rotation d’image désactivent les statistiques.
+Les lignes statistiques restent désactivées sur tous les graphiques.
+Les alertes propres à l’accessoire (batterie faible, filtre à remplacer,
+détection de gaz) restent indépendantes de ces repères de lecture.
 La qualité d’air HomeKit 0–5 conserve ses catégories Apple, sans devenir un AQI.
-Les autres préréglages historiques hors de ce périmètre sont conservés.
 
 Les validateurs et le build acceptent désormais un tableau de seuils vide et valident
 le booléen facultatif `includesEmptyAggregates`. Aucun schéma Swift ne doit changer
@@ -135,9 +156,9 @@ restent aussi des responsabilités du pipeline applicatif.
    disponibilité ou dernière présence en ligne n’est ajoutée par cette livraison.
 
 Décisions restantes : implémenter et tester ce raccordement dans `babeya/datajot#95` ;
-choisir éventuellement des seuils interprétatifs sourcés par polluant et contexte ;
-définir un éventuel futur contrat de bornes d’axe. Aucun de ces choix ne bloque les
-modèles neutres livrés. Aucune migration implicite des séries ou mesures existantes.
+définir un éventuel futur contrat de bornes d’axe. Les bandes descriptives de
+polluants peuvent être adaptées au contexte sans changer les unités brutes.
+Aucune migration implicite des séries ou mesures existantes.
 
 ## Validation réalisée
 
@@ -154,8 +175,10 @@ Les quatre commandes passent. Le contrôle HomeKit vérifie les 103 identifiants
 sans doublon, la conservation des 32/27/25 clés historiques, les jeux de clés identiques
 en quatre langues, les références et intégrations imbriquées, l’absence de nouvelle
 ressource orpheline, les deux modes de recherche des libellés pour chaque code
-(minimum, maximum et inconnus inclus), les statistiques désactivées, la séparation
-des unités et les exemples numériques bruts. Les anciens préréglages autonomes
+(minimum, maximum et inconnus inclus), les statistiques adaptées, la couverture
+des valeurs avant/sur/après chaque seuil numérique, les bandes toutes accessibles,
+la séparation des familles, les unités et les exemples numériques bruts.
+Les anciens préréglages autonomes
 sans série, comme `motion_detection_count`, restent disponibles et ne sont pas
 utilisés pour transformer du mouvement en comptage.
 
@@ -164,8 +187,15 @@ rejetés : seuils sous forme d’objet, booléen sous forme de chaîne, identifi
 libellé français décalé, moyenne de mouvement et sous-unité kelvin multiplicative
 pour mired. Le validateur signale aussi proprement un tableau de seuils invalide.
 
-Un essai isolé avec `JSONDecoder` Swift a décodé les quatre bundles : 128 séries,
-30 unités, 89 configurations par langue. Il réutilise les déclarations des structs
+La révision du 5 novembre ajoute huit essais isolés rejetés : visualisation
+numérique redevenue neutre, plage de volume non couverte, bande d’ouverture
+inaccessible, moyenne d’un pic de CO₂, orientation 270° décalée, libellé français
+absent, couleurs mired inversées et détection de fumée verte. Les 103 contrats
+d’unités, domaines, agrégations et codes restent identiques à ceux du 4 novembre.
+
+Lors de la livraison du 4 novembre, un essai isolé avec `JSONDecoder` Swift a
+décodé les quatre bundles de cette livraison : 128 séries, 30 unités,
+89 configurations par langue. Il réutilise les déclarations des structs
 `SeriesTemplate`, `UnitTemplate`, `SubUnitTemplate`, `CategoryTemplate`, `SVCTemplate`,
 `ThresholdConfigTemplate`, `YAxisBoundConfigTemplate` du commit applicatif cité,
 avec les valeurs brutes des enums nécessaires, en excluant seulement leurs adaptateurs
@@ -188,33 +218,33 @@ dans la [table des états](homekit-states.md) et dans la matrice JSON.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `temperature` | `temperature_indoor_metric` E* | `temperature_metric` E | `inside_temp_deg_c` E* | `average` | 1 | P0 | métadonnées | Aucune condition supplémentaire. |
 | `humidity` | `humidity` E* | `percentage` E | `humidity_percentage` E* | `average` | 1 | P0 | 0…100 | Aucune condition supplémentaire. |
-| `carbonDioxide` | `co2_concentration_ppm` E | `parts_per_million` E | `co2_concentration_ppm` E* | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
+| `carbonDioxide` | `co2_concentration_ppm` E* | `parts_per_million` E | `co2_concentration_ppm` E* | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
 | `airQuality` | `homekit_air_quality` E | — | `homekit_air_quality` E* | `last` | 0 | P0 | 0…5 entiers | Aucune condition supplémentaire. |
 | `lightLevel` | `light_level` E* | `luminosity_metric` E | `light_level_lux` E* | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
-| `contactState` | `door_open` E | — | `door_open_binary` E* | `last` | 0 | P0 | 0…1 entiers | Correspondance historique de contact : 0 = contact détecté, 1 = contact absent. window_open uniquement si le service confirme une fenêtre ; aucun choix automatique sans contexte. |
-| `motionDetected` | `motion_detected` E | — | `motion_detected_binary` E* | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
+| `contactState` | `door_open` E* | — | `door_open_binary` E* | `last` | 0 | P0 | 0…1 entiers | Correspondance historique de contact : 0 = contact détecté, 1 = contact absent. window_open uniquement si le service confirme une fenêtre ; aucun choix automatique sans contexte. |
+| `motionDetected` | `motion_detected` E* | — | `motion_detected_binary` E* | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
 | `occupancyDetected` | `occupancy_detected` + | — | `occupancy_detected` + | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
 | `powerState` | `device_power_state` + | — | `device_power_state` + | `last` | 0 | P0 | 0…1 entiers | Modèle générique par défaut. light_on/light_on_binary seulement si le service est explicitement une lumière ; jamais une puissance en watts. |
 | `outletInUse` | `outlet_in_use` + | — | `outlet_in_use` + | `last` | 0 | P0 | 0…1 entiers | Un appareil peut être branché même éteint ; cet état ne mesure ni la consommation ni la puissance. |
 | `currentPosition` | `opening_position` + | `percentage` E | `homekit_percentage` + | `last` | 0 | P0 | 0…100 | 0 = fermeture complète ; 100 = ouverture complète. Position observée, distincte du contact et de la consigne. |
-| `carbonDioxidePeakLevel` | `co2_peak_concentration_ppm` + | `parts_per_million` E | `gas_concentration_ppm` + | `last` | 1 | P1 | 0… (fini) | Raccordement explicite au nouveau modèle de pic. La clé co2_concentration_ppm reste disponible ; les séries existantes ne sont pas migrées. |
+| `carbonDioxidePeakLevel` | `co2_peak_concentration_ppm` + | `parts_per_million` E | `co2_peak_concentration_ppm` + | `last` | 1 | P1 | 0… (fini) | Raccordement explicite au nouveau modèle de pic. La clé co2_concentration_ppm reste disponible ; les séries existantes ne sont pas migrées. |
 | `carbonMonoxide` | `co_concentration_ppm` + | `parts_per_million` E | `gas_concentration_ppm` + | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
-| `carbonMonoxidePeakLevel` | `co_peak_concentration_ppm` + | `parts_per_million` E | `gas_concentration_ppm` + | `last` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
+| `carbonMonoxidePeakLevel` | `co_peak_concentration_ppm` + | `parts_per_million` E | `co_peak_concentration_ppm` + | `last` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
 | `airParticulateDensity` | `air_particulate_concentration` + | `mass_concentration` + | `mass_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Concentration générique ; conserver séparément la caractéristique airParticulateSize, sans déduire PM2,5 ou PM10 en son absence. |
-| `ozoneDensity` | `ozone_concentration` + | `mass_concentration` + | `mass_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
-| `nitrogenDioxideDensity` | `no2_concentration` + | `mass_concentration` + | `mass_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
-| `sulphurDioxideDensity` | `so2_concentration` + | `mass_concentration` + | `mass_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
-| `pm2_5Density` | `pm2_5_concentration` + | `mass_concentration` + | `mass_concentration_ug_m3` + | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
-| `pm10Density` | `pm10_concentration` + | `mass_concentration` + | `mass_concentration_ug_m3` + | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
-| `volatileOrganicCompoundDensity` | `voc_concentration` + | `mass_concentration` + | `mass_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
+| `ozoneDensity` | `ozone_concentration` + | `mass_concentration` + | `ozone_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
+| `nitrogenDioxideDensity` | `no2_concentration` + | `mass_concentration` + | `no2_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
+| `sulphurDioxideDensity` | `so2_concentration` + | `mass_concentration` + | `so2_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
+| `pm2_5Density` | `pm2_5_concentration` + | `mass_concentration` + | `pm2_5_concentration_ug_m3` + | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
+| `pm10Density` | `pm10_concentration` + | `mass_concentration` + | `pm10_concentration_ug_m3` + | `average` | 1 | P0 | 0… (fini) | Aucune condition supplémentaire. |
+| `volatileOrganicCompoundDensity` | `voc_concentration` + | `mass_concentration` + | `voc_concentration_ug_m3` + | `average` | 1 | P1 | 0… (fini) | Aucune condition supplémentaire. |
 | `airParticulateSize` | `air_particulate_size` + | — | `air_particulate_size` + | `last` | 0 | P1 | 0…1 entiers | Aucune condition supplémentaire. |
 | `smokeDetected` | `smoke_detected` + | — | `smoke_detected` + | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
 | `leakDetected` | `leak_detected` + | — | `leak_detected` + | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
 | `carbonMonoxideDetected` | `co_detected` + | — | `co_detected` + | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
 | `carbonDioxideDetected` | `co2_detected` + | — | `co2_detected` + | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
 | `obstructionDetected` | `obstruction_detected` + | — | `obstruction_detected` + | `last` | 0 | P0 | 0…1 entiers | Aucune condition supplémentaire. |
-| `brightness` | `light_brightness` + | `percentage` E | `homekit_percentage` + | `last` | 0 | P0 | 0…100 | Aucune condition supplémentaire. |
-| `saturation` | `light_saturation` + | `percentage` E | `homekit_percentage` + | `last` | 0 | P1 | 0…100 | Aucune condition supplémentaire. |
+| `brightness` | `light_brightness` + | `percentage` E | `light_brightness_percentage` + | `last` | 0 | P0 | 0…100 | Aucune condition supplémentaire. |
+| `saturation` | `light_saturation` + | `percentage` E | `light_saturation_percentage` + | `last` | 0 | P1 | 0…100 | Aucune condition supplémentaire. |
 | `hue` | `light_hue` + | `angle_degrees` + | `homekit_angle_degrees` + | `last` | 0 | P1 | 0…360 | Angle circulaire : last, sans moyenne arithmétique ni interpolation entre 360° et 0°. |
 | `colorTemperature` | `light_color_temperature` + | `color_temperature_mired` + | `homekit_color_temperature_mired` + | `last` | 0 | P1 | 1…4294967295 ; métadonnées | Bornes effectives fournies par les métadonnées de l’accessoire. Aucune borne UInt32 utilisée comme axe, aucune conversion multiplicative en kelvin. |
 | `outputState` | `switch_output_state` + | — | `switch_output_state` + | `last` | 0 | P2 | 0…1 entiers | État de présentation d’un interrupteur programmable binaire, pas une mesure électrique. |
@@ -239,21 +269,21 @@ dans la [table des états](homekit-states.md) et dans la matrice JSON.
 | `lockPhysicalControls` | `physical_controls_lock` + | — | `physical_controls_lock` + | `last` | 0 | P1 | 0…1 entiers | Aucune condition supplémentaire. |
 | `currentSecuritySystemState` | `security_current_state` + | — | `security_current_state` + | `last` | 0 | P1 | 0…4 entiers | Aucune condition supplémentaire. |
 | `lockMechanismLastKnownAction` | `lock_last_action` + | — | `lock_last_action` + | `last` | 0 | P1 | 0…10 entiers | Aucune condition supplémentaire. |
-| `lockManagementAutoSecureTimeout` | `lock_auto_secure_timeout` + | `duration` E | `homekit_duration_seconds` + | `last` | 0 | P1 | 0…4294967295 | Secondes brutes. Le domaine UInt32 ne définit pas les bornes du graphique. |
+| `lockManagementAutoSecureTimeout` | `lock_auto_secure_timeout` + | `duration` E | `lock_auto_secure_timeout_seconds` + | `last` | 0 | P1 | 0…4294967295 | Secondes brutes. Le domaine UInt32 ne définit pas les bornes du graphique. |
 | `targetTemperature` | `target_temperature` + | `temperature_metric` E | `homekit_temperature_setpoint` + | `last` | 1 | P1 | métadonnées | Aucune condition supplémentaire. |
 | `heatingThreshold` | `heating_temperature_threshold` + | `temperature_metric` E | `homekit_temperature_setpoint` + | `last` | 1 | P1 | métadonnées | Aucune condition supplémentaire. |
 | `coolingThreshold` | `cooling_temperature_threshold` + | `temperature_metric` E | `homekit_temperature_setpoint` + | `last` | 1 | P1 | métadonnées | Aucune condition supplémentaire. |
-| `targetRelativeHumidity` | `target_relative_humidity` + | `percentage` E | `homekit_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
-| `humidifierThreshold` | `humidifier_humidity_threshold` + | `percentage` E | `homekit_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
-| `dehumidifierThreshold` | `dehumidifier_humidity_threshold` + | `percentage` E | `homekit_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
+| `targetRelativeHumidity` | `target_relative_humidity` + | `percentage` E | `humidity_setpoint_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
+| `humidifierThreshold` | `humidifier_humidity_threshold` + | `percentage` E | `humidity_setpoint_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
+| `dehumidifierThreshold` | `dehumidifier_humidity_threshold` + | `percentage` E | `humidity_setpoint_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
 | `currentHeatingCooling` | `heating_cooling_current_state` + | — | `heating_cooling_current_state` + | `last` | 0 | P1 | 0…2 entiers | Aucune condition supplémentaire. |
 | `targetHeaterCoolerState` | `heater_cooler_target_mode` + | — | `heater_cooler_target_mode` + | `last` | 0 | P1 | 0…2 entiers | Aucune condition supplémentaire. |
 | `targetHumidifierDehumidifierState` | `humidifier_target_mode` + | — | `humidifier_target_mode` + | `last` | 0 | P1 | 0…2 entiers | Aucune condition supplémentaire. |
 | `targetHeatingCooling` | `heating_cooling_target_mode` + | — | `heating_cooling_target_mode` + | `last` | 0 | P1 | 0…3 entiers | Aucune condition supplémentaire. |
 | `currentHeaterCoolerState` | `heater_cooler_current_state` + | — | `heater_cooler_current_state` + | `last` | 0 | P1 | 0…3 entiers | Aucune condition supplémentaire. |
 | `currentHumidifierDehumidifierState` | `humidifier_current_state` + | — | `humidifier_current_state` + | `last` | 0 | P1 | 0…3 entiers | Aucune condition supplémentaire. |
-| `rotationSpeed` | `fan_rotation_speed` + | `percentage` E | `homekit_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
-| `filterLifeLevel` | `filter_life_level` + | `percentage` E | `homekit_percentage` + | `last` | 0 | P2 | 0…100 | Aucune condition supplémentaire. |
+| `rotationSpeed` | `fan_rotation_speed` + | `percentage` E | `fan_speed_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
+| `filterLifeLevel` | `filter_life_level` + | `percentage` E | `filter_life_percentage` + | `last` | 0 | P2 | 0…100 | Aucune condition supplémentaire. |
 | `currentFanState` | `fan_current_state` + | — | `homekit_activity_state` + | `last` | 0 | P1 | 0…2 entiers | Aucune condition supplémentaire. |
 | `currentAirPurifierState` | `air_purifier_current_state` + | — | `homekit_activity_state` + | `last` | 0 | P1 | 0…2 entiers | Aucune condition supplémentaire. |
 | `rotationDirection` | `fan_rotation_direction` + | — | `fan_rotation_direction` + | `last` | 0 | P1 | 0…1 entiers | Aucune condition supplémentaire. |
@@ -261,9 +291,9 @@ dans la [table des états](homekit-states.md) et dans la matrice JSON.
 | `targetAirPurifierState` | `air_purifier_target_mode` + | — | `homekit_manual_automatic` + | `last` | 0 | P1 | 0…1 entiers | Aucune condition supplémentaire. |
 | `swingMode` | `fan_swing_mode` + | — | `fan_swing_mode` + | `last` | 0 | P1 | 0…1 entiers | Aucune condition supplémentaire. |
 | `filterChangeIndication` | `filter_change_needed` + | — | `filter_change_needed` + | `last` | 0 | P2 | 0…1 entiers | Aucune condition supplémentaire. |
-| `waterLevel` | `water_level` + | `percentage` E | `homekit_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
+| `waterLevel` | `water_level` + | `percentage` E | `water_level_percentage` + | `last` | 1 | P1 | 0…100 | Aucune condition supplémentaire. |
 | `setDuration` | `valve_set_duration` + | `duration` E | `homekit_duration_seconds` + | `last` | 0 | P1 | 0…3600 | Aucune condition supplémentaire. |
-| `remainingDuration` | `valve_remaining_duration` + | `duration` E | `homekit_duration_seconds` + | `last` | 0 | P1 | 0…3600 | Aucune condition supplémentaire. |
+| `remainingDuration` | `valve_remaining_duration` + | `duration` E | `valve_remaining_duration_seconds` + | `last` | 0 | P1 | 0…3600 | Aucune condition supplémentaire. |
 | `valveType` | `valve_type` + | — | `valve_type` + | `last` | 0 | P1 | 0…3 entiers | Aucune condition supplémentaire. |
 | `programMode` | `valve_program_mode` + | — | `valve_program_mode` + | `last` | 0 | P1 | 0…2 entiers | Aucune condition supplémentaire. |
 | `batteryLevel` | `battery_level` + | `percentage` E | `battery_level_percentage` E* | `last` | 0 | P0 | 0…100 | Aucune condition supplémentaire. |
@@ -274,13 +304,13 @@ dans la [table des états](homekit-states.md) et dans la matrice JSON.
 | `statusJammed` | `service_jammed` + | — | `service_jammed` + | `last` | 0 | P2 | 0…1 entiers | Aucune condition supplémentaire. |
 | `statusTampered` | `service_tampered` + | — | `service_tampered` + | `last` | 0 | P2 | 0…1 entiers | Aucune condition supplémentaire. |
 | `inputEvent` | `switch_input_event` + | — | `switch_input_event` + | `last` | 0 | P2 | 0…2 entiers | Dernier type d’appui observé ; aucun comptage, aucune durée de maintien implicite. |
-| `volume` | `audio_volume` + | `percentage` E | `homekit_percentage` + | `last` | 0 | P2 | 0…100 | Aucune condition supplémentaire. |
+| `volume` | `audio_volume` + | `percentage` E | `audio_volume_percentage` + | `last` | 0 | P2 | 0…100 | Aucune condition supplémentaire. |
 | `mute` | `audio_mute` + | — | `audio_mute` + | `last` | 0 | P2 | 0…1 entiers | Aucune condition supplémentaire. |
 | `nightVision` | `camera_night_vision` + | — | `camera_night_vision` + | `last` | 0 | P2 | 0…1 entiers | Aucune condition supplémentaire. |
 | `imageMirroring` | `camera_image_mirroring` + | — | `camera_image_mirroring` + | `last` | 0 | P2 | 0…1 entiers | Miroir autour de l’axe vertical. |
 | `opticalZoom` | `camera_optical_zoom` + | — | `homekit_zoom_ratio` + | `last` | 2 | P2 | 0… (fini) | Rapport sans dimension ; limites de l’accessoire, aucune unité physique ni conversion en pourcentage. |
 | `digitalZoom` | `camera_digital_zoom` + | — | `homekit_zoom_ratio` + | `last` | 2 | P2 | 0… (fini) | Rapport sans dimension ; limites de l’accessoire, aucune unité physique ni conversion en pourcentage. |
-| `imageRotation` | `camera_image_rotation` + | `angle_degrees` + | `homekit_angle_degrees` + | `last` | 0 | P2 | 0/90/180/270 | Aucune condition supplémentaire. |
+| `imageRotation` | `camera_image_rotation` + | `angle_degrees` + | `camera_image_rotation_degrees` + | `last` | 0 | P2 | 0/90/180/270 | Aucune condition supplémentaire. |
 | `currentMediaState` | `media_current_state` + | — | `media_current_state` + | `last` | 0 | P2 | 0…5 entiers | Aucune condition supplémentaire. |
 | `targetMediaState` | `media_target_state` + | — | `media_target_state` + | `last` | 0 | P2 | 0…2 entiers | Aucune condition supplémentaire. |
 | `wifiSatelliteStatus` | `wifi_satellite_status` + | — | `wifi_satellite_status` + | `last` | 0 | P2 | 0…2 entiers | Aucune condition supplémentaire. |

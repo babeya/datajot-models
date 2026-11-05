@@ -1,0 +1,27 @@
+{
+  "label": "Lüftergeschwindigkeit",
+  "description": "Lüftergeschwindigkeit in Prozent des Gerätebereichs, nicht in Umdrehungen pro Minute. Die Farbbereiche zeigen steigende Geschwindigkeit.",
+  "thresholds": {
+    "1": {
+      "label": "Drehzahl null"
+    },
+    "2": {
+      "label": "Langsam"
+    },
+    "3": {
+      "label": "Mittel"
+    },
+    "4": {
+      "label": "Schnell"
+    },
+    "5": {
+      "label": "Sehr schnell"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Lüftergeschwindigkeit",
+      "HomeKit"
+    ]
+  }
+}

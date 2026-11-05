@@ -1,0 +1,44 @@
+{
+  "key": "camera_image_rotation_degrees",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0,
+      "operatorType": "<=",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 2,
+      "value": 90,
+      "operatorType": "<=",
+      "colorHex": "#14B8A6"
+    },
+    {
+      "order": 3,
+      "value": 180,
+      "operatorType": "<=",
+      "colorHex": "#8B5CF6"
+    },
+    {
+      "order": 4,
+      "value": 270,
+      "operatorType": "<=",
+      "colorHex": "#EC4899"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "label",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": false,
+  "showMin": false,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "unit": "angle_degrees"
+}

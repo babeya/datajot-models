@@ -1,0 +1,27 @@
+{
+  "label": "Wasserstand",
+  "description": "Gemeldeter Wasserstand in Prozent mit Füllstandsbereichen. Behälterfüllstand, kein Wasserverbrauch oder Lecknachweis.",
+  "thresholds": {
+    "1": {
+      "label": "Leer"
+    },
+    "2": {
+      "label": "Niedriger Stand"
+    },
+    "3": {
+      "label": "Weniger als halbvoll"
+    },
+    "4": {
+      "label": "Mittlerer Stand"
+    },
+    "5": {
+      "label": "Hoher Stand"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Wasserstand",
+      "HomeKit"
+    ]
+  }
+}

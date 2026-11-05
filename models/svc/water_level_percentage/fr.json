@@ -1,0 +1,27 @@
+{
+  "label": "Niveau d’eau",
+  "description": "Niveau d’eau rapporté en pourcentage, avec bandes de remplissage. C’est un niveau de réservoir, distinct d’une consommation ou d’une détection de fuite.",
+  "thresholds": {
+    "1": {
+      "label": "Vide"
+    },
+    "2": {
+      "label": "Niveau bas"
+    },
+    "3": {
+      "label": "Moins de la moitié"
+    },
+    "4": {
+      "label": "Niveau moyen"
+    },
+    "5": {
+      "label": "Niveau haut"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Niveau d’eau",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "label": "Velocidad del ventilador",
+  "description": "Velocidad del ventilador en porcentaje del rango del accesorio, no en revoluciones por minuto. Las bandas destacan el aumento de velocidad.",
+  "thresholds": {
+    "1": {
+      "label": "Velocidad cero"
+    },
+    "2": {
+      "label": "Lenta"
+    },
+    "3": {
+      "label": "Media"
+    },
+    "4": {
+      "label": "Rápida"
+    },
+    "5": {
+      "label": "Muy rápida"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Velocidad del ventilador",
+      "HomeKit"
+    ]
+  }
+}

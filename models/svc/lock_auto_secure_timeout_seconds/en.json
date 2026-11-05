@@ -1,0 +1,27 @@
+{
+  "label": "Auto-lock delay",
+  "description": "Reported lock auto-secure timeout in seconds. Bands describe the duration; zero is displayed without inferring accessory behavior.",
+  "thresholds": {
+    "1": {
+      "label": "0 s"
+    },
+    "2": {
+      "label": "≤ 30 s"
+    },
+    "3": {
+      "label": "30–60 s"
+    },
+    "4": {
+      "label": "1–5 min"
+    },
+    "5": {
+      "label": "> 5 min"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Auto-lock delay",
+      "HomeKit"
+    ]
+  }
+}

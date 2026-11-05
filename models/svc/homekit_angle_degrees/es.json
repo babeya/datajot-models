@@ -1,10 +1,32 @@
 {
-  "label": "Ángulo (°)",
-  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
-  "thresholds": {},
+  "label": "Tono de luz",
+  "description": "Matiz en grados con los colores del círculo cromático. 0° y 360° son rojos; las medias circulares están desactivadas.",
+  "thresholds": {
+    "1": {
+      "label": "Rojo"
+    },
+    "2": {
+      "label": "Amarillo"
+    },
+    "3": {
+      "label": "Verde"
+    },
+    "4": {
+      "label": "Cian"
+    },
+    "5": {
+      "label": "Azul"
+    },
+    "6": {
+      "label": "Magenta"
+    },
+    "7": {
+      "label": "Rojo"
+    }
+  },
   "seo": {
     "keywords": [
-      "Ángulo (°)",
+      "Tono de luz",
       "HomeKit"
     ]
   }

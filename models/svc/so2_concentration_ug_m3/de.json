@@ -1,0 +1,27 @@
+{
+  "label": "SO₂-Konzentration",
+  "description": "Konzentration in µg/m³. Farbbereiche beschreiben die gemeldeten Messwerte, ohne AQI, Bewertung der Expositionsdauer oder gesundheitliche Einstufung.",
+  "thresholds": {
+    "1": {
+      "label": "< 10 µg/m³"
+    },
+    "2": {
+      "label": "10–< 50 µg/m³"
+    },
+    "3": {
+      "label": "50–< 100 µg/m³"
+    },
+    "4": {
+      "label": "100–< 300 µg/m³"
+    },
+    "5": {
+      "label": "≥ 300 µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "SO₂-Konzentration",
+      "HomeKit"
+    ]
+  }
+}

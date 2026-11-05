@@ -1,0 +1,27 @@
+{
+  "label": "CO₂-Spitzenkonzentration",
+  "description": "CO₂ in ppm mit Lüftungs-Richtbereichen. Dauerhafte Werte in belegten Räumen bewerten; ein Einzelwert oder Spitzenwert belegt keine sichere Luft.",
+  "thresholds": {
+    "1": {
+      "label": "Niedriger Spitzenwert"
+    },
+    "2": {
+      "label": "Mäßiger Spitzenwert"
+    },
+    "3": {
+      "label": "Erhöhter Spitzenwert"
+    },
+    "4": {
+      "label": "Hoher Spitzenwert"
+    },
+    "5": {
+      "label": "Sehr hoher Spitzenwert"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "CO₂-Spitzenkonzentration",
+      "HomeKit"
+    ]
+  }
+}

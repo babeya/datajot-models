@@ -1,7 +1,23 @@
 {
   "label": "CO₂-Konzentration",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "description": "CO₂ in ppm mit Lüftungs-Richtbereichen. Dauerhafte Werte in belegten Räumen bewerten; ein Einzelwert oder Spitzenwert belegt keine sichere Luft.",
+  "thresholds": {
+    "1": {
+      "label": "Niedrig"
+    },
+    "2": {
+      "label": "Mäßig"
+    },
+    "3": {
+      "label": "Erhöht"
+    },
+    "4": {
+      "label": "Hoch"
+    },
+    "5": {
+      "label": "Sehr hoch"
+    }
+  },
   "seo": {
     "keywords": [
       "CO₂-Konzentration",

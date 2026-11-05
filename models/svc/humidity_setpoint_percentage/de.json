@@ -1,0 +1,24 @@
+{
+  "label": "Zielluftfeuchtigkeit",
+  "description": "Luftfeuchte-Sollwert in Prozent mit denselben 30–50-%-Bereichen wie die gemessene Luftfeuchte. Keine Mittelwerte von Einstellungen.",
+  "thresholds": {
+    "1": {
+      "label": "Trocken"
+    },
+    "2": {
+      "label": "Bereich 30–50 %"
+    },
+    "3": {
+      "label": "Feucht"
+    },
+    "4": {
+      "label": "Sehr feucht"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Zielluftfeuchtigkeit",
+      "HomeKit"
+    ]
+  }
+}

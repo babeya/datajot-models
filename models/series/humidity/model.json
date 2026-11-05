@@ -5,7 +5,7 @@
   "icon": "humidity.fill",
   "unit": "percentage",
   "svc": "humidity_percentage",
-  "color": "#06B6D4",
+  "color": "#3B82F6",
   "graphType": "area",
   "aggregationMethod": "average",
   "decimalPrecision": 1

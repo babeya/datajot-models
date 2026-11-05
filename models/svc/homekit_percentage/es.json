@@ -1,10 +1,26 @@
 {
-  "label": "Porcentaje",
-  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
-  "thresholds": {},
+  "label": "Posición de apertura",
+  "description": "Posición de apertura: 0 % cerrado y 100 % totalmente abierto. Las mismas bandas se aplican a las posiciones actual y objetivo.",
+  "thresholds": {
+    "1": {
+      "label": "Cerrado"
+    },
+    "2": {
+      "label": "Poco abierto"
+    },
+    "3": {
+      "label": "Parcialmente abierto"
+    },
+    "4": {
+      "label": "Casi abierto"
+    },
+    "5": {
+      "label": "Totalmente abierto"
+    }
+  },
   "seo": {
     "keywords": [
-      "Porcentaje",
+      "Posición de apertura",
       "HomeKit"
     ]
   }

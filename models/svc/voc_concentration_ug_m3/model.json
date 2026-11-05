@@ -1,0 +1,50 @@
+{
+  "key": "voc_concentration_ug_m3",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 100,
+      "operatorType": "<",
+      "colorHex": "#93C5FD"
+    },
+    {
+      "order": 2,
+      "value": 300,
+      "operatorType": "<",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 3,
+      "value": 1000,
+      "operatorType": "<",
+      "colorHex": "#6366F1"
+    },
+    {
+      "order": 4,
+      "value": 3000,
+      "operatorType": "<",
+      "colorHex": "#8B5CF6"
+    },
+    {
+      "order": 5,
+      "value": 3000,
+      "operatorType": ">=",
+      "colorHex": "#C026D3"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
+  "showAverage": true,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": true,
+  "showMin": true,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "unit": "mass_concentration"
+}

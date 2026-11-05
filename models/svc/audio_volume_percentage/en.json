@@ -1,0 +1,27 @@
+{
+  "label": "Audio volume",
+  "description": "Relative volume setting in percent, not measured sound pressure in decibels. Mute is a separate state.",
+  "thresholds": {
+    "1": {
+      "label": "Zero volume"
+    },
+    "2": {
+      "label": "Low"
+    },
+    "3": {
+      "label": "Medium"
+    },
+    "4": {
+      "label": "Loud"
+    },
+    "5": {
+      "label": "Very loud"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Audio volume",
+      "HomeKit"
+    ]
+  }
+}

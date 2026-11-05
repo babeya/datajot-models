@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "sensor.fill",
-  "color": "#0891B2",
+  "color": "#22C55E",
   "graphType": "bar",
   "svc": "service_status_active",
   "decimalPrecision": 0,

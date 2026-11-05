@@ -1,0 +1,27 @@
+{
+  "label": "Verbleibende Dauer",
+  "description": "Ventildauer in unveränderten Sekunden, gruppiert in Minutenbereiche. Countdown-Werte werden nicht summiert und ergeben keinen Wasserverbrauch.",
+  "thresholds": {
+    "1": {
+      "label": "0 s"
+    },
+    "2": {
+      "label": "≤ 1 min"
+    },
+    "3": {
+      "label": "1–5 min"
+    },
+    "4": {
+      "label": "5–15 min"
+    },
+    "5": {
+      "label": "> 15 min"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Verbleibende Dauer",
+      "HomeKit"
+    ]
+  }
+}

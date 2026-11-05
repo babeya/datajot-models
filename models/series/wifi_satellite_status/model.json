@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "play.tv",
-  "color": "#0891B2",
+  "color": "#22C55E",
   "graphType": "bar",
   "svc": "wifi_satellite_status",
   "decimalPrecision": 0,

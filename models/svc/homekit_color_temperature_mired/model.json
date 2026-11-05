@@ -1,16 +1,41 @@
 {
   "key": "homekit_color_temperature_mired",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 200,
+      "operatorType": "<",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 2,
+      "value": 286,
+      "operatorType": "<",
+      "colorHex": "#94A3B8"
+    },
+    {
+      "order": 3,
+      "value": 400,
+      "operatorType": "<",
+      "colorHex": "#FBBF24"
+    },
+    {
+      "order": 4,
+      "value": 400,
+      "operatorType": ">=",
+      "colorHex": "#F97316"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
   "showAverage": false,
   "showMedian": false,
   "showSum": false,
   "showCount": false,
-  "showMax": false,
-  "showMin": false,
+  "showMax": true,
+  "showMin": true,
   "showAverageOnChart": false,
   "showMedianOnChart": false,
   "showMaxOnChart": false,

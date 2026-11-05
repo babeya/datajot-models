@@ -3,9 +3,9 @@
   "type": "series",
   "category": "home",
   "icon": "humidity.fill",
-  "color": "#0891B2",
+  "color": "#3B82F6",
   "graphType": "line",
-  "svc": "homekit_percentage",
+  "svc": "humidity_setpoint_percentage",
   "decimalPrecision": 1,
   "aggregationMethod": "last",
   "unit": "percentage"

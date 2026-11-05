@@ -1,0 +1,27 @@
+{
+  "label": "Lautstärke",
+  "description": "Relative Lautstärkeeinstellung in Prozent, kein gemessener Schalldruck in Dezibel. Stummschaltung ist ein separater Zustand.",
+  "thresholds": {
+    "1": {
+      "label": "Lautstärke null"
+    },
+    "2": {
+      "label": "Leise"
+    },
+    "3": {
+      "label": "Mittel"
+    },
+    "4": {
+      "label": "Laut"
+    },
+    "5": {
+      "label": "Sehr laut"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Lautstärke",
+      "HomeKit"
+    ]
+  }
+}

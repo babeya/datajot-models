@@ -3,9 +3,9 @@
   "type": "series",
   "category": "home",
   "icon": "fan.fill",
-  "color": "#0891B2",
-  "graphType": "line",
-  "svc": "homekit_percentage",
+  "color": "#14B8A6",
+  "graphType": "area",
+  "svc": "fan_speed_percentage",
   "decimalPrecision": 1,
   "aggregationMethod": "last",
   "unit": "percentage"

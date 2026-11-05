@@ -1,10 +1,26 @@
 {
-  "label": "Inclinaison (°)",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "label": "Inclinaison horizontale",
+  "description": "Inclinaison signée en degrés. La bande centrale va de −5° à +5° ; les signes décrivent l’orientation sans déduire une ouverture ou une fermeture.",
+  "thresholds": {
+    "1": {
+      "label": "Négative marquée"
+    },
+    "2": {
+      "label": "Négative"
+    },
+    "3": {
+      "label": "Centrée"
+    },
+    "4": {
+      "label": "Positive"
+    },
+    "5": {
+      "label": "Positive marquée"
+    }
+  },
   "seo": {
     "keywords": [
-      "Inclinaison (°)",
+      "Inclinaison horizontale",
       "HomeKit"
     ]
   }

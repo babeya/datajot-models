@@ -1,0 +1,27 @@
+{
+  "label": "Filter life remaining",
+  "description": "Remaining filter life reported by the accessory. Visual reserve bands do not replace its separate filter-change indication.",
+  "thresholds": {
+    "1": {
+      "label": "Depleted"
+    },
+    "2": {
+      "label": "Nearly depleted"
+    },
+    "3": {
+      "label": "Low remaining life"
+    },
+    "4": {
+      "label": "Remaining life"
+    },
+    "5": {
+      "label": "High remaining life"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Filter life remaining",
+      "HomeKit"
+    ]
+  }
+}

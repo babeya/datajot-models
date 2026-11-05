@@ -1,10 +1,26 @@
 {
-  "label": "Pourcentage",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "label": "Position de l’ouvrant",
+  "description": "Position d’ouverture : 0 % fermé, 100 % entièrement ouvert. Les mêmes bandes s’appliquent aux positions courante et cible.",
+  "thresholds": {
+    "1": {
+      "label": "Fermé"
+    },
+    "2": {
+      "label": "Peu ouvert"
+    },
+    "3": {
+      "label": "Partiellement ouvert"
+    },
+    "4": {
+      "label": "Presque ouvert"
+    },
+    "5": {
+      "label": "Entièrement ouvert"
+    }
+  },
   "seo": {
     "keywords": [
-      "Pourcentage",
+      "Position de l’ouvrant",
       "HomeKit"
     ]
   }

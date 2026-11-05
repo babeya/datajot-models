@@ -6,7 +6,7 @@
   "unit": "luminosity_metric",
   "svc": "light_level_lux",
   "color": "#EAB308",
-  "graphType": "line",
+  "graphType": "area",
   "aggregationMethod": "average",
   "decimalPrecision": 1
 }

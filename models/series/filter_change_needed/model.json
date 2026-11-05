@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "fan.fill",
-  "color": "#0891B2",
+  "color": "#F59E0B",
   "graphType": "bar",
   "svc": "filter_change_needed",
   "decimalPrecision": 0,

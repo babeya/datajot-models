@@ -1,0 +1,24 @@
+{
+  "label": "Humedad objetivo",
+  "description": "Consigna de humedad en porcentaje, con las mismas referencias del 30–50 % que la humedad observada. No se promedian los ajustes.",
+  "thresholds": {
+    "1": {
+      "label": "Seco"
+    },
+    "2": {
+      "label": "Intervalo 30–50 %"
+    },
+    "3": {
+      "label": "Húmedo"
+    },
+    "4": {
+      "label": "Muy húmedo"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Humedad objetivo",
+      "HomeKit"
+    ]
+  }
+}

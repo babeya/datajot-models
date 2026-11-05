@@ -1,0 +1,27 @@
+{
+  "label": "Vida útil restante del filtro",
+  "description": "Vida útil restante del filtro registrada por el accesorio. Las bandas de reserva no sustituyen su indicación independiente de cambio.",
+  "thresholds": {
+    "1": {
+      "label": "Agotado"
+    },
+    "2": {
+      "label": "Casi agotado"
+    },
+    "3": {
+      "label": "Vida útil baja"
+    },
+    "4": {
+      "label": "Vida útil disponible"
+    },
+    "5": {
+      "label": "Vida útil alta"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Vida útil restante del filtro",
+      "HomeKit"
+    ]
+  }
+}

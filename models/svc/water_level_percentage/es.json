@@ -1,0 +1,27 @@
+{
+  "label": "Nivel de agua",
+  "description": "Nivel de agua registrado en porcentaje, con bandas de llenado. Es un nivel de depósito, no consumo de agua ni detección de fugas.",
+  "thresholds": {
+    "1": {
+      "label": "Vacío"
+    },
+    "2": {
+      "label": "Nivel bajo"
+    },
+    "3": {
+      "label": "Menos de la mitad"
+    },
+    "4": {
+      "label": "Nivel medio"
+    },
+    "5": {
+      "label": "Nivel alto"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Nivel de agua",
+      "HomeKit"
+    ]
+  }
+}

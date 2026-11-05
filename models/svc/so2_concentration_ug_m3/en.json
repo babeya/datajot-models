@@ -1,0 +1,27 @@
+{
+  "label": "SO₂ concentration",
+  "description": "Concentration in µg/m³. Colored magnitude bands describe the reported values, without an AQI, exposure-duration assessment or safety classification.",
+  "thresholds": {
+    "1": {
+      "label": "< 10 µg/m³"
+    },
+    "2": {
+      "label": "10–< 50 µg/m³"
+    },
+    "3": {
+      "label": "50–< 100 µg/m³"
+    },
+    "4": {
+      "label": "100–< 300 µg/m³"
+    },
+    "5": {
+      "label": "≥ 300 µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "SO₂ concentration",
+      "HomeKit"
+    ]
+  }
+}

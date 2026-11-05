@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "fan.fill",
-  "color": "#0891B2",
+  "color": "#14B8A6",
   "graphType": "bar",
   "svc": "homekit_activity_state",
   "decimalPrecision": 0,

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "battery.100percent",
-  "color": "#0891B2",
+  "color": "#22C55E",
   "graphType": "bar",
   "svc": "battery_charging_state",
   "decimalPrecision": 0,

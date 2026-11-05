@@ -1,10 +1,26 @@
 {
-  "label": "Inclinación (°)",
-  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
-  "thresholds": {},
+  "label": "Inclinación horizontal",
+  "description": "Inclinación con signo en grados. La banda central abarca de −5° a +5°; los signos describen la orientación sin inferir apertura o cierre.",
+  "thresholds": {
+    "1": {
+      "label": "Negativa marcada"
+    },
+    "2": {
+      "label": "Negativa"
+    },
+    "3": {
+      "label": "Centrada"
+    },
+    "4": {
+      "label": "Positiva"
+    },
+    "5": {
+      "label": "Positiva marcada"
+    }
+  },
   "seo": {
     "keywords": [
-      "Inclinación (°)",
+      "Inclinación horizontal",
       "HomeKit"
     ]
   }

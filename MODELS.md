@@ -273,6 +273,12 @@ A neutral numeric configuration uses `thresholds: []` in `model.json` and
 an empty array, as required by the Swift decoder. Do not invent interpretation
 thresholds just to populate this array.
 
+HomeKit numeric templates use measurement-specific visual bands, described in
+`docs/homekit-visualizations.md`. Share a configuration only when the measurement
+meaning, bands and statistics agree: opening, volume and remaining battery are
+different uses of a percentage. Keep raw units and distinguish descriptive
+concentration bands from health or AQI limits, which require additional context.
+
 For categorical HomeKit states, use one threshold per raw code with `value` equal
 to that code and `operatorType: "<="`, ordered by increasing code. This supports
 both first-matching color lookup and exact-value label lookup in DataJot.

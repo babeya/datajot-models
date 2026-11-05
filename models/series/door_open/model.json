@@ -5,7 +5,7 @@
   "icon": "door.left.hand.open",
   "svc": "door_open_binary",
   "decimalPrecision": 0,
-  "color": "#0EA5E9",
+  "color": "#F59E0B",
   "graphType": "bar",
   "aggregationMethod": "last"
 }

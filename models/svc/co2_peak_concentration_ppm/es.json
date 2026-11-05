@@ -1,0 +1,27 @@
+{
+  "label": "Pico de CO₂",
+  "description": "CO₂ en ppm con referencias de ventilación. Evaluar niveles persistentes en salas ocupadas; una lectura o un pico aislado no determina la seguridad del aire.",
+  "thresholds": {
+    "1": {
+      "label": "Pico bajo"
+    },
+    "2": {
+      "label": "Pico moderado"
+    },
+    "3": {
+      "label": "Pico elevado"
+    },
+    "4": {
+      "label": "Pico alto"
+    },
+    "5": {
+      "label": "Pico muy alto"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Pico de CO₂",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,10 +1,26 @@
 {
-  "label": "Neigung (°)",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "Horizontale Neigung",
+  "description": "Vorzeichenbehaftete Neigung in Grad. Der mittlere Farbbereich reicht von −5° bis +5°; das Vorzeichen beschreibt keine offene oder geschlossene Stellung.",
+  "thresholds": {
+    "1": {
+      "label": "Stark negativ"
+    },
+    "2": {
+      "label": "Negativ"
+    },
+    "3": {
+      "label": "Zentriert"
+    },
+    "4": {
+      "label": "Positiv"
+    },
+    "5": {
+      "label": "Stark positiv"
+    }
+  },
   "seo": {
     "keywords": [
-      "Neigung (°)",
+      "Horizontale Neigung",
       "HomeKit"
     ]
   }

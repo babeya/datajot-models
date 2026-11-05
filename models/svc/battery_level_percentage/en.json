@@ -1,7 +1,23 @@
 {
   "label": "Battery level",
-  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
-  "thresholds": {},
+  "description": "Battery charge in percent, from low reserve to high charge. Bands are visual presets; the accessory reports its own low-battery state separately.",
+  "thresholds": {
+    "1": {
+      "label": "Very low"
+    },
+    "2": {
+      "label": "Low"
+    },
+    "3": {
+      "label": "Medium charge"
+    },
+    "4": {
+      "label": "Charged"
+    },
+    "5": {
+      "label": "High charge"
+    }
+  },
   "seo": {
     "keywords": [
       "Battery level",

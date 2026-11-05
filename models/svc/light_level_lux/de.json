@@ -1,10 +1,29 @@
 {
-  "label": "Beleuchtungsstärke (lx)",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "Beleuchtungsstärke",
+  "description": "Beleuchtungsstärke in Lux, von Dunkelheit bis zu hellem Licht. Der Bedarf hängt von Tätigkeit und Sensorposition ab.",
+  "thresholds": {
+    "1": {
+      "label": "Dunkel"
+    },
+    "2": {
+      "label": "Sehr gedämpft"
+    },
+    "3": {
+      "label": "Gedämpft"
+    },
+    "4": {
+      "label": "Beleuchtet"
+    },
+    "5": {
+      "label": "Hell"
+    },
+    "6": {
+      "label": "Sehr hell"
+    }
+  },
   "seo": {
     "keywords": [
-      "Beleuchtungsstärke (lx)",
+      "Beleuchtungsstärke",
       "HomeKit"
     ]
   }

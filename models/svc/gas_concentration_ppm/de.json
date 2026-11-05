@@ -1,10 +1,26 @@
 {
-  "label": "Gaskonzentration (ppm)",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "CO-Konzentration",
+  "description": "Konzentration in ppm. Farbbereiche beschreiben die gemeldeten Messwerte, ohne AQI, Bewertung der Expositionsdauer oder gesundheitliche Einstufung.",
+  "thresholds": {
+    "1": {
+      "label": "< 0.5 ppm"
+    },
+    "2": {
+      "label": "0.5–< 2 ppm"
+    },
+    "3": {
+      "label": "2–< 10 ppm"
+    },
+    "4": {
+      "label": "10–< 25 ppm"
+    },
+    "5": {
+      "label": "≥ 25 ppm"
+    }
+  },
   "seo": {
     "keywords": [
-      "Gaskonzentration (ppm)",
+      "CO-Konzentration",
       "HomeKit"
     ]
   }

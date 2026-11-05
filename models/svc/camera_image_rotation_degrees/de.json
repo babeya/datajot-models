@@ -1,0 +1,24 @@
+{
+  "label": "Bilddrehung",
+  "description": "Bildausrichtung in den vier unterstützten Winkeln: 0°, 90°, 180° und 270°. Punkte vermeiden eine Interpolation zwischen diskreten Ausrichtungen.",
+  "thresholds": {
+    "1": {
+      "label": "0°"
+    },
+    "2": {
+      "label": "90°"
+    },
+    "3": {
+      "label": "180°"
+    },
+    "4": {
+      "label": "270°"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Bilddrehung",
+      "HomeKit"
+    ]
+  }
+}

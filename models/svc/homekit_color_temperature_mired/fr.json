@@ -1,10 +1,23 @@
 {
-  "label": "Température de couleur (mired)",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "label": "Température de couleur",
+  "description": "Température de couleur en mired bruts. Une valeur plus élevée donne une lumière plus chaude ; repères proches de 5000, 3500 et 2500 K avec K = 1000000 / mired.",
+  "thresholds": {
+    "1": {
+      "label": "Blanc froid"
+    },
+    "2": {
+      "label": "Blanc neutre"
+    },
+    "3": {
+      "label": "Blanc chaud"
+    },
+    "4": {
+      "label": "Blanc très chaud"
+    }
+  },
   "seo": {
     "keywords": [
-      "Température de couleur (mired)",
+      "Température de couleur",
       "HomeKit"
     ]
   }

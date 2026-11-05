@@ -1,0 +1,50 @@
+{
+  "key": "water_level_percentage",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0,
+      "operatorType": "<=",
+      "colorHex": "#64748B"
+    },
+    {
+      "order": 2,
+      "value": 20,
+      "operatorType": "<",
+      "colorHex": "#F59E0B"
+    },
+    {
+      "order": 3,
+      "value": 50,
+      "operatorType": "<",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 4,
+      "value": 80,
+      "operatorType": "<",
+      "colorHex": "#06B6D4"
+    },
+    {
+      "order": 5,
+      "value": 80,
+      "operatorType": ">=",
+      "colorHex": "#14B8A6"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": true,
+  "showMin": true,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "unit": "percentage"
+}

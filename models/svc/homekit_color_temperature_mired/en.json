@@ -1,10 +1,23 @@
 {
-  "label": "Color temperature (mired)",
-  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
-  "thresholds": {},
+  "label": "Color temperature",
+  "description": "Light color temperature in raw mired. Higher mired values mean warmer light; bands approximate 5000, 3500 and 2500 K using K = 1000000 / mired.",
+  "thresholds": {
+    "1": {
+      "label": "Cool white"
+    },
+    "2": {
+      "label": "Neutral white"
+    },
+    "3": {
+      "label": "Warm white"
+    },
+    "4": {
+      "label": "Very warm white"
+    }
+  },
   "seo": {
     "keywords": [
-      "Color temperature (mired)",
+      "Color temperature",
       "HomeKit"
     ]
   }

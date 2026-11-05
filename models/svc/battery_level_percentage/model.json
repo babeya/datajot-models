@@ -1,16 +1,47 @@
 {
   "key": "battery_level_percentage",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 10,
+      "operatorType": "<",
+      "colorHex": "#EF4444"
+    },
+    {
+      "order": 2,
+      "value": 20,
+      "operatorType": "<",
+      "colorHex": "#F97316"
+    },
+    {
+      "order": 3,
+      "value": 50,
+      "operatorType": "<",
+      "colorHex": "#F59E0B"
+    },
+    {
+      "order": 4,
+      "value": 80,
+      "operatorType": "<",
+      "colorHex": "#84CC16"
+    },
+    {
+      "order": 5,
+      "value": 80,
+      "operatorType": ">=",
+      "colorHex": "#22C55E"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
   "showAverage": false,
   "showMedian": false,
   "showSum": false,
   "showCount": false,
-  "showMax": false,
-  "showMin": false,
+  "showMax": true,
+  "showMin": true,
   "showAverageOnChart": false,
   "showMedianOnChart": false,
   "showMaxOnChart": false,

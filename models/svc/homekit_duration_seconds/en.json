@@ -1,10 +1,26 @@
 {
-  "label": "Duration",
-  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
-  "thresholds": {},
+  "label": "Programmed duration",
+  "description": "Valve timing in raw seconds, grouped into minute-scale bands. No summing of countdown readings or inference of water consumption.",
+  "thresholds": {
+    "1": {
+      "label": "0 s"
+    },
+    "2": {
+      "label": "≤ 1 min"
+    },
+    "3": {
+      "label": "1–5 min"
+    },
+    "4": {
+      "label": "5–15 min"
+    },
+    "5": {
+      "label": "> 15 min"
+    }
+  },
   "seo": {
     "keywords": [
-      "Duration",
+      "Programmed duration",
       "HomeKit"
     ]
   }

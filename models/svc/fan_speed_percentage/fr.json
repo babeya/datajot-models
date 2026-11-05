@@ -1,0 +1,27 @@
+{
+  "label": "Vitesse de ventilation",
+  "description": "Vitesse du ventilateur en pourcentage de la plage de l’accessoire, pas en tours par minute. Les bandes soulignent la montée en vitesse.",
+  "thresholds": {
+    "1": {
+      "label": "Vitesse nulle"
+    },
+    "2": {
+      "label": "Lente"
+    },
+    "3": {
+      "label": "Moyenne"
+    },
+    "4": {
+      "label": "Rapide"
+    },
+    "5": {
+      "label": "Très rapide"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Vitesse de ventilation",
+      "HomeKit"
+    ]
+  }
+}

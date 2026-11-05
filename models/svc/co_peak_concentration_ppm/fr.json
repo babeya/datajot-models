@@ -1,0 +1,27 @@
+{
+  "label": "Pic de CO",
+  "description": "Concentration en ppm. Les bandes colorées décrivent les valeurs rapportées, sans AQI, évaluation de durée d’exposition ni classement sanitaire.",
+  "thresholds": {
+    "1": {
+      "label": "< 0.5 ppm"
+    },
+    "2": {
+      "label": "0.5–< 2 ppm"
+    },
+    "3": {
+      "label": "2–< 10 ppm"
+    },
+    "4": {
+      "label": "10–< 25 ppm"
+    },
+    "5": {
+      "label": "≥ 25 ppm"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Pic de CO",
+      "HomeKit"
+    ]
+  }
+}

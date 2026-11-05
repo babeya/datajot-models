@@ -1,0 +1,27 @@
+{
+  "label": "Pico de CO",
+  "description": "Concentración en ppm. Las bandas de color describen los valores registrados, sin AQI, evaluación del tiempo de exposición ni clasificación sanitaria.",
+  "thresholds": {
+    "1": {
+      "label": "< 0.5 ppm"
+    },
+    "2": {
+      "label": "0.5–< 2 ppm"
+    },
+    "3": {
+      "label": "2–< 10 ppm"
+    },
+    "4": {
+      "label": "10–< 25 ppm"
+    },
+    "5": {
+      "label": "≥ 25 ppm"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Pico de CO",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "label": "Saturation des couleurs",
+  "description": "Saturation de couleur, de l’achromatique à la couleur intense. Les bandes décrivent le réglage sans jugement de qualité.",
+  "thresholds": {
+    "1": {
+      "label": "Sans saturation"
+    },
+    "2": {
+      "label": "Pastel"
+    },
+    "3": {
+      "label": "Coloré"
+    },
+    "4": {
+      "label": "Vif"
+    },
+    "5": {
+      "label": "Intense"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Saturation des couleurs",
+      "HomeKit"
+    ]
+  }
+}

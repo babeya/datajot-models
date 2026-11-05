@@ -1,10 +1,23 @@
 {
-  "label": "Farbtemperatur (Mired)",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "Farbtemperatur",
+  "description": "Lichtfarbtemperatur in unveränderten Mired. Höhere Werte bedeuten wärmeres Licht; Bereiche nahe 5000, 3500 und 2500 K mit K = 1000000 / Mired.",
+  "thresholds": {
+    "1": {
+      "label": "Kaltweiß"
+    },
+    "2": {
+      "label": "Neutralweiß"
+    },
+    "3": {
+      "label": "Warmweiß"
+    },
+    "4": {
+      "label": "Sehr warmweiß"
+    }
+  },
   "seo": {
     "keywords": [
-      "Farbtemperatur (Mired)",
+      "Farbtemperatur",
       "HomeKit"
     ]
   }
