@@ -6,67 +6,67 @@
       "order": 1,
       "value": 0,
       "operatorType": "<=",
-      "colorHex": "#64748B"
+      "colorHex": "#22C55E"
     },
     {
       "order": 2,
       "value": 1,
       "operatorType": "<=",
-      "colorHex": "#0EA5E9"
+      "colorHex": "#F59E0B"
     },
     {
       "order": 3,
       "value": 2,
       "operatorType": "<=",
-      "colorHex": "#A78BFA"
+      "colorHex": "#14B8A6"
     },
     {
       "order": 4,
       "value": 3,
       "operatorType": "<=",
-      "colorHex": "#14B8A6"
+      "colorHex": "#F97316"
     },
     {
       "order": 5,
       "value": 4,
       "operatorType": "<=",
-      "colorHex": "#F59E0B"
+      "colorHex": "#22C55E"
     },
     {
       "order": 6,
       "value": 5,
       "operatorType": "<=",
-      "colorHex": "#EC4899"
+      "colorHex": "#F59E0B"
     },
     {
       "order": 7,
       "value": 6,
       "operatorType": "<=",
-      "colorHex": "#38BDF8"
+      "colorHex": "#3B82F6"
     },
     {
       "order": 8,
       "value": 7,
       "operatorType": "<=",
-      "colorHex": "#A3E635"
+      "colorHex": "#F97316"
     },
     {
       "order": 9,
       "value": 8,
       "operatorType": "<=",
-      "colorHex": "#FB923C"
+      "colorHex": "#8B5CF6"
     },
     {
       "order": 10,
       "value": 9,
       "operatorType": "<=",
-      "colorHex": "#818CF8"
+      "colorHex": "#14B8A6"
     },
     {
       "order": 11,
       "value": 10,
       "operatorType": "<=",
-      "colorHex": "#2DD4BF"
+      "colorHex": "#F59E0B"
     }
   ],
   "thresholdAxisLabelDisplayMode": "label",

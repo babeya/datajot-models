@@ -1,0 +1,24 @@
+{
+  "label": "Image rotation",
+  "description": "Image orientation at the four supported angles: 0°, 90°, 180° and 270°. Points avoid interpolation between discrete orientations.",
+  "thresholds": {
+    "1": {
+      "label": "0°"
+    },
+    "2": {
+      "label": "90°"
+    },
+    "3": {
+      "label": "180°"
+    },
+    "4": {
+      "label": "270°"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Image rotation",
+      "HomeKit"
+    ]
+  }
+}

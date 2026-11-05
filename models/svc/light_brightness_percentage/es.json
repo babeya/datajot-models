@@ -1,0 +1,27 @@
+{
+  "label": "Intensidad luminosa",
+  "description": "Brillo relativo de la lámpara, del mínimo a la luz intensa. Este ajuste es independiente del encendido y de la iluminancia en lux.",
+  "thresholds": {
+    "1": {
+      "label": "Mínimo"
+    },
+    "2": {
+      "label": "Atenuado"
+    },
+    "3": {
+      "label": "Suave"
+    },
+    "4": {
+      "label": "Claro"
+    },
+    "5": {
+      "label": "Muy luminoso"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Intensidad luminosa",
+      "HomeKit"
+    ]
+  }
+}

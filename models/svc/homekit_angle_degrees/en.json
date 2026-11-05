@@ -1,10 +1,32 @@
 {
-  "label": "Angle (°)",
-  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
-  "thresholds": {},
+  "label": "Light hue",
+  "description": "Hue in degrees, colored by the color wheel. Both 0° and 360° are red; circular averages are disabled.",
+  "thresholds": {
+    "1": {
+      "label": "Red"
+    },
+    "2": {
+      "label": "Yellow"
+    },
+    "3": {
+      "label": "Green"
+    },
+    "4": {
+      "label": "Cyan"
+    },
+    "5": {
+      "label": "Blue"
+    },
+    "6": {
+      "label": "Magenta"
+    },
+    "7": {
+      "label": "Red"
+    }
+  },
   "seo": {
     "keywords": [
-      "Angle (°)",
+      "Light hue",
       "HomeKit"
     ]
   }

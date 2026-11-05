@@ -3,9 +3,9 @@
   "type": "series",
   "category": "home",
   "icon": "drop.fill",
-  "color": "#0891B2",
-  "graphType": "line",
-  "svc": "homekit_percentage",
+  "color": "#06B6D4",
+  "graphType": "area",
+  "svc": "water_level_percentage",
   "decimalPrecision": 1,
   "aggregationMethod": "last",
   "unit": "percentage"

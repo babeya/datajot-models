@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "figure.walk.motion",
-  "color": "#0891B2",
+  "color": "#14B8A6",
   "graphType": "bar",
   "svc": "occupancy_detected",
   "decimalPrecision": 0,

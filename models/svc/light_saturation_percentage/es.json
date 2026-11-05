@@ -1,0 +1,27 @@
+{
+  "label": "Saturación de color",
+  "description": "Saturación del color, de acromático a intenso. Las bandas describen el ajuste sin valorarlo como mejor o peor.",
+  "thresholds": {
+    "1": {
+      "label": "Sin saturación"
+    },
+    "2": {
+      "label": "Pastel"
+    },
+    "3": {
+      "label": "Colorido"
+    },
+    "4": {
+      "label": "Vivo"
+    },
+    "5": {
+      "label": "Intenso"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Saturación de color",
+      "HomeKit"
+    ]
+  }
+}

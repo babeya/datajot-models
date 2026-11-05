@@ -1,0 +1,27 @@
+{
+  "label": "Volumen de audio",
+  "description": "Ajuste de volumen relativo en porcentaje, no presión sonora medida en decibelios. El silencio es un estado independiente.",
+  "thresholds": {
+    "1": {
+      "label": "Volumen cero"
+    },
+    "2": {
+      "label": "Bajo"
+    },
+    "3": {
+      "label": "Medio"
+    },
+    "4": {
+      "label": "Alto"
+    },
+    "5": {
+      "label": "Muy alto"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Volumen de audio",
+      "HomeKit"
+    ]
+  }
+}

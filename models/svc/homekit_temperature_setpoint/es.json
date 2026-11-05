@@ -1,10 +1,26 @@
 {
-  "label": "Ajuste de temperatura",
-  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
-  "thresholds": {},
+  "label": "Temperatura objetivo",
+  "description": "Consigna de temperatura en °C con referencias del catálogo. Es un ajuste, distinto de la temperatura observada y de un objetivo universal recomendado.",
+  "thresholds": {
+    "1": {
+      "label": "Consigna baja"
+    },
+    "2": {
+      "label": "Consigna moderada"
+    },
+    "3": {
+      "label": "Consigna templada"
+    },
+    "4": {
+      "label": "Consigna alta"
+    },
+    "5": {
+      "label": "Consigna muy alta"
+    }
+  },
   "seo": {
     "keywords": [
-      "Ajuste de temperatura",
+      "Temperatura objetivo",
       "HomeKit"
     ]
   }

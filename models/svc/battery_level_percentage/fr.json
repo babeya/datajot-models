@@ -1,7 +1,23 @@
 {
   "label": "Niveau de batterie",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "description": "Charge de batterie en pourcentage, de la réserve faible à la charge élevée. Les bandes sont des préréglages visuels ; l’accessoire rapporte séparément son état de batterie faible.",
+  "thresholds": {
+    "1": {
+      "label": "Très faible"
+    },
+    "2": {
+      "label": "Faible"
+    },
+    "3": {
+      "label": "Charge intermédiaire"
+    },
+    "4": {
+      "label": "Chargée"
+    },
+    "5": {
+      "label": "Bien chargée"
+    }
+  },
   "seo": {
     "keywords": [
       "Niveau de batterie",

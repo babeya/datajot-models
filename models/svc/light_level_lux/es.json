@@ -1,10 +1,29 @@
 {
-  "label": "Iluminancia (lx)",
-  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
-  "thresholds": {},
+  "label": "Nivel de luz",
+  "description": "Iluminancia en lux, de la oscuridad a la luz intensa. Las necesidades dependen de la actividad y la ubicación del sensor.",
+  "thresholds": {
+    "1": {
+      "label": "Oscuro"
+    },
+    "2": {
+      "label": "Muy tenue"
+    },
+    "3": {
+      "label": "Tenue"
+    },
+    "4": {
+      "label": "Iluminado"
+    },
+    "5": {
+      "label": "Luminoso"
+    },
+    "6": {
+      "label": "Muy luminoso"
+    }
+  },
   "seo": {
     "keywords": [
-      "Iluminancia (lx)",
+      "Nivel de luz",
       "HomeKit"
     ]
   }

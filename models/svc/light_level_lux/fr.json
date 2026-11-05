@@ -1,10 +1,29 @@
 {
-  "label": "Éclairement (lx)",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "label": "Luminosité",
+  "description": "Éclairement en lux, de l’obscurité à la forte lumière. Les besoins dépendent de l’activité et de l’emplacement du capteur.",
+  "thresholds": {
+    "1": {
+      "label": "Obscur"
+    },
+    "2": {
+      "label": "Très tamisé"
+    },
+    "3": {
+      "label": "Tamisé"
+    },
+    "4": {
+      "label": "Éclairé"
+    },
+    "5": {
+      "label": "Lumineux"
+    },
+    "6": {
+      "label": "Très lumineux"
+    }
+  },
   "seo": {
     "keywords": [
-      "Éclairement (lx)",
+      "Luminosité",
       "HomeKit"
     ]
   }

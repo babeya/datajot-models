@@ -1,0 +1,50 @@
+{
+  "key": "filter_life_percentage",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0,
+      "operatorType": "<=",
+      "colorHex": "#EF4444"
+    },
+    {
+      "order": 2,
+      "value": 10,
+      "operatorType": "<",
+      "colorHex": "#F97316"
+    },
+    {
+      "order": 3,
+      "value": 25,
+      "operatorType": "<",
+      "colorHex": "#F59E0B"
+    },
+    {
+      "order": 4,
+      "value": 75,
+      "operatorType": "<",
+      "colorHex": "#14B8A6"
+    },
+    {
+      "order": 5,
+      "value": 75,
+      "operatorType": ">=",
+      "colorHex": "#22C55E"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": true,
+  "showMin": true,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "unit": "percentage"
+}

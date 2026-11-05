@@ -1,0 +1,27 @@
+{
+  "label": "Peak CO₂ concentration",
+  "description": "CO₂ in ppm, with ventilation reference bands. Assess sustained levels in occupied rooms; an isolated reading or peak does not establish air safety.",
+  "thresholds": {
+    "1": {
+      "label": "Low peak"
+    },
+    "2": {
+      "label": "Moderate peak"
+    },
+    "3": {
+      "label": "Raised peak"
+    },
+    "4": {
+      "label": "High peak"
+    },
+    "5": {
+      "label": "Very high peak"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Peak CO₂ concentration",
+      "HomeKit"
+    ]
+  }
+}

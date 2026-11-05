@@ -1,0 +1,27 @@
+{
+  "label": "VOC-Konzentration",
+  "description": "Konzentration in µg/m³. Farbbereiche beschreiben die gemeldeten Messwerte, ohne AQI, Bewertung der Expositionsdauer oder gesundheitliche Einstufung.",
+  "thresholds": {
+    "1": {
+      "label": "< 100 µg/m³"
+    },
+    "2": {
+      "label": "100–< 300 µg/m³"
+    },
+    "3": {
+      "label": "300–< 1000 µg/m³"
+    },
+    "4": {
+      "label": "1000–< 3000 µg/m³"
+    },
+    "5": {
+      "label": "≥ 3000 µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "VOC-Konzentration",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,10 +1,23 @@
 {
-  "label": "Relative Luftfeuchtigkeit",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "Luftfeuchtigkeit",
+  "description": "Relative Luftfeuchtigkeit mit einem Innenraum-Richtbereich von 30–50 %. Der Komfort hängt von Raum und Jahreszeit ab.",
+  "thresholds": {
+    "1": {
+      "label": "Trocken"
+    },
+    "2": {
+      "label": "Bereich 30–50 %"
+    },
+    "3": {
+      "label": "Feucht"
+    },
+    "4": {
+      "label": "Sehr feucht"
+    }
+  },
   "seo": {
     "keywords": [
-      "Relative Luftfeuchtigkeit",
+      "Luftfeuchtigkeit",
       "HomeKit"
     ]
   }

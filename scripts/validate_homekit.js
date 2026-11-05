@@ -50,6 +50,96 @@ for (const kind of ['series', 'units', 'svc']) {
 assert.deepEqual(Object.fromEntries(Object.entries(matrix.baselineKeys).map(([k, v]) => [k, v.length])),
   { series: 32, units: 27, svc: 25 })
 
+const numericFamilies = {
+  comfort_bands: 'temperature',
+  humidity_bands: 'humidity',
+  ventilation_bands: 'carbonDioxide carbonDioxidePeakLevel',
+  concentration_bands: 'carbonMonoxide carbonMonoxidePeakLevel airParticulateDensity ozoneDensity nitrogenDioxideDensity sulphurDioxideDensity pm2_5Density pm10Density volatileOrganicCompoundDensity',
+  illuminance_bands: 'lightLevel',
+  position_bands: 'currentPosition targetPosition',
+  brightness_bands: 'brightness',
+  saturation_bands: 'saturation',
+  hue_bands: 'hue',
+  color_temperature_bands: 'colorTemperature',
+  tilt_bands: 'currentHorizontalTilt targetHorizontalTilt currentVerticalTilt targetVerticalTilt currentTilt targetTilt',
+  duration_bands: 'lockManagementAutoSecureTimeout setDuration remainingDuration',
+  temperature_setpoint_bands: 'targetTemperature heatingThreshold coolingThreshold',
+  humidity_setpoint_bands: 'targetRelativeHumidity humidifierThreshold dehumidifierThreshold',
+  speed_bands: 'rotationSpeed',
+  remaining_life_bands: 'filterLifeLevel batteryLevel',
+  level_bands: 'waterLevel',
+  volume_bands: 'volume',
+  zoom_bands: 'opticalZoom digitalZoom',
+  discrete_values: 'imageRotation'
+}
+const numericPolicies = new Map(Object.entries(numericFamilies)
+  .flatMap(([policy, ids]) => ids.split(' ').map(id => [id, policy])))
+assert.equal(numericPolicies.size, 43)
+assert.deepEqual([...numericPolicies.keys()].sort(), matrix.characteristics.filter(e => !e.states).map(e => e.identifier).sort())
+
+function numericSamples(e, thresholds) {
+  if (e.domain.values) return e.domain.values
+  const min = e.domain.minimum ?? -Number.MAX_SAFE_INTEGER
+  const max = e.domain.maximum ?? Number.MAX_SAFE_INTEGER
+  const boundaries = thresholds.flatMap(t => {
+    const epsilon = Math.max(1, Math.abs(t.value)) * 1e-7
+    return [t.value - epsilon, t.value, t.value + epsilon]
+  })
+  return [min, max, ...boundaries].filter(value => value >= min && value <= max)
+}
+
+function validateNumericCoverage(e, svc) {
+  const selected = new Set()
+  for (const value of numericSamples(e, svc.thresholds)) {
+    const match = svc.thresholds.find(t => compare[t.operatorType](value, t.value))
+    assert(match, `${e.identifier}: uncovered value ${value}`)
+    selected.add(match.order)
+    if (e.domain.values) {
+      assert.equal(match.value, value, `${e.identifier}: discrete orientation shifted`)
+      assert.equal(svc.thresholds.find(t => t.value === value)?.order, match.order)
+    }
+  }
+  assert.equal(selected.size, svc.thresholds.length, `${e.identifier}: unreachable visual band`)
+}
+
+function validateNumericStats(e, svc) {
+  const noStats = ['hue_bands', 'tilt_bands', 'discrete_values'].includes(e.thresholdPolicy)
+  const fields = noStats ? [] : e.aggregationMethod === 'average'
+    ? ['showAverage', 'showMin', 'showMax']
+    : e.identifier.endsWith('PeakLevel') ? ['showMax'] : ['showMin', 'showMax']
+  for (const field of statFields) {
+    assert.equal(svc[field], fields.includes(field), `${e.identifier}: ${field}`)
+  }
+}
+
+function validateIndoorTemperature(svc) {
+  assert.equal(svc.key, 'inside_temp_deg_c')
+  const expectedThresholds = [
+    [16, '<', '#1D4ED8'],
+    [19, '<', '#3B82F6'],
+    [21, '<', '#22C55E'],
+    [24, '<', '#EAB308'],
+    [24, '>=', '#EF4444']
+  ].map(([value, operatorType, colorHex], i) => ({ order: i + 1, value, operatorType, colorHex }))
+  assert.deepEqual(svc.thresholds.map(({ label, ...threshold }) => threshold), expectedThresholds)
+}
+
+function validateNumericVisualization(e, svc) {
+  assert.equal(e.thresholdPolicy, numericPolicies.get(e.identifier), `${e.identifier}: wrong visual family`)
+  assert(Array.isArray(svc.thresholds) && svc.thresholds.length >= 2, `${e.identifier}: missing visual bands`)
+  assert(new Set(svc.thresholds.map(t => t.colorHex)).size >= 2, `${e.identifier}: missing color palette`)
+  assert.equal(svc.thresholdAxisLabelDisplayMode, e.domain.values ? 'label' : 'valueAndLabel')
+  assert.equal(svc.autoScaleYAxis, true)
+  svc.thresholds.forEach((t, i) => {
+    assert.equal(t.order, i + 1)
+    assert(Number.isFinite(t.value) && compare[t.operatorType])
+    if (i) assert(t.value >= svc.thresholds[i - 1].value)
+  })
+  validateNumericCoverage(e, svc)
+  validateNumericStats(e, svc)
+  if (e.identifier === 'temperature') validateIndoorTemperature(svc)
+}
+
 function validateMapping(e) {
   const series = source.series.get(e.series.key)
   const svc = source.svc.get(e.configuration.key)
@@ -72,6 +162,7 @@ function validateMapping(e) {
     assert.equal(ref.status, expected, `${e.identifier}: incorrect resource status`)
   }
   if (e.states) {
+    assert.equal(e.thresholdPolicy, 'categorical_codes')
     assert.equal(series.aggregationMethod, 'last')
     assert.equal(series.decimalPrecision, 0)
     assert.equal(series.graphType, 'bar')
@@ -86,9 +177,7 @@ function validateMapping(e) {
       if (e.publicEnum) assert(state.publicSymbol.startsWith(e.publicEnum))
     }
   } else {
-    assert.equal(e.thresholdPolicy, 'neutral')
-    assert.deepEqual(svc.thresholds, [])
-    assert.equal(svc.thresholdAxisLabelDisplayMode, 'value')
+    validateNumericVisualization(e, svc)
   }
 }
 matrix.characteristics.forEach(validateMapping)
@@ -134,6 +223,34 @@ function validateStateRendering(e, series, lang) {
   }
 }
 
+function validateLocalizedVisualization(e, svc, lang) {
+  const model = source.svc.get(e.configuration.key)
+  const localized = read(`models/svc/${e.configuration.key}/${lang}.json`)
+  const expected = {
+    ...model,
+    ...localized,
+    thresholds: model.thresholds.map(t => ({ ...t, ...localized.thresholds[String(t.order)] }))
+  }
+  assert.deepEqual(svc, expected, `${lang}/${e.identifier}: localized source differs from output`)
+}
+
+function validateConditionalPresets(seriesByKey, lang) {
+  for (const [key, svcKey, colors] of [
+    ['window_open', 'window_open_binary', ['#14B8A6', '#F59E0B']],
+    ['light_on', 'light_on_binary', ['#64748B', '#FBBF24']]
+  ]) {
+    const series = seriesByKey.get(key)
+    assert.equal(series.svc.key, svcKey)
+    assert.equal(series.graphType, 'bar')
+    assert.equal(series.aggregationMethod, 'last')
+    assert.equal(series.svc.includesEmptyAggregates, false)
+    for (const field of statFields) assert.equal(series.svc[field], false)
+    assert.deepEqual(series.svc.thresholds.map(t => [t.value, t.operatorType, t.colorHex]),
+      colors.map((color, value) => [value, '<=', color]))
+    validateLocalizedVisualization({ identifier: key, configuration: { key: svcKey } }, series.svc, lang)
+  }
+}
+
 function validateBundles(lang) {
   const bundle = read(`build/bundle-${lang}.json`)
   assert.deepEqual(Object.keys(bundle).sort(), ['series', 'svc', 'units'])
@@ -154,11 +271,14 @@ function validateBundles(lang) {
     if (series.svc) assert.deepEqual(series.svc, svcByKey.get(series.svc.key))
     if (series.unit) assert.deepEqual(series.unit, unitByKey.get(series.unit.key))
   }
+  validateConditionalPresets(seriesByKey, lang)
   for (const e of matrix.characteristics) {
     const series = seriesByKey.get(e.series.key)
     assert.equal(series.svc.includesEmptyAggregates, false)
+    assert.equal(series.graphType, source.series.get(e.series.key).graphType)
+    validateLocalizedVisualization(e, series.svc, lang)
     if (e.states) validateStateRendering(e, series, lang)
-    else assert.deepEqual(series.svc.thresholds, [])
+    else validateNumericVisualization(e, series.svc)
   }
 }
 locales.forEach(validateBundles)
@@ -188,6 +308,33 @@ assert.notEqual(byId.get('carbonDioxide').series.key, byId.get('carbonDioxidePea
 assert.equal(byId.get('carbonDioxidePeakLevel').previousTemplateKey, 'co2_concentration_ppm')
 assert.notEqual(byId.get('brightness').unit.key, byId.get('lightLevel').unit.key)
 assert.notEqual(byId.get('motionDetected').series.key, byId.get('occupancyDetected').series.key)
+for (const [first, second] of [
+  ['carbonDioxide', 'carbonMonoxide'], ['carbonDioxide', 'carbonDioxidePeakLevel'],
+  ['carbonMonoxide', 'carbonMonoxidePeakLevel'], ['pm2_5Density', 'pm10Density'],
+  ['currentPosition', 'volume'], ['batteryLevel', 'volume'],
+  ['filterLifeLevel', 'waterLevel'], ['hue', 'imageRotation']
+]) {
+  assert.notEqual(byId.get(first).configuration.key, byId.get(second).configuration.key,
+    `${first}/${second}: incompatible visualizations must remain separate`)
+}
+
+function colorAt(id, value) {
+  const svc = source.svc.get(byId.get(id).configuration.key)
+  return svc.thresholds.find(t => compare[t.operatorType](value, t.value))?.colorHex
+}
+assert.equal(colorAt('hue', 0), colorAt('hue', 360), 'Hue must wrap to the same color')
+assert.equal(colorAt('hue', 120), '#22C55E', '120° hue is green')
+assert.equal(colorAt('hue', 240), '#3B82F6', '240° hue is blue')
+assert.equal(colorAt('colorTemperature', 100), '#3B82F6', 'Low mired values describe cooler light')
+assert.equal(colorAt('colorTemperature', 500), '#F97316', 'High mired values describe warmer light')
+for (const [id, lowReserveColor] of [['batteryLevel', '#EF4444'], ['filterLifeLevel', '#F97316']]) {
+  assert.equal(colorAt(id, 5), lowReserveColor)
+  assert.equal(colorAt(id, 90), '#22C55E')
+}
+assert.equal(colorAt('currentPosition', 0), '#64748B')
+assert.equal(colorAt('currentPosition', 100), '#22C55E')
+assert.equal(source.series.get(byId.get('hue').series.key).graphType, 'points')
+assert.equal(source.series.get(byId.get('imageRotation').series.key).graphType, 'points')
 
 const criticalSymbols = {
   contactState: ['Detected', 'None'],
@@ -207,6 +354,19 @@ for (const [id, symbols] of Object.entries(criticalSymbols)) {
   const e = byId.get(id)
   assert.deepEqual(e.states.map(s => s.publicSymbol), symbols.map(s => e.publicEnum + s))
 }
+for (const id of ['smokeDetected', 'leakDetected', 'carbonMonoxideDetected', 'carbonDioxideDetected',
+  'obstructionDetected', 'statusFault', 'statusJammed', 'statusTampered']) {
+  assert.equal(byId.get(id).states.find(s => s.code === 1).colorHex, '#EF4444', `${id}: alert color`)
+}
+assert.equal(byId.get('currentHeatingCooling').states.find(s => s.code === 1).colorHex, '#F97316')
+assert.equal(byId.get('currentHeatingCooling').states.find(s => s.code === 2).colorHex, '#3B82F6')
+assert.equal(byId.get('currentLockMechanismState').states.find(s => s.code === 2).colorHex, '#EF4444')
+assert.equal(byId.get('currentSlatState').states.find(s => s.code === 1).colorHex, '#EF4444')
+for (const e of matrix.characteristics.filter(e => e.states)) {
+  for (const state of e.states.filter(s => s.labels.en.toLowerCase().includes('unknown'))) {
+    assert.equal(state.colorHex, '#64748B', `${e.identifier}: explicit unknown must stay gray`)
+  }
+}
 
 function convert(unitKey, value, from, to) {
   const unit = source.units.get(unitKey)
@@ -222,4 +382,4 @@ for (const [key, base] of Object.entries({ mass_concentration: 'ug_m3', angle_de
   assert.equal(source.units.get(key).baseUnit, base)
   assert.equal(source.units.get(key).subUnits.length, 1)
 }
-console.log('✅ HomeKit: 103 identifiers; all locales, references, historical keys, state lookup modes and raw units verified')
+console.log('✅ HomeKit: 103 identifiers; 43 numeric profiles, 60 states, boundary coverage, all locales, references and raw units verified')

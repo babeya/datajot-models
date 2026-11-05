@@ -1,0 +1,27 @@
+{
+  "label": "Lichthelligkeit",
+  "description": "Relative Lampenhelligkeit von Minimum bis hell. Diese Einstellung ist unabhängig von Ein/Aus und Umgebungslicht in Lux.",
+  "thresholds": {
+    "1": {
+      "label": "Minimum"
+    },
+    "2": {
+      "label": "Gedimmt"
+    },
+    "3": {
+      "label": "Sanft"
+    },
+    "4": {
+      "label": "Hell"
+    },
+    "5": {
+      "label": "Sehr hell"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Lichthelligkeit",
+      "HomeKit"
+    ]
+  }
+}

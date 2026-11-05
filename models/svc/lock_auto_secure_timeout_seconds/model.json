@@ -1,0 +1,50 @@
+{
+  "key": "lock_auto_secure_timeout_seconds",
+  "type": "visualizationConfig",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0,
+      "operatorType": "<=",
+      "colorHex": "#64748B"
+    },
+    {
+      "order": 2,
+      "value": 30,
+      "operatorType": "<=",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 3,
+      "value": 60,
+      "operatorType": "<=",
+      "colorHex": "#14B8A6"
+    },
+    {
+      "order": 4,
+      "value": 300,
+      "operatorType": "<=",
+      "colorHex": "#F59E0B"
+    },
+    {
+      "order": 5,
+      "value": 300,
+      "operatorType": ">",
+      "colorHex": "#8B5CF6"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
+  "autoScaleYAxis": true,
+  "includesEmptyAggregates": false,
+  "showAverage": false,
+  "showMedian": false,
+  "showSum": false,
+  "showCount": false,
+  "showMax": true,
+  "showMin": true,
+  "showAverageOnChart": false,
+  "showMedianOnChart": false,
+  "showMaxOnChart": false,
+  "showMinOnChart": false,
+  "unit": "duration"
+}

@@ -1,7 +1,23 @@
 {
   "label": "Batteriestand",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "description": "Akkuladung in Prozent von geringer bis hoher Reserve. Visuelle Voreinstellungen; das Gerät meldet seinen niedrigen Batteriestand separat.",
+  "thresholds": {
+    "1": {
+      "label": "Sehr niedrig"
+    },
+    "2": {
+      "label": "Niedrig"
+    },
+    "3": {
+      "label": "Mittlere Ladung"
+    },
+    "4": {
+      "label": "Geladen"
+    },
+    "5": {
+      "label": "Hohe Ladung"
+    }
+  },
   "seo": {
     "keywords": [
       "Batteriestand",

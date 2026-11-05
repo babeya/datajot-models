@@ -1,11 +1,29 @@
 {
   "label": "Température intérieure (°C)",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "description": "Surveillez la température intérieure en Celsius pour un confort optimal",
   "seo": {
     "keywords": [
-      "Température intérieure (°C)",
-      "HomeKit"
+      "température",
+      "intérieur",
+      "celsius",
+      "climat"
     ]
+  },
+  "thresholds": {
+    "1": {
+      "label": "Très froid"
+    },
+    "2": {
+      "label": "Froid"
+    },
+    "3": {
+      "label": "Confortable"
+    },
+    "4": {
+      "label": "Chaud"
+    },
+    "5": {
+      "label": "Très chaud"
+    }
   }
 }

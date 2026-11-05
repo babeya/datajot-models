@@ -1,8 +1,51 @@
 {
   "key": "homekit_angle_degrees",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 30,
+      "operatorType": "<",
+      "colorHex": "#EF4444"
+    },
+    {
+      "order": 2,
+      "value": 90,
+      "operatorType": "<",
+      "colorHex": "#EAB308"
+    },
+    {
+      "order": 3,
+      "value": 150,
+      "operatorType": "<",
+      "colorHex": "#22C55E"
+    },
+    {
+      "order": 4,
+      "value": 210,
+      "operatorType": "<",
+      "colorHex": "#06B6D4"
+    },
+    {
+      "order": 5,
+      "value": 270,
+      "operatorType": "<",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 6,
+      "value": 330,
+      "operatorType": "<",
+      "colorHex": "#D946EF"
+    },
+    {
+      "order": 7,
+      "value": 330,
+      "operatorType": ">=",
+      "colorHex": "#EF4444"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
   "showAverage": false,

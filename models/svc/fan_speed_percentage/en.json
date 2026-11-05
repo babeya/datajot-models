@@ -1,0 +1,27 @@
+{
+  "label": "Fan speed",
+  "description": "Fan speed as a percentage of the accessory range, not revolutions per minute. Bands emphasize increasing speed.",
+  "thresholds": {
+    "1": {
+      "label": "Zero speed"
+    },
+    "2": {
+      "label": "Slow"
+    },
+    "3": {
+      "label": "Medium"
+    },
+    "4": {
+      "label": "Fast"
+    },
+    "5": {
+      "label": "Very fast"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Fan speed",
+      "HomeKit"
+    ]
+  }
+}

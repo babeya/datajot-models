@@ -1,7 +1,23 @@
 {
   "label": "Concentration de CO₂",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "description": "CO₂ en ppm, avec repères de ventilation. Évaluer les niveaux persistants dans une pièce occupée ; une lecture ou un pic isolé ne qualifie pas la sécurité de l’air.",
+  "thresholds": {
+    "1": {
+      "label": "Faible"
+    },
+    "2": {
+      "label": "Modérée"
+    },
+    "3": {
+      "label": "Soutenue"
+    },
+    "4": {
+      "label": "Élevée"
+    },
+    "5": {
+      "label": "Très élevée"
+    }
+  },
   "seo": {
     "keywords": [
       "Concentration de CO₂",

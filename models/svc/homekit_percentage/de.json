@@ -1,10 +1,26 @@
 {
-  "label": "Prozentwert",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "Öffnungsposition",
+  "description": "Öffnungsposition: 0 % geschlossen, 100 % vollständig geöffnet. Gleiche Bereiche für Ist- und Zielposition.",
+  "thresholds": {
+    "1": {
+      "label": "Geschlossen"
+    },
+    "2": {
+      "label": "Leicht geöffnet"
+    },
+    "3": {
+      "label": "Teilweise geöffnet"
+    },
+    "4": {
+      "label": "Fast geöffnet"
+    },
+    "5": {
+      "label": "Vollständig geöffnet"
+    }
+  },
   "seo": {
     "keywords": [
-      "Prozentwert",
+      "Öffnungsposition",
       "HomeKit"
     ]
   }

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "power",
-  "color": "#0891B2",
+  "color": "#14B8A6",
   "graphType": "bar",
   "svc": "outlet_in_use",
   "decimalPrecision": 0,

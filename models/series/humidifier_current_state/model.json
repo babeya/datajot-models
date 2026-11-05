@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "humidity.fill",
-  "color": "#0891B2",
+  "color": "#3B82F6",
   "graphType": "bar",
   "svc": "humidifier_current_state",
   "decimalPrecision": 0,

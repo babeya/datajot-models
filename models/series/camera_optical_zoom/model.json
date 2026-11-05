@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "play.tv",
-  "color": "#0891B2",
+  "color": "#8B5CF6",
   "graphType": "line",
   "svc": "homekit_zoom_ratio",
   "decimalPrecision": 2,

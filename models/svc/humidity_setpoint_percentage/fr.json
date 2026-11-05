@@ -1,0 +1,24 @@
+{
+  "label": "Humidité cible",
+  "description": "Consigne d’humidité en pourcentage, avec les mêmes repères 30–50 % que l’humidité observée. Les réglages ne sont pas moyennés.",
+  "thresholds": {
+    "1": {
+      "label": "Sec"
+    },
+    "2": {
+      "label": "Zone 30–50 %"
+    },
+    "3": {
+      "label": "Humide"
+    },
+    "4": {
+      "label": "Très humide"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Humidité cible",
+      "HomeKit"
+    ]
+  }
+}

@@ -3,7 +3,7 @@
   "type": "series",
   "category": "environment",
   "icon": "aqi.medium",
-  "color": "#0891B2",
+  "color": "#8B5CF6",
   "graphType": "bar",
   "svc": "air_particulate_size",
   "decimalPrecision": 0,

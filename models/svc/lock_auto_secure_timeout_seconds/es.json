@@ -1,0 +1,27 @@
+{
+  "label": "Plazo de bloqueo automático",
+  "description": "Tiempo de bloqueo automático registrado en segundos. Las bandas describen la duración; cero se muestra sin inferir el comportamiento del accesorio.",
+  "thresholds": {
+    "1": {
+      "label": "0 s"
+    },
+    "2": {
+      "label": "≤ 30 s"
+    },
+    "3": {
+      "label": "30–60 s"
+    },
+    "4": {
+      "label": "1–5 min"
+    },
+    "5": {
+      "label": "> 5 min"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Plazo de bloqueo automático",
+      "HomeKit"
+    ]
+  }
+}

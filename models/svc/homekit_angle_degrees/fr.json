@@ -1,10 +1,32 @@
 {
-  "label": "Angle (°)",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "label": "Teinte lumineuse",
+  "description": "Teinte en degrés, colorée selon le cercle chromatique. 0° et 360° sont rouges ; les moyennes circulaires sont désactivées.",
+  "thresholds": {
+    "1": {
+      "label": "Rouge"
+    },
+    "2": {
+      "label": "Jaune"
+    },
+    "3": {
+      "label": "Vert"
+    },
+    "4": {
+      "label": "Cyan"
+    },
+    "5": {
+      "label": "Bleu"
+    },
+    "6": {
+      "label": "Magenta"
+    },
+    "7": {
+      "label": "Rouge"
+    }
+  },
   "seo": {
     "keywords": [
-      "Angle (°)",
+      "Teinte lumineuse",
       "HomeKit"
     ]
   }

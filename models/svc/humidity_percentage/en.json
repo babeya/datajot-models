@@ -1,10 +1,23 @@
 {
-  "label": "Relative humidity",
-  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
-  "thresholds": {},
+  "label": "Humidity",
+  "description": "Relative humidity with 30–50% indoor reference bands. Comfort depends on the room and season.",
+  "thresholds": {
+    "1": {
+      "label": "Dry"
+    },
+    "2": {
+      "label": "30–50% range"
+    },
+    "3": {
+      "label": "Humid"
+    },
+    "4": {
+      "label": "Very humid"
+    }
+  },
   "seo": {
     "keywords": [
-      "Relative humidity",
+      "Humidity",
       "HomeKit"
     ]
   }

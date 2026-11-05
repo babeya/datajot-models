@@ -1,0 +1,27 @@
+{
+  "label": "Durée de vie du filtre",
+  "description": "Durée de vie restante du filtre rapportée par l’accessoire. Les bandes de réserve ne remplacent pas son indication distincte de remplacement.",
+  "thresholds": {
+    "1": {
+      "label": "Épuisé"
+    },
+    "2": {
+      "label": "Presque épuisé"
+    },
+    "3": {
+      "label": "Réserve faible"
+    },
+    "4": {
+      "label": "Réserve disponible"
+    },
+    "5": {
+      "label": "Réserve élevée"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Durée de vie du filtre",
+      "HomeKit"
+    ]
+  }
+}

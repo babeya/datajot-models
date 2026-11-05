@@ -1,0 +1,27 @@
+{
+  "label": "Concentración de NO₂",
+  "description": "Concentración en µg/m³. Las bandas de color describen los valores registrados, sin AQI, evaluación del tiempo de exposición ni clasificación sanitaria.",
+  "thresholds": {
+    "1": {
+      "label": "< 25 µg/m³"
+    },
+    "2": {
+      "label": "25–< 50 µg/m³"
+    },
+    "3": {
+      "label": "50–< 100 µg/m³"
+    },
+    "4": {
+      "label": "100–< 200 µg/m³"
+    },
+    "5": {
+      "label": "≥ 200 µg/m³"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Concentración de NO₂",
+      "HomeKit"
+    ]
+  }
+}

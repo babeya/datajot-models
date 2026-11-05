@@ -1,10 +1,26 @@
 {
-  "label": "Temperature setting",
-  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
-  "thresholds": {},
+  "label": "Target temperature",
+  "description": "Temperature setpoint in °C with catalog reference bands. It is a setting, not an observed room temperature or a universal recommended target.",
+  "thresholds": {
+    "1": {
+      "label": "Low setpoint"
+    },
+    "2": {
+      "label": "Moderate setpoint"
+    },
+    "3": {
+      "label": "Mild setpoint"
+    },
+    "4": {
+      "label": "High setpoint"
+    },
+    "5": {
+      "label": "Very high setpoint"
+    }
+  },
   "seo": {
     "keywords": [
-      "Temperature setting",
+      "Target temperature",
       "HomeKit"
     ]
   }

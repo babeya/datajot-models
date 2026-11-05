@@ -1,10 +1,32 @@
 {
-  "label": "Winkel (°)",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "Lichtfarbton",
+  "description": "Farbton in Grad mit Farben des Farbkreises. 0° und 360° sind rot; keine Mittelwerte für Kreiswinkel.",
+  "thresholds": {
+    "1": {
+      "label": "Rot"
+    },
+    "2": {
+      "label": "Gelb"
+    },
+    "3": {
+      "label": "Grün"
+    },
+    "4": {
+      "label": "Cyan"
+    },
+    "5": {
+      "label": "Blau"
+    },
+    "6": {
+      "label": "Magenta"
+    },
+    "7": {
+      "label": "Rot"
+    }
+  },
   "seo": {
     "keywords": [
-      "Winkel (°)",
+      "Lichtfarbton",
       "HomeKit"
     ]
   }

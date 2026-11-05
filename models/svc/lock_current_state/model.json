@@ -6,19 +6,19 @@
       "order": 1,
       "value": 0,
       "operatorType": "<=",
-      "colorHex": "#64748B"
+      "colorHex": "#F59E0B"
     },
     {
       "order": 2,
       "value": 1,
       "operatorType": "<=",
-      "colorHex": "#0EA5E9"
+      "colorHex": "#22C55E"
     },
     {
       "order": 3,
       "value": 2,
       "operatorType": "<=",
-      "colorHex": "#F59E0B"
+      "colorHex": "#EF4444"
     },
     {
       "order": 4,

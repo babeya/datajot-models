@@ -1,0 +1,27 @@
+{
+  "label": "Water level",
+  "description": "Reported water level in percent, with fill-level bands. This is a reservoir level, not water consumption or leak detection.",
+  "thresholds": {
+    "1": {
+      "label": "Empty"
+    },
+    "2": {
+      "label": "Low level"
+    },
+    "3": {
+      "label": "Below half"
+    },
+    "4": {
+      "label": "Medium level"
+    },
+    "5": {
+      "label": "High level"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Water level",
+      "HomeKit"
+    ]
+  }
+}

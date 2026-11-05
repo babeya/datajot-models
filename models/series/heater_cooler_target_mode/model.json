@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "thermometer.medium",
-  "color": "#0891B2",
+  "color": "#F97316",
   "graphType": "bar",
   "svc": "heater_cooler_target_mode",
   "decimalPrecision": 0,

@@ -1,0 +1,27 @@
+{
+  "label": "Farbsättigung",
+  "description": "Farbsättigung von unbunt bis intensiv. Die Bereiche beschreiben die Einstellung ohne Qualitätsbewertung.",
+  "thresholds": {
+    "1": {
+      "label": "Ungesättigt"
+    },
+    "2": {
+      "label": "Pastell"
+    },
+    "3": {
+      "label": "Farbig"
+    },
+    "4": {
+      "label": "Kräftig"
+    },
+    "5": {
+      "label": "Intensiv"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Farbsättigung",
+      "HomeKit"
+    ]
+  }
+}

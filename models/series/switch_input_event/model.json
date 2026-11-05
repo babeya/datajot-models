@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "sensor.fill",
-  "color": "#0891B2",
+  "color": "#8B5CF6",
   "graphType": "bar",
   "svc": "switch_input_event",
   "decimalPrecision": 0,

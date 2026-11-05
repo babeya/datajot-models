@@ -1,16 +1,53 @@
 {
   "key": "light_level_lux",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 10,
+      "operatorType": "<",
+      "colorHex": "#312E81"
+    },
+    {
+      "order": 2,
+      "value": 50,
+      "operatorType": "<",
+      "colorHex": "#4F46E5"
+    },
+    {
+      "order": 3,
+      "value": 200,
+      "operatorType": "<",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 4,
+      "value": 500,
+      "operatorType": "<",
+      "colorHex": "#06B6D4"
+    },
+    {
+      "order": 5,
+      "value": 1000,
+      "operatorType": "<",
+      "colorHex": "#EAB308"
+    },
+    {
+      "order": 6,
+      "value": 1000,
+      "operatorType": ">=",
+      "colorHex": "#FBBF24"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
-  "showAverage": false,
+  "showAverage": true,
   "showMedian": false,
   "showSum": false,
   "showCount": false,
-  "showMax": false,
-  "showMin": false,
+  "showMax": true,
+  "showMin": true,
   "showAverageOnChart": false,
   "showMedianOnChart": false,
   "showMaxOnChart": false,

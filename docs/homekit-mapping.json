@@ -31,7 +31,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrenttemperature",
       "integrationStatus": "already_mapped",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "comfort_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -62,7 +62,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentrelativehumidity",
       "integrationStatus": "already_mapped",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "humidity_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -72,7 +72,7 @@
       "series": {
         "key": "co2_concentration_ppm",
         "status": "existing",
-        "modified": false
+        "modified": true
       },
       "unit": {
         "key": "parts_per_million",
@@ -92,7 +92,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbondioxidelevel",
       "integrationStatus": "already_mapped",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "ventilation_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -228,7 +228,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentlightlevel",
       "integrationStatus": "already_mapped",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "illuminance_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -238,7 +238,7 @@
       "series": {
         "key": "door_open",
         "status": "existing",
-        "modified": false
+        "modified": true
       },
       "unit": {
         "key": null,
@@ -274,7 +274,7 @@
             "es": "Cerrada"
           },
           "publicSymbol": "HMCharacteristicValueContactStateDetected",
-          "colorHex": "#64748B"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 1,
@@ -285,7 +285,7 @@
             "es": "Abierta"
           },
           "publicSymbol": "HMCharacteristicValueContactStateNone",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F59E0B"
         }
       ],
       "publicEnum": "HMCharacteristicValueContactState"
@@ -296,7 +296,7 @@
       "series": {
         "key": "motion_detected",
         "status": "existing",
-        "modified": false
+        "modified": true
       },
       "unit": {
         "key": null,
@@ -341,7 +341,7 @@
             "de": "Bewegung erkannt",
             "es": "Movimiento detectado"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#8B5CF6"
         }
       ]
     },
@@ -396,7 +396,7 @@
             "es": "Con presencia"
           },
           "publicSymbol": "HMCharacteristicValueOccupancyStatusOccupied",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueOccupancyStatus"
@@ -450,7 +450,7 @@
             "de": "Ein",
             "es": "Encendido"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         }
       ]
     },
@@ -503,7 +503,7 @@
             "de": "Gerät angeschlossen",
             "es": "Dispositivo conectado"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ]
     },
@@ -532,7 +532,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentposition",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "position_bands",
       "serviceCondition": "0 = fermeture complète ; 100 = ouverture complète. Position observée, distincte du contact et de la consigne.",
       "decision": "ready"
     },
@@ -549,7 +549,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "gas_concentration_ppm",
+        "key": "co2_peak_concentration_ppm",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -560,7 +560,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbondioxidepeaklevel",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "ventilation_bands",
       "serviceCondition": "Raccordement explicite au nouveau modèle de pic. La clé co2_concentration_ppm reste disponible ; les séries existantes ne sont pas migrées.",
       "decision": "ready",
       "previousTemplateKey": "co2_concentration_ppm"
@@ -589,7 +589,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbonmonoxidelevel",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -606,7 +606,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "gas_concentration_ppm",
+        "key": "co_peak_concentration_ppm",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -617,7 +617,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecarbonmonoxidepeaklevel",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -644,7 +644,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeairparticulatedensity",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": "Concentration générique ; conserver séparément la caractéristique airParticulateSize, sans déduire PM2,5 ou PM10 en son absence.",
       "decision": "ready"
     },
@@ -660,7 +660,7 @@
         "status": "added"
       },
       "configuration": {
-        "key": "mass_concentration_ug_m3",
+        "key": "ozone_concentration_ug_m3",
         "status": "added"
       },
       "aggregationMethod": "average",
@@ -671,7 +671,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeozonedensity",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -687,7 +687,7 @@
         "status": "added"
       },
       "configuration": {
-        "key": "mass_concentration_ug_m3",
+        "key": "no2_concentration_ug_m3",
         "status": "added"
       },
       "aggregationMethod": "average",
@@ -698,7 +698,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypenitrogendioxidedensity",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -714,7 +714,7 @@
         "status": "added"
       },
       "configuration": {
-        "key": "mass_concentration_ug_m3",
+        "key": "so2_concentration_ug_m3",
         "status": "added"
       },
       "aggregationMethod": "average",
@@ -725,7 +725,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypesulphurdioxidedensity",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -741,7 +741,7 @@
         "status": "added"
       },
       "configuration": {
-        "key": "mass_concentration_ug_m3",
+        "key": "pm2_5_concentration_ug_m3",
         "status": "added"
       },
       "aggregationMethod": "average",
@@ -752,7 +752,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypepm2_5density",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -768,7 +768,7 @@
         "status": "added"
       },
       "configuration": {
-        "key": "mass_concentration_ug_m3",
+        "key": "pm10_concentration_ug_m3",
         "status": "added"
       },
       "aggregationMethod": "average",
@@ -779,7 +779,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypepm10density",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -795,7 +795,7 @@
         "status": "added"
       },
       "configuration": {
-        "key": "mass_concentration_ug_m3",
+        "key": "voc_concentration_ug_m3",
         "status": "added"
       },
       "aggregationMethod": "average",
@@ -806,7 +806,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypevolatileorganiccompounddensity",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "concentration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -850,7 +850,7 @@
             "es": "2,5 µm"
           },
           "publicSymbol": "HMCharacteristicValueAirParticulateSize2_5",
-          "colorHex": "#64748B"
+          "colorHex": "#06B6D4"
         },
         {
           "code": 1,
@@ -861,7 +861,7 @@
             "es": "10 µm"
           },
           "publicSymbol": "HMCharacteristicValueAirParticulateSize10",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#8B5CF6"
         }
       ],
       "publicEnum": "HMCharacteristicValueAirParticulateSize"
@@ -1156,7 +1156,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "light_brightness_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -1168,7 +1168,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypebrightness",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "brightness_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -1185,7 +1185,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "light_saturation_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -1197,7 +1197,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypesaturation",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "saturation_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -1225,7 +1225,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypehue",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "hue_bands",
       "serviceCondition": "Angle circulaire : last, sans moyenne arithmétique ni interpolation entre 360° et 0°.",
       "decision": "ready"
     },
@@ -1254,7 +1254,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecolortemperature",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "color_temperature_bands",
       "serviceCondition": "Bornes effectives fournies par les métadonnées de l’accessoire. Aucune borne UInt32 utilisée comme axe, aucune conversion multiplicative en kelvin.",
       "decision": "ready"
     },
@@ -1307,7 +1307,7 @@
             "de": "Ein",
             "es": "Encendida"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         }
       ]
     },
@@ -1362,7 +1362,7 @@
             "es": "Activo"
           },
           "publicSymbol": "HMCharacteristicValueActivationStateActive",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         }
       ],
       "publicEnum": "HMCharacteristicValueActivationState"
@@ -1418,7 +1418,7 @@
             "es": "En uso"
           },
           "publicSymbol": "HMCharacteristicValueUsageStateInUse",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueUsageState"
@@ -1448,7 +1448,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargetposition",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "position_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -1476,7 +1476,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrenthorizontaltilt",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "tilt_bands",
       "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
       "decision": "ready"
     },
@@ -1504,7 +1504,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargethorizontaltilt",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "tilt_bands",
       "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
       "decision": "ready"
     },
@@ -1532,7 +1532,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrentverticaltilt",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "tilt_bands",
       "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
       "decision": "ready"
     },
@@ -1560,7 +1560,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargetverticaltilt",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "tilt_bands",
       "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
       "decision": "ready"
     },
@@ -1588,7 +1588,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecurrenttilt",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "tilt_bands",
       "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
       "decision": "ready"
     },
@@ -1616,7 +1616,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargettilt",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "tilt_bands",
       "serviceCondition": "Orientation liée au service ; currentTilt/targetTilt décrivent les lamelles, sans inventer un axe horizontal ou vertical.",
       "decision": "ready"
     },
@@ -1663,7 +1663,7 @@
             "es": "Abierta"
           },
           "publicSymbol": "HMCharacteristicValueDoorStateOpen",
-          "colorHex": "#64748B"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 1,
@@ -1674,7 +1674,7 @@
             "es": "Cerrada"
           },
           "publicSymbol": "HMCharacteristicValueDoorStateClosed",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 2,
@@ -1685,7 +1685,7 @@
             "es": "Abriendo"
           },
           "publicSymbol": "HMCharacteristicValueDoorStateOpening",
-          "colorHex": "#A78BFA"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 3,
@@ -1696,7 +1696,7 @@
             "es": "Cerrando"
           },
           "publicSymbol": "HMCharacteristicValueDoorStateClosing",
-          "colorHex": "#14B8A6"
+          "colorHex": "#8B5CF6"
         },
         {
           "code": 4,
@@ -1707,7 +1707,7 @@
             "es": "Detenida"
           },
           "publicSymbol": "HMCharacteristicValueDoorStateStopped",
-          "colorHex": "#F59E0B"
+          "colorHex": "#64748B"
         }
       ],
       "publicEnum": "HMCharacteristicValueDoorState"
@@ -1752,7 +1752,7 @@
             "es": "Abierta"
           },
           "publicSymbol": "HMCharacteristicValueTargetDoorStateOpen",
-          "colorHex": "#64748B"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 1,
@@ -1763,7 +1763,7 @@
             "es": "Cerrada"
           },
           "publicSymbol": "HMCharacteristicValueTargetDoorStateClosed",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetDoorState"
@@ -1808,7 +1808,7 @@
             "es": "Horizontal"
           },
           "publicSymbol": "HMCharacteristicValueSlatTypeHorizontal",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -1819,7 +1819,7 @@
             "es": "Vertical"
           },
           "publicSymbol": "HMCharacteristicValueSlatTypeVertical",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#8B5CF6"
         }
       ],
       "publicEnum": "HMCharacteristicValueSlatType"
@@ -1865,7 +1865,7 @@
             "es": "Cerrando"
           },
           "publicSymbol": "HMCharacteristicValuePositionStateClosing",
-          "colorHex": "#64748B"
+          "colorHex": "#8B5CF6"
         },
         {
           "code": 1,
@@ -1876,7 +1876,7 @@
             "es": "Abriendo"
           },
           "publicSymbol": "HMCharacteristicValuePositionStateOpening",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 2,
@@ -1887,7 +1887,7 @@
             "es": "Detenido"
           },
           "publicSymbol": "HMCharacteristicValuePositionStateStopped",
-          "colorHex": "#A78BFA"
+          "colorHex": "#64748B"
         }
       ],
       "publicEnum": "HMCharacteristicValuePositionState"
@@ -1944,7 +1944,7 @@
             "es": "Atascadas"
           },
           "publicSymbol": "HMCharacteristicValueCurrentSlatStateJammed",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#EF4444"
         },
         {
           "code": 2,
@@ -1955,7 +1955,7 @@
             "es": "Oscilando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentSlatStateOscillating",
-          "colorHex": "#A78BFA"
+          "colorHex": "#06B6D4"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentSlatState"
@@ -2002,7 +2002,7 @@
             "es": "Desbloqueada"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismStateUnsecured",
-          "colorHex": "#64748B"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 1,
@@ -2013,7 +2013,7 @@
             "es": "Bloqueada"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismStateSecured",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         },
         {
           "code": 2,
@@ -2024,7 +2024,7 @@
             "es": "Atascada"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismStateJammed",
-          "colorHex": "#F59E0B"
+          "colorHex": "#EF4444"
         },
         {
           "code": 3,
@@ -2082,7 +2082,7 @@
             "es": "Armada en casa"
           },
           "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateStayArm",
-          "colorHex": "#64748B"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 1,
@@ -2093,7 +2093,7 @@
             "es": "Armada en ausencia"
           },
           "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateAwayArm",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 2,
@@ -2104,7 +2104,7 @@
             "es": "Armada de noche"
           },
           "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateNightArm",
-          "colorHex": "#A78BFA"
+          "colorHex": "#8B5CF6"
         },
         {
           "code": 3,
@@ -2115,7 +2115,7 @@
             "es": "Desarmada"
           },
           "publicSymbol": "HMCharacteristicValueTargetSecuritySystemStateDisarm",
-          "colorHex": "#14B8A6"
+          "colorHex": "#64748B"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetSecuritySystemState"
@@ -2160,7 +2160,7 @@
             "es": "Desbloqueada"
           },
           "publicSymbol": "HMCharacteristicValueTargetLockMechanismStateUnsecured",
-          "colorHex": "#64748B"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 1,
@@ -2171,7 +2171,7 @@
             "es": "Bloqueada"
           },
           "publicSymbol": "HMCharacteristicValueTargetLockMechanismStateSecured",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetLockMechanismState"
@@ -2272,7 +2272,7 @@
             "es": "Desbloqueados"
           },
           "publicSymbol": "HMCharacteristicValueLockPhysicalControlsStateNotLocked",
-          "colorHex": "#64748B"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 1,
@@ -2283,7 +2283,7 @@
             "es": "Bloqueados"
           },
           "publicSymbol": "HMCharacteristicValueLockPhysicalControlsStateLocked",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueLockPhysicalControlsState"
@@ -2331,7 +2331,7 @@
             "es": "Armada en casa"
           },
           "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateStayArm",
-          "colorHex": "#64748B"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 1,
@@ -2342,7 +2342,7 @@
             "es": "Armada en ausencia"
           },
           "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateAwayArm",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 2,
@@ -2353,7 +2353,7 @@
             "es": "Armada de noche"
           },
           "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateNightArm",
-          "colorHex": "#A78BFA"
+          "colorHex": "#8B5CF6"
         },
         {
           "code": 3,
@@ -2364,7 +2364,7 @@
             "es": "Desarmada"
           },
           "publicSymbol": "HMCharacteristicValueCurrentSecuritySystemStateDisarmed",
-          "colorHex": "#14B8A6"
+          "colorHex": "#64748B"
         },
         {
           "code": 4,
@@ -2429,7 +2429,7 @@
             "es": "Bloqueada manualmente desde dentro"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementInterior",
-          "colorHex": "#64748B"
+          "colorHex": "#22C55E"
         },
         {
           "code": 1,
@@ -2440,7 +2440,7 @@
             "es": "Desbloqueada manualmente desde dentro"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementInterior",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 2,
@@ -2451,7 +2451,7 @@
             "es": "Bloqueada manualmente desde fuera"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementExterior",
-          "colorHex": "#A78BFA"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 3,
@@ -2462,7 +2462,7 @@
             "es": "Desbloqueada manualmente desde fuera"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementExterior",
-          "colorHex": "#14B8A6"
+          "colorHex": "#F97316"
         },
         {
           "code": 4,
@@ -2473,7 +2473,7 @@
             "es": "Bloqueada con teclado"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredWithKeypad",
-          "colorHex": "#F59E0B"
+          "colorHex": "#22C55E"
         },
         {
           "code": 5,
@@ -2484,7 +2484,7 @@
             "es": "Desbloqueada con teclado"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredWithKeypad",
-          "colorHex": "#EC4899"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 6,
@@ -2495,7 +2495,7 @@
             "es": "Bloqueada a distancia"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredRemotely",
-          "colorHex": "#38BDF8"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 7,
@@ -2506,7 +2506,7 @@
             "es": "Desbloqueada a distancia"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredRemotely",
-          "colorHex": "#A3E635"
+          "colorHex": "#F97316"
         },
         {
           "code": 8,
@@ -2517,7 +2517,7 @@
             "es": "Bloqueada tras el plazo"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout",
-          "colorHex": "#FB923C"
+          "colorHex": "#8B5CF6"
         },
         {
           "code": 9,
@@ -2528,7 +2528,7 @@
             "es": "Bloqueada manualmente"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement",
-          "colorHex": "#818CF8"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 10,
@@ -2539,7 +2539,7 @@
             "es": "Desbloqueada manualmente"
           },
           "publicSymbol": "HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement",
-          "colorHex": "#2DD4BF"
+          "colorHex": "#F59E0B"
         }
       ],
       "publicEnum": "HMCharacteristicValueLockMechanismLastKnownAction"
@@ -2557,7 +2557,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_duration_seconds",
+        "key": "lock_auto_secure_timeout_seconds",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -2569,7 +2569,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypelockmanagementautosecuretimeout",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "duration_bands",
       "serviceCondition": "Secondes brutes. Le domaine UInt32 ne définit pas les bornes du graphique.",
       "decision": "ready"
     },
@@ -2597,7 +2597,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargettemperature",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "temperature_setpoint_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -2625,7 +2625,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeheatingthreshold",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "temperature_setpoint_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -2653,7 +2653,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypecoolingthreshold",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "temperature_setpoint_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -2670,7 +2670,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "humidity_setpoint_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -2682,7 +2682,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypetargetrelativehumidity",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "humidity_setpoint_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -2699,7 +2699,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "humidity_setpoint_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -2711,7 +2711,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypehumidifierthreshold",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "humidity_setpoint_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -2728,7 +2728,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "humidity_setpoint_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -2740,7 +2740,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypedehumidifierthreshold",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "humidity_setpoint_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -2796,7 +2796,7 @@
             "es": "Calentando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHeatingCoolingHeat",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F97316"
         },
         {
           "code": 2,
@@ -2807,7 +2807,7 @@
             "es": "Enfriando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHeatingCoolingCool",
-          "colorHex": "#A78BFA"
+          "colorHex": "#3B82F6"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentHeatingCooling"
@@ -2853,7 +2853,7 @@
             "es": "Automático"
           },
           "publicSymbol": "HMCharacteristicValueTargetHeaterCoolerStateAutomatic",
-          "colorHex": "#64748B"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 1,
@@ -2864,7 +2864,7 @@
             "es": "Calefacción"
           },
           "publicSymbol": "HMCharacteristicValueTargetHeaterCoolerStateHeat",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F97316"
         },
         {
           "code": 2,
@@ -2875,7 +2875,7 @@
             "es": "Refrigeración"
           },
           "publicSymbol": "HMCharacteristicValueTargetHeaterCoolerStateCool",
-          "colorHex": "#A78BFA"
+          "colorHex": "#3B82F6"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetHeaterCoolerState"
@@ -2921,7 +2921,7 @@
             "es": "Automático"
           },
           "publicSymbol": "HMCharacteristicValueTargetHumidifierDehumidifierStateAutomatic",
-          "colorHex": "#64748B"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 1,
@@ -2932,7 +2932,7 @@
             "es": "Humidificar"
           },
           "publicSymbol": "HMCharacteristicValueTargetHumidifierDehumidifierStateHumidify",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 2,
@@ -2943,7 +2943,7 @@
             "es": "Deshumidificar"
           },
           "publicSymbol": "HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify",
-          "colorHex": "#A78BFA"
+          "colorHex": "#F59E0B"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetHumidifierDehumidifierState"
@@ -3001,7 +3001,7 @@
             "es": "Calefacción"
           },
           "publicSymbol": "HMCharacteristicValueHeatingCoolingHeat",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F97316"
         },
         {
           "code": 2,
@@ -3012,7 +3012,7 @@
             "es": "Refrigeración"
           },
           "publicSymbol": "HMCharacteristicValueHeatingCoolingCool",
-          "colorHex": "#A78BFA"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 3,
@@ -3081,7 +3081,7 @@
             "es": "En espera"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHeaterCoolerStateIdle",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#94A3B8"
         },
         {
           "code": 2,
@@ -3092,7 +3092,7 @@
             "es": "Calentando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHeaterCoolerStateHeating",
-          "colorHex": "#A78BFA"
+          "colorHex": "#F97316"
         },
         {
           "code": 3,
@@ -3103,7 +3103,7 @@
             "es": "Enfriando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHeaterCoolerStateCooling",
-          "colorHex": "#14B8A6"
+          "colorHex": "#3B82F6"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentHeaterCoolerState"
@@ -3161,7 +3161,7 @@
             "es": "En espera"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#94A3B8"
         },
         {
           "code": 2,
@@ -3172,7 +3172,7 @@
             "es": "Humidificando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHumidifierDehumidifierStateHumidifying",
-          "colorHex": "#A78BFA"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 3,
@@ -3183,7 +3183,7 @@
             "es": "Deshumidificando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentHumidifierDehumidifierStateDehumidifying",
-          "colorHex": "#14B8A6"
+          "colorHex": "#F59E0B"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentHumidifierDehumidifierState"
@@ -3201,7 +3201,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "fan_speed_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -3213,7 +3213,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictyperotationspeed",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "speed_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -3230,7 +3230,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "filter_life_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -3242,7 +3242,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypefilterlifelevel",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "remaining_life_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -3298,7 +3298,7 @@
             "es": "En espera"
           },
           "publicSymbol": "HMCharacteristicValueCurrentFanStateIdle",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#94A3B8"
         },
         {
           "code": 2,
@@ -3309,7 +3309,7 @@
             "es": "En funcionamiento"
           },
           "publicSymbol": "HMCharacteristicValueCurrentFanStateActive",
-          "colorHex": "#A78BFA"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentFanState"
@@ -3366,7 +3366,7 @@
             "es": "En espera"
           },
           "publicSymbol": "HMCharacteristicValueCurrentAirPurifierStateIdle",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#94A3B8"
         },
         {
           "code": 2,
@@ -3377,7 +3377,7 @@
             "es": "En funcionamiento"
           },
           "publicSymbol": "HMCharacteristicValueCurrentAirPurifierStateActive",
-          "colorHex": "#A78BFA"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentAirPurifierState"
@@ -3422,7 +3422,7 @@
             "es": "Horario"
           },
           "publicSymbol": "HMCharacteristicValueRotationDirectionClockwise",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -3433,7 +3433,7 @@
             "es": "Antihorario"
           },
           "publicSymbol": "HMCharacteristicValueRotationDirectionCounterClockwise",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#8B5CF6"
         }
       ],
       "publicEnum": "HMCharacteristicValueRotationDirection"
@@ -3478,7 +3478,7 @@
             "es": "Manual"
           },
           "publicSymbol": "HMCharacteristicValueTargetFanStateManual",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -3489,7 +3489,7 @@
             "es": "Automático"
           },
           "publicSymbol": "HMCharacteristicValueTargetFanStateAutomatic",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetFanState"
@@ -3534,7 +3534,7 @@
             "es": "Manual"
           },
           "publicSymbol": "HMCharacteristicValueTargetAirPurifierStateManual",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -3545,7 +3545,7 @@
             "es": "Automático"
           },
           "publicSymbol": "HMCharacteristicValueTargetAirPurifierStateAutomatic",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetAirPurifierState"
@@ -3601,7 +3601,7 @@
             "es": "Activada"
           },
           "publicSymbol": "HMCharacteristicValueSwingModeEnabled",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#06B6D4"
         }
       ],
       "publicEnum": "HMCharacteristicValueSwingMode"
@@ -3646,7 +3646,7 @@
             "es": "No necesario"
           },
           "publicSymbol": "HMCharacteristicValueFilterChangeNotNeeded",
-          "colorHex": "#64748B"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 1,
@@ -3657,7 +3657,7 @@
             "es": "Necesario"
           },
           "publicSymbol": "HMCharacteristicValueFilterChangeNeeded",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F59E0B"
         }
       ],
       "publicEnum": "HMCharacteristicValueFilterChange"
@@ -3675,7 +3675,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "water_level_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -3687,7 +3687,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypewaterlevel",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "level_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -3716,7 +3716,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypesetduration",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "duration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -3733,7 +3733,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_duration_seconds",
+        "key": "valve_remaining_duration_seconds",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -3745,7 +3745,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictyperemainingduration",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "duration_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -3802,7 +3802,7 @@
             "es": "Riego"
           },
           "publicSymbol": "HMCharacteristicValueValveTypeIrrigation",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         },
         {
           "code": 2,
@@ -3813,7 +3813,7 @@
             "es": "Cabezal de ducha"
           },
           "publicSymbol": "HMCharacteristicValueValveTypeShowerHead",
-          "colorHex": "#A78BFA"
+          "colorHex": "#06B6D4"
         },
         {
           "code": 3,
@@ -3824,7 +3824,7 @@
             "es": "Grifo"
           },
           "publicSymbol": "HMCharacteristicValueValveTypeWaterFaucet",
-          "colorHex": "#14B8A6"
+          "colorHex": "#3B82F6"
         }
       ],
       "publicEnum": "HMCharacteristicValueValveType"
@@ -3881,7 +3881,7 @@
             "es": "Programado"
           },
           "publicSymbol": "HMCharacteristicValueProgramModeScheduled",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 2,
@@ -3892,7 +3892,7 @@
             "es": "Programa anulado manualmente"
           },
           "publicSymbol": "HMCharacteristicValueProgramModeScheduleOverriddenToManual",
-          "colorHex": "#A78BFA"
+          "colorHex": "#F59E0B"
         }
       ],
       "publicEnum": "HMCharacteristicValueProgramMode"
@@ -3923,7 +3923,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypebatterylevel",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "remaining_life_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -3967,7 +3967,7 @@
             "es": "Normal"
           },
           "publicSymbol": "HMCharacteristicValueBatteryStatusNormal",
-          "colorHex": "#64748B"
+          "colorHex": "#22C55E"
         },
         {
           "code": 1,
@@ -4035,7 +4035,7 @@
             "es": "Cargando"
           },
           "publicSymbol": "HMCharacteristicValueChargingStateInProgress",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         },
         {
           "code": 2,
@@ -4046,7 +4046,7 @@
             "es": "No recargable"
           },
           "publicSymbol": "HMCharacteristicValueChargingStateNotChargeable",
-          "colorHex": "#A78BFA"
+          "colorHex": "#8B5CF6"
         }
       ],
       "publicEnum": "HMCharacteristicValueChargingState"
@@ -4100,7 +4100,7 @@
             "de": "Aktiv",
             "es": "Activo"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         }
       ]
     },
@@ -4313,7 +4313,7 @@
             "es": "Pulsación simple"
           },
           "publicSymbol": "HMCharacteristicValueInputEventSinglePress",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -4324,7 +4324,7 @@
             "es": "Pulsación doble"
           },
           "publicSymbol": "HMCharacteristicValueInputEventDoublePress",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#8B5CF6"
         },
         {
           "code": 2,
@@ -4335,7 +4335,7 @@
             "es": "Pulsación larga"
           },
           "publicSymbol": "HMCharacteristicValueInputEventLongPress",
-          "colorHex": "#A78BFA"
+          "colorHex": "#EC4899"
         }
       ],
       "publicEnum": "HMCharacteristicValueInputEvent"
@@ -4353,7 +4353,7 @@
         "modified": false
       },
       "configuration": {
-        "key": "homekit_percentage",
+        "key": "audio_volume_percentage",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -4365,7 +4365,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypevolume",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "volume_bands",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -4408,7 +4408,7 @@
             "de": "Ton an",
             "es": "Sonido activo"
           },
-          "colorHex": "#64748B"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 1,
@@ -4418,7 +4418,7 @@
             "de": "Stumm",
             "es": "Silenciado"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F59E0B"
         }
       ]
     },
@@ -4471,7 +4471,7 @@
             "de": "Aktiviert",
             "es": "Activada"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#8B5CF6"
         }
       ]
     },
@@ -4524,7 +4524,7 @@
             "de": "Gespiegelt",
             "es": "Reflejada"
           },
-          "colorHex": "#0EA5E9"
+          "colorHex": "#3B82F6"
         }
       ]
     },
@@ -4552,7 +4552,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeopticalzoom",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "zoom_bands",
       "serviceCondition": "Rapport sans dimension ; limites de l’accessoire, aucune unité physique ni conversion en pourcentage.",
       "decision": "ready"
     },
@@ -4580,7 +4580,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypedigitalzoom",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "zoom_bands",
       "serviceCondition": "Rapport sans dimension ; limites de l’accessoire, aucune unité physique ni conversion en pourcentage.",
       "decision": "ready"
     },
@@ -4596,7 +4596,7 @@
         "status": "added"
       },
       "configuration": {
-        "key": "homekit_angle_degrees",
+        "key": "camera_image_rotation_degrees",
         "status": "added"
       },
       "aggregationMethod": "last",
@@ -4612,7 +4612,7 @@
       },
       "reference": "https://developer.apple.com/documentation/homekit/hmcharacteristictypeimagerotation",
       "integrationStatus": "requires_app_mapping",
-      "thresholdPolicy": "neutral",
+      "thresholdPolicy": "discrete_values",
       "serviceCondition": null,
       "decision": "ready"
     },
@@ -4660,7 +4660,7 @@
             "es": "Reproduciendo"
           },
           "publicSymbol": "HMCharacteristicValueCurrentMediaStatePlaying",
-          "colorHex": "#64748B"
+          "colorHex": "#22C55E"
         },
         {
           "code": 1,
@@ -4671,7 +4671,7 @@
             "es": "En pausa"
           },
           "publicSymbol": "HMCharacteristicValueCurrentMediaStatePaused",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 2,
@@ -4682,7 +4682,7 @@
             "es": "Detenido"
           },
           "publicSymbol": "HMCharacteristicValueCurrentMediaStateStopped",
-          "colorHex": "#A78BFA"
+          "colorHex": "#64748B"
         },
         {
           "code": 3,
@@ -4704,7 +4704,7 @@
             "es": "Cargando"
           },
           "publicSymbol": "HMCharacteristicValueCurrentMediaStateLoading",
-          "colorHex": "#F59E0B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 5,
@@ -4715,7 +4715,7 @@
             "es": "Interrumpido"
           },
           "publicSymbol": "HMCharacteristicValueCurrentMediaStateInterrupted",
-          "colorHex": "#EC4899"
+          "colorHex": "#F97316"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentMediaState"
@@ -4761,7 +4761,7 @@
             "es": "Reproducir"
           },
           "publicSymbol": "HMCharacteristicValueTargetMediaStatePlay",
-          "colorHex": "#64748B"
+          "colorHex": "#22C55E"
         },
         {
           "code": 1,
@@ -4772,7 +4772,7 @@
             "es": "Pausar"
           },
           "publicSymbol": "HMCharacteristicValueTargetMediaStatePause",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F59E0B"
         },
         {
           "code": 2,
@@ -4783,7 +4783,7 @@
             "es": "Detener"
           },
           "publicSymbol": "HMCharacteristicValueTargetMediaStateStop",
-          "colorHex": "#A78BFA"
+          "colorHex": "#64748B"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetMediaState"
@@ -4840,7 +4840,7 @@
             "es": "Conectado"
           },
           "publicSymbol": "HMCharacteristicValueWiFiSatelliteStatusConnected",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#22C55E"
         },
         {
           "code": 2,
@@ -4851,7 +4851,7 @@
             "es": "No conectado"
           },
           "publicSymbol": "HMCharacteristicValueWiFiSatelliteStatusNotConnected",
-          "colorHex": "#A78BFA"
+          "colorHex": "#F97316"
         }
       ],
       "publicEnum": "HMCharacteristicValueWiFiSatelliteStatus"
@@ -4898,7 +4898,7 @@
             "es": "Visible"
           },
           "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateShown",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -4909,7 +4909,7 @@
             "es": "Oculto"
           },
           "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateHidden",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#64748B"
         },
         {
           "code": 2,
@@ -4920,7 +4920,7 @@
             "es": "Conectado"
           },
           "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateConnected",
-          "colorHex": "#A78BFA"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 3,
@@ -4931,7 +4931,7 @@
             "es": "Siempre visible"
           },
           "publicSymbol": "HMCharacteristicValueCurrentVisibilityStateAlwaysShown",
-          "colorHex": "#14B8A6"
+          "colorHex": "#8B5CF6"
         }
       ],
       "publicEnum": "HMCharacteristicValueCurrentVisibilityState"
@@ -4976,7 +4976,7 @@
             "es": "Mostrar"
           },
           "publicSymbol": "HMCharacteristicValueTargetVisibilityStateShow",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -4987,7 +4987,7 @@
             "es": "Ocultar"
           },
           "publicSymbol": "HMCharacteristicValueTargetVisibilityStateHide",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#64748B"
         }
       ],
       "publicEnum": "HMCharacteristicValueTargetVisibilityState"
@@ -5032,7 +5032,7 @@
             "es": "Preparado"
           },
           "publicSymbol": "HMCharacteristicValueRouterStatusReady",
-          "colorHex": "#64748B"
+          "colorHex": "#22C55E"
         },
         {
           "code": 1,
@@ -5043,7 +5043,7 @@
             "es": "No preparado"
           },
           "publicSymbol": "HMCharacteristicValueRouterStatusNotReady",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#F97316"
         }
       ],
       "publicEnum": "HMCharacteristicValueRouterStatus"
@@ -5099,7 +5099,7 @@
             "es": "Activados"
           },
           "publicSymbol": "HMCharacteristicValueClosedCaptionsEnabled",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#14B8A6"
         }
       ],
       "publicEnum": "HMCharacteristicValueClosedCaptions"
@@ -5156,7 +5156,7 @@
             "es": "Estándar"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeStandard",
-          "colorHex": "#64748B"
+          "colorHex": "#3B82F6"
         },
         {
           "code": 1,
@@ -5167,7 +5167,7 @@
             "es": "Cine"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeMovie",
-          "colorHex": "#0EA5E9"
+          "colorHex": "#8B5CF6"
         },
         {
           "code": 2,
@@ -5178,7 +5178,7 @@
             "es": "Deporte"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeSport",
-          "colorHex": "#A78BFA"
+          "colorHex": "#22C55E"
         },
         {
           "code": 3,
@@ -5189,7 +5189,7 @@
             "es": "Juego"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeGame",
-          "colorHex": "#14B8A6"
+          "colorHex": "#EC4899"
         },
         {
           "code": 4,
@@ -5211,7 +5211,7 @@
             "es": "Vívido"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeVivid",
-          "colorHex": "#EC4899"
+          "colorHex": "#D946EF"
         },
         {
           "code": 6,
@@ -5222,7 +5222,7 @@
             "es": "Oscuro"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeDark",
-          "colorHex": "#38BDF8"
+          "colorHex": "#475569"
         },
         {
           "code": 7,
@@ -5233,7 +5233,7 @@
             "es": "Claro"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeBright",
-          "colorHex": "#A3E635"
+          "colorHex": "#FBBF24"
         },
         {
           "code": 8,
@@ -5244,7 +5244,7 @@
             "es": "Ordenador"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeComputer",
-          "colorHex": "#FB923C"
+          "colorHex": "#06B6D4"
         },
         {
           "code": 9,
@@ -5255,7 +5255,7 @@
             "es": "Noche"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeNight",
-          "colorHex": "#818CF8"
+          "colorHex": "#4338CA"
         },
         {
           "code": 10,
@@ -5266,7 +5266,7 @@
             "es": "Calibrado"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeCalibrated",
-          "colorHex": "#2DD4BF"
+          "colorHex": "#14B8A6"
         },
         {
           "code": 11,
@@ -5277,7 +5277,7 @@
             "es": "Personalizado 1"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeCustom1",
-          "colorHex": "#F472B6"
+          "colorHex": "#818CF8"
         },
         {
           "code": 12,
@@ -5288,7 +5288,7 @@
             "es": "Personalizado 2"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeCustom2",
-          "colorHex": "#FACC15"
+          "colorHex": "#FB923C"
         },
         {
           "code": 13,
@@ -5299,7 +5299,7 @@
             "es": "Personalizado 3"
           },
           "publicSymbol": "HMCharacteristicValuePictureModeCustom3",
-          "colorHex": "#94A3B8"
+          "colorHex": "#A3E635"
         }
       ],
       "publicEnum": "HMCharacteristicValuePictureMode"

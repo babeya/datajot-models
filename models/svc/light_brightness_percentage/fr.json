@@ -1,0 +1,27 @@
+{
+  "label": "Intensité lumineuse",
+  "description": "Luminosité relative de la lampe, du minimum à la forte lumière. Ce réglage est distinct de l’état marche/arrêt et de l’éclairement en lux.",
+  "thresholds": {
+    "1": {
+      "label": "Minimum"
+    },
+    "2": {
+      "label": "Tamisé"
+    },
+    "3": {
+      "label": "Doux"
+    },
+    "4": {
+      "label": "Clair"
+    },
+    "5": {
+      "label": "Très lumineux"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Intensité lumineuse",
+      "HomeKit"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "label": "Color saturation",
+  "description": "Color saturation, from achromatic to intense color. Bands describe the setting without rating it as better or worse.",
+  "thresholds": {
+    "1": {
+      "label": "Unsaturated"
+    },
+    "2": {
+      "label": "Pastel"
+    },
+    "3": {
+      "label": "Colorful"
+    },
+    "4": {
+      "label": "Vivid"
+    },
+    "5": {
+      "label": "Intense"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Color saturation",
+      "HomeKit"
+    ]
+  }
+}

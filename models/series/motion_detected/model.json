@@ -5,7 +5,7 @@
   "icon": "figure.walk.motion",
   "svc": "motion_detected_binary",
   "decimalPrecision": 0,
-  "color": "#F97316",
+  "color": "#8B5CF6",
   "graphType": "bar",
   "aggregationMethod": "last"
 }

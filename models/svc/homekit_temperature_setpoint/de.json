@@ -1,10 +1,26 @@
 {
-  "label": "Temperatureinstellung",
-  "description": "HomeKit-Rohwerte ohne Bewertungsschwellen. Fehlende Messwerte werden ausgelassen.",
-  "thresholds": {},
+  "label": "Zieltemperatur",
+  "description": "Temperatur-Sollwert in °C mit Katalogbereichen. Ein Einstellwert, keine gemessene Raumtemperatur oder allgemein empfohlene Zieltemperatur.",
+  "thresholds": {
+    "1": {
+      "label": "Niedriger Sollwert"
+    },
+    "2": {
+      "label": "Mäßiger Sollwert"
+    },
+    "3": {
+      "label": "Mittlerer Sollwert"
+    },
+    "4": {
+      "label": "Hoher Sollwert"
+    },
+    "5": {
+      "label": "Sehr hoher Sollwert"
+    }
+  },
   "seo": {
     "keywords": [
-      "Temperatureinstellung",
+      "Zieltemperatur",
       "HomeKit"
     ]
   }

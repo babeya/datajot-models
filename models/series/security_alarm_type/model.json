@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "lock.shield",
-  "color": "#0891B2",
+  "color": "#64748B",
   "graphType": "bar",
   "svc": "security_alarm_type",
   "decimalPrecision": 0,

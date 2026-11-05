@@ -1,0 +1,27 @@
+{
+  "label": "Light brightness",
+  "description": "Relative lamp brightness, with bands from minimum to bright light. This setting is separate from the power state and ambient lux.",
+  "thresholds": {
+    "1": {
+      "label": "Minimum"
+    },
+    "2": {
+      "label": "Dimmed"
+    },
+    "3": {
+      "label": "Soft"
+    },
+    "4": {
+      "label": "Bright"
+    },
+    "5": {
+      "label": "Very bright"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Light brightness",
+      "HomeKit"
+    ]
+  }
+}

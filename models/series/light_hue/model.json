@@ -3,7 +3,7 @@
   "type": "series",
   "category": "light",
   "icon": "lightbulb.fill",
-  "color": "#0891B2",
+  "color": "#D946EF",
   "graphType": "points",
   "svc": "homekit_angle_degrees",
   "decimalPrecision": 0,

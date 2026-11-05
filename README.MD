@@ -45,6 +45,10 @@ templates, raw units, state codes, priorities and application changes still
 required. They are integration documentation and are never included in bundles.
 After building, run `npm run validate:homekit` to check the full mapping,
 localized state labels, raw-unit examples and preservation of historical keys.
+The [visualization catalogue](docs/homekit-visualizations.md) lists colored bands
+for all 43 numeric characteristics, alongside the 60 categorical state mappings.
+Separate presets distinguish lighting, openings, reserves, volume, pollutants
+and peaks; thresholds and statistics are checked in all four locales.
 Adding templates here does not update HomeKit's explicit template selection in
 the application or its embedded fallback bundles.
 

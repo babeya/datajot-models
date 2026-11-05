@@ -41,8 +41,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueContactStateDetected` | Fermée | `#64748B` |
-| 1 | `HMCharacteristicValueContactStateNone` | Ouverte | `#0EA5E9` |
+| 0 | `HMCharacteristicValueContactStateDetected` | Fermée | `#14B8A6` |
+| 1 | `HMCharacteristicValueContactStateNone` | Ouverte | `#F59E0B` |
 
 ## `motionDetected`
 
@@ -51,7 +51,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `false` | Aucun mouvement | `#64748B` |
-| 1 | `true` | Mouvement détecté | `#0EA5E9` |
+| 1 | `true` | Mouvement détecté | `#8B5CF6` |
 
 ## `occupancyDetected`
 
@@ -60,7 +60,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueOccupancyStatusNotOccupied` | Absence | `#64748B` |
-| 1 | `HMCharacteristicValueOccupancyStatusOccupied` | Présence | `#0EA5E9` |
+| 1 | `HMCharacteristicValueOccupancyStatusOccupied` | Présence | `#14B8A6` |
 
 ## `powerState`
 
@@ -69,7 +69,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `false` | Arrêt | `#64748B` |
-| 1 | `true` | Marche | `#0EA5E9` |
+| 1 | `true` | Marche | `#22C55E` |
 
 ## `outletInUse`
 
@@ -78,7 +78,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `false` | Aucun appareil branché | `#64748B` |
-| 1 | `true` | Appareil branché | `#0EA5E9` |
+| 1 | `true` | Appareil branché | `#14B8A6` |
 
 ## `airParticulateSize`
 
@@ -86,8 +86,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueAirParticulateSize2_5` | 2,5 µm | `#64748B` |
-| 1 | `HMCharacteristicValueAirParticulateSize10` | 10 µm | `#0EA5E9` |
+| 0 | `HMCharacteristicValueAirParticulateSize2_5` | 2,5 µm | `#06B6D4` |
+| 1 | `HMCharacteristicValueAirParticulateSize10` | 10 µm | `#8B5CF6` |
 
 ## `smokeDetected`
 
@@ -141,7 +141,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `false` | Arrêt | `#64748B` |
-| 1 | `true` | Marche | `#0EA5E9` |
+| 1 | `true` | Marche | `#22C55E` |
 
 ## `active`
 
@@ -150,7 +150,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueActivationStateInactive` | Inactive | `#64748B` |
-| 1 | `HMCharacteristicValueActivationStateActive` | Active | `#0EA5E9` |
+| 1 | `HMCharacteristicValueActivationStateActive` | Active | `#22C55E` |
 
 ## `inUse`
 
@@ -159,7 +159,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueUsageStateNotInUse` | À l’arrêt | `#64748B` |
-| 1 | `HMCharacteristicValueUsageStateInUse` | En cours | `#0EA5E9` |
+| 1 | `HMCharacteristicValueUsageStateInUse` | En cours | `#14B8A6` |
 
 ## `currentDoorState`
 
@@ -167,11 +167,11 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueDoorStateOpen` | Ouverte | `#64748B` |
-| 1 | `HMCharacteristicValueDoorStateClosed` | Fermée | `#0EA5E9` |
-| 2 | `HMCharacteristicValueDoorStateOpening` | En ouverture | `#A78BFA` |
-| 3 | `HMCharacteristicValueDoorStateClosing` | En fermeture | `#14B8A6` |
-| 4 | `HMCharacteristicValueDoorStateStopped` | Arrêtée | `#F59E0B` |
+| 0 | `HMCharacteristicValueDoorStateOpen` | Ouverte | `#F59E0B` |
+| 1 | `HMCharacteristicValueDoorStateClosed` | Fermée | `#14B8A6` |
+| 2 | `HMCharacteristicValueDoorStateOpening` | En ouverture | `#3B82F6` |
+| 3 | `HMCharacteristicValueDoorStateClosing` | En fermeture | `#8B5CF6` |
+| 4 | `HMCharacteristicValueDoorStateStopped` | Arrêtée | `#64748B` |
 
 ## `targetDoorState`
 
@@ -179,8 +179,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetDoorStateOpen` | Ouverte | `#64748B` |
-| 1 | `HMCharacteristicValueTargetDoorStateClosed` | Fermée | `#0EA5E9` |
+| 0 | `HMCharacteristicValueTargetDoorStateOpen` | Ouverte | `#F59E0B` |
+| 1 | `HMCharacteristicValueTargetDoorStateClosed` | Fermée | `#14B8A6` |
 
 ## `slatType`
 
@@ -188,8 +188,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueSlatTypeHorizontal` | Horizontales | `#64748B` |
-| 1 | `HMCharacteristicValueSlatTypeVertical` | Verticales | `#0EA5E9` |
+| 0 | `HMCharacteristicValueSlatTypeHorizontal` | Horizontales | `#3B82F6` |
+| 1 | `HMCharacteristicValueSlatTypeVertical` | Verticales | `#8B5CF6` |
 
 ## `positionState`
 
@@ -197,9 +197,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValuePositionStateClosing` | En fermeture | `#64748B` |
-| 1 | `HMCharacteristicValuePositionStateOpening` | En ouverture | `#0EA5E9` |
-| 2 | `HMCharacteristicValuePositionStateStopped` | À l’arrêt | `#A78BFA` |
+| 0 | `HMCharacteristicValuePositionStateClosing` | En fermeture | `#8B5CF6` |
+| 1 | `HMCharacteristicValuePositionStateOpening` | En ouverture | `#3B82F6` |
+| 2 | `HMCharacteristicValuePositionStateStopped` | À l’arrêt | `#64748B` |
 
 ## `currentSlatState`
 
@@ -208,8 +208,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueCurrentSlatStateStationary` | Immobiles | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentSlatStateJammed` | Bloquées | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentSlatStateOscillating` | En oscillation | `#A78BFA` |
+| 1 | `HMCharacteristicValueCurrentSlatStateJammed` | Bloquées | `#EF4444` |
+| 2 | `HMCharacteristicValueCurrentSlatStateOscillating` | En oscillation | `#06B6D4` |
 
 ## `currentLockMechanismState`
 
@@ -217,9 +217,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueLockMechanismStateUnsecured` | Déverrouillée | `#64748B` |
-| 1 | `HMCharacteristicValueLockMechanismStateSecured` | Verrouillée | `#0EA5E9` |
-| 2 | `HMCharacteristicValueLockMechanismStateJammed` | Bloquée | `#F59E0B` |
+| 0 | `HMCharacteristicValueLockMechanismStateUnsecured` | Déverrouillée | `#F59E0B` |
+| 1 | `HMCharacteristicValueLockMechanismStateSecured` | Verrouillée | `#22C55E` |
+| 2 | `HMCharacteristicValueLockMechanismStateJammed` | Bloquée | `#EF4444` |
 | 3 | `HMCharacteristicValueLockMechanismStateUnknown` | Inconnue | `#64748B` |
 
 ## `targetSecuritySystemState`
@@ -228,10 +228,10 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetSecuritySystemStateStayArm` | Armée à domicile | `#64748B` |
-| 1 | `HMCharacteristicValueTargetSecuritySystemStateAwayArm` | Armée en absence | `#0EA5E9` |
-| 2 | `HMCharacteristicValueTargetSecuritySystemStateNightArm` | Armée la nuit | `#A78BFA` |
-| 3 | `HMCharacteristicValueTargetSecuritySystemStateDisarm` | Désarmée | `#14B8A6` |
+| 0 | `HMCharacteristicValueTargetSecuritySystemStateStayArm` | Armée à domicile | `#14B8A6` |
+| 1 | `HMCharacteristicValueTargetSecuritySystemStateAwayArm` | Armée en absence | `#3B82F6` |
+| 2 | `HMCharacteristicValueTargetSecuritySystemStateNightArm` | Armée la nuit | `#8B5CF6` |
+| 3 | `HMCharacteristicValueTargetSecuritySystemStateDisarm` | Désarmée | `#64748B` |
 
 ## `targetLockMechanismState`
 
@@ -239,8 +239,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetLockMechanismStateUnsecured` | Déverrouillée | `#64748B` |
-| 1 | `HMCharacteristicValueTargetLockMechanismStateSecured` | Verrouillée | `#0EA5E9` |
+| 0 | `HMCharacteristicValueTargetLockMechanismStateUnsecured` | Déverrouillée | `#F59E0B` |
+| 1 | `HMCharacteristicValueTargetLockMechanismStateSecured` | Verrouillée | `#22C55E` |
 
 ## `securitySystemAlarmType`
 
@@ -257,8 +257,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueLockPhysicalControlsStateNotLocked` | Déverrouillées | `#64748B` |
-| 1 | `HMCharacteristicValueLockPhysicalControlsStateLocked` | Verrouillées | `#0EA5E9` |
+| 0 | `HMCharacteristicValueLockPhysicalControlsStateNotLocked` | Déverrouillées | `#F59E0B` |
+| 1 | `HMCharacteristicValueLockPhysicalControlsStateLocked` | Verrouillées | `#14B8A6` |
 
 ## `currentSecuritySystemState`
 
@@ -266,10 +266,10 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueCurrentSecuritySystemStateStayArm` | Armée à domicile | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentSecuritySystemStateAwayArm` | Armée en absence | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentSecuritySystemStateNightArm` | Armée la nuit | `#A78BFA` |
-| 3 | `HMCharacteristicValueCurrentSecuritySystemStateDisarmed` | Désarmée | `#14B8A6` |
+| 0 | `HMCharacteristicValueCurrentSecuritySystemStateStayArm` | Armée à domicile | `#14B8A6` |
+| 1 | `HMCharacteristicValueCurrentSecuritySystemStateAwayArm` | Armée en absence | `#3B82F6` |
+| 2 | `HMCharacteristicValueCurrentSecuritySystemStateNightArm` | Armée la nuit | `#8B5CF6` |
+| 3 | `HMCharacteristicValueCurrentSecuritySystemStateDisarmed` | Désarmée | `#64748B` |
 | 4 | `HMCharacteristicValueCurrentSecuritySystemStateTriggered` | Déclenchée | `#EF4444` |
 
 ## `lockMechanismLastKnownAction`
@@ -278,17 +278,17 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementInterior` | Verrouillée manuellement de l’intérieur | `#64748B` |
-| 1 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementInterior` | Déverrouillée manuellement de l’intérieur | `#0EA5E9` |
-| 2 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementExterior` | Verrouillée manuellement de l’extérieur | `#A78BFA` |
-| 3 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementExterior` | Déverrouillée manuellement de l’extérieur | `#14B8A6` |
-| 4 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredWithKeypad` | Verrouillée par clavier | `#F59E0B` |
-| 5 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredWithKeypad` | Déverrouillée par clavier | `#EC4899` |
-| 6 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredRemotely` | Verrouillée à distance | `#38BDF8` |
-| 7 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredRemotely` | Déverrouillée à distance | `#A3E635` |
-| 8 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout` | Verrouillée après délai | `#FB923C` |
-| 9 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement` | Verrouillée manuellement | `#818CF8` |
-| 10 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement` | Déverrouillée manuellement | `#2DD4BF` |
+| 0 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementInterior` | Verrouillée manuellement de l’intérieur | `#22C55E` |
+| 1 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementInterior` | Déverrouillée manuellement de l’intérieur | `#F59E0B` |
+| 2 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementExterior` | Verrouillée manuellement de l’extérieur | `#14B8A6` |
+| 3 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementExterior` | Déverrouillée manuellement de l’extérieur | `#F97316` |
+| 4 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredWithKeypad` | Verrouillée par clavier | `#22C55E` |
+| 5 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredWithKeypad` | Déverrouillée par clavier | `#F59E0B` |
+| 6 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredRemotely` | Verrouillée à distance | `#3B82F6` |
+| 7 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredRemotely` | Déverrouillée à distance | `#F97316` |
+| 8 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout` | Verrouillée après délai | `#8B5CF6` |
+| 9 | `HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovement` | Verrouillée manuellement | `#14B8A6` |
+| 10 | `HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovement` | Déverrouillée manuellement | `#F59E0B` |
 
 ## `currentHeatingCooling`
 
@@ -297,8 +297,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueCurrentHeatingCoolingOff` | À l’arrêt | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentHeatingCoolingHeat` | Chauffage | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentHeatingCoolingCool` | Refroidissement | `#A78BFA` |
+| 1 | `HMCharacteristicValueCurrentHeatingCoolingHeat` | Chauffage | `#F97316` |
+| 2 | `HMCharacteristicValueCurrentHeatingCoolingCool` | Refroidissement | `#3B82F6` |
 
 ## `targetHeaterCoolerState`
 
@@ -306,9 +306,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetHeaterCoolerStateAutomatic` | Automatique | `#64748B` |
-| 1 | `HMCharacteristicValueTargetHeaterCoolerStateHeat` | Chauffage | `#0EA5E9` |
-| 2 | `HMCharacteristicValueTargetHeaterCoolerStateCool` | Refroidissement | `#A78BFA` |
+| 0 | `HMCharacteristicValueTargetHeaterCoolerStateAutomatic` | Automatique | `#14B8A6` |
+| 1 | `HMCharacteristicValueTargetHeaterCoolerStateHeat` | Chauffage | `#F97316` |
+| 2 | `HMCharacteristicValueTargetHeaterCoolerStateCool` | Refroidissement | `#3B82F6` |
 
 ## `targetHumidifierDehumidifierState`
 
@@ -316,9 +316,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetHumidifierDehumidifierStateAutomatic` | Automatique | `#64748B` |
-| 1 | `HMCharacteristicValueTargetHumidifierDehumidifierStateHumidify` | Humidification | `#0EA5E9` |
-| 2 | `HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify` | Déshumidification | `#A78BFA` |
+| 0 | `HMCharacteristicValueTargetHumidifierDehumidifierStateAutomatic` | Automatique | `#14B8A6` |
+| 1 | `HMCharacteristicValueTargetHumidifierDehumidifierStateHumidify` | Humidification | `#3B82F6` |
+| 2 | `HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify` | Déshumidification | `#F59E0B` |
 
 ## `targetHeatingCooling`
 
@@ -327,8 +327,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueHeatingCoolingOff` | Arrêt | `#64748B` |
-| 1 | `HMCharacteristicValueHeatingCoolingHeat` | Chauffage | `#0EA5E9` |
-| 2 | `HMCharacteristicValueHeatingCoolingCool` | Refroidissement | `#A78BFA` |
+| 1 | `HMCharacteristicValueHeatingCoolingHeat` | Chauffage | `#F97316` |
+| 2 | `HMCharacteristicValueHeatingCoolingCool` | Refroidissement | `#3B82F6` |
 | 3 | `HMCharacteristicValueHeatingCoolingAuto` | Automatique | `#14B8A6` |
 
 ## `currentHeaterCoolerState`
@@ -338,9 +338,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueCurrentHeaterCoolerStateInactive` | Inactif | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentHeaterCoolerStateIdle` | En attente | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentHeaterCoolerStateHeating` | En chauffage | `#A78BFA` |
-| 3 | `HMCharacteristicValueCurrentHeaterCoolerStateCooling` | En refroidissement | `#14B8A6` |
+| 1 | `HMCharacteristicValueCurrentHeaterCoolerStateIdle` | En attente | `#94A3B8` |
+| 2 | `HMCharacteristicValueCurrentHeaterCoolerStateHeating` | En chauffage | `#F97316` |
+| 3 | `HMCharacteristicValueCurrentHeaterCoolerStateCooling` | En refroidissement | `#3B82F6` |
 
 ## `currentHumidifierDehumidifierState`
 
@@ -349,9 +349,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueCurrentHumidifierDehumidifierStateInactive` | Inactif | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle` | En attente | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentHumidifierDehumidifierStateHumidifying` | En humidification | `#A78BFA` |
-| 3 | `HMCharacteristicValueCurrentHumidifierDehumidifierStateDehumidifying` | En déshumidification | `#14B8A6` |
+| 1 | `HMCharacteristicValueCurrentHumidifierDehumidifierStateIdle` | En attente | `#94A3B8` |
+| 2 | `HMCharacteristicValueCurrentHumidifierDehumidifierStateHumidifying` | En humidification | `#3B82F6` |
+| 3 | `HMCharacteristicValueCurrentHumidifierDehumidifierStateDehumidifying` | En déshumidification | `#F59E0B` |
 
 ## `currentFanState`
 
@@ -360,8 +360,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueCurrentFanStateInactive` | Inactif | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentFanStateIdle` | En attente | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentFanStateActive` | En fonctionnement | `#A78BFA` |
+| 1 | `HMCharacteristicValueCurrentFanStateIdle` | En attente | `#94A3B8` |
+| 2 | `HMCharacteristicValueCurrentFanStateActive` | En fonctionnement | `#14B8A6` |
 
 ## `currentAirPurifierState`
 
@@ -370,8 +370,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueCurrentAirPurifierStateInactive` | Inactif | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentAirPurifierStateIdle` | En attente | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentAirPurifierStateActive` | En fonctionnement | `#A78BFA` |
+| 1 | `HMCharacteristicValueCurrentAirPurifierStateIdle` | En attente | `#94A3B8` |
+| 2 | `HMCharacteristicValueCurrentAirPurifierStateActive` | En fonctionnement | `#14B8A6` |
 
 ## `rotationDirection`
 
@@ -379,8 +379,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueRotationDirectionClockwise` | Horaire | `#64748B` |
-| 1 | `HMCharacteristicValueRotationDirectionCounterClockwise` | Antihoraire | `#0EA5E9` |
+| 0 | `HMCharacteristicValueRotationDirectionClockwise` | Horaire | `#3B82F6` |
+| 1 | `HMCharacteristicValueRotationDirectionCounterClockwise` | Antihoraire | `#8B5CF6` |
 
 ## `targetFanState`
 
@@ -388,8 +388,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetFanStateManual` | Manuel | `#64748B` |
-| 1 | `HMCharacteristicValueTargetFanStateAutomatic` | Automatique | `#0EA5E9` |
+| 0 | `HMCharacteristicValueTargetFanStateManual` | Manuel | `#3B82F6` |
+| 1 | `HMCharacteristicValueTargetFanStateAutomatic` | Automatique | `#14B8A6` |
 
 ## `targetAirPurifierState`
 
@@ -397,8 +397,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetAirPurifierStateManual` | Manuel | `#64748B` |
-| 1 | `HMCharacteristicValueTargetAirPurifierStateAutomatic` | Automatique | `#0EA5E9` |
+| 0 | `HMCharacteristicValueTargetAirPurifierStateManual` | Manuel | `#3B82F6` |
+| 1 | `HMCharacteristicValueTargetAirPurifierStateAutomatic` | Automatique | `#14B8A6` |
 
 ## `swingMode`
 
@@ -407,7 +407,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueSwingModeDisabled` | Désactivée | `#64748B` |
-| 1 | `HMCharacteristicValueSwingModeEnabled` | Activée | `#0EA5E9` |
+| 1 | `HMCharacteristicValueSwingModeEnabled` | Activée | `#06B6D4` |
 
 ## `filterChangeIndication`
 
@@ -415,8 +415,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueFilterChangeNotNeeded` | Non nécessaire | `#64748B` |
-| 1 | `HMCharacteristicValueFilterChangeNeeded` | Nécessaire | `#0EA5E9` |
+| 0 | `HMCharacteristicValueFilterChangeNotNeeded` | Non nécessaire | `#14B8A6` |
+| 1 | `HMCharacteristicValueFilterChangeNeeded` | Nécessaire | `#F59E0B` |
 
 ## `valveType`
 
@@ -425,9 +425,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueValveTypeGenericValve` | Vanne générique | `#64748B` |
-| 1 | `HMCharacteristicValueValveTypeIrrigation` | Arrosage | `#0EA5E9` |
-| 2 | `HMCharacteristicValueValveTypeShowerHead` | Pommeau de douche | `#A78BFA` |
-| 3 | `HMCharacteristicValueValveTypeWaterFaucet` | Robinet | `#14B8A6` |
+| 1 | `HMCharacteristicValueValveTypeIrrigation` | Arrosage | `#22C55E` |
+| 2 | `HMCharacteristicValueValveTypeShowerHead` | Pommeau de douche | `#06B6D4` |
+| 3 | `HMCharacteristicValueValveTypeWaterFaucet` | Robinet | `#3B82F6` |
 
 ## `programMode`
 
@@ -436,8 +436,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueProgramModeNotScheduled` | Non programmé | `#64748B` |
-| 1 | `HMCharacteristicValueProgramModeScheduled` | Programmé | `#0EA5E9` |
-| 2 | `HMCharacteristicValueProgramModeScheduleOverriddenToManual` | Programme remplacé manuellement | `#A78BFA` |
+| 1 | `HMCharacteristicValueProgramModeScheduled` | Programmé | `#3B82F6` |
+| 2 | `HMCharacteristicValueProgramModeScheduleOverriddenToManual` | Programme remplacé manuellement | `#F59E0B` |
 
 ## `statusLowBattery`
 
@@ -445,7 +445,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueBatteryStatusNormal` | Normale | `#64748B` |
+| 0 | `HMCharacteristicValueBatteryStatusNormal` | Normale | `#22C55E` |
 | 1 | `HMCharacteristicValueBatteryStatusLow` | Faible | `#F59E0B` |
 
 ## `chargingState`
@@ -455,8 +455,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueChargingStateNone` | Pas en charge | `#64748B` |
-| 1 | `HMCharacteristicValueChargingStateInProgress` | En charge | `#0EA5E9` |
-| 2 | `HMCharacteristicValueChargingStateNotChargeable` | Non rechargeable | `#A78BFA` |
+| 1 | `HMCharacteristicValueChargingStateInProgress` | En charge | `#22C55E` |
+| 2 | `HMCharacteristicValueChargingStateNotChargeable` | Non rechargeable | `#8B5CF6` |
 
 ## `statusActive`
 
@@ -465,7 +465,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `false` | Inactif | `#64748B` |
-| 1 | `true` | Actif | `#0EA5E9` |
+| 1 | `true` | Actif | `#22C55E` |
 
 ## `statusFault`
 
@@ -500,9 +500,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueInputEventSinglePress` | Appui simple | `#64748B` |
-| 1 | `HMCharacteristicValueInputEventDoublePress` | Double appui | `#0EA5E9` |
-| 2 | `HMCharacteristicValueInputEventLongPress` | Appui long | `#A78BFA` |
+| 0 | `HMCharacteristicValueInputEventSinglePress` | Appui simple | `#3B82F6` |
+| 1 | `HMCharacteristicValueInputEventDoublePress` | Double appui | `#8B5CF6` |
+| 2 | `HMCharacteristicValueInputEventLongPress` | Appui long | `#EC4899` |
 
 ## `mute`
 
@@ -510,8 +510,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `false` | Son actif | `#64748B` |
-| 1 | `true` | Son coupé | `#0EA5E9` |
+| 0 | `false` | Son actif | `#14B8A6` |
+| 1 | `true` | Son coupé | `#F59E0B` |
 
 ## `nightVision`
 
@@ -520,7 +520,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `false` | Désactivée | `#64748B` |
-| 1 | `true` | Activée | `#0EA5E9` |
+| 1 | `true` | Activée | `#8B5CF6` |
 
 ## `imageMirroring`
 
@@ -529,7 +529,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `false` | Non inversée | `#64748B` |
-| 1 | `true` | Inversée en miroir | `#0EA5E9` |
+| 1 | `true` | Inversée en miroir | `#3B82F6` |
 
 ## `currentMediaState`
 
@@ -537,12 +537,12 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueCurrentMediaStatePlaying` | En lecture | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentMediaStatePaused` | En pause | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentMediaStateStopped` | Arrêté | `#A78BFA` |
+| 0 | `HMCharacteristicValueCurrentMediaStatePlaying` | En lecture | `#22C55E` |
+| 1 | `HMCharacteristicValueCurrentMediaStatePaused` | En pause | `#F59E0B` |
+| 2 | `HMCharacteristicValueCurrentMediaStateStopped` | Arrêté | `#64748B` |
 | 3 | `HMCharacteristicValueCurrentMediaStateUnknown` | Inconnu | `#64748B` |
-| 4 | `HMCharacteristicValueCurrentMediaStateLoading` | Chargement | `#F59E0B` |
-| 5 | `HMCharacteristicValueCurrentMediaStateInterrupted` | Interrompu | `#EC4899` |
+| 4 | `HMCharacteristicValueCurrentMediaStateLoading` | Chargement | `#3B82F6` |
+| 5 | `HMCharacteristicValueCurrentMediaStateInterrupted` | Interrompu | `#F97316` |
 
 ## `targetMediaState`
 
@@ -550,9 +550,9 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetMediaStatePlay` | Lecture | `#64748B` |
-| 1 | `HMCharacteristicValueTargetMediaStatePause` | Pause | `#0EA5E9` |
-| 2 | `HMCharacteristicValueTargetMediaStateStop` | Arrêt | `#A78BFA` |
+| 0 | `HMCharacteristicValueTargetMediaStatePlay` | Lecture | `#22C55E` |
+| 1 | `HMCharacteristicValueTargetMediaStatePause` | Pause | `#F59E0B` |
+| 2 | `HMCharacteristicValueTargetMediaStateStop` | Arrêt | `#64748B` |
 
 ## `wifiSatelliteStatus`
 
@@ -561,8 +561,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueWiFiSatelliteStatusUnknown` | Inconnu | `#64748B` |
-| 1 | `HMCharacteristicValueWiFiSatelliteStatusConnected` | Connecté | `#0EA5E9` |
-| 2 | `HMCharacteristicValueWiFiSatelliteStatusNotConnected` | Non connecté | `#A78BFA` |
+| 1 | `HMCharacteristicValueWiFiSatelliteStatusConnected` | Connecté | `#22C55E` |
+| 2 | `HMCharacteristicValueWiFiSatelliteStatusNotConnected` | Non connecté | `#F97316` |
 
 ## `currentVisibilityState`
 
@@ -570,10 +570,10 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueCurrentVisibilityStateShown` | Visible | `#64748B` |
-| 1 | `HMCharacteristicValueCurrentVisibilityStateHidden` | Masqué | `#0EA5E9` |
-| 2 | `HMCharacteristicValueCurrentVisibilityStateConnected` | Connecté | `#A78BFA` |
-| 3 | `HMCharacteristicValueCurrentVisibilityStateAlwaysShown` | Toujours visible | `#14B8A6` |
+| 0 | `HMCharacteristicValueCurrentVisibilityStateShown` | Visible | `#3B82F6` |
+| 1 | `HMCharacteristicValueCurrentVisibilityStateHidden` | Masqué | `#64748B` |
+| 2 | `HMCharacteristicValueCurrentVisibilityStateConnected` | Connecté | `#14B8A6` |
+| 3 | `HMCharacteristicValueCurrentVisibilityStateAlwaysShown` | Toujours visible | `#8B5CF6` |
 
 ## `targetVisibilityState`
 
@@ -581,8 +581,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueTargetVisibilityStateShow` | Afficher | `#64748B` |
-| 1 | `HMCharacteristicValueTargetVisibilityStateHide` | Masquer | `#0EA5E9` |
+| 0 | `HMCharacteristicValueTargetVisibilityStateShow` | Afficher | `#3B82F6` |
+| 1 | `HMCharacteristicValueTargetVisibilityStateHide` | Masquer | `#64748B` |
 
 ## `routerStatus`
 
@@ -590,8 +590,8 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValueRouterStatusReady` | Prêt | `#64748B` |
-| 1 | `HMCharacteristicValueRouterStatusNotReady` | Non prêt | `#0EA5E9` |
+| 0 | `HMCharacteristicValueRouterStatusReady` | Prêt | `#22C55E` |
+| 1 | `HMCharacteristicValueRouterStatusNotReady` | Non prêt | `#F97316` |
 
 ## `closedCaptions`
 
@@ -600,7 +600,7 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
 | 0 | `HMCharacteristicValueClosedCaptionsDisabled` | Désactivés | `#64748B` |
-| 1 | `HMCharacteristicValueClosedCaptionsEnabled` | Activés | `#0EA5E9` |
+| 1 | `HMCharacteristicValueClosedCaptionsEnabled` | Activés | `#14B8A6` |
 
 ## `pictureMode`
 
@@ -608,17 +608,17 @@ HomeKit déployée ; ce n’est pas un indicateur générique de présence en li
 
 | Code brut | Symbole public / booléen | Libellé français | Couleur |
 | --- | --- | --- | --- |
-| 0 | `HMCharacteristicValuePictureModeStandard` | Standard | `#64748B` |
-| 1 | `HMCharacteristicValuePictureModeMovie` | Cinéma | `#0EA5E9` |
-| 2 | `HMCharacteristicValuePictureModeSport` | Sport | `#A78BFA` |
-| 3 | `HMCharacteristicValuePictureModeGame` | Jeu | `#14B8A6` |
+| 0 | `HMCharacteristicValuePictureModeStandard` | Standard | `#3B82F6` |
+| 1 | `HMCharacteristicValuePictureModeMovie` | Cinéma | `#8B5CF6` |
+| 2 | `HMCharacteristicValuePictureModeSport` | Sport | `#22C55E` |
+| 3 | `HMCharacteristicValuePictureModeGame` | Jeu | `#EC4899` |
 | 4 | `HMCharacteristicValuePictureModePhoto` | Photo | `#F59E0B` |
-| 5 | `HMCharacteristicValuePictureModeVivid` | Vif | `#EC4899` |
-| 6 | `HMCharacteristicValuePictureModeDark` | Sombre | `#38BDF8` |
-| 7 | `HMCharacteristicValuePictureModeBright` | Clair | `#A3E635` |
-| 8 | `HMCharacteristicValuePictureModeComputer` | Ordinateur | `#FB923C` |
-| 9 | `HMCharacteristicValuePictureModeNight` | Nuit | `#818CF8` |
-| 10 | `HMCharacteristicValuePictureModeCalibrated` | Calibré | `#2DD4BF` |
-| 11 | `HMCharacteristicValuePictureModeCustom1` | Personnalisé 1 | `#F472B6` |
-| 12 | `HMCharacteristicValuePictureModeCustom2` | Personnalisé 2 | `#FACC15` |
-| 13 | `HMCharacteristicValuePictureModeCustom3` | Personnalisé 3 | `#94A3B8` |
+| 5 | `HMCharacteristicValuePictureModeVivid` | Vif | `#D946EF` |
+| 6 | `HMCharacteristicValuePictureModeDark` | Sombre | `#475569` |
+| 7 | `HMCharacteristicValuePictureModeBright` | Clair | `#FBBF24` |
+| 8 | `HMCharacteristicValuePictureModeComputer` | Ordinateur | `#06B6D4` |
+| 9 | `HMCharacteristicValuePictureModeNight` | Nuit | `#4338CA` |
+| 10 | `HMCharacteristicValuePictureModeCalibrated` | Calibré | `#14B8A6` |
+| 11 | `HMCharacteristicValuePictureModeCustom1` | Personnalisé 1 | `#818CF8` |
+| 12 | `HMCharacteristicValuePictureModeCustom2` | Personnalisé 2 | `#FB923C` |
+| 13 | `HMCharacteristicValuePictureModeCustom3` | Personnalisé 3 | `#A3E635` |

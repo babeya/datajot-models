@@ -3,7 +3,7 @@
   "type": "series",
   "category": "home",
   "icon": "play.tv",
-  "color": "#0891B2",
+  "color": "#8B5CF6",
   "graphType": "bar",
   "svc": "media_picture_mode",
   "decimalPrecision": 0,

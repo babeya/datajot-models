@@ -1,10 +1,23 @@
 {
-  "label": "Humedad relativa",
-  "description": "Valores brutos de HomeKit sin umbrales de interpretación. Se omiten las lecturas ausentes.",
-  "thresholds": {},
+  "label": "Humedad",
+  "description": "Humedad relativa con referencias interiores del 30–50 %. El confort depende de la estancia y la estación.",
+  "thresholds": {
+    "1": {
+      "label": "Seco"
+    },
+    "2": {
+      "label": "Intervalo 30–50 %"
+    },
+    "3": {
+      "label": "Húmedo"
+    },
+    "4": {
+      "label": "Muy húmedo"
+    }
+  },
   "seo": {
     "keywords": [
-      "Humedad relativa",
+      "Humedad",
       "HomeKit"
     ]
   }

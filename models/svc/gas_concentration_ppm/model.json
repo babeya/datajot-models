@@ -1,16 +1,47 @@
 {
   "key": "gas_concentration_ppm",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0.5,
+      "operatorType": "<",
+      "colorHex": "#93C5FD"
+    },
+    {
+      "order": 2,
+      "value": 2,
+      "operatorType": "<",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 3,
+      "value": 10,
+      "operatorType": "<",
+      "colorHex": "#6366F1"
+    },
+    {
+      "order": 4,
+      "value": 25,
+      "operatorType": "<",
+      "colorHex": "#8B5CF6"
+    },
+    {
+      "order": 5,
+      "value": 25,
+      "operatorType": ">=",
+      "colorHex": "#C026D3"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
-  "showAverage": false,
+  "showAverage": true,
   "showMedian": false,
   "showSum": false,
   "showCount": false,
-  "showMax": false,
-  "showMin": false,
+  "showMax": true,
+  "showMin": true,
   "showAverageOnChart": false,
   "showMedianOnChart": false,
   "showMaxOnChart": false,

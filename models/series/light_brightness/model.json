@@ -3,9 +3,9 @@
   "type": "series",
   "category": "light",
   "icon": "lightbulb.fill",
-  "color": "#0891B2",
-  "graphType": "line",
-  "svc": "homekit_percentage",
+  "color": "#F59E0B",
+  "graphType": "area",
+  "svc": "light_brightness_percentage",
   "decimalPrecision": 0,
   "aggregationMethod": "last",
   "unit": "percentage"

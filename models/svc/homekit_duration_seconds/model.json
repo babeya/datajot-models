@@ -1,16 +1,47 @@
 {
   "key": "homekit_duration_seconds",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": 0,
+      "operatorType": "<=",
+      "colorHex": "#64748B"
+    },
+    {
+      "order": 2,
+      "value": 60,
+      "operatorType": "<=",
+      "colorHex": "#06B6D4"
+    },
+    {
+      "order": 3,
+      "value": 300,
+      "operatorType": "<=",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 4,
+      "value": 900,
+      "operatorType": "<=",
+      "colorHex": "#14B8A6"
+    },
+    {
+      "order": 5,
+      "value": 900,
+      "operatorType": ">",
+      "colorHex": "#8B5CF6"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
   "showAverage": false,
   "showMedian": false,
   "showSum": false,
   "showCount": false,
-  "showMax": false,
-  "showMin": false,
+  "showMax": true,
+  "showMin": true,
   "showAverageOnChart": false,
   "showMedianOnChart": false,
   "showMaxOnChart": false,

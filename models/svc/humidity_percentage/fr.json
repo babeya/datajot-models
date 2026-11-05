@@ -1,10 +1,23 @@
 {
-  "label": "Humidité relative",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "label": "Humidité",
+  "description": "Humidité relative avec repères intérieurs à 30–50 %. Le confort dépend de la pièce et de la saison.",
+  "thresholds": {
+    "1": {
+      "label": "Sec"
+    },
+    "2": {
+      "label": "Zone 30–50 %"
+    },
+    "3": {
+      "label": "Humide"
+    },
+    "4": {
+      "label": "Très humide"
+    }
+  },
   "seo": {
     "keywords": [
-      "Humidité relative",
+      "Humidité",
       "HomeKit"
     ]
   }

@@ -1,0 +1,27 @@
+{
+  "label": "Verbleibende Filterlebensdauer",
+  "description": "Vom Gerät gemeldete Filter-Restlebensdauer. Die Farbbereiche ersetzen nicht die separate Filterwechselanzeige.",
+  "thresholds": {
+    "1": {
+      "label": "Aufgebraucht"
+    },
+    "2": {
+      "label": "Fast aufgebraucht"
+    },
+    "3": {
+      "label": "Geringe Restlebensdauer"
+    },
+    "4": {
+      "label": "Restlebensdauer verfügbar"
+    },
+    "5": {
+      "label": "Hohe Restlebensdauer"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Verbleibende Filterlebensdauer",
+      "HomeKit"
+    ]
+  }
+}

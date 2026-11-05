@@ -1,10 +1,26 @@
 {
-  "label": "Tilt (°)",
-  "description": "Raw HomeKit values without interpretation thresholds. Missing readings are omitted.",
-  "thresholds": {},
+  "label": "Horizontal tilt",
+  "description": "Signed tilt in degrees. The central visual band spans −5° to +5°; signs describe orientation, without inferring open or closed.",
+  "thresholds": {
+    "1": {
+      "label": "Strong negative tilt"
+    },
+    "2": {
+      "label": "Negative tilt"
+    },
+    "3": {
+      "label": "Centered"
+    },
+    "4": {
+      "label": "Positive tilt"
+    },
+    "5": {
+      "label": "Strong positive tilt"
+    }
+  },
   "seo": {
     "keywords": [
-      "Tilt (°)",
+      "Horizontal tilt",
       "HomeKit"
     ]
   }

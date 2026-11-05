@@ -12,19 +12,19 @@
       "order": 2,
       "value": 1,
       "operatorType": "<=",
-      "colorHex": "#0EA5E9"
+      "colorHex": "#22C55E"
     },
     {
       "order": 3,
       "value": 2,
       "operatorType": "<=",
-      "colorHex": "#A78BFA"
+      "colorHex": "#06B6D4"
     },
     {
       "order": 4,
       "value": 3,
       "operatorType": "<=",
-      "colorHex": "#14B8A6"
+      "colorHex": "#3B82F6"
     }
   ],
   "thresholdAxisLabelDisplayMode": "label",

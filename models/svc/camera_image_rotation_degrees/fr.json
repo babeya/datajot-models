@@ -1,0 +1,24 @@
+{
+  "label": "Rotation de l’image",
+  "description": "Orientation d’image selon les quatre angles permis : 0°, 90°, 180° et 270°. Les points évitent l’interpolation entre orientations discrètes.",
+  "thresholds": {
+    "1": {
+      "label": "0°"
+    },
+    "2": {
+      "label": "90°"
+    },
+    "3": {
+      "label": "180°"
+    },
+    "4": {
+      "label": "270°"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Rotation de l’image",
+      "HomeKit"
+    ]
+  }
+}

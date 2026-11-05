@@ -1,0 +1,27 @@
+{
+  "label": "Volume sonore",
+  "description": "Réglage de volume relatif en pourcentage, pas une pression sonore mesurée en décibels. La sourdine est un état distinct.",
+  "thresholds": {
+    "1": {
+      "label": "Volume nul"
+    },
+    "2": {
+      "label": "Bas"
+    },
+    "3": {
+      "label": "Moyen"
+    },
+    "4": {
+      "label": "Fort"
+    },
+    "5": {
+      "label": "Très fort"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "Volume sonore",
+      "HomeKit"
+    ]
+  }
+}

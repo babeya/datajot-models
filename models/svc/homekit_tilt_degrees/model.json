@@ -1,8 +1,39 @@
 {
   "key": "homekit_tilt_degrees",
   "type": "visualizationConfig",
-  "thresholds": [],
-  "thresholdAxisLabelDisplayMode": "value",
+  "thresholds": [
+    {
+      "order": 1,
+      "value": -45,
+      "operatorType": "<",
+      "colorHex": "#3B82F6"
+    },
+    {
+      "order": 2,
+      "value": -5,
+      "operatorType": "<",
+      "colorHex": "#06B6D4"
+    },
+    {
+      "order": 3,
+      "value": 5,
+      "operatorType": "<=",
+      "colorHex": "#14B8A6"
+    },
+    {
+      "order": 4,
+      "value": 45,
+      "operatorType": "<=",
+      "colorHex": "#8B5CF6"
+    },
+    {
+      "order": 5,
+      "value": 45,
+      "operatorType": ">",
+      "colorHex": "#EC4899"
+    }
+  ],
+  "thresholdAxisLabelDisplayMode": "valueAndLabel",
   "autoScaleYAxis": true,
   "includesEmptyAggregates": false,
   "showAverage": false,

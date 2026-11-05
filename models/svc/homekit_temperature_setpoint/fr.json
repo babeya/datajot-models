@@ -1,10 +1,26 @@
 {
-  "label": "Réglage de température",
-  "description": "Valeurs brutes HomeKit sans seuil d’interprétation. Les lectures absentes sont omises.",
-  "thresholds": {},
+  "label": "Température cible",
+  "description": "Consigne de température en °C avec repères du catalogue. C’est un réglage, distinct de la température observée et d’une cible universelle recommandée.",
+  "thresholds": {
+    "1": {
+      "label": "Consigne basse"
+    },
+    "2": {
+      "label": "Consigne modérée"
+    },
+    "3": {
+      "label": "Consigne tempérée"
+    },
+    "4": {
+      "label": "Consigne élevée"
+    },
+    "5": {
+      "label": "Consigne très élevée"
+    }
+  },
   "seo": {
     "keywords": [
-      "Réglage de température",
+      "Température cible",
       "HomeKit"
     ]
   }
